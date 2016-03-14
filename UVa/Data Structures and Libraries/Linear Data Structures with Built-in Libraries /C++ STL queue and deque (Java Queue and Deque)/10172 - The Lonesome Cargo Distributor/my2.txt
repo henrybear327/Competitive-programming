@@ -1,0 +1,156 @@
+here!
+here!
+2: 2 enqueue 5
+here!
+here!
+3: 2 enqueue 1
+here!
+3: 2 enqueue 4
+here!
+here!
+4: 1 pop 4
+here!
+here!
+5: 2 enqueue 3
+here!
+5: 2 enqueue 1
+here!
+here!
+1: 2 enqueue 3
+here!
+1: 2 enqueue 4
+here!
+here!
+2: 2 enqueue 3
+here!
+2: 1 pop 2
+here!
+here!
+3: 2 enqueue 5
+here!
+3: 1 pop 3
+here!
+here!
+4: 2 enqueue 5
+here!
+here!
+5: 2 enqueue 1
+here!
+5: 1 pop 5
+here!
+here!
+1: 1 pop 1
+1: 2 enqueue 1
+here!
+here!
+2: 2 enqueue 1
+here!
+2: 2 enqueue 4
+here!
+here!
+3: 2 enqueue 1
+here!
+3: 1 pop 3
+here!
+here!
+4: 2 enqueue 1
+here!
+here!
+5: 2 enqueue 1
+here!
+5: 1 pop 5
+here!
+here!
+1: 1 pop 1
+here!
+here!
+here!
+3: 2 enqueue 4
+here!
+here!
+4: 1 pop 4
+here!
+90
+here!
+here!
+2: 2 enqueue 5
+here!
+here!
+3: 2 enqueue 1
+here!
+3: 2 enqueue 4
+here!
+here!
+4: 1 pop 4
+here!
+here!
+5: 2 enqueue 3
+here!
+5: 2 enqueue 1
+here!
+here!
+1: 2 enqueue 3
+here!
+1: 2 enqueue 4
+here!
+here!
+2: 2 enqueue 3
+here!
+2: 1 pop 2
+here!
+here!
+3: 2 enqueue 5
+here!
+3: 1 pop 3
+here!
+here!
+4: 2 enqueue 5
+here!
+here!
+5: 2 enqueue 1
+here!
+5: 1 pop 5
+here!
+here!
+1: 1 pop 1
+1: 2 enqueue 1
+here!
+here!
+2: 2 enqueue 1
+here!
+2: 2 enqueue 4
+here!
+here!
+3: 2 enqueue 1
+here!
+3: 1 pop 3
+here!
+here!
+4: 2 enqueue 1
+here!
+here!
+5: 2 enqueue 1
+here!
+5: 1 pop 5
+here!
+here!
+1: 1 pop 1
+here!
+here!
+here!
+3: 2 enqueue 4
+here!
+here!
+4: 1 pop 4
+here!
+90
+here!
+here!
+2: 2 enqueue 3
+here!
+2: 1 pop 2
+here!
+here!
+3: 1 pop 3
+here!
+10

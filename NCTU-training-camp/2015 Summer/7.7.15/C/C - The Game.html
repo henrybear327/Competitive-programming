@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0042)http://acm.fzu.edu.cn/problem.php?pid=1172 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<title>Fuzhou University OnlineJudge</title>
+<link href="./C - The Game_files/oj.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./C - The Game_files/jquery.min.js"></script>
+</head>
+
+<body data-feedly-mini="yes">﻿
+<div class="top_nav"><div style="display:inline; clear:none; float:left; padding: 6px 5px 0 15px;"><img src="./C - The Game_files/annicon.gif"></div><div class="top_nav_style"><b>提示</b>: <a href="http://acm.fzu.edu.cn/ouracm/"><font color="red">欢迎访问OurACM平台</font></a></div></div><div align="center" class="page">
+<div class="head_block">
+	<div class="head_img"><div class="search-box">
+				<form action="http://acm.fzu.edu.cn/search_noajax.php?act=1" method="post" id="search">
+					<input name="search" type="text" maxlength="16" title="Problem Id or keywords" style="width:140px; height:16px; font-size:14px; font-style:italic; color:#9E9E9E; background-repeat:no-repeat; padding-left:17px; background-image:url(image/search_box.gif);" value="Keywords..." onclick="if(this.value==&#39;Keywords...&#39;) this.value=&#39;&#39;;" onblur="if(this.value==&#39;&#39;) this.value=&#39;Keywords...&#39;;"> 
+					<input style="width:30px; font-size:14px;" value="Go" type="submit">
+				</form>
+			</div>
+</div>
+	<div class="head_menu">
+		<div class="menu_button" id="menu1"><a href="http://acm.fzu.edu.cn/index.php">Home</a>
+			<div class="menu_button_ext" id="menu1_ext"><div class="menu_ext_tr"><a href="http://acm.fzu.edu.cn/index.php">Home Page</a></div><div class="menu_ext_tr"><a href="http://acm.fzu.edu.cn/ouracm/">Our Heroes</a></div><div class="menu_ext_tr"><a href="http://acm.fzu.edu.cn/about.php">Development Diary</a></div></div>
+		</div>
+		<div class="menu_button" id="menu2"><a href="http://acm.fzu.edu.cn/list.php">Problems</a>
+			<div class="menu_button_ext" id="menu2_ext"><div class="menu_ext_tr"><a href="http://acm.fzu.edu.cn/list.php">Problem List</a></div><div class="menu_ext_tr"><a href="http://acm.fzu.edu.cn/log.php">Status</a></div><div class="menu_ext_tr"><a href="http://acm.fzu.edu.cn/submit.php">Submit</a></div><div class="menu_ext_tr"><a href="http://acm.fzu.edu.cn/search.php">Search</a></div><div class="menu_ext_tr"><a href="http://acm.fzu.edu.cn/list.php?vol=1001">Top AC (50)</a></div></div>
+		</div>
+		<div class="menu_button" id="menu3"><a href="http://acm.fzu.edu.cn/ranklist.php">Ranklist</a>
+			<div class="menu_button_ext" id="menu3_ext" style="display: none;"><div class="menu_ext_tr"><a href="http://acm.fzu.edu.cn/ranklist.php">All Users</a></div><div class="menu_ext_tr"><a href="http://acm.fzu.edu.cn/ranklist.php?act=1">Recent Ranklist</a></div><div class="menu_ext_tr"><a href="http://acm.fzu.edu.cn/awardrk.php">Award Contest Rank</a></div></div>
+		</div>
+		<div class="menu_button" id="menu4"><a href="http://acm.fzu.edu.cn/contest.php">Contest</a>
+			<div class="menu_button_ext" id="menu4_ext" style="display: none;"><div class="menu_ext_tr"><a href="http://acm.fzu.edu.cn/contest.php?act=running">Running Contest</a></div><div class="menu_ext_tr"><a href="http://acm.fzu.edu.cn/contest.php">Contest List</a></div><div class="menu_ext_tr"><a href="http://acm.fzu.edu.cn/contest.php?act=scheduled">Scheduled Contest</a></div><div class="menu_ext_tr"><a href="http://acm.fzu.edu.cn/award.php">Award Contest</a></div></div>
+		</div>
+		<div class="menu_button" id="menu5"><a href="http://acm.fzu.edu.cn/faq.php">Help</a>
+			<div class="menu_button_ext" id="menu5_ext" style="display: none;"><div class="menu_ext_tr"><a href="http://acm.fzu.edu.cn/faq.php">F.A.Q</a></div><div class="menu_ext_tr"><a href="http://acm.fzu.edu.cn/ouracm/?z=talk">Forum</a></div></div>
+		</div>
+		<div class="menu_button" style="float: right; border-left-width: 1px; border-right-width: 0px; width:180px;" id="menu6"><a href="http://acm.fzu.edu.cn/login.php?dir=L3Byb2JsZW0ucGhwP3BpZD0xMTcy">Member</a>					<div class="menu_button_ext" id="menu6_ext"><div class="menu_ext_tr"><a href="http://acm.fzu.edu.cn/login.php?dir=L3Byb2JsZW0ucGhwP3BpZD0xMTcy">Login</a></div><div class="menu_ext_tr"><a href="http://acm.fzu.edu.cn/register.php">Register</a></div><div class="menu_ext_tr"><a href="http://acm.fzu.edu.cn/compare.php">Compare Users</a></div></div>
+				</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(function() {
+	var i = 1;
+	for(i=1;i<=6;i++)
+	{
+		var id = "#menu" + i.toString();
+		$(id).mouseenter(function(){ $("#"+this.getAttribute("id")+"_ext").show(); });
+		$(id).mouseleave(function(){ $("#"+this.getAttribute("id")+"_ext").hide(); });
+	}
+});
+</script>
+<div class="bg">
+<div class="box">
+<div class="problem">
+	<div class="problem_title"><img width="32px" height="32px" src="./C - The Game_files/problem.gif"><b> Problem 1172 The Game		</b></div>
+<div class="problem_desc">
+		<h3>Accept: 98&nbsp;&nbsp;&nbsp;&nbsp;Submit: 351<br>Time Limit: 1000 mSec&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit : 32768 KB</h3></div>
+<div class="problem_content">
+			<h2><img src="./C - The Game_files/prodesc.gif"> Problem Description</h2><div class="pro_desc"><p>
+A game of Renju is played on a 19*19 board by two players. One player uses black stones and the other uses white stones. The game begins in an empty board and two players alternate in placing black stones and white stones. Black always goes first. There are 19 horizontal lines and 19 vertical lines in the board and the stones are placed on the intersections of the lines.
+<br>
+<br>Horizontal lines are marked 1, 2, ..., 19 from up to down and vertical lines are marked 1, 2, ..., 19 from left to right.
+</p><center><img src="./C - The Game_files/1172.gif"></center>
+<br>The objective of this game is to put five stones of the same color consecutively along a horizontal, vertical, or diagonal line. So, black wins in the above figure. But, a player does not win the game if more than five stones of the same color were put consecutively.
+<br>
+<br>Given a configuration of the game, write a program to determine whether white has won or black has won or nobody has won yet. There will be no input data where the black and the white both win at the same time. Also there will be no input data where the white or the black wins in more than one place.
+<br><p></p>
+</div>
+			<h2><img src="./C - The Game_files/prodesc.gif"> Input</h2><div class="pro_desc"><p>
+The first line of the input contains a single integer t (1 &lt;= t &lt;= 11), the number of test cases, followed by the input data for each test case. Each test case consists of 19 lines, each having 19 numbers. A black stone is denoted by 1, a white stone is denoted by 2, and 0 denotes no stone. </p>
+</div>			<h2><img src="./C - The Game_files/prodesc.gif"> Output</h2><div class="pro_desc">There should be one or two line(s) per test case. In the first line of the test case output, you should print 1 if black wins, 2 if white wins, and 0 if nobody wins yet. If black or white won, print in the second line the horizontal line number and the vertical line number of the left-most stone among the five consecutive stones. (Select the upper-most stone if the five consecutive stones are located vertically.)<p></p>
+</div>			<h2><img src="./C - The Game_files/prodesc.gif"> Sample Input</h2>
+			<div class="data">1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 1 2 0 0 2 2 2 1 0 0 0 0 0 0 0 0 0 0
+0 0 1 2 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0
+0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 1 2 2 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 1 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 2 1 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+</div>
+			<h2><img src="./C - The Game_files/prodesc.gif"> Sample Output</h2>
+			<div class="data">1
+3 2
+</div>
+						<h2><img src="./C - The Game_files/prodesc.gif"> Source</h2>Iran 2004		</div>
+	<br><div style="text-align:center;"><b><a href="http://acm.fzu.edu.cn/submit.php?pid=1172">Submit</a>&nbsp;&nbsp;<a href="http://acm.fzu.edu.cn/list.php?vol=2">Back</a>&nbsp;&nbsp;<a href="http://acm.fzu.edu.cn/status.php?pid=1172">Status</a>&nbsp;&nbsp;<a href="http://acm.fzu.edu.cn/ouracm/?z=talk-index-pid-1172">Discuss</a></b></div>
+	</div>
+</div>
+
+﻿</div><!-- bg -->
+<div><img src="./C - The Game_files/footer.jpg"></div>
+</div><!-- center -->
+<center>
+<div class="footer">Fuzhou University Online Judge. Powered by Fasast Version 1.20 Build 20141101.<br>Designed &amp; Developed by <a style="color:white;" href="http://ekszz.com/"><b>谢振哲(Xie Zhenzhe)</b></a>
+. Copyright (C) 2008-2014 XieZhenZhe, All Rights Reserved.<br>Any problem, Please Contact <b><a style="color:white;" href="mailto:acmicpc@fzu.edu.cn">Fuzhou University ACM/ICPC Group</a></b>.</div>
+<br><br></center>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./C - The Game_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11625886-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+
+		
+<div id="feedly-mini" title="feedly Mini tookit"></div></body></html>

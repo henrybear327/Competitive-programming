@@ -1,0 +1,105 @@
+7/7：Basic Enumeration
+
+array is pass-by-ref, checkout B
+
+clang-format E.c && astyle --style=linux E.c && clang -lm E.c -o E && ./E < input.txt 
+
+len = strlen!!!
+need to use (int)strlen
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+
+int main()
+{
+    char input1[100010], input2[100010], input3[100010];
+    while (fgets(input1, 100010, stdin) != NULL &&
+           fgets(input2, 100010, stdin) != NULL &&
+           fgets(input3, 100010, stdin) != NULL) {
+        input1[strlen(input1) - 1] = '\0';
+        input2[strlen(input2) - 1] = '\0';
+        input3[strlen(input3) - 1] = '\0';
+        int count1[26] = {0};
+        int count2[26] = {0};
+        int count3[26] = {0};
+        for (int i = 0; i < strlen(input1); i++) {
+            count1[input1[i] - 'a']++;
+        }
+        for (int i = 0; i < strlen(input2); i++) {
+            count2[input2[i] - 'a']++;
+        }
+        for (int i = 0; i < strlen(input3); i++) {
+            count3[input3[i] - 'a']++;
+        }
+
+        int max_b = 0, flag = 1;
+        while (flag) {
+            max_b++;
+            for (int i = 0; i < 26; i++) {
+                if (count2[i] * (max_b) <= count1[i])
+                    continue;
+                else {
+                    max_b--;
+                    flag = 0;
+                    break;
+                }
+            }
+        }
+
+        int max_c = 0;
+        flag = 1;
+        while (flag) {
+            max_c++;
+            for (int i = 0; i < 26; i++) {
+                if (count3[i] * (max_c) <= count1[i])
+                    continue;
+                else {
+                    flag = 0;
+                    max_c--;
+                    break;
+                }
+            }
+        }
+
+        int temp_b = -1, temp_c = -1, total = -1;
+
+        for (int i = 0; i <= max_b; i++) {
+            for (int j = 0; j <= max_c; j++) {
+                int k;
+                for (k = 0; k < 26; k++) {
+                    if (count2[k] * i + count3[k] * j <= count1[k]) {
+                        continue;
+                    } else {
+                        break;
+                    }
+                }
+                printf("k = %d, %d, %d, %d\n", k,
+                       i * strlen(input2) + j * strlen(input3), i, j);
+                if (k == 26) {
+                    if ((int)(i * strlen(input2) + j * strlen(input3)) > total) { //a good case to NOT ignore warning on strlen
+                        total = i * strlen(input2) + j * strlen(input3);
+                        temp_b = i;
+                        temp_c = j;
+                        printf("%d %d\n", temp_b, temp_c);
+                    }
+                }
+            }
+        }
+        printf("%d %d %d %d\n", max_b, max_c, temp_b, temp_c);
+
+        for (int i = 0; i < temp_b; i++)
+            printf("%s", input2);
+        for (int i = 0; i < temp_c; i++)
+            printf("%s", input3);
+        for (int i = 0; i < 26; i++) {
+            count1[i] -= (count2[i] * temp_b + count3[i] * temp_c);
+            for (int j = 0; j < count1[i]; j++)
+                printf("%c", i + 'a');
+        }
+        printf("\n");
+    }
+
+    return 0;
+}

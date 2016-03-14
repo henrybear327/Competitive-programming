@@ -1,0 +1,64 @@
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <queue>
+
+using namespace std;
+
+typedef struct team {
+    int count;
+    int team_member[1000];
+    int front, back;
+    int queue[1000];
+} Team;
+
+int main()
+{
+    int tot_team, case_count = 1;
+    while (scanf("%d", &tot_team) == 1 && tot_team) {
+        printf("Scenario #%d\n", case_count++);
+        Team data[1000];
+        for (int i = 0; i < tot_team; i++) {
+            scanf("%d", &data[i].count);
+            for (int j = 0; j < data[i].count; j++) {
+                scanf("%d", &data[i].team_member[j]);
+            }
+            data[i].front = data[i].back = 0;
+        }
+
+        char input[100];
+        fgets(input, 100, stdin);
+        while (fgets(input, 100, stdin) != NULL) {
+            char *command = strtok(input, " \n");
+            if (strcmp(command, "ENQUEUE") == 0) {
+                char *member = strtok(NULL, "\n");
+                int member_i = atoi(member), flag = 1;
+                for (int i = 0; i < tot_team && flag; i++) {
+                    for (int j = 0; j < data[i].count; j++) {
+                        if (data[i].team_member[j] == member_i) {
+                            data[i].queue[data[i].back++] = member_i;
+                            flag = 0;
+                            break;
+                        }
+                    }
+                }
+            } else if (strcmp(command, "DEQUEUE") == 0) {
+                for (int i = 0; i < tot_team; i++) {
+                    // printf("%d %d\n", data[i].front, data[i].back);
+
+                    if (data[i].front != data[i].back) {
+                        printf("%d\n", data[i].queue[data[i].front]);
+                        data[i].front++;
+                        break;
+                    }
+                }
+            } else {
+                // stop
+                break;
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}

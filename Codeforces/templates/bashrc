@@ -1,0 +1,4 @@
+alias clang++="clang++-3.6 -Wall -Wextra -O2 -o main.o"
+alias clang-format="clang-format-3.6 -i -style=LLVM"
+alias astyle="astyle --style=linux"
+

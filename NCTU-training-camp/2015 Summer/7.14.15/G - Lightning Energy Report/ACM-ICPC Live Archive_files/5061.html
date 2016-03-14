@@ -1,0 +1,107 @@
+
+<!-- saved from url=(0056)https://icpcarchive.ecs.baylor.edu/external/50/5061.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><p>
+The city of Thunder has many houses and they are powered by lightning. Two houses may be 
+interconnected by a wire. The wires connect the houses such that there is exactly one 
+path from one house to any other house in the city. Each house has a large battery that 
+can store infinite electrical energy. 
+
+</p><p>
+Everyday, several lightnings strike several houses. 
+These lightnings are very unusual, when it strikes, it strikes two houses simultaneously: 
+one house (A) with a red lightning and the other house (B) with a blue lightning. After 
+the strikes, every house along the path from A to B (inclusive) will receive a certain 
+amount of electrical energy which is then added to the house's battery. 
+
+</p><p>
+The mayor of Thunder city wants a report on the stored electrical energy for every house at 
+the end of the month and the owner of each house has to pay taxes for that. To prevent the 
+owners report invalid energy stored in their house battery (because they want less tax to 
+pay), you are asked to produce a correct report based on the observed lightnings of the 
+current month. At the beginning of the month, the energy reading on the battery of each 
+house is 0.
+
+</p><p>
+
+</p><h2><font size="4" color="#ff0000"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>
+The first line of input contains an integer <span class="MATH"><i>T</i></span> <!-- MATH
+ $(T \le 10)$
+ -->
+<span class="MATH">(<i>T</i><img width="18" height="31" align="MIDDLE" border="0" src="5061img1.png" alt="$ \le$">10)</span>, the number of cases. Each 
+case begins with an integer <span class="MATH"><i>N</i></span> <!-- MATH
+ $(2 \le N \le 50,000)$
+ -->
+<span class="MATH">(2<img width="18" height="31" align="MIDDLE" border="0" src="5061img1.png" alt="$ \le$"><i>N</i><img width="18" height="31" align="MIDDLE" border="0" src="5061img1.png" alt="$ \le$">50, 000)</span>, the number of houses in the 
+Thunder city. The next <span class="MATH"><i>N</i> - 1</span> lines contain the wire connections where each line will 
+consist of two integers <span class="MATH"><i>X</i></span> and <span class="MATH"><i>Y</i></span> which means house <span class="MATH"><i>X</i></span> is connected with house <span class="MATH"><i>Y</i></span>. The 
+house number is from 0 to <span class="MATH"><i>N</i> - 1</span>. The next line will contain a number <span class="MATH"><i>Q</i></span> <!-- MATH
+ $(1 \le Q \le 50,000)$
+ -->
+<span class="MATH">(1<img width="18" height="31" align="MIDDLE" border="0" src="5061img1.png" alt="$ \le$"><i>Q</i><img width="18" height="31" align="MIDDLE" border="0" src="5061img1.png" alt="$ \le$">50, 000)</span> 
+which denotes the number of observed lightning strikes. The next <span class="MATH"><i>Q</i></span> lines describe the 
+unusual lightnings happened during the month. Each line will consist of three integers 
+<span class="MATH"><i>A</i></span>, <span class="MATH"><i>B</i></span>, <span class="MATH"><i>C</i></span> which tells that a red lightning strikes house <span class="MATH"><i>A</i></span> and a blue lightning strikes 
+house <span class="MATH"><i>B</i></span> and the power transferred is <span class="MATH"><i>C</i></span> (at most 100) based on the reading of a special 
+lightning instrument.
+
+</p><p>
+
+</p><h2><font size="4" color="#ff0000"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>
+For each case, output ``<tt>Case #<span class="MATH"><i>X</i></span>:</tt>" (without quote) where <span class="MATH"><i>X</i></span> is the case 
+number and <span class="MATH"><i>N</i></span> lines where each line is the electrical energy reading on the battery of each 
+house from house 0 to house <span class="MATH"><i>N</i> - 1</span> at the end of the month.
+
+</p><p>
+
+</p><h2><font size="4" color="#ff0000"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>1 
+9 
+0 1
+1 2
+2 3
+2 4
+2 7
+7 8
+7 6
+6 5
+5 
+1 4 10 
+3 5 3 
+0 8 5 
+1 6 10 
+4 4 100
+</pre>
+
+<p>
+
+</p><h2><font size="4" color="#ff0000"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>Case #1: 
+5 
+25 
+28 
+3 
+110 
+3 
+13 
+18 
+5
+</pre> 
+
+<p>
+</p></body></html>

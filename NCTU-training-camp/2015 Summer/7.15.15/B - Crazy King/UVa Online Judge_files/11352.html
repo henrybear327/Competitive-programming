@@ -1,0 +1,97 @@
+
+<!-- saved from url=(0051)https://uva.onlinejudge.org/external/113/11352.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>
+M - Crazy King
+</title>
+</head>
+<body>
+<p></p><h1><center>M - Crazy King</center></h1><p></p>
+	
+<p><b>Time Limit: 1 sec <br>
+Memory Limit: 16MB</b></p>
+
+<p>King Peter lives in kingdom A, and his daughter in kingdom B. King recieved
+a letter telling that her daughter gave birth to a child. King is incredibly
+curious to see his grandchild! Unfortunately that`s not gonna be that easy.</p>
+
+<p>Kingdoms A and B are separated by a forest. There are lots of enemies in the
+forest, and King is not that curious to see them. If they attack king on his way
+to kingdom B, then he will never ever see his grandchild and daughter again
+because of lethal consequences.</p>
+
+<p>Security Council of the King disposes information about location of the
+enemies, which makes the things easier for king. For some unknown reason a
+forest is M x N chessboard. (M is the number of rows, and N is the number
+of columns). N, M &lt;= 100 are positive integers.</p>
+
+<p>Enemies of the King can ride horses as showed in the picture. Usually horses
+ride (or jump) that way in Chess. Unfortunately king can't take an airplane
+from point A to point B because it is not invented yet.  So he moves the same
+way as chess-king does (refer to picture for details).</p>
+
+<img src="p11352.jpg">
+
+<p>King can`t move to a square X, if a horse of the enemy is on that square.
+While the king is moving horses are not, but if at least one horse can reach
+square X in one move, then king can't move to that square (except for the case
+when square X is either kingdom A or B).</p>
+
+<p>You are the chief of Electronic Intelligence dapartment of kingdom A (by
+the way the computers are already invented). And you`re asked to find the
+length of the shortest route L from kingdom A to B, as king can`t wait any
+longer.</p>
+	
+<p></p><h4>INPUT:</h4>
+The first line of input contains the number of tests T &lt;= 100. The first line
+of each test contains 2 numbers M and N. Then M lines follow each containing N
+symbols from the set S = {'.', 'Z', 'A', 'B'}. '.' means that square is not
+occupied. 'Z' � horse occupies that square. 'A' - kingdom A, 'B' - kingdom B.
+Each test contains exactly one kingdom A and B.<p></p>
+    
+<p></p><h4>OUTPUT:</h4>
+Find number L for each test and print line "<code>Minimal possible length of a
+trip is L</code>" if King can reach kingdom B. Replace "<code>L</code>" with corresponding number.
+If King can`t safely reach the kingdom B print line "<code>King Peter, you
+can't go now!</code>".
+	
+<p></p><h4>SAMPLE INPUT:</h4>
+<code><pre>4
+5 5
+.Z..B
+..Z..
+Z...Z
+.Z...
+A....
+3 2
+ZB
+.Z
+AZ
+6 5
+....B
+.....
+.....
+..Z..
+.....
+A..Z.
+3 3
+ZZ.
+...
+AB.
+</pre></code>
+	
+<p></p><h4>SAMPLE OUTPUT:</h4><p></p>
+<code></code><pre><code>King Peter, you can't go now!
+Minimal possible length of a trip is 2
+King Peter, you can't go now!
+Minimal possible length of a trip is 1
+</code></pre>
+
+<hr>
+
+<p><i>Problem setters: Aleksej Viktorchik, Leonid Shishlo. <br>
+Huge Easy Contest #1</i></p>
+
+
+
+</body></html>

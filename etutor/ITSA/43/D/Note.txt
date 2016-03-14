@@ -1,0 +1,5 @@
+Submit both main_old.cpp and main.cpp.
+
+main_old.cpp uses inheritance to keep track of the total steps and path cnt.
+
+main.cpp uses two queue to keep track of all the nodes that can be reached at every level(visualize it as a BFS-tree)

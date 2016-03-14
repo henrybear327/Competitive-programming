@@ -1,0 +1,11 @@
+1. .vimrc, .bashrc
+2. Use a fgets to get newline characters after a scanf before using fgets
+3. Use len= strlen()
+4. scanf() == 1, 2, 3...
+5. Don't mess up indices, such as i, j, k
+6. scanf() != EOF may fail!
+7. Don't try to reduce code, think of every conditions that's possible and code them all.
+7. Test cases with corner cases, such as 0, 1, -1. Also test the lower and upper bound of the testcases.
+8. Read the problem statement carefully
+9. Estimate time complexity
+10. Find pattern, cycle

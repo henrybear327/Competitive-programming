@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/B -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+  
+
+
+
+
+
+<link rel="shortcut icon" href="http://acm.hust.edu.cn/vjudge/images/logo.ico">
+<link rel="stylesheet" type="text/css" href="./NCTU Summer Camp - String - Virtual Judge_files/style.min.css">
+<script async="" src="./NCTU Summer Camp - String - Virtual Judge_files/analytics.js"></script><script type="text/javascript">var basePath = "/vjudge";</script>
+<script type="text/javascript" src="./NCTU Summer Camp - String - Virtual Judge_files/script.min.js"></script>
+<script type="text/javascript" src="./NCTU Summer Camp - String - Virtual Judge_files/judgeService.js"></script>
+<script type="text/javascript" src="./NCTU Summer Camp - String - Virtual Judge_files/util.js"></script>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+    
+        ga('create', 'UA-13231844-2', 'auto');
+    
+	ga('send', 'pageview');
+</script>
+
+        <title>NCTU Summer Camp - String - Virtual Judge</title>
+
+
+
+    <script type="text/javascript" async="" src="./NCTU Summer Camp - String - Virtual Judge_files/embed.js"></script><script src="./NCTU Summer Camp - String - Virtual Judge_files/alfie.f51946af45e0b561c60f768335c9eb79.js" async="" charset="UTF-8"></script></head>
+
+    <body data-feedly-mini="yes">
+        <input type="hidden" name="" id="js_require_view_contest">
+        
+  
+
+
+
+<div id="cssmenu"><div id="menu-line" style="width: 116px; left: 297.546875px;"></div><div id="menu-button">Menu</div>
+<ul>
+    <li id="nav_home"><a href="http://acm.hust.edu.cn/vjudge/toIndex.action">Home</a></li>
+    <li id="nav_problem"><a href="http://acm.hust.edu.cn/vjudge/problem/toListProblem.action">Problem</a></li>
+    <li id="nav_status"><a href="http://acm.hust.edu.cn/vjudge/problem/status.action">Status</a></li>
+    <li id="nav_contest" class="has-sub active"><span class="submenu-button"></span><a href="http://acm.hust.edu.cn/vjudge/contest/toListContest.action">Contest</a>
+       <ul>
+          <li><a href="http://acm.hust.edu.cn/vjudge/contest/toAddContest.action" class="login">Add Contest</a></li>
+          <li><a href="http://acm.hust.edu.cn/vjudge/contest/statistic.action">Statistic</a></li>
+       </ul>
+    </li>
+	<li style="float:right">
+        
+        
+            <a class="login" href="javascript:void(0)">LOGIN</a>
+        
+    </li>
+    
+    
+        <li style="float:right">
+            <a class="register" href="javascript:void(0)">REGISTER</a>
+        </li>
+    
+</ul>
+</div>
+
+
+	
+	
+
+
+        
+            <marquee id="contest_announcement" height="25" style="text-align: center; color: red; font-weight: bold; height: 25px;" onmouseout="this.start()" onmouseover="this.stop()" scrollamount="2" scrolldelay="1" behavior="alternate">UVA 12886 若無法顯示題目，請至uva：https://goo.gl/Flshcq</marquee>
+        
+        <input type="hidden" name="cid" value="83561" id="cid">
+        
+        <div id="contest_title" class="ptt">
+            
+            NCTU Summer Camp - String
+        </div>
+        <div id="time_container" style="width:96%;height:40px;margin:auto;font-family: Lucida Grande,Lucida Sans,Arial,sans-serif;font-size: 12px;">
+            <div id="time_index" style="text-align: right; float: left; width: 102%;">
+                <span>5:00:00</span>
+            </div>
+            <div id="time_total" style="text-align:right;">
+                <span></span>
+            </div>
+            <div id="time_controller" style="clear:both" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 100%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 100%;"></span></div>
+        </div>
+        
+        <div id="contest_tabs" style="min-width: 0px; background: transparent;" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+            <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+                <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="overview" aria-labelledby="ui-id-3" aria-selected="false" aria-expanded="false"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#overview" rel="#overview" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3">Overview</a></li>
+                
+                    <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="problem" aria-labelledby="ui-id-4" aria-selected="true" aria-expanded="true"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem" rel="#problem" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-4">Problem</a></li>
+                    <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="status" aria-labelledby="ui-id-5" aria-selected="false" aria-expanded="false"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status" rel="#status" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-5">Status</a></li>
+                    <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="rank" aria-labelledby="ui-id-6" aria-selected="false" aria-expanded="false"><a href="./NCTU Summer Camp - String - Virtual Judge_files/view.html" rel="#rank" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-6">Rank</a></li>
+                
+                
+                    <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="discuss" aria-labelledby="ui-id-7" aria-selected="false" aria-expanded="false"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#discuss" rel="#discuss" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-7">Discuss</a></li>
+                
+            </ul>
+            
+
+
+  
+
+
+<div id="overview" aria-labelledby="ui-id-3" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="true" style="display: none;">
+	<table style="margin:auto" class="plm">
+		<tbody><tr>
+			<td class="alignRight"><b>Current Time: </b></td>
+			<td class="alignLeft"><span class="currentTime">2015-07-21 16:41:44</span></td>
+			<td class="alignRight"><b>Contest Type: </b></td>
+			<td class="alignLeft"><font color="blue">Public</font></td>
+		</tr>
+		<tr>
+			<td class="alignRight"><b>Start Time: </b></td>
+			<td class="alignLeft"><span class="plainDate">2015-07-20 12:30:00</span></td>
+			<td class="alignRight"><b>Contest Status: </b></td>
+			<td class="alignLeft">
+				
+				
+				<font color="green">Ended</font>
+			</td>
+		</tr>
+		<tr>
+			<td class="alignRight"><b>End Time: </b></td>
+			<td class="alignLeft"><span class="plainDate">2015-07-20 17:30:00</span></td>
+			<td class="alignRight"><b>Manager: </b></td>
+			<td class="alignLeft"><a href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=60388">jackyliuxx</a></td>
+		</tr>
+	</tbody></table>
+	
+	
+	<div id="contest_opt" style="text-align:center;margin-top:10px">
+		
+			<a id="clone_contest" class="login ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" href="http://acm.hust.edu.cn/vjudge/contest/toAddContest.action?cid=83561" title="Create a contest using the same problems, in which you can see the original score board." role="button"><span class="ui-button-text">Clone this contest</span></a>
+		
+		
+	</div>
+	<div id="viewContest_wrapper" class="dataTables_wrapper dt-jqueryui no-footer"><div class="fg-toolbar ui-toolbar ui-widget-header ui-helper-clearfix ui-corner-tl ui-corner-tr"></div><table style="width:960px;margin-top:20px" cellpadding="0" cellspacing="0" border="0" class="display dataTable no-footer" id="viewContest" role="grid">
+		<thead>
+			<tr role="row"><th style="text-align: right;width:20px" class="ui-state-default sorting_disabled" rowspan="1" colspan="1"><div class="DataTables_sort_wrapper"><span class="DataTables_sort_icon"></span></div></th><th style="text-align: left;width:90px" class="ui-state-default sorting_disabled" rowspan="1" colspan="1"><div class="DataTables_sort_wrapper"><span class="DataTables_sort_icon"></span></div></th><th style="text-align: right;width:90px" class="ui-state-default sorting_disabled" rowspan="1" colspan="1"><div class="DataTables_sort_wrapper">ID<span class="DataTables_sort_icon"></span></div></th><th style="width:150px" class="ui-state-default sorting_disabled" rowspan="1" colspan="1"><div class="DataTables_sort_wrapper">Origin<span class="DataTables_sort_icon"></span></div></th><th style="text-align: left;padding-left:50px;" class="ui-state-default sorting_disabled" rowspan="1" colspan="1"><div class="DataTables_sort_wrapper">Title<span class="DataTables_sort_icon"></span></div></th></tr>
+		</thead>
+		
+		
+			<tbody>
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+	<tr role="row" class="odd">
+				<td style="text-align: right"></td>
+				<td style="text-align: center"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//A/1">15</a> / <a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//A/0">63</a></td>
+				<td style="text-align: right">Problem A</td>
+				
+					<td class="center">
+						<a target="_blank" href="http://acm.hust.edu.cn/vjudge/problem/visitOriginUrl.action?id=19669">UVA 11362</a>
+					</td>
+				
+				<td style="padding-left:50px;">
+					<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/A">
+						Phone List
+					</a>
+				</td>
+			</tr><tr role="row" class="even">
+				<td style="text-align: right"></td>
+				<td style="text-align: center"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//B/1">7</a> / <a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//B/0">36</a></td>
+				<td style="text-align: right">Problem B</td>
+				
+					<td class="center">
+						<a target="_blank" href="http://acm.hust.edu.cn/vjudge/problem/visitOriginUrl.action?id=10368">POJ 3461</a>
+					</td>
+				
+				<td style="padding-left:50px;">
+					<a href="./NCTU Summer Camp - String - Virtual Judge_files/NCTU Summer Camp - String - Virtual Judge.html">
+						Oulipo
+					</a>
+				</td>
+			</tr><tr role="row" class="odd">
+				<td style="text-align: right"></td>
+				<td style="text-align: center"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//C/1">5</a> / <a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//C/0">13</a></td>
+				<td style="text-align: right">Problem C</td>
+				
+					<td class="center">
+						<a target="_blank" href="http://acm.hust.edu.cn/vjudge/problem/visitOriginUrl.action?id=26002">UVA 11576</a>
+					</td>
+				
+				<td style="padding-left:50px;">
+					<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/C">
+						Scrolling Sign
+					</a>
+				</td>
+			</tr><tr role="row" class="even">
+				<td style="text-align: right"></td>
+				<td style="text-align: center"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//D/1">5</a> / <a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//D/0">12</a></td>
+				<td style="text-align: right">Problem D</td>
+				
+					<td class="center">
+						<a target="_blank" href="http://acm.hust.edu.cn/vjudge/problem/visitOriginUrl.action?id=27647">UVA 11475</a>
+					</td>
+				
+				<td style="padding-left:50px;">
+					<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/D">
+						Extend to Palindrome
+					</a>
+				</td>
+			</tr><tr role="row" class="odd">
+				<td style="text-align: right"></td>
+				<td style="text-align: center"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//E/1">3</a> / <a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//E/0">11</a></td>
+				<td style="text-align: right">Problem E</td>
+				
+					<td class="center">
+						<a target="_blank" href="http://acm.hust.edu.cn/vjudge/problem/visitOriginUrl.action?id=19933">HDU 3068</a>
+					</td>
+				
+				<td style="padding-left:50px;">
+					<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/E">
+						最长回文
+					</a>
+				</td>
+			</tr><tr role="row" class="even">
+				<td style="text-align: right"></td>
+				<td style="text-align: center"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//F/1">3</a> / <a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//F/0">9</a></td>
+				<td style="text-align: right">Problem F</td>
+				
+					<td class="center">
+						<a target="_blank" href="http://acm.hust.edu.cn/vjudge/problem/visitOriginUrl.action?id=36265">UVA 1449</a>
+					</td>
+				
+				<td style="padding-left:50px;">
+					<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/F">
+						Dominating Patterns
+					</a>
+				</td>
+			</tr><tr role="row" class="odd">
+				<td style="text-align: right"></td>
+				<td style="text-align: center"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//G/1">1</a> / <a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//G/0">3</a></td>
+				<td style="text-align: right">Problem G</td>
+				
+					<td class="center">
+						<a target="_blank" href="http://acm.hust.edu.cn/vjudge/problem/visitOriginUrl.action?id=88791">UVA 12886</a>
+					</td>
+				
+				<td style="padding-left:50px;">
+					<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/G">
+						The Big Painting
+					</a>
+				</td>
+			</tr><tr role="row" class="even">
+				<td style="text-align: right"></td>
+				<td style="text-align: center"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//H/1">1</a> / <a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//H/0">4</a></td>
+				<td style="text-align: right">Problem H</td>
+				
+					<td class="center">
+						<a target="_blank" href="http://acm.hust.edu.cn/vjudge/problem/visitOriginUrl.action?id=188774">CodeForces 557E</a>
+					</td>
+				
+				<td style="padding-left:50px;">
+					<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/H">
+						Ann and Half-Palindrome
+					</a>
+				</td>
+			</tr></tbody></table><div class="fg-toolbar ui-toolbar ui-widget-header ui-helper-clearfix ui-corner-bl ui-corner-br"></div></div>
+	<div class="description">
+		
+	</div>
+	
+	
+</div>
+
+            
+                
+
+
+  
+
+
+<div id="problem" style="font-size: 14px; display: block;" aria-labelledby="ui-id-4" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false">
+	<div id="problem_number_container" style="margin: auto; text-align: center;" class="ui-buttonset">
+		<input type="radio" name="problem_number" id="problem_numberA" checked="checked" value="A" onclick="this.blur()" class="ui-helper-hidden-accessible"><label for="problem_numberA" class="ui-button ui-widget ui-state-default ui-button-text-only ui-corner-left" role="button" aria-pressed="false"><span class="ui-button-text">A</span></label>
+<input type="radio" name="problem_number" id="problem_numberB" value="B" onclick="this.blur()" class="ui-helper-hidden-accessible"><label for="problem_numberB" class="ui-button ui-widget ui-state-default ui-button-text-only ui-state-active" role="button" aria-pressed="true"><span class="ui-button-text">B</span></label>
+<input type="radio" name="problem_number" id="problem_numberC" value="C" onclick="this.blur()" class="ui-helper-hidden-accessible"><label for="problem_numberC" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-pressed="false"><span class="ui-button-text">C</span></label>
+<input type="radio" name="problem_number" id="problem_numberD" value="D" onclick="this.blur()" class="ui-helper-hidden-accessible"><label for="problem_numberD" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-pressed="false"><span class="ui-button-text">D</span></label>
+<input type="radio" name="problem_number" id="problem_numberE" value="E" onclick="this.blur()" class="ui-helper-hidden-accessible"><label for="problem_numberE" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-pressed="false"><span class="ui-button-text">E</span></label>
+<input type="radio" name="problem_number" id="problem_numberF" value="F" onclick="this.blur()" class="ui-helper-hidden-accessible"><label for="problem_numberF" class="ui-button ui-widget ui-state-default ui-button-text-only ui-state-hover" role="button" aria-pressed="false"><span class="ui-button-text">F</span></label>
+<input type="radio" name="problem_number" id="problem_numberG" value="G" onclick="this.blur()" class="ui-helper-hidden-accessible"><label for="problem_numberG" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-pressed="false"><span class="ui-button-text">G</span></label>
+<input type="radio" name="problem_number" id="problem_numberH" value="H" onclick="this.blur()" class="ui-helper-hidden-accessible"><label for="problem_numberH" class="ui-button ui-widget ui-state-default ui-button-text-only ui-corner-right" role="button" aria-pressed="false"><span class="ui-button-text">H</span></label>
+
+	</div>
+
+	<div class="plm" style="clear:both">
+		<div class="ptt" id="problem_title"><span style="color:green">B - </span>Oulipo</div>
+		<span id="crawling" style="display: none;" class="crawlInfo">
+			<b><font color="green">Crawling in process...</font></b>
+		</span>
+		<span id="crawlFailed" style="display: none;" class="crawlInfo">
+			<b><font color="red">Crawling failed</font></b>
+		</span>
+		<span id="crawlSuccess" style="display: inline;" class="crawlInfo">
+			<b>Time Limit:</b><span id="timeLimit">1000</span>MS&nbsp;&nbsp;&nbsp;&nbsp;
+			<b>Memory Limit:</b><span id="memoryLimit">65536</span>KB&nbsp;&nbsp;&nbsp;&nbsp;
+			<b>64bit IO Format:</b><span id="_64IOFormat">%I64d &amp; %I64u</span>
+		</span>
+		<div id="problem_opt" style="font-size:12px;margin-top:10px">
+			<a id="submit" href="javascript:void(0)" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span class="ui-button-text">Submit</span></a>
+			<a id="problem_status" href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//B/0" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span class="ui-button-text">Status</span></a>
+			
+				<a id="problem_practice" target="_blank" href="http://acm.hust.edu.cn/vjudge/problem/viewProblem.action?id=10368" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span class="ui-button-text">Practice</span></a>
+				<a id="problem_origin" target="_blank" href="http://acm.hust.edu.cn/vjudge/problem/visitOriginUrl.action?id=10368" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span class="ui-button-text">POJ 3461</span></a>
+			
+		</div>
+	</div>
+
+	<div style="width:960px;margin:auto">
+		
+		<div class="hiddable" id="vj_description" style="display: block;"><p class="pst">Description</p><div class="textBG"><div class="ptx" lang="en-US"><p>The French author Georges Perec (1936–1982) once wrote a book, La disparition, without the letter <tt>'e'</tt>. He was a member of the Oulipo group. A quote from the book:</p><blockquote><p>Tout avait Pair normal, mais tout s’affirmait faux. Tout avait Fair normal, d’abord, puis surgissait l’inhumain, l’affolant. Il aurait voulu savoir où s’articulait l’association qui l’unissait au roman : stir son tapis, assaillant à tout instant son imagination, l’intuition d’un tabou, la vision d’un mal obscur, d’un quoi vacant, d’un non-dit : la vision, l’avision d’un oubli commandant tout, où s’abolissait la raison : tout avait l’air normal mais…</p></blockquote><p>Perec would probably have scored high (or rather, low) in the following contest. People are asked to write a perhaps even meaningful text on some subject with as few occurrences of a given “word” as possible. Our task is to provide the jury with a program that counts these occurrences, in order to obtain a ranking of the competitors. These competitors often write very long texts with nonsense meaning; a sequence of 500,000 consecutive <tt>'T'</tt>s is not unusual. And they never use spaces.</p><p>So we want to quickly find out how often a word, i.e., a given string, occurs in a text. More formally: given the alphabet {<tt>'A'</tt>, <tt>'B'</tt>, <tt>'C'</tt>, …, <tt>'Z'</tt>} and two finite strings over that alphabet, a word <i>W</i> and a text <i>T</i>, count the number of occurrences of <i>W</i> in <i>T</i>. All the consecutive characters of W must exactly match consecutive characters of <i>T</i>. Occurrences may overlap.</p></div></div></div>
+		<div class="hiddable" id="vj_input" style="display: block;"><p class="pst">Input</p><div class="textBG"><div class="ptx" lang="en-US"><p>The first line of the input file contains a single number: the number of test cases to follow. Each test case has the following format:</p><ul><li>One line with the word <i>W</i>, a string over {<tt>'A'</tt>, <tt>'B'</tt>, <tt>'C'</tt>, …, <tt>'Z'</tt>}, with 1 ≤ |<i>W</i>| ≤ 10,000 (here |<i>W</i>| denotes the length of the string <i>W</i>).</li><li>One line with the text <i>T</i>, a string over {<tt>'A'</tt>, <tt>'B'</tt>, <tt>'C'</tt>, …, <tt>'Z'</tt>}, with |<i>W</i>| ≤ |<i>T</i>| ≤ 1,000,000.</li></ul></div></div></div>
+		<div class="hiddable" id="vj_output" style="display: block;"><p class="pst">Output</p><div class="textBG"><div class="ptx" lang="en-US"><p>For every test case in the input file, the output should contain a single number, on a single line: the number of occurrences of the word <i>W</i> in the text <i>T</i>.</p></div></div></div>
+		<div class="hiddable" id="vj_sampleInput" style="display: block;"><p class="pst">Sample Input</p><div class="textBG"><pre class="sio">3
+BAPC
+BAPC
+AZA
+AZAZAZA
+VERDI
+AVERDXIVYERDIAN</pre></div></div>
+		<div class="hiddable" id="vj_sampleOutput" style="display: block;"><p class="pst">Sample Output</p><div class="textBG"><pre class="sio">1
+3
+0</pre></div></div>
+		<div class="hiddable" id="vj_hint" style="display: none;"><p class="pst">Hint</p><div class="textBG"></div></div>
+	</div>
+	
+	
+</div>
+
+                
+
+
+  
+
+
+<div id="status" style="font-size: 14px; padding: 12px 0px; display: none;" aria-labelledby="ui-id-5" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="true">
+    <div id="table_status_wrapper" class="dataTables_wrapper no-footer"><div class="fg-toolbar ui-toolbar ui-widget-header ui-helper-clearfix ui-corner-tl ui-corner-tr"><div class="dataTables_paginate fg-buttonset ui-buttonset fg-buttonset-multi ui-buttonset-multi paging_simple_numbers" id="table_status_paginate"><a class="fg-button ui-button ui-state-default previous ui-state-disabled" aria-controls="table_status" data-dt-idx="0" tabindex="0" id="table_status_previous">Previous</a><span><a class="fg-button ui-button ui-state-default ui-state-disabled" aria-controls="table_status" data-dt-idx="1" tabindex="0">1</a><a class="fg-button ui-button ui-state-default " aria-controls="table_status" data-dt-idx="2" tabindex="0">2</a><a class="fg-button ui-button ui-state-default " aria-controls="table_status" data-dt-idx="3" tabindex="0">3</a><a class="fg-button ui-button ui-state-default " aria-controls="table_status" data-dt-idx="4" tabindex="0">4</a><a class="fg-button ui-button ui-state-default " aria-controls="table_status" data-dt-idx="5" tabindex="0">5</a><span>…</span><a class="fg-button ui-button ui-state-default " aria-controls="table_status" data-dt-idx="6" tabindex="0">500000</a></span><a class="fg-button ui-button ui-state-default next" aria-controls="table_status" data-dt-idx="7" tabindex="0" id="table_status_next">Next</a></div><div id="table_status_processing" class="dataTables_processing" style="display: none;">Processing...</div><div id="buttonContainer"><input type="button" id="filter" value="Filter" class="ui-button ui-widget ui-state-default ui-corner-all" role="button"><input type="button" id="reset" value="Reset" class="ui-button ui-widget ui-state-default ui-corner-all" role="button"></div></div><table cellpadding="0" cellspacing="0" border="0" class="display status_table dataTable no-footer" id="table_status" role="grid">
+        <thead>
+            <tr role="row"><th class="run_id ui-state-default sorting_disabled" rowspan="1" colspan="1"><div class="DataTables_sort_wrapper">RunID<span class="DataTables_sort_icon"></span></div></th><th class="username ui-state-default sorting_disabled" rowspan="1" colspan="1"><div class="DataTables_sort_wrapper">User<br><input type="search" id="un" name="un" class="search_text" style="width:100%"><span class="DataTables_sort_icon"></span></div></th><th class="prob_num ui-state-default sorting_disabled" rowspan="1" colspan="1"><div class="DataTables_sort_wrapper">Problem<br><select name="num" id="num" style="width: 100%; display: none;"><option value="-">All</option>
+    <option value="A">A - Phone List</option>
+    <option value="B">B - Oulipo</option>
+    <option value="C">C - Scrolling Sign</option>
+    <option value="D">D - Extend to Palindrome</option>
+    <option value="E">E - 最长回文</option>
+    <option value="F">F - Dominating Patterns</option>
+    <option value="G">G - The Big Painting</option>
+    <option value="H">H - Ann and Half-Palindrome</option>
+
+
+</select><span class="ui-selectmenu-button ui-widget ui-state-default ui-corner-all" tabindex="0" id="num-button" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-owns="num-menu" aria-haspopup="true" style="width: 98px;" aria-activedescendant="ui-id-190" aria-labelledby="ui-id-190" aria-disabled="false"><span class="ui-icon ui-icon-triangle-1-s"></span><span class="ui-selectmenu-text">All</span></span>
+
+<span class="DataTables_sort_icon"></span></div></th><th class="result ui-state-default sorting_disabled" rowspan="1" colspan="1"><div class="DataTables_sort_wrapper">
+                    Result
+                    <br>
+                    <select name="res" id="res" style="width: 100%; display: none;">
+                        <option value="0">All</option>
+                        <option value="1" data-class="ui-icon-check">Accepted</option>
+                        <option value="2" data-class="ui-icon-lightbulb">Presentation Error</option>
+                        <option value="3" data-class="ui-icon-closethick">Wrong Answer</option>
+                        <option value="4" data-class="ui-icon-clock">Time Limit Exceed</option>
+                        <option value="5" data-class="ui-icon-notice">Memory Limit Exceed</option>
+                        <option value="6" data-class="ui-icon-notice">Output Limit Exceed</option>
+                        <option value="7" data-class="ui-icon-notice">Runtime Error</option>
+                        <option value="8" data-class="ui-icon-notice">Compile Error</option>
+                        <option value="9" data-class="ui-icon-notice">Unknown Error</option>
+                        <option value="10" data-class="ui-icon-notice">Submit Error</option>
+                        <option value="11" data-class="ui-icon-arrowrefresh-1-s">Queuing &amp;&amp; Judging</option>
+                    </select><span class="ui-selectmenu-button ui-widget ui-state-default ui-corner-all" tabindex="0" id="res-button" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-owns="res-menu" aria-haspopup="true" style="width: 148px;" aria-activedescendant="ui-id-199" aria-labelledby="ui-id-199" aria-disabled="false"><span class="ui-icon ui-icon-triangle-1-s"></span><span class="ui-selectmenu-text">All</span></span>
+                <span class="DataTables_sort_icon"></span></div></th><th class="memory ui-state-default sorting_disabled" rowspan="1" colspan="1"><div class="DataTables_sort_wrapper">Memory<br>(KB)<span class="DataTables_sort_icon"></span></div></th><th class="time ui-state-default sorting_disabled" rowspan="1" colspan="1"><div class="DataTables_sort_wrapper">Time<br>(ms)<span class="DataTables_sort_icon"></span></div></th><th class="language ui-state-default sorting_disabled" rowspan="1" colspan="1"><div class="DataTables_sort_wrapper">
+                    Language
+                    <br>
+                    <select name="lang" id="lang" style="width: 100%; display: none;">
+                        <option value="">All</option>
+                        <option value="CPP">C++</option>
+                        <option value="C">C</option>
+                        <option value="JAVA">Java</option>
+                        <option value="PASCAL">Pascal</option>
+                        <option value="PYTHON">Python</option>
+                        <option value="CSHARP">C#</option>
+                        <option value="RUBY">Ruby</option>
+                        <option value="OTHER">Other</option>
+                    </select><span class="ui-selectmenu-button ui-widget ui-state-default ui-corner-all" tabindex="0" id="lang-button" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-owns="lang-menu" aria-haspopup="true" style="width: 108px;" aria-activedescendant="ui-id-211" aria-labelledby="ui-id-211" aria-disabled="false"><span class="ui-icon ui-icon-triangle-1-s"></span><span class="ui-selectmenu-text">All</span></span>
+                <span class="DataTables_sort_icon"></span></div></th><th class="length ui-state-default sorting_disabled" rowspan="1" colspan="1"><div class="DataTables_sort_wrapper">Length<br>(Bytes)<span class="DataTables_sort_icon"></span></div></th><th class="date ui-state-default sorting_disabled" rowspan="1" colspan="1"><div class="DataTables_sort_wrapper">Submit Time<span class="DataTables_sort_icon"></span></div></th></tr>
+        </thead>
+        <tbody>
+        <tr class="odd no" id="4086474" role="row"><td class=" run_id">4086474</td><td class=" username"><a href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70833">henrybear327</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" prob_num"><a href="./NCTU Summer Camp - String - Virtual Judge_files/NCTU Summer Camp - String - Virtual Judge.html">B</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" result">Wrong Answer</td><td class=" memory"></td><td class=" time"></td><td class=" language"><div><a class="shared" target="_blank" href="http://acm.hust.edu.cn/vjudge/contest/viewSource.action?id=4086474">C++</a></div></td><td class=" length">1970</td><td class="date rejudge"><div class="localizedTime">1 min ago</div></td></tr><tr class="no even" id="4086436" role="row"><td class=" run_id">4086436</td><td class=" username"><a href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70833">henrybear327</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" prob_num"><a href="./NCTU Summer Camp - String - Virtual Judge_files/NCTU Summer Camp - String - Virtual Judge.html">B</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" result"><div>Runtime Error</div></td><td class=" memory"></td><td class=" time"></td><td class=" language"><div><a class="shared" target="_blank" href="http://acm.hust.edu.cn/vjudge/contest/viewSource.action?id=4086436">C++</a></div></td><td class=" length">1970</td><td class="date rejudge"><div class="localizedTime">1 min ago</div></td></tr><tr class="no odd" id="4086411" role="row"><td class=" run_id">4086411</td><td class=" username"><a href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70833">henrybear327</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" prob_num"><a href="./NCTU Summer Camp - String - Virtual Judge_files/NCTU Summer Camp - String - Virtual Judge.html">B</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" result"><div>Runtime Error</div></td><td class=" memory"></td><td class=" time"></td><td class=" language"><div><a class="shared" target="_blank" href="http://acm.hust.edu.cn/vjudge/contest/viewSource.action?id=4086411">C++</a></div></td><td class=" length">1891</td><td class="date rejudge"><div class="localizedTime">2 min ago</div></td></tr><tr class="no even" id="4086329" role="row"><td class=" run_id">4086329</td><td class=" username"><a href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70833">henrybear327</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" prob_num"><a href="./NCTU Summer Camp - String - Virtual Judge_files/NCTU Summer Camp - String - Virtual Judge.html">B</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" result"><div>Runtime Error</div></td><td class=" memory"></td><td class=" time"></td><td class=" language"><div><a class="shared" target="_blank" href="http://acm.hust.edu.cn/vjudge/contest/viewSource.action?id=4086329">C++</a></div></td><td class=" length">1857</td><td class="date rejudge"><div class="localizedTime">6 min ago</div></td></tr><tr class="no odd" id="4086200" role="row"><td class=" run_id">4086200</td><td class=" username"><a href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70833">henrybear327</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" prob_num"><a href="./NCTU Summer Camp - String - Virtual Judge_files/NCTU Summer Camp - String - Virtual Judge.html">B</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" result"><div>Runtime Error</div></td><td class=" memory"></td><td class=" time"></td><td class=" language"><div><a target="_blank" href="http://acm.hust.edu.cn/vjudge/contest/viewSource.action?id=4086200">G++</a></div></td><td class=" length">1897</td><td class="date rejudge"><div class="localizedTime">11 min ago</div></td></tr><tr class="no even" id="4078280" role="row"><td class=" run_id">4078280</td><td class=" username"><a href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70846">hanting1225</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" prob_num"><a href="./NCTU Summer Camp - String - Virtual Judge_files/NCTU Summer Camp - String - Virtual Judge.html">B</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" result"><div>Wrong Answer</div></td><td class=" memory"></td><td class=" time"></td><td class=" language"><div>G++</div></td><td class=" length">2191</td><td class="date rejudge"><div class="localizedTime">9 hr ago</div></td></tr><tr class="no odd" id="4078073" role="row"><td class=" run_id">4078073</td><td class=" username"><a href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70846">hanting1225</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" prob_num"><a href="./NCTU Summer Camp - String - Virtual Judge_files/NCTU Summer Camp - String - Virtual Judge.html">B</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" result"><div>Wrong Answer</div></td><td class=" memory"></td><td class=" time"></td><td class=" language"><div><a class="shared" target="_blank" href="http://acm.hust.edu.cn/vjudge/contest/viewSource.action?id=4078073">G++</a></div></td><td class=" length">1336</td><td class="date rejudge"><div class="localizedTime">15 hr ago</div></td></tr><tr class="no even" id="4078001" role="row"><td class=" run_id">4078001</td><td class=" username"><a href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70846">hanting1225</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" prob_num"><a href="./NCTU Summer Camp - String - Virtual Judge_files/NCTU Summer Camp - String - Virtual Judge.html">B</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" result"><div>Wrong Answer</div></td><td class=" memory"></td><td class=" time"></td><td class=" language"><div><a class="shared" target="_blank" href="http://acm.hust.edu.cn/vjudge/contest/viewSource.action?id=4078001">G++</a></div></td><td class=" length">1578</td><td class="date rejudge"><div class="localizedTime">15 hr ago</div></td></tr><tr class="yes odd" id="4076968" role="row"><td class=" run_id">4076968</td><td class=" username"><a href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70852">ImFay5</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" prob_num"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/A">A</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" result"><div>Accepted</div></td><td class=" memory">0</td><td class=" time">528</td><td class=" language"><div><a class="shared" target="_blank" href="http://acm.hust.edu.cn/vjudge/contest/viewSource.action?id=4076968">C++ 4.8.2</a></div></td><td class=" length">1098</td><td class="date rejudge"><div class="localizedTime">18 hr ago</div></td></tr><tr class="no even" id="4076961" role="row"><td class=" run_id">4076961</td><td class=" username"><a href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70852">ImFay5</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" prob_num"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/A">A</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" result"><div><a href="http://acm.hust.edu.cn/vjudge/problem/fetchSubmissionInfo.action?id=4076961" rel="facebox">Compilation error</a></div></td><td class=" memory"></td><td class=" time"></td><td class=" language"><div><a class="shared" target="_blank" href="http://acm.hust.edu.cn/vjudge/contest/viewSource.action?id=4076961">ANSI C 4.8.2</a></div></td><td class=" length">1623</td><td class="date rejudge"><div class="localizedTime">18 hr ago</div></td></tr><tr class="yes odd" id="4076812" role="row"><td class=" run_id">4076812</td><td class=" username"><a href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70826">maguroDusandwish</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" prob_num"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/C">C</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" result"><div>Accepted</div></td><td class=" memory">0</td><td class=" time">1</td><td class=" language"><div>C++11 4.8.2</div></td><td class=" length">1197</td><td class="date rejudge"><div class="localizedTime">19 hr ago</div></td></tr><tr class="no even" id="4076786" role="row"><td class=" run_id">4076786</td><td class=" username"><a href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70846">hanting1225</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" prob_num"><a href="./NCTU Summer Camp - String - Virtual Judge_files/NCTU Summer Camp - String - Virtual Judge.html">B</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" result"><div>Wrong Answer</div></td><td class=" memory"></td><td class=" time"></td><td class=" language"><div><a class="shared" target="_blank" href="http://acm.hust.edu.cn/vjudge/contest/viewSource.action?id=4076786">G++</a></div></td><td class=" length">1678</td><td class="date rejudge"><div class="localizedTime">19 hr ago</div></td></tr><tr class="yes odd" id="4075725" role="row"><td class=" run_id">4075725</td><td class=" username"><a href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=60388">jackyliuxx</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" prob_num"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/A">A</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" result"><div>Accepted</div></td><td class=" memory">0</td><td class=" time">3468</td><td class=" language"><div><a class="shared" target="_blank" href="http://acm.hust.edu.cn/vjudge/contest/viewSource.action?id=4075725">C++11 4.8.2</a></div></td><td class=" length">1895</td><td class="date rejudge"><div class="localizedTime">20 hr ago</div></td></tr><tr class="yes even" id="4075373" role="row"><td class=" run_id">4075373</td><td class=" username"><a href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70826">maguroDusandwish</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" prob_num"><a href="./NCTU Summer Camp - String - Virtual Judge_files/NCTU Summer Camp - String - Virtual Judge.html">B</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" result"><div>Accepted</div></td><td class=" memory">1160</td><td class=" time">79</td><td class=" language"><div>C++</div></td><td class=" length">829</td><td class="date rejudge"><div class="localizedTime">20 hr ago</div></td></tr><tr class="no odd" id="4075290" role="row"><td class=" run_id">4075290</td><td class=" username"><a href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70826">maguroDusandwish</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" prob_num"><a href="./NCTU Summer Camp - String - Virtual Judge_files/NCTU Summer Camp - String - Virtual Judge.html">B</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" result"><div>Wrong Answer</div></td><td class=" memory"></td><td class=" time"></td><td class=" language"><div>C++</div></td><td class=" length">949</td><td class="date rejudge"><div class="localizedTime">20 hr ago</div></td></tr><tr class="no even" id="4075170" role="row"><td class=" run_id">4075170</td><td class=" username"><a href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70826">maguroDusandwish</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" prob_num"><a href="./NCTU Summer Camp - String - Virtual Judge_files/NCTU Summer Camp - String - Virtual Judge.html">B</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" result"><div>Wrong Answer</div></td><td class=" memory"></td><td class=" time"></td><td class=" language"><div>C++</div></td><td class=" length">949</td><td class="date rejudge"><div class="localizedTime">20 hr ago</div></td></tr><tr class="no odd" id="4074906" role="row"><td class=" run_id">4074906</td><td class=" username"><a href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70826">maguroDusandwish</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" prob_num"><a href="./NCTU Summer Camp - String - Virtual Judge_files/NCTU Summer Camp - String - Virtual Judge.html">B</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" result"><div>Time Limit Exceeded</div></td><td class=" memory"></td><td class=" time"></td><td class=" language"><div>C++</div></td><td class=" length">1333</td><td class="date rejudge"><div class="localizedTime">21 hr ago</div></td></tr><tr class="no even" id="4074738" role="row"><td class=" run_id">4074738</td><td class=" username"><a href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70826">maguroDusandwish</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" prob_num"><a href="./NCTU Summer Camp - String - Virtual Judge_files/NCTU Summer Camp - String - Virtual Judge.html">B</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" result"><div>Wrong Answer</div></td><td class=" memory"></td><td class=" time"></td><td class=" language"><div>G++</div></td><td class=" length">1331</td><td class="date rejudge"><div class="localizedTime">21 hr ago</div></td></tr><tr class="yes odd" id="4074728" role="row"><td class=" run_id">4074728</td><td class=" username"><a href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=60388">jackyliuxx</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" prob_num"><a href="./NCTU Summer Camp - String - Virtual Judge_files/NCTU Summer Camp - String - Virtual Judge.html">B</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" result"><div>Accepted</div></td><td class=" memory">6792</td><td class=" time">250</td><td class=" language"><div><a class="shared" target="_blank" href="http://acm.hust.edu.cn/vjudge/contest/viewSource.action?id=4074728">C++</a></div></td><td class=" length">1048</td><td class="date rejudge"><div class="localizedTime">21 hr ago</div></td></tr><tr class="no even" id="4074719" role="row"><td class=" run_id">4074719</td><td class=" username"><a href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=60388">jackyliuxx</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" prob_num"><a href="./NCTU Summer Camp - String - Virtual Judge_files/NCTU Summer Camp - String - Virtual Judge.html">B</a><img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png"></td><td class=" result"><div>Time Limit Exceeded</div></td><td class=" memory"></td><td class=" time"></td><td class=" language"><div><a class="shared" target="_blank" href="http://acm.hust.edu.cn/vjudge/contest/viewSource.action?id=4074719">G++</a></div></td><td class=" length">1048</td><td class="date rejudge"><div class="localizedTime">21 hr ago</div></td></tr></tbody>
+    </table><div class="fg-toolbar ui-toolbar ui-widget-header ui-helper-clearfix ui-corner-bl ui-corner-br"></div></div>
+
+    <input type="hidden" name="isSup" value="" id="isSup">
+    
+    
+
+</div>
+
+                
+
+
+  
+
+
+<div id="rank" style="padding: 0px; min-height: 300px; display: none; width: 1120px;" aria-labelledby="ui-id-6" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="true">
+
+	<div id="rank_header" style="position: fixed; top: 0px; z-index: 100; width: 1120px; left: 11px; display: none; background-color: rgb(242, 252, 247);" data-id="rank_header">
+		<div class="rank">Rank</div>
+		<div class="id">ID</div>
+		<div class="solve">Solve</div>
+		<div class="penalty_td">Penalty</div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/A">A</a></div>
+		
+			<div class="standing_time"><a href="./NCTU Summer Camp - String - Virtual Judge_files/NCTU Summer Camp - String - Virtual Judge.html">B</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/C">C</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/D">D</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/E">E</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/F">F</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/G">G</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/H">H</a></div>
+		
+		<div style="text-align:right"></div>
+	</div>
+	
+	<div id="rank_data_destination" style="display:none"></div>
+	<div id="rank_data_source"><div id="rank_header_1" style="width: 1120px; display: block; background-color: rgb(242, 252, 247);" data-id="rank_header">
+		<div class="rank">Rank</div>
+		<div class="id">ID</div>
+		<div class="solve">Solve</div>
+		<div class="penalty_td">Penalty</div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/A">A</a></div>
+		
+			<div class="standing_time"><a href="./NCTU Summer Camp - String - Virtual Judge_files/NCTU Summer Camp - String - Virtual Judge.html">B</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/C">C</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/D">D</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/E">E</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/F">F</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/G">G</a></div>
+		
+			<div class="standing_time"><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#problem/H">H</a></div>
+		
+		<div style="text-align:right"></div>
+	</div><div data-id="60388_83561" class="disp cur_tr" cid="83561" u="jackyliuxx"><div class="meta_td rank">1</div><div class="meta_td id" title="jackyliuxx"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=60388">jackyliuxx</a></div><div class="meta_td solve">8</div><div class="meta_td penalty_td" v0="54:49:25" v1="3289">3289</div><div class="solved_practice standing_time" pid="0" title="8:10:44">　<br>　</div><div class="solved_practice standing_time" pid="1" title="7:20:46">　<br><span>(-2)</span></div><div class="solved_practice standing_time" pid="2" title="7:17:07">　<br>　</div><div class="solved_practice standing_time" pid="3" title="7:10:57">　<br>　</div><div class="solved_practice standing_time" pid="4" title="6:55:03">　<br>　</div><div class="solved_practice standing_time" pid="5" title="6:52:13">　<br>　</div><div class="solved_practice standing_time" pid="6" title="5:00:49">　<br><span>(-1)</span></div><div class="solvedfirst standing_time" pid="7" title="4:01:46">4:01:46<br><span>(-3)</span></div><div class="standing_time"></div></div><div data-id="70844_83561" class="disp cur_tr" cid="83561" u="a2983456"><div class="meta_td rank">2</div><div class="meta_td id" title="a2983456 (poi!ob)"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70844">a2983456<span style="color:gray">(poi!ob)</span></a></div><div class="meta_td solve">6</div><div class="meta_td penalty_td" v0="20:15:55" v1="1215">1215</div><div class="green standing_time" pid="0" title="0:53:28">0:53:28<br><span>(-4)</span></div><div class="green standing_time" pid="1" title="2:02:28">2:02:28<br><span>(-2)</span></div><div class="green standing_time" pid="2" title="2:24:06">2:24:06<br><span>(-2)</span></div><div class="green standing_time" pid="3" title="2:35:22">2:35:22<br><span>(-2)</span></div><div class="solved_practice standing_time" pid="4" title="5:24:19">　<br><span>(-1)</span></div><div class="solvedfirst standing_time" pid="5" title="2:56:12">2:56:12<br><span>(-1)</span></div><div class="red standing_time" pid="6">　<br><span>(-1)</span></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="70828_83561" class="disp cur_tr" cid="83561" u="Muramasa"><div class="meta_td rank">3</div><div class="meta_td id" title="Muramasa"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70828">Muramasa</a></div><div class="meta_td solve">4</div><div class="meta_td penalty_td" v0="3:59:50" v1="239">239</div><div class="green standing_time" pid="0" title="0:08:01">0:08:01<br>　</div><div class="green standing_time" pid="1" title="2:30:54">2:30:54<br><span>(-3)</span></div><div class="solvedfirst standing_time" pid="2" title="0:10:05">0:10:05<br>　</div><div class="solvedfirst standing_time" pid="3" title="0:10:50">0:10:50<br>　</div><div class="standing_time"></div><div class="red standing_time" pid="5">　<br><span>(-2)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="71476_83561" class="disp cur_tr" cid="83561" u="w86763777"><div class="meta_td rank">4</div><div class="meta_td id" title="w86763777 (publicname)"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=71476">w86763777<span style="color:gray">(publicname)</span></a></div><div class="meta_td solve">4</div><div class="meta_td penalty_td" v0="14:38:44" v1="878">878</div><div class="green standing_time" pid="0" title="0:51:41">0:51:41<br><span>(-3)</span></div><div class="green standing_time" pid="1" title="2:25:56">2:25:56<br><span>(-1)</span></div><div class="solved_practice standing_time" pid="2" title="5:06:40">　<br><span>(-3)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="green standing_time" pid="5" title="3:54:27">3:54:27<br>　</div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="70826_83561" class="disp cur_tr" cid="83561" u="maguroDusandwish"><div class="meta_td rank">5</div><div class="meta_td id" title="maguroDusandwish"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70826">maguroDusandwish</a></div><div class="meta_td solve">3</div><div class="meta_td penalty_td" v0="25:27:04" v1="1527">1527</div><div class="solved_practice standing_time" pid="0" title="5:58:44">　<br><span>(-3)</span></div><div class="solved_practice standing_time" pid="1" title="7:51:59">　<br><span>(-4)</span></div><div class="solved_practice standing_time" pid="2" title="9:16:21">　<br>　</div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="70857_83561" class="disp cur_tr" cid="83561" u="XDGGOAO"><div class="meta_td rank">6</div><div class="meta_td id" title="XDGGOAO (君亮4NI)"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70857">XDGGOAO<span style="color:gray">(君亮4NI)</span></a></div><div class="meta_td solve">2</div><div class="meta_td penalty_td" v0="1:14:38" v1="74">74</div><div class="solvedfirst standing_time" pid="0" title="0:05:06">0:05:06<br>　</div><div class="standing_time"></div><div class="standing_time"></div><div class="green standing_time" pid="3" title="0:49:32">0:49:32<br><span>(-1)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="44781_83561" class="disp cur_tr" cid="83561" u="zater"><div class="meta_td rank">7</div><div class="meta_td id" title="zater"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=44781">zater</a></div><div class="meta_td solve">2</div><div class="meta_td penalty_td" v0="1:54:34" v1="114">114</div><div class="green standing_time" pid="0" title="0:44:20">0:44:20<br>　</div><div class="green standing_time" pid="1" title="1:10:14">1:10:14<br>　</div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="58238_83561" class="disp cur_tr" cid="83561" u="anson370"><div class="meta_td rank">8</div><div class="meta_td id" title="anson370"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=58238">anson370</a></div><div class="meta_td solve">2</div><div class="meta_td penalty_td" v0="3:21:22" v1="201">201</div><div class="red standing_time" pid="0">　<br><span>(-4)</span></div><div class="solvedfirst standing_time" pid="1" title="0:43:01">0:43:01<br>　</div><div class="red standing_time" pid="2">　<br><span>(-2)</span></div><div class="green standing_time" pid="3" title="2:38:21">2:38:21<br>　</div><div class="red standing_time" pid="4">　<br><span>(-2)</span></div><div class="red standing_time" pid="5">　<br><span>(-3)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="70848_83561" class="disp cur_tr" cid="83561" u="iris123321"><div class="meta_td rank">9</div><div class="meta_td id" title="iris123321 (iris)"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70848">iris123321<span style="color:gray">(iris)</span></a></div><div class="meta_td solve">2</div><div class="meta_td penalty_td" v0="6:38:18" v1="398">398</div><div class="green standing_time" pid="0" title="1:50:45">1:50:45<br><span>(-1)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="solvedfirst standing_time" pid="4" title="2:47:33">2:47:33<br><span>(-5)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="58242_83561" class="disp cur_tr" cid="83561" u="siscon_org"><div class="meta_td rank">10</div><div class="meta_td id" title="siscon_org (過膝襪好ㄘ)"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=58242">siscon_org<span style="color:gray">(過膝襪好ㄘ)</span></a></div><div class="meta_td solve">1</div><div class="meta_td penalty_td" v0="0:20:16" v1="20">20</div><div class="green standing_time" pid="0" title="0:20:16">0:20:16<br>　</div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="70846_83561" class="disp cur_tr" cid="83561" u="hanting1225"><div class="meta_td rank">11</div><div class="meta_td id" title="hanting1225 (hanting)"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70846">hanting1225<span style="color:gray">(hanting)</span></a></div><div class="meta_td solve">1</div><div class="meta_td penalty_td" v0="0:35:00" v1="35">35</div><div class="green standing_time" pid="0" title="0:15:00">0:15:00<br><span>(-1)</span></div><div class="red standing_time" pid="1">　<br><span>(-9)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="58288_83561" class="disp cur_tr" cid="83561" u="anton117"><div class="meta_td rank">12</div><div class="meta_td id" title="anton117 (Kana)"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=58288">anton117<span style="color:gray">(Kana)</span></a></div><div class="meta_td solve">1</div><div class="meta_td penalty_td" v0="1:53:19" v1="113">113</div><div class="green standing_time" pid="0" title="1:53:19">1:53:19<br>　</div><div class="standing_time"></div><div class="red standing_time" pid="2">　<br><span>(-1)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="58270_83561" class="disp cur_tr" cid="83561" u="410385002"><div class="meta_td rank">13</div><div class="meta_td id" title="410385002 (倫全)"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=58270">410385002<span style="color:gray">(倫全)</span></a></div><div class="meta_td solve">1</div><div class="meta_td penalty_td" v0="3:44:10" v1="224">224</div><div class="green standing_time" pid="0" title="2:24:10">2:24:10<br><span>(-4)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="70850_83561" class="disp cur_tr" cid="83561" u="joanjoan"><div class="meta_td rank">14</div><div class="meta_td id" title="joanjoan (joanna)"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70850">joanjoan<span style="color:gray">(joanna)</span></a></div><div class="meta_td solve">1</div><div class="meta_td penalty_td" v0="4:06:38" v1="246">246</div><div class="green standing_time" pid="0" title="4:06:38">4:06:38<br>　</div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="70851_83561" class="disp cur_tr" cid="83561" u="layan"><div class="meta_td rank">15</div><div class="meta_td id" title="layan"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70851">layan</a></div><div class="meta_td solve">1</div><div class="meta_td penalty_td" v0="4:30:41" v1="270">270</div><div class="green standing_time" pid="0" title="3:50:41">3:50:41<br><span>(-2)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="70852_83561" class="disp cur_tr" cid="83561" u="ImFay5"><div class="meta_td rank">16</div><div class="meta_td id" title="ImFay5 (Fay5)"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70852">ImFay5<span style="color:gray">(Fay5)</span></a></div><div class="meta_td solve">1</div><div class="meta_td penalty_td" v0="15:16:49" v1="916">916</div><div class="solved_practice standing_time" pid="0" title="9:36:49">　<br><span>(-17)</span></div><div class="red standing_time" pid="1">　<br><span>(-7)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="70831_83561" class="disp cur_tr" cid="83561" u="dream040102"><div class="meta_td rank">17</div><div class="meta_td id" title="dream040102 (Tia)"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70831">dream040102<span style="color:gray">(Tia)</span></a></div><div class="meta_td solve">0</div><div class="meta_td penalty_td" v0="0:00:00" v1="0">0</div><div class="red standing_time" pid="0">　<br><span>(-6)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="70827_83561" class="disp cur_tr" cid="83561" u="jj528s35"><div class="meta_td rank">18</div><div class="meta_td id" title="jj528s35 (chenxy)"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70827">jj528s35<span style="color:gray">(chenxy)</span></a></div><div class="meta_td solve">0</div><div class="meta_td penalty_td" v0="0:00:00" v1="0">0</div><div class="red standing_time" pid="0">　<br><span>(-3)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="70840_83561" class="disp cur_tr" cid="83561" u="chlin62"><div class="meta_td rank">19</div><div class="meta_td id" title="chlin62 (cheng han, lin)"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=70840">chlin62<span style="color:gray">(cheng han, lin)</span></a></div><div class="meta_td solve">0</div><div class="meta_td penalty_td" v0="0:00:00" v1="0">0</div><div class="standing_time"></div><div class="red standing_time" pid="1">　<br><span>(-1)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div data-id="59254_83561" class="disp cur_tr" cid="83561" u="a9770504z"><div class="meta_td rank">20</div><div class="meta_td id" title="a9770504z (WaxApple)"><a target="_blank" href="http://acm.hust.edu.cn/vjudge/user/profile.action?uid=59254">a9770504z<span style="color:gray">(WaxApple)</span></a></div><div class="meta_td solve">0</div><div class="meta_td penalty_td" v0="0:00:00" v1="0">0</div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="red standing_time" pid="3">　<br><span>(-4)</span></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div><div class="standing_time"></div></div><div id="rank_foot_1" style="width: 1120px; display: block; background-color: transparent;" class="disp" data-id="rank_foot">
+		<div class="rank"></div>
+		<div class="id"></div>
+		<div class="solve"></div>
+		<div class="penalty_td"></div>
+		
+			<div class="standing_time white-font" style="background-color: rgb(0, 0, 0);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//A/1">15</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//A/0">63</a><br>23%</div>
+		
+			<div class="standing_time black-font" style="background-color: rgb(136, 136, 136);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//B/1">7</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//B/0">36</a><br>19%</div>
+		
+			<div class="standing_time black-font" style="background-color: rgb(170, 170, 170);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//C/1">5</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//C/0">13</a><br>38%</div>
+		
+			<div class="standing_time black-font" style="background-color: rgb(170, 170, 170);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//D/1">5</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//D/0">12</a><br>41%</div>
+		
+			<div class="standing_time black-font" style="background-color: rgb(204, 204, 204);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//E/1">3</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//E/0">11</a><br>27%</div>
+		
+			<div class="standing_time black-font" style="background-color: rgb(204, 204, 204);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//F/1">3</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//F/0">9</a><br>33%</div>
+		
+			<div class="standing_time black-font" style="background-color: rgb(238, 238, 238);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//G/1">1</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//G/0">3</a><br>33%</div>
+		
+			<div class="standing_time black-font" style="background-color: rgb(238, 238, 238);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//H/1">1</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//H/0">4</a><br>25%</div>
+		
+		<div class="standing_time" style="background-color: rgb(211, 214, 255);">　<br>40/151<br>26%</div>
+	</div></div>
+
+	<div id="rank_foot" style="position: fixed; bottom: 0px; z-index: 100; width: 1120px; left: 11px; display: block; background-color: transparent;" class="disp" data-id="rank_foot">
+		<div class="rank"></div>
+		<div class="id"></div>
+		<div class="solve"></div>
+		<div class="penalty_td"></div>
+		
+			<div class="standing_time white-font" style="background-color: rgb(0, 0, 0);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//A/1">15</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//A/0">63</a><br>23%</div>
+		
+			<div class="standing_time black-font" style="background-color: rgb(136, 136, 136);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//B/1">7</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//B/0">36</a><br>19%</div>
+		
+			<div class="standing_time black-font" style="background-color: rgb(170, 170, 170);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//C/1">5</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//C/0">13</a><br>38%</div>
+		
+			<div class="standing_time black-font" style="background-color: rgb(170, 170, 170);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//D/1">5</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//D/0">12</a><br>41%</div>
+		
+			<div class="standing_time black-font" style="background-color: rgb(204, 204, 204);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//E/1">3</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//E/0">11</a><br>27%</div>
+		
+			<div class="standing_time black-font" style="background-color: rgb(204, 204, 204);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//F/1">3</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//F/0">9</a><br>33%</div>
+		
+			<div class="standing_time black-font" style="background-color: rgb(238, 238, 238);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//G/1">1</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//G/0">3</a><br>33%</div>
+		
+			<div class="standing_time black-font" style="background-color: rgb(238, 238, 238);">　<br><a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//H/1">1</a>/<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#status//H/0">4</a><br>25%</div>
+		
+		<div class="standing_time" style="background-color: rgb(211, 214, 255);">　<br>40/151<br>26%</div>
+	</div>
+
+	<div id="div_rank_tool" style="text-align:right;position:fixed;bottom:80px;right:15px;z-index:999999">
+        <img src="./NCTU Summer Camp - String - Virtual Judge_files/loader.gif" id="calc_rank" height="55" style="visibility: hidden;">
+        <img src="./NCTU Summer Camp - String - Virtual Judge_files/find_me.png" id="img_find_me" title="Find me" height="55" style="visibility: hidden; cursor: pointer;">
+		<img src="./NCTU Summer Camp - String - Virtual Judge_files/go_top.png" id="img_go_top" title="Go to top" height="60" style="visibility: hidden; cursor: pointer;">
+		<img src="./NCTU Summer Camp - String - Virtual Judge_files/config.png" id="rank_setting" title="Rank config" height="60" style="cursor: pointer">
+	</div>
+	
+	
+	
+</div>
+
+            
+            
+                
+
+
+  
+
+
+<div id="discuss" style="font-size: 14px; padding: 12px 0px; display: none;" aria-labelledby="ui-id-7" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="true">
+	<div id="disqus_thread" style="width:900px;margin:auto"><iframe id="dsq-1" data-disqus-uid="1" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="./NCTU Summer Camp - String - Virtual Judge_files/saved_resource.html" horizontalscrolling="no" verticalscrolling="no" style="width: 100% !important; border: none !important; overflow: hidden !important; height: 513px !important;"></iframe><iframe id="dsq-indicator-north" data-disqus-uid="indicator-north" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" style="width: 0px !important; border: none !important; overflow: hidden !important; top: 0px !important; min-width: 0px !important; max-width: 0px !important; position: fixed !important; z-index: 2147483646 !important; height: 29px !important; min-height: 29px !important; max-height: 29px !important; display: none !important;"></iframe><iframe id="dsq-indicator-south" data-disqus-uid="indicator-south" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" style="width: 0px !important; border: none !important; overflow: hidden !important; bottom: 0px !important; min-width: 0px !important; max-width: 0px !important; position: fixed !important; z-index: 2147483646 !important; height: 29px !important; min-height: 29px !important; max-height: 29px !important; display: none !important;"></iframe></div>
+	<script type="text/javascript">
+	    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+		var disqus_shortname = 'vjudge'; // required: replace example with your forum shortname
+		var disqus_developer = 0;
+		var disqus_identifier = "contest/83561";
+/* 		var disqus_url = basePath + "/contest/view.action?cid=83561#discuss"; */
+		var disqus_title = "Contest - NCTU Summer Camp - String";
+		
+	    /* * * DON'T EDIT BELOW THIS LINE * * */
+	    var _showDiscuss = function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    };
+	</script>
+	<noscript>Please enable JavaScript to view the &lt;a href="http://disqus.com/?ref_noscript"&gt;comments powered by Disqus.&lt;/a&gt;</noscript>
+</div>
+
+            
+        </div>        
+        
+
+
+  
+
+
+<div style="text-align:center;margin-top:30px;clear:both;font-size:80%">
+	<hr>FAQ | About Virtual Judge | <a href="https://groups.google.com/group/virtual-judge" target="_blank">Forum</a> | <a href="http://acm.hust.edu.cn/vjudge/discuss.action" target="_blank">Discuss</a> | <a href="https://github.com/trcnkq/virtual-judge" target="_blank">Open Source Project</a><br>
+	All Copyright Reserved ©2010-2014 <a href="http://acm.hust.edu.cn/">HUST ACM/ICPC</a> TEAM
+	
+	<br>Anything about the OJ, please ask in the <a href="https://groups.google.com/group/virtual-judge" target="_blank">forum</a>, or contact author:<a href="mailto:is.un@qq.com">Isun</a><br>
+	Server Time: <span class="currentTime">2015-07-21 16:41:44</span>
+</div>
+
+<input id="serverTime" name="serverTime" type="hidden" value="1437464217726">
+
+
+    
+
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-describedby="dialog-form-login" style="position: absolute; height: auto; width: 400px; top: 201px; left: 589px; display: none; z-index: 101;" aria-labelledby="ui-id-1"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle"><span id="ui-id-1" class="ui-dialog-title">Login</span><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="Close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">Close</span></button></div><div id="dialog-form-login" style="width: auto; min-height: 0px; max-height: none; height: 200px;" class="ui-dialog-content ui-widget-content">
+		<p class="validateTips"></p><form id="login_form" action="javascript:void(0)"><fieldset><label for="username">Username *</label><input type="text" id="username" name="username" class="text ui-widget-content ui-corner-all" style="ime-mode:disabled"><label for="password">Password *</label><input type="password" id="password" name="password" class="text ui-widget-content ui-corner-all"></fieldset></form>
+	</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span class="ui-button-text">Login</span></button><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span class="ui-button-text">Cancel</span></button></div></div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-describedby="dialog-form-register" style="display: none; position: absolute;" aria-labelledby="ui-id-2"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle"><span id="ui-id-2" class="ui-dialog-title">Register</span><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="Close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">Close</span></button></div><div id="dialog-form-register" style="" class="ui-dialog-content ui-widget-content">
+		<p class="validateTips"></p><fieldset><div style="width:200px;float:left"><label for="username1">Username *</label><input type="text" id="username1" class="text ui-widget-content ui-corner-all" style="ime-mode:disabled"><label for="password1">Password *</label><input type="password" id="password1" class="text ui-widget-content ui-corner-all"><label for="repassword">Repeat *</label><input type="password" id="repassword" class="text ui-widget-content ui-corner-all"><label for="nickname">Nickname</label><input type="text" id="nickname" class="text ui-widget-content ui-corner-all"><label for="school">School</label><input type="text" id="school" class="text ui-widget-content ui-corner-all"><label for="qq">QQ</label><input type="text" id="qq" class="text ui-widget-content ui-corner-all"><label for="email">Email</label><input type="text" id="email" class="text ui-widget-content ui-corner-all"><label for="share">Share code by default</label><br><input type="radio" name="share" id="share0" value="0"><label for="share0">No</label>
+<input type="radio" name="share" id="share1" checked="checked" value="1"><label for="share1">Yes</label>
+</div><div style="width:200px;margin-left:20px;float:left"><label for="blog">Blog &amp; Introduction</label><textarea name="" cols="35" rows="25" id="blog" class="text ui-widget-content ui-corner-all"></textarea></div></fieldset>
+	</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span class="ui-button-text">Register</span></button><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span class="ui-button-text">Cancel</span></button></div></div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-describedby="dialog-form-submit" style="position: absolute; height: auto; width: 600px; top: 20px; left: 489px; display: none; z-index: 101;" aria-labelledby="ui-id-8"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle"><span id="ui-id-8" class="ui-dialog-title">Submit</span><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="Close" style="display: block;"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">Close</span></button></div><div id="dialog-form-submit" style="width: auto; min-height: 0px; max-height: none; height: 550px;" class="ui-dialog-content ui-widget-content">
+		<p class="validateTips"></p>
+		<table>
+			<tbody><tr>
+				<td style="text-align:right;padding:5px">Problem:</td>
+				<td><span id="submit_num" style="color:green">B - Oulipo</span></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;padding:5px">Language:</td>
+				<td><select id="language" name="language"><option value="0">G++</option><option value="1">GCC</option><option value="2">Java</option><option value="3">Pascal</option><option value="4">C++</option><option value="5">C</option><option value="6">Fortran</option></select></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;padding:5px">Public:</td>
+				<td><input type="radio" name="isOpen" id="isOpen0" value="0"><label for="isOpen0">No</label>
+<input type="radio" name="isOpen" id="isOpen1" value="1"><label for="isOpen1">Yes</label>
+</td>
+			</tr>
+		</tbody></table>
+		<textarea name="source" class="text ui-widget-content ui-corner-all" style="width:100%;height:360px;background:#F4F4F4;font-family: Courier New,Courier,monospace"></textarea>
+	</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span class="ui-button-text">Submit</span></button><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span class="ui-button-text">Cancel</span></button></div></div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><div class="ui-selectmenu-menu ui-front" style="top: 356.78125px; left: 751.5px;"><ul aria-hidden="true" aria-labelledby="num-button" id="num-menu" class="ui-menu ui-widget ui-widget-content ui-corner-bottom ui-menu-icons avatar" role="listbox" tabindex="0" aria-activedescendant="ui-id-190" aria-disabled="false" style="width: 190px;"><li class="ui-menu-item ui-state-focus" id="ui-id-190" tabindex="-1" role="option">All<span class="ui-icon undefined"></span></li><li class="ui-menu-item" id="ui-id-191" tabindex="-1" role="option">A - Phone List<span class="ui-icon undefined"></span></li><li class="ui-menu-item" id="ui-id-192" tabindex="-1" role="option">B - Oulipo<span class="ui-icon undefined"></span></li><li class="ui-menu-item" id="ui-id-193" tabindex="-1" role="option">C - Scrolling Sign<span class="ui-icon undefined"></span></li><li class="ui-menu-item" id="ui-id-194" tabindex="-1" role="option">D - Extend to Palindrome<span class="ui-icon undefined"></span></li><li class="ui-menu-item" id="ui-id-195" tabindex="-1" role="option">E - 最长回文<span class="ui-icon undefined"></span></li><li class="ui-menu-item" id="ui-id-196" tabindex="-1" role="option">F - Dominating Patterns<span class="ui-icon undefined"></span></li><li class="ui-menu-item" id="ui-id-197" tabindex="-1" role="option">G - The Big Painting<span class="ui-icon undefined"></span></li><li class="ui-menu-item" id="ui-id-198" tabindex="-1" role="option">H - Ann and Half-Palindrome<span class="ui-icon undefined"></span></li></ul></div><div class="ui-selectmenu-menu ui-front"><ul aria-hidden="true" aria-labelledby="res-button" id="res-menu" class="ui-menu ui-widget ui-widget-content ui-corner-bottom ui-menu-icons avatar" role="listbox" tabindex="0" aria-activedescendant="ui-id-199" aria-disabled="false"><li class="ui-menu-item ui-state-focus" id="ui-id-199" tabindex="-1" role="option">All<span class="ui-icon undefined"></span></li><li class="ui-menu-item" id="ui-id-200" tabindex="-1" role="option">Accepted<span class="ui-icon ui-icon-check"></span></li><li class="ui-menu-item" id="ui-id-201" tabindex="-1" role="option">Presentation Error<span class="ui-icon ui-icon-lightbulb"></span></li><li class="ui-menu-item" id="ui-id-202" tabindex="-1" role="option">Wrong Answer<span class="ui-icon ui-icon-closethick"></span></li><li class="ui-menu-item" id="ui-id-203" tabindex="-1" role="option">Time Limit Exceed<span class="ui-icon ui-icon-clock"></span></li><li class="ui-menu-item" id="ui-id-204" tabindex="-1" role="option">Memory Limit Exceed<span class="ui-icon ui-icon-notice"></span></li><li class="ui-menu-item" id="ui-id-205" tabindex="-1" role="option">Output Limit Exceed<span class="ui-icon ui-icon-notice"></span></li><li class="ui-menu-item" id="ui-id-206" tabindex="-1" role="option">Runtime Error<span class="ui-icon ui-icon-notice"></span></li><li class="ui-menu-item" id="ui-id-207" tabindex="-1" role="option">Compile Error<span class="ui-icon ui-icon-notice"></span></li><li class="ui-menu-item" id="ui-id-208" tabindex="-1" role="option">Unknown Error<span class="ui-icon ui-icon-notice"></span></li><li class="ui-menu-item" id="ui-id-209" tabindex="-1" role="option">Submit Error<span class="ui-icon ui-icon-notice"></span></li><li class="ui-menu-item" id="ui-id-210" tabindex="-1" role="option">Queuing &amp;&amp; Judging<span class="ui-icon ui-icon-arrowrefresh-1-s"></span></li></ul></div><div class="ui-selectmenu-menu ui-front"><ul aria-hidden="true" aria-labelledby="lang-button" id="lang-menu" class="ui-menu ui-widget ui-widget-content ui-corner-bottom ui-menu-icons avatar" role="listbox" tabindex="0" aria-activedescendant="ui-id-211" aria-disabled="false"><li class="ui-menu-item ui-state-focus" id="ui-id-211" tabindex="-1" role="option">All<span class="ui-icon undefined"></span></li><li class="ui-menu-item" id="ui-id-212" tabindex="-1" role="option">C++<span class="ui-icon undefined"></span></li><li class="ui-menu-item" id="ui-id-213" tabindex="-1" role="option">C<span class="ui-icon undefined"></span></li><li class="ui-menu-item" id="ui-id-214" tabindex="-1" role="option">Java<span class="ui-icon undefined"></span></li><li class="ui-menu-item" id="ui-id-215" tabindex="-1" role="option">Pascal<span class="ui-icon undefined"></span></li><li class="ui-menu-item" id="ui-id-216" tabindex="-1" role="option">Python<span class="ui-icon undefined"></span></li><li class="ui-menu-item" id="ui-id-217" tabindex="-1" role="option">C#<span class="ui-icon undefined"></span></li><li class="ui-menu-item" id="ui-id-218" tabindex="-1" role="option">Ruby<span class="ui-icon undefined"></span></li><li class="ui-menu-item" id="ui-id-219" tabindex="-1" role="option">Other<span class="ui-icon undefined"></span></li></ul></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-describedby="dialog-form-rank-setting" style="display: none; position: absolute;" aria-labelledby="ui-id-9"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle"><span id="ui-id-9" class="ui-dialog-title">Rank Setting</span><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="Close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">Close</span></button></div><div id="dialog-form-rank-setting" style="" class="ui-dialog-content ui-widget-content"></div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span class="ui-button-text">OK</span></button></div></div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><div id="feedly-mini" title="feedly Mini tookit"></div>	<div id="facebox" style="top: 79px; left: 339.5px; z-index: 1000000; display: none;"> 	  <div class="popup"> 		<div class="content">
+
+
+  
+
+
+<span>zater's submissions for problem B </span>
+<br>
+<br>
+<div id="team_submissions_table_wrapper" class="dataTables_wrapper dt-jqueryui no-footer"><div class="fg-toolbar ui-toolbar ui-widget-header ui-helper-clearfix ui-corner-tl ui-corner-tr"></div><table id="team_submissions_table" class="display status_table dataTable no-footer" cellpadding="0" cellspacing="0" border="0" role="grid">
+    <thead>
+    <tr role="row"><th class="run_id ui-state-default sorting_disabled" rowspan="1" colspan="1"><div class="DataTables_sort_wrapper">RunID<span class="DataTables_sort_icon"></span></div></th><th class="result ui-state-default sorting_disabled" rowspan="1" colspan="1"><div class="DataTables_sort_wrapper">Status<span class="DataTables_sort_icon"></span></div></th><th class="memory ui-state-default sorting_disabled" rowspan="1" colspan="1"><div class="DataTables_sort_wrapper">Memory<span class="DataTables_sort_icon"></span></div></th><th class="time ui-state-default sorting_disabled" rowspan="1" colspan="1"><div class="DataTables_sort_wrapper">Time<span class="DataTables_sort_icon"></span></div></th><th class="language ui-state-default sorting_disabled" rowspan="1" colspan="1"><div class="DataTables_sort_wrapper">Language<span class="DataTables_sort_icon"></span></div></th><th class="length ui-state-default sorting_disabled" rowspan="1" colspan="1"><div class="DataTables_sort_wrapper">Length<span class="DataTables_sort_icon"></span></div></th><th class="ui-state-default sorting_disabled" rowspan="1" colspan="1"><div class="DataTables_sort_wrapper">Submit Time<span class="DataTables_sort_icon"></span></div></th></tr>
+    </thead>
+    <tbody>
+    
+        
+    
+        
+    
+    <tr class="yes odd" role="row">
+            <td class="run_id">4068358</td>
+            <td class="result">
+                <div>Accepted</div>
+            </td>
+            <td class="memory">20028</td>
+            <td class="time">1016</td>
+            <td class="language">
+                <div>
+                    
+                    
+                    
+                        Java
+                    
+                </div>
+            </td>
+            <td class="length">1369</td>
+            <td>1:13:33</td>
+        </tr><tr class="yes even" role="row">
+            <td class="run_id">4068304</td>
+            <td class="result">
+                <div>Accepted</div>
+            </td>
+            <td class="memory">19992</td>
+            <td class="time">1094</td>
+            <td class="language">
+                <div>
+                    
+                    
+                    
+                        Java
+                    
+                </div>
+            </td>
+            <td class="length">1369</td>
+            <td>1:10:14</td>
+        </tr></tbody>
+</table><div class="fg-toolbar ui-toolbar ui-widget-header ui-helper-clearfix ui-corner-bl ui-corner-br"></div></div>
+
+<script type="text/javascript" src="./NCTU Summer Camp - String - Virtual Judge_files/contest_team_submissions.js"></script>
+</div> 		<a href="http://acm.hust.edu.cn/vjudge/contest/view.action?cid=83561#" class="close"><img src="./NCTU Summer Camp - String - Virtual Judge_files/closelabel.png" class="close_image" title="close"></a> 	  </div> 	</div></body></html>

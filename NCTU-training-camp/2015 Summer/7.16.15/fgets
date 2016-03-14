@@ -1,0 +1,8 @@
+char get_newline[100];
+        fgets(get_newline, 100, stdin); // get rid of scanf \n
+        if (fgets(get_newline, 100, stdin) == NULL)
+            break; // end of file
+        else {
+            printf("\n");
+            continue;
+        }
