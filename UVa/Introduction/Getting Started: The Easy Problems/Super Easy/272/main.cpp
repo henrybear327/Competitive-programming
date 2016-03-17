@@ -1,23 +1,25 @@
-#include <cstdio>
-#include <cstring>
+#include <bits/stdc++.h>
+
+using namespace std;
 
 int main()
 {
-    bool flag = false;
-    char input[1000];
-    while (fgets(input, 1000, stdin) != NULL) {
-        int len = strlen(input);
-        for (int i = 0; i < len; i++) {
-            if (input[i] == '"' && flag == false) {
-                flag = true;
-                printf("``");
-            } else if (input[i] == '"' && flag == true) {
-                flag = false;
-                printf("''");
-            } else {
-                printf("%c", input[i]);
-            }
-        }
+    bool first = false;
+    char inp[10000];
+    while(fgets(inp, 10000, stdin) != NULL) {
+	for(int i = 0; inp[i] != '\0'; i++) {
+	    if(inp[i] == '"') {
+		if(first == false) {
+		    first = true;
+		    printf("``");
+		} else { 
+		    first = false;
+		    printf("''");
+		}
+	    } else {
+		printf("%c", inp[i]);
+	    }
+	}
     }
 
     return 0;

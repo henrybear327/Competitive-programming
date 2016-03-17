@@ -1,10 +1,13 @@
-#include <cstdio>
+#include <bits/stdc++.h>
+
+using namespace std;
 
 int main()
-{
-    char input[1000];
-    while (fgets(input, 1000, stdin) != NULL)
-        printf("%s", input);
+{   
+    char inp[10000];
+    while(fgets(inp, 10000, stdin) != NULL) {
+	printf("%s", inp);
+    }
 
     return 0;
 }
