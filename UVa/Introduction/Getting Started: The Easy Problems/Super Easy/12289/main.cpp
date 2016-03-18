@@ -1,32 +1,33 @@
-#include <cstdio>
-#include <cstring>
+#include <bits/stdc++.h>
+
+using namespace std;
 
 int main()
 {
-    int cases;
-    scanf("%d", &cases);
-    char buffer[10];
-    fgets(buffer, 10, stdin);
+    int ncase;
+    scanf("%d", &ncase);
 
-    while (cases--) {
-        char input[10];
-        fgets(input, 10, stdin);
+    while(ncase--) {
+	char inp[100];
+	scanf("%s", inp);
 
-        int len = strlen(input) - 1;
-        if (len == 5)
-            printf("3\n");
-        else {
-            char one[4] = "one";
-            int count = 0;
-            for (int i = 0; i < 3; i++) {
-                if (input[i] == one[i])
-                    count++;
-            }
-            if (count >= 2)
-                printf("1\n");
-            else
-                printf("2\n");
-        }
+	int len = strlen(inp);
+	if(len == 5) {
+	    printf("3\n");
+	} else {
+	    const char *one = "one", *two = "two";
+	    int s1 = 0, s2 = 0;
+	    for(int i = 0; i < 3; i++) {
+		if(one[i] == inp[i])
+		    s1++;
+		if(two[i] == inp[i])
+		    s2++;
+	    }
+	    if(s1 >= 2)
+		printf("1\n");
+	    else
+		printf("2\n");
+	}
     }
 
     return 0;
