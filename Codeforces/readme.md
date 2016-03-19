@@ -116,6 +116,10 @@ The following lists will be written as followed.
         * A, B, C
     48. Round 345
         * A, B, C (You will never forget to use long long to do (x * (x - 1) / 2))
+    49. CROC 2016 - Qualification
+        * A, B
+    50. IndiaHacks 2016 - Online Edition
+        * A, B
 
 # Gym
 
