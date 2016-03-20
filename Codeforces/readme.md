@@ -1,6 +1,6 @@
 # Codeforces Contest code backup
 
-I started doing Codeforces contest in 2015 summer vacation while participating in **2015CPSTC(competitive programming summer training camp)** @NCTU. Thanks to the teacher and student mentors there. :)
+I started doing Codeforces contest in 2015 summer vacation while participating in **2015 competitive programming summer training camp ** @NCTU. Thanks to the teacher and student mentors there. :)
 
 This is a repository that I use for backing up my Codeforces code. I am still new to this competitive programming field, so my code may be really bad. Please don't take it too seriously.
 
