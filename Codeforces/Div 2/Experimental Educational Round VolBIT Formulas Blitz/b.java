@@ -35,7 +35,8 @@ public class b
         int t = sc.nextInt();
         
         //out.println(fast_pow(2, 7));
-        out.printf("%.15f\n", n * fast_pow(1.000000011, t));
+        //out.printf("%.15f\n", n * fast_pow(1.000000011, t));
+        out.printf("%.15f\n", n * Math.pow(1.000000011, t));
         //out.printf("%.15f\n", n * fast_pow1(1.000000011, t));
 
         out.close();
