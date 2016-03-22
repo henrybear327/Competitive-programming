@@ -120,6 +120,8 @@ The following lists will be written as followed.
         * A, B
     50. IndiaHacks 2016 - Online Edition
         * A, B
+    51. Experimental Educational Round: VolBIT Formulas Blitz
+        * A (WA code can still pass), B, C
 
 # Gym
 
