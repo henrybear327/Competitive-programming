@@ -122,6 +122,8 @@ The following lists will be written as followed.
         * A, B
     51. Experimental Educational Round: VolBIT Formulas Blitz
         * A (WA code can still pass), B, C
+    52. Educational Round 10
+        * A, B, C
 
 # Gym
 
