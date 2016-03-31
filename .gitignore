@@ -1,0 +1,16 @@
+*.swp
+
+*.o
+*.out
+
+*.orig
+
+*.*~
+*~
+
+.DS_Store
+
+*.class
+.project
+.classpath
+Main.class
