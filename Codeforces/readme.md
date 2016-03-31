@@ -124,6 +124,8 @@ The following lists will be written as followed.
         * A (WA code can still pass), B, C
     52. Educational Round 10
         * A, B, C
+    53. Round 346
+        * A (Good negative mod practice problem), B, C, D (Fun problem!), E (dfs, UFDS)
 
 # Gym
 
