@@ -9,6 +9,13 @@ public class D
         out = new PrintWriter(new BufferedOutputStream(System.out));
         
         int n = sc.nextInt();
+        out.println((n - 4) / 2); 
+        /*
+         * 270 * ans + 90 * (n - ans) = 180 * (n - 2)
+         * x = (n - 4) / 2
+         * */
+        
+        /*
         int ans = 0;
         
         int[] x = new int[n + 2];
@@ -21,10 +28,10 @@ public class D
         y[n + 1] = y[1];
         	
         int[] dir = new int[n + 2];
-        /*
-         * ESWN
-         * 0123
-         * */
+        
+         //ESWN
+         //0123
+
         for(int i = 1; i < n + 2; i++) {
         	if(x[i] == x[i - 1]) {
         		if(y[i] > y[i - 1]) {
@@ -46,6 +53,7 @@ public class D
         		ans++;
         }
         out.println(n - ans);
+        */
                 
         out.close();
     }
