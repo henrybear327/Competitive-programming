@@ -38,18 +38,33 @@ public class E
         int n = sc.nextInt(), m = sc.nextInt();
         
         UFDS s = new UFDS();
+        int[] cnt = new int[n + 1];
+
         for(int i = 0; i < m; i++) {
         	int a = sc.nextInt(), b = sc.nextInt();
         	s.merge(a, b);
+        	cnt[a]++;
+        	cnt[b]++;
         }
         
+        int[] cnt1 = new int[n + 1];
+        Arrays.fill(cnt1, 0);
         for(int i = 1; i <= n; i++) {
-        	s.root(i);
+        	cnt1[s.root(i)] += cnt[i];
+        	//out.println(i + " -> " + s.par[i]);
         }
         
+        int ans = 0;
         for(int i = 1; i <= n; i++) {
-        	out.println(i + " -> " + s.par[i]);
+        	//out.println("cnt1 -> " + cnt1[i]);
+        	if(s.root(i) == i) {
+        		cnt1[i] /= 2;
+        		if(cnt1[i] <= -1 * s.par[i] - 1)
+        			ans++;
+        	}
         }
+        
+        out.println(ans);
         
         out.close();
     }
