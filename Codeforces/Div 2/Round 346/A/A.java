@@ -10,11 +10,19 @@ public class A
         
         int n = sc.nextInt(), a = sc.nextInt(), b = sc.nextInt();
         
+        // int ans = (a - 1 + (b % n) + (b < 0 ? n : 0)) % n + 1; // Wrong! (b < 0 ? n : 0) may not overcome the negative effect!
+        int ans = (((a - 1 + b) % n) + n) % n + 1; // +n here can overcome negative effect because %n guarantees the number range -n+1 ~ 0
+        // int ans = (a - 1 + b + (b < 0 ? n : 0)) % n + 1; //3 1 -4
+        
+        out.println(ans);
+        
+        /*
         b = b % n;
 		int ans = ( a + b ) % n;
 		if(ans <= 0)
 			ans = n + ans;
         out.println(ans);
+        */
 
         out.close();
     }
