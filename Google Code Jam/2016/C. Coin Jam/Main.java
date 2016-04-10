@@ -13,7 +13,9 @@ public class Main
         int cnt_ans = 0;
         StringBuilder st = new StringBuilder();
         
-        for(long i = ((1L << (n - 1)) + 1); i < (1L << n); i+=2) {
+        //for(long i = 32947/*((1L << (n - 1)) + 1)*/; i < 32950/*(1L << n)*/; i+=2L) {
+        for(long i = ((1L << (n - 1)) + 1); i < (1L << n); i+=2L) {
+        	//System.out.println("i: " + i);
         	boolean ok = true;
         	StringBuilder tmp = new StringBuilder();
         	tmp.append(Long.toBinaryString(i));
@@ -24,13 +26,23 @@ public class Main
         		//out.println("j: " + j + " " + cur);
 
             	if(cur.isProbablePrime(10) == false) {
-        			for(long k = 2; ; k++) {
+            		//System.out.println(cur);
+            		boolean in_loop = false;
+        			for(long k = 2; k < 100000; k++) {
         				if(cur.mod(BigInteger.valueOf((int)k)) == BigInteger.ZERO) {
+        					if(k >= 100000)
+        						System.out.println(cur + " " + k);
+            				in_loop = true;
 	        				tmp.append(" ").append(k);
+	            			// System.out.println(tmp);
 	        				break;
         				}
         			}
-            		//out.println("Error! " + binary_string + " " + j + " " + cur + " " + cur.mod(BigInteger.valueOf(3)));
+        			
+        			if(in_loop == false) {
+        				ok = false;
+        				break;
+        			}
             	} else {
             		ok = false;
             		break;
@@ -38,7 +50,7 @@ public class Main
         	}
         	if(ok == true) {
         		st.append(tmp).append("\n");
-        		out.println(tmp);
+        		//out.println(tmp);
         		cnt_ans++;
         		if(cnt_ans >= target)
         			break;
