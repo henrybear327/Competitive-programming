@@ -24,7 +24,9 @@ int main()
     int l = 0, r = 0; // [l, r) Using this bound will be easy to control! When l == r, r will always increment!
     int ansl = 0, ansr = 0;
     int cnt = 0;
-    while(l < n) {
+
+    // while(l < n) {
+    for(l = 0; l < n; l++) {
 	// let r go as far as it can, and stop at the right most point that is conflicting with the condition given -> [l, r)
 	while(r < n && cnt <= k) { // cnt == k! Or the consecutive 1s won't be treated as consecutive ones!
 	    if(inp[r] == 0) {
@@ -42,7 +44,7 @@ int main()
 	
 	// increment l by 1 per loop
 	cnt -= (inp[l] == 0 ? 1 : 0); // if l is on a 0, then cnt-- -> [l, r)
-	l++;
+	// l++;
     }
 
     printf("%d\n", ansr - ansl);
