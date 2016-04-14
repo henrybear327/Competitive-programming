@@ -9,6 +9,8 @@ Winston Churchill
 ## Binary Search
 
 * [Hard Process](http://codeforces.com/contest/660/problem/C): Watch out for the initial condition!
+* [Worms](http://codeforces.com/contest/474/problem/B): lower_bound
+* [11057 - Exact Sum](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1998)
 
 ## Two pointer
 
@@ -37,7 +39,16 @@ Winston Churchill
 
 * DFS
     * [New Reform](http://codeforces.com/contest/659/problem/E)
+    * [Apple Tree](http://poj.org/problem?id=3321)
+* BFS
+    * [Expressions](http://poj.org/problem?id=3367)
 
 ## UFDS  
 
 * [New Reform](http://codeforces.com/contest/659/problem/E)
+* [Cube Stacking](http://poj.org/problem?id=1988)
+* [Navigation Nightmare](http://poj.org/problem?id=1984)
+
+## BIT
+
+* [Apple Tree](http://poj.org/problem?id=3321)
