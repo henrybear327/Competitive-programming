@@ -52,16 +52,17 @@ int main()
 	scanf("%d", &inp[i]);
 
     // binary search the answer
-    int lb = 0, ub = n + 1; // [lb, ub)
+    int lb = 0, ub = n; // [lb, ub]
     while(ub - lb > 1) {
+	//printf("%d %d\n", lb, ub);
 	int mid = (lb + ub) / 2;
 	if(check(inp, mid) == false)
-	    ub = mid;
+	    ub = mid - 1;
 	else
 	    lb = mid;
     }
 
-    printf("%d\n", lb);
+    printf("%d\n", check(inp, ub) ? ub : lb);
     for(int i = 0; i < n; i++) {
 	if(l <= i && i <= r) 
 	    printf("1 ");
