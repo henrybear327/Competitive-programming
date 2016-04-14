@@ -4,20 +4,7 @@ I started doing Codeforces contest in 2015 summer vacation while participating i
 
 This is a repository that I use for backing up my Codeforces code. I am still new to this competitive programming field, so my code may be really bad. Please don't take it too seriously.
 
-# Compilation parameter
-
-`clang-format-3.7 -style=LLVM -i main.cpp && astyle --style=linux main.cpp && g++ -Wall -Wextra -o main.o main.cpp`
-
-#List format
-
-The following lists will be written as followed.
-
-* (h1 title) Contest name(type)
-    * Division(if present)
-        1. Round / contest name
-            * solved problem
-
-#Contest
+# Contest
 
 * Div 2
     1. Round 312 (The first ever contest that I participated in!)
@@ -127,7 +114,7 @@ The following lists will be written as followed.
     53. Round 346
         * A (Good negative mod practice problem), B, C, D (Fun problem!), E (dfs, UFDS)
     54.Education Round 11
-        * A, B, D
+        * A, B, C, D
 
 # Gym
 
