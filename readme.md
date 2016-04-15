@@ -52,3 +52,30 @@ Winston Churchill
 ## BIT
 
 * [Apple Tree](http://poj.org/problem?id=3321)
+
+## Extended Euclidean Algorithm
+
+*
+
+## Fast power
+
+## Segment Tree
+
+* [Balanced Lineup](http://poj.org/problem?id=3264): Very basic segment tree min/max problem
+* [A Simple Problem with Integers](http://poj.org/problem?id=3468): Very basic segment tree with lazy propagation
+
+### Using Struct for Segment Tree Notes
+
+```
+You have to define a destructor and destroy your objects (someMutex and someString).
+
+But, as you have allocated someMutex with malloc, you must free it with free.
+
+Take care for not to mix them.
+
+Remember:
+
+allocated with malloc, freed with free
+allocated with new, freed with delete
+allocated with new[], freed with delete[]
+```
