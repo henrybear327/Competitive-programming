@@ -22,11 +22,9 @@ void init()
 #define rc(x) ((x << 1) + 1)
 struct SegmentTree {
     int nn;
-    void init(int n)
+    void build(int n)
     {
         nn = n;
-        int depth = 1;
-        while( (1 << depth++) < n);
 
         build(1, 0, n - 1);
     }
@@ -127,7 +125,7 @@ int main()
             scanf("%d", &inp[i]);
 
         SegmentTree sum;
-        sum.init(n);
+        sum.build(n);
 
         for(int i = 0; i < q; i++) {
             char com[100];
