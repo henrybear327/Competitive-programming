@@ -84,6 +84,7 @@ void init()
     }
 }
 
+/*
 int lb(int l, int r, ll key) 
 {
     int notFound = r;
@@ -92,13 +93,15 @@ int lb(int l, int r, ll key)
 	if(num[mid] == key)
 	    return mid;
 	else if(num[mid] < key)
-	    l = mid + 1;
+	    l = mid;
 	else
 	    r = mid;
     }
     return num[l] <= key && key < num[r] ? (num[l] == key ? l : r) : (key < num[l] ? l : (key == num[r] ? r : notFound));
 }
+*/
 
+/*
 int ub(int l, int r, ll key) 
 {
     int notFound = r;
@@ -111,6 +114,33 @@ int ub(int l, int r, ll key)
 	    r = mid;
     }
     return num[l] <= key && key < num[r] ? r : key < num[l] ? l : notFound;
+}
+*/
+
+int lb(int l, int r, ll key) 
+{
+    r--;
+    while(l < r) {
+	int mid = (l + r) / 2;
+	if(num[mid] < key)
+	    l = mid + 1;
+	else
+	    r = mid;
+    }
+    return l;
+}
+
+int ub(int l, int r, ll key)
+{
+    r--;
+    while(l < r) {
+	int mid = (l + r) / 2;
+	if(num[mid] >= key)
+	    r = mid;
+	else
+	    l = mid + 1;
+    }
+    return r;
 }
 
 int rrrr = 0;
