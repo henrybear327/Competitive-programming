@@ -1,15 +1,18 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include <cstdio>
+#include <vector>
+#include <algorithm>
+#include <string>
+    using namespace std;
 
-typedef long long ll;
-vector<ll> num;
-vector<string> gen;
+    typedef long long ll;
+    vector<ll> num;
+    vector<string> gen;
 
-ll rToNumber(string x)
-{
-    // 12345
-    ll res = 0;
-    for(int i = (int)x.length() - 1; i >= 0; i--) {
+    ll rToNumber(string x)
+    {
+	// 12345
+	ll res = 0;
+	for(int i = (int)x.length() - 1; i >= 0; i--) {
 	res *= 10;
 	res += (x[i] - '0');
     }
