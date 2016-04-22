@@ -117,6 +117,7 @@ int ub(int l, int r, ll key)
 }
 */
 
+/*
 int lb(int l, int r, ll key) 
 {
     r--;
@@ -129,7 +130,8 @@ int lb(int l, int r, ll key)
     }
     return l;
 }
-
+*/
+/*
 int ub(int l, int r, ll key)
 {
     r--;
@@ -141,6 +143,35 @@ int ub(int l, int r, ll key)
 	    l = mid + 1;
     }
     return r;
+}
+*/
+
+int lb(int l, int r, ll key) 
+{
+    int cand = l;
+    int s = r / 2;
+    while(s != 0) { // [0, n)
+	if(cand + s < r && num[cand + s] < key) 
+	    cand += s;
+	else
+	    s /= 2;
+    }
+
+    return cand;
+}   
+
+int ub(int l, int r, ll key) 
+{
+    int cand = l;
+    int s = r / 2;
+    while(s != 0) { // [0, n)
+	if(cand + s < r && num[cand + s] <= key) 
+	    cand += s;
+	else
+	    s /= 2;
+    }
+
+    return cand;
 }
 
 int rrrr = 0;
