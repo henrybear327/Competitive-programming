@@ -115,6 +115,8 @@ This is a repository that I use for backing up my Codeforces code. I am still ne
         * A (Good negative mod practice problem), B, C, D (Fun problem!), E (dfs, UFDS)
     54.Education Round 11
         * A, B, C, D
+    55.Education Round 12
+        * A, C
 
 # Gym
 
