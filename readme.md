@@ -35,6 +35,11 @@ Winston Churchill
 
 * [Bicycle Race](http://codeforces.com/contest/659/problem/D)
 
+## String
+
+* Implementation
+  * [Simple Strings](http://codeforces.com/contest/665/problem/C)
+
 ## Graph
 
 * DFS
@@ -59,10 +64,20 @@ Winston Churchill
 
 ## Fast power
 
+## Time
+
+* [Buses Between Cities](http://codeforces.com/contest/665/problem/A)
+
 ## Segment Tree
 
 * [Balanced Lineup](http://poj.org/problem?id=3264): Very basic segment tree min/max problem
 * [A Simple Problem with Integers](http://poj.org/problem?id=3468): Very basic segment tree with lazy propagation
+
+## Articulation point
+
+* [Network](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=24&problem=251)
+
+## Bridge
 
 ### Using Struct for Segment Tree Notes
 
