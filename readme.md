@@ -87,6 +87,10 @@ Winston Churchill
 
 * [Out of Hay](http://poj.org/problem?id=2395)
 
+## DP
+
+* [Dessert Wizard](https://www.codechef.com/JUNE13/problems/DELISH)
+
 ### Using Struct for Segment Tree Notes
 
 ```
