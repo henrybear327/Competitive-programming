@@ -10,7 +10,8 @@ Winston Churchill
 
 * [Hard Process](http://codeforces.com/contest/660/problem/C): Watch out for the initial condition!
 * [Worms](http://codeforces.com/contest/474/problem/B): lower_bound
-* [11057 - Exact Sum](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1998)
+* [Exact Sum](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1998)
+* [Block Towers](http://codeforces.com/contest/626/problem/C)
 
 ## Two pointer
 
