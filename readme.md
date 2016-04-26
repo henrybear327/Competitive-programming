@@ -23,6 +23,7 @@ Winston Churchill
 
 * [Hard Process](http://codeforces.com/contest/660/problem/C)
 * [Kefa and Company](http://codeforces.com/problemset/problem/580/B)
+* [Count Substrings](https://www.codechef.com/problems/STRSUB)
 
 ## Math
 
