@@ -53,6 +53,7 @@ Winston Churchill
 * [New Reform](http://codeforces.com/contest/659/problem/E)
 * [Cube Stacking](http://poj.org/problem?id=1988)
 * [Navigation Nightmare](http://poj.org/problem?id=1984)
+* [Is it a tree?](http://poj.org/problem?id=1308)
 
 ## BIT
 
@@ -80,6 +81,10 @@ Winston Churchill
 ## Bridge
 
 * [Critical Links](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=737)
+
+## Kruskal
+
+* [Out of Hay](http://poj.org/problem?id=2395)
 
 ### Using Struct for Segment Tree Notes
 
