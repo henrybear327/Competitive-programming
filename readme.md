@@ -84,6 +84,10 @@ Winston Churchill
 
 * [Critical Links](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=737)
 
+## 2-edge component
+
+* [Redundant Paths](http://poj.org/problem?id=3177)
+
 ## Kruskal
 
 * [Out of Hay](http://poj.org/problem?id=2395)
