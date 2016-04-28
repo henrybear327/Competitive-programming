@@ -116,7 +116,7 @@ This is a repository that I use for backing up my Codeforces code. I am still ne
     54. Education Round 11
         * A, B, C, D
     55. Education Round 12
-        * A, C
+        * A, B, C
     56. Round 348
         * A, B
 
