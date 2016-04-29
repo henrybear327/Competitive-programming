@@ -96,6 +96,10 @@ Winston Churchill
 
 * [Dessert Wizard](https://www.codechef.com/JUNE13/problems/DELISH)
 
+## Pigeonhole Principle
+
+* [Simple Subset](http://codeforces.com/contest/665/problem/D)
+
 ### Using Struct for Segment Tree Notes
 
 ```
