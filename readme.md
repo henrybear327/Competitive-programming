@@ -4,6 +4,12 @@
 
 Winston Churchill
 
+# Experience
+
+1. Time complexity analysis!!
+2. Read IO carefully!!
+3. Enumeration -> greedy -> DP
+
 # Categorized problems
 
 ## Binary Search
@@ -42,7 +48,7 @@ Winston Churchill
 * Implementation
   * [Simple Strings](http://codeforces.com/contest/665/problem/C)
 
-## Graph
+## Graph traversal
 
 * DFS
     * [New Reform](http://codeforces.com/contest/659/problem/E)
@@ -91,6 +97,7 @@ Winston Churchill
 ## Kruskal
 
 * [Out of Hay](http://poj.org/problem?id=2395)
+* [Trial Maintenance](http://www.lightoj.com/volume_showproblem.php?problem=1123): Time complexity trap...
 
 ## DP
 
