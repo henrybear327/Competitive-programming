@@ -62,6 +62,7 @@ Winston Churchill
 * [Cube Stacking](http://poj.org/problem?id=1988)
 * [Navigation Nightmare](http://poj.org/problem?id=1984)
 * [Is it a tree?](http://poj.org/problem?id=1308)
+* [Wireless Network](http://poj.org/problem?id=2236)
 
 ## BIT
 
