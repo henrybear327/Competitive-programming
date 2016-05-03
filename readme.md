@@ -77,6 +77,8 @@ Winston Churchill
 ## Time
 
 * [Buses Between Cities](http://codeforces.com/contest/665/problem/A)
+* [Road Construction](http://codeforces.com/problemset/problem/330/B)
+* [Bear and Three Musketeers](http://codeforces.com/problemset/problem/574/B)
 
 ## Segment Tree
 
@@ -99,6 +101,7 @@ Winston Churchill
 
 * [Out of Hay](http://poj.org/problem?id=2395)
 * [Trial Maintenance](http://www.lightoj.com/volume_showproblem.php?problem=1123): Time complexity trap...
+* [Underground Cables](https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2873)
 
 ## Euler Path
 
