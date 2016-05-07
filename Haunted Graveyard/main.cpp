@@ -3,7 +3,7 @@
 #include <map>
 #include <cstring>
 
-#define INT_MAX 111111111
+#define INT_MAX (1 << 30)
 using namespace std;
 
 int m[33][33];
@@ -27,6 +27,9 @@ int main()
 {
     while(scanf("%d %d", &w, &h) == 2 && (w || h) ) {
 	memset(m, 0, sizeof(m));
+	for(int i = 0; i < 33; i++)
+	    for(int j = 0; j < 33; j++)
+		m[i][j] = 0;
 
 	int n;
 	scanf("%d", &n);
@@ -35,10 +38,11 @@ int main()
 	    scanf("%d %d", &a, &b);
 	    m[a][b] = STONE;
 	}
-
-	scanf("%d", &n);
+	
+	int nn;
+	scanf("%d", &nn);
 	map< pair<int, int>, pair< pair<int, int>, int > > info;
-	for(int i = 0; i < n; i++) {
+	for(int i = 0; i < nn; i++) {
 	    int a, b, c, d, e;
 	    scanf("%d %d %d %d %d", &a, &b, &c, &d, &e);
 	    m[a][b] = HOLE;
@@ -51,6 +55,7 @@ int main()
 	    for(int j = 0; j < h; j++) {
 		if(i == w - 1 && j == h - 1)
 		    continue;
+
 		if(m[i][j] == GRASS) {
 		    for(int k = 0; k < 4; k++) {
 			int x1 = i + dx[k];
@@ -62,7 +67,7 @@ int main()
 			}
 		    }
 		} else if(m[i][j] == STONE) {
-		    // do nothing
+		    continue;
 		} else  {
 		    pair< pair<int, int>, int> tmp = info[make_pair(i, j)];
 		    edge.push_back(make_pair(tmp.second, make_pair(convert(i, j), 
@@ -70,7 +75,7 @@ int main()
 		}
 	    }
 	}
-
+	
 	int lim = w * h;
 	int dst[1000];
 	for(int i = 0; i < 1000; i++)
@@ -78,19 +83,35 @@ int main()
 	dst[0] = 0;
 	
 	bool loop = false;
-	for(int i = 0; i < lim && loop == false; i++) {
+	int cnt[1000] = {0};
+	bool hasChange = false;
+
+	for(int i = 0; loop == false; i++) {
 	    for(int j = 0; j < (int)edge.size(); j++) {
 		int u = edge[j].second.first, v = edge[j].second.second;
 		int w = edge[j].first;
-		if(dst[v] > dst[u] + w) {
+		// printf("%d %d %d\n", u, v, w);
+		if(dst[u] != INT_MAX && dst[v] > dst[u] + w) {
 		    dst[v] = dst[u] + w;
+		    hasChange = true;
 
-		    if(i == lim - 1) {
+		    if(cnt[v] == lim - 1) {
 			loop = true;
 			break;
 		    }
+		    cnt[v]++;
 		}
 	    }
+	    
+	    /*
+	    for(int j = 0; j < lim; j++)
+		printf("%d %d\n", j, dst[j]);
+	    printf("\n");
+	    */
+
+	    if(hasChange == false)
+		break;
+	    hasChange = false;
 	}
 
 	if(loop == true)
@@ -99,7 +120,6 @@ int main()
 	    printf("Impossible\n");
 	else
 	    printf("%d\n", dst[lim - 1]);
-
     }
 
     return 0;
