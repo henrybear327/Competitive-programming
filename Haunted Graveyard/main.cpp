@@ -83,32 +83,22 @@ int main()
 	dst[0] = 0;
 	
 	bool loop = false;
-	int cnt[1000] = {0};
 	bool hasChange = false;
-
-	for(int i = 0; loop == false; i++) {
+	for(int i = 0; i < lim && loop == false; i++) {
 	    for(int j = 0; j < (int)edge.size(); j++) {
 		int u = edge[j].second.first, v = edge[j].second.second;
 		int w = edge[j].first;
-		// printf("%d %d %d\n", u, v, w);
-		if(dst[u] != INT_MAX && dst[v] > dst[u] + w) {
+		if(dst[u] != INT_MAX && dst[v] > dst[u] + w) { // don't need to update INT value, fuck
 		    dst[v] = dst[u] + w;
 		    hasChange = true;
 
-		    if(cnt[v] == lim - 1) {
+		    if(i == lim - 1) {
 			loop = true;
 			break;
 		    }
-		    cnt[v]++;
 		}
 	    }
 	    
-	    /*
-	    for(int j = 0; j < lim; j++)
-		printf("%d %d\n", j, dst[j]);
-	    printf("\n");
-	    */
-
 	    if(hasChange == false)
 		break;
 	    hasChange = false;
