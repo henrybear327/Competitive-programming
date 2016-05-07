@@ -116,8 +116,13 @@ Winston Churchill
 * [Simple Subset](http://codeforces.com/contest/665/problem/D)
 
 ## Floyd-Warshall
-  * [Frogger](http://poj.org/problem?id=2253): tricky to realize the tweak needed :)
-  * [Stockbroker Grapevine](http://poj.org/problem?id=1125)
+
+* [Frogger](http://poj.org/problem?id=2253): tricky to realize the tweak needed :)
+* [Stockbroker Grapevine](http://poj.org/problem?id=1125)
+
+## Bellman-Ford
+
+* [Layout](http://poj.org/problem?id=3169): 差分約束系統
 
 ### Using Struct for Segment Tree Notes
 
