@@ -123,6 +123,7 @@ Winston Churchill
 ## Bellman-Ford
 
 * [Layout](http://poj.org/problem?id=3169): 差分約束系統
+* [Haunted Graveyard](http://poj.org/problem?id=3878)
 
 ### Using Struct for Segment Tree Notes
 
