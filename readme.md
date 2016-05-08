@@ -125,6 +125,10 @@ Winston Churchill
 * [Layout](http://poj.org/problem?id=3169): 差分約束系統
 * [Haunted Graveyard](http://poj.org/problem?id=3878)
 
+## Dijkatra
+
+* [Roadblocks](http://poj.org/problem?id=3255): next-to-shortest path
+
 ### Using Struct for Segment Tree Notes
 
 ```
