@@ -128,6 +128,7 @@ Winston Churchill
 ## Dijkatra
 
 * [Roadblocks](http://poj.org/problem?id=3255): next-to-shortest path
+* [Sightseeing](http://poj.org/problem?id=3463) : a good one!
 
 ### Using Struct for Segment Tree Notes
 
