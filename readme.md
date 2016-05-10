@@ -117,7 +117,7 @@ Winston Churchill
 
 ## Floyd-Warshall
 
-* [Frogger](http://poj.org/problem?id=2253): tricky to realize the tweak needed :)
+* [Frogger](http://poj.org/problem?id=2253): tricky to realize the tweak needed :) Minimax
 * [Stockbroker Grapevine](http://poj.org/problem?id=1125)
 
 ## Bellman-Ford
