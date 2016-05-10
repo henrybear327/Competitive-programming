@@ -55,6 +55,8 @@ Winston Churchill
     * [Apple Tree](http://poj.org/problem?id=3321)
 * BFS
     * [Expressions](http://poj.org/problem?id=3367)
+    * [The two routes](http://codeforces.com/contest/601/problem/A)
+    * [Biridian Forest](http://codeforces.com/contest/330/problem/D)
 
 ## UFDS  
 
