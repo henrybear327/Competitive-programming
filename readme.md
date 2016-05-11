@@ -112,6 +112,8 @@ Winston Churchill
 ## DP
 
 * [Dessert Wizard](https://www.codechef.com/JUNE13/problems/DELISH)
+* [The triangle](http://poj.org/problem?id=1163)
+* [Balancing Act](http://poj.org/problem?id=1655): good one! Tree related.
 
 ## Pigeonhole Principle
 
