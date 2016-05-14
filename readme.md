@@ -134,6 +134,12 @@ Winston Churchill
 * [Roadblocks](http://poj.org/problem?id=3255): next-to-shortest path
 * [Sightseeing](http://poj.org/problem?id=3463) : a good one!
 
+## Max flow
+
+### Basic
+
+* [Dining](http://poj.org/problem?id=3281)
+
 ### Using Struct for Segment Tree Notes
 
 ```
