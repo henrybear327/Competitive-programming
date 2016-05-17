@@ -9,6 +9,9 @@ Winston Churchill
 1. Time complexity analysis!!
 2. Read IO carefully!!
 3. Enumeration -> greedy -> DP
+4. Observations
+  * Even/odd properties?
+  * Binary search and check?
 
 # Categorized problems
 
