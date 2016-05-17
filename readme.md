@@ -140,7 +140,7 @@ Winston Churchill
 ## Max flow
 
 * [Dining](http://poj.org/problem?id=3281): Ford-Fulkerson
-* [Optimal Milking](http://poj.org/problem?id=2112): Edmonds-Karp
+* [Optimal Milking](http://poj.org/problem?id=2112): Edmonds-Karp, Binary search
 
 ## Min cost max flow
 
