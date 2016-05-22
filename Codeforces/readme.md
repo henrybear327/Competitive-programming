@@ -119,6 +119,10 @@ This is a repository that I use for backing up my Codeforces code. I am still ne
         * A, B, C, D
     56. Round 348
         * A, B
+    57. Round 353
+        * A, B, C
+    58. Round 352
+        * A, B, C
 
 # Gym
 

@@ -21,6 +21,7 @@ Winston Churchill
 * [Worms](http://codeforces.com/contest/474/problem/B): lower_bound
 * [Exact Sum](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1998)
 * [Block Towers](http://codeforces.com/contest/626/problem/C)
+* [Restoring Painting](http://codeforces.com/contest/675/problem/B)
 
 ## Two pointer
 
@@ -50,6 +51,9 @@ Winston Churchill
 
 * Implementation
   * [Simple Strings](http://codeforces.com/contest/665/problem/C)
+  * [Summer Camp](http://codeforces.com/contest/672/problem/A)
+* Greedy
+  * [All in All](http://poj.org/problem?id=1936)
 
 ## Graph traversal
 
@@ -117,10 +121,12 @@ Winston Churchill
 * [Dessert Wizard](https://www.codechef.com/JUNE13/problems/DELISH)
 * [The triangle](http://poj.org/problem?id=1163)
 * [Balancing Act](http://poj.org/problem?id=1655): good one! Tree related.
+* [Money Transfers](http://codeforces.com/contest/675/problem/C)
 
 ## Pigeonhole Principle
 
 * [Simple Subset](http://codeforces.com/contest/665/problem/D)
+* [Different is Good](http://codeforces.com/contest/672/problem/B)
 
 ## Floyd-Warshall
 
@@ -150,7 +156,12 @@ Winston Churchill
 
 * [Dining](http://poj.org/problem?id=3281)
 
-### Using Struct for Segment Tree Notes
+## Implementation + Observation
+
+* [Infinite Sequence](http://codeforces.com/contest/675/problem/A)
+* [Recycling Bottles](http://codeforces.com/contest/672/problem/C)
+
+## Using Struct for Segment Tree Notes
 
 ```
 You have to define a destructor and destroy your objects (someMutex and someString).
