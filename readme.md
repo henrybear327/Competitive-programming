@@ -35,6 +35,7 @@ Winston Churchill
 * [Hard Process](http://codeforces.com/contest/660/problem/C)
 * [Kefa and Company](http://codeforces.com/problemset/problem/580/B)
 * [Count Substrings](https://www.codechef.com/problems/STRSUB)
+* [Vasya and String](http://codeforces.com/contest/676/problem/C): edge case!! k = 0
 
 ## Math
 
@@ -160,6 +161,8 @@ Winston Churchill
 
 * [Infinite Sequence](http://codeforces.com/contest/675/problem/A)
 * [Recycling Bottles](http://codeforces.com/contest/672/problem/C)
+* [Nicholas and Permutation](http://codeforces.com/contest/676/problem/A)
+* [Pyramid of Glasses](http://codeforces.com/contest/676/problem/B)
 
 ## Using Struct for Segment Tree Notes
 
