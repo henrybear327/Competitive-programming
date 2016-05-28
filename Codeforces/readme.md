@@ -123,6 +123,8 @@ This is a repository that I use for backing up my Codeforces code. I am still ne
         * A, B, C
     58. Round 352
         * A, B, C
+    59. Round 354
+	* A, B, C
 
 # Gym
 
