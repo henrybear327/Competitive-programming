@@ -164,6 +164,10 @@ Winston Churchill
 * [Nicholas and Permutation](http://codeforces.com/contest/676/problem/A)
 * [Pyramid of Glasses](http://codeforces.com/contest/676/problem/B)
 
+# Geometry
+* [Expanding Rods](http://poj.org/problem?id=1905): precision!
+* [Pick-up sticks](http://poj.org/problem?id=2653): a basic problem to test out your ccw, cross product, overlap, and intersection code.
+
 ## Using Struct for Segment Tree Notes
 
 ```
