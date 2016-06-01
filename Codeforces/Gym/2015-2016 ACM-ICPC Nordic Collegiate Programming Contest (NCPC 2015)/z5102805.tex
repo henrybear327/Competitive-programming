@@ -1,0 +1,78 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+
+\usepackage{listings}
+\usepackage{xcolor}
+\lstset { %
+    language=C++,
+    backgroundcolor=\color{black!5}, % set backgroundcolor
+    basicstyle=\footnotesize,% basic font setting
+    tabsize=2,
+    breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  	breaklines=true,                 % sets automatic line breaking
+  	keepspaces=true,  
+}
+
+\title{2015-2016 ACM-ICPC Nordic Collegiate Programming Contest (NCPC 2015)} % // is line break
+\author{Chun-Hung Tseng}
+\date{\today}
+
+% Use this tag to surround the entire document, a must
+\begin{document} 
+
+\lstdefinestyle{customc}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  frame=L,
+  xleftmargin=\parindent,
+  language=C,
+  showstringspaces=false,
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+}
+
+\lstdefinestyle{customasm}{
+  belowcaptionskip=1\baselineskip,
+  frame=L,
+  xleftmargin=\parindent,
+  language=[x86masm]Assembler,
+  basicstyle=\footnotesize\ttfamily,
+  commentstyle=\itshape\color{purple!40!black},
+}
+
+\lstset{escapechar=@,style=customc}
+
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+
+%By default, the paragraphs are indented by 1.5 times the point size of the current font. Also, there is no extra blank space inserted between the paragraphs. In the sections below is described how to change that.
+
+%Let's try to use Latex to finish up assignment 3! Be professional!! \par
+
+% If just \section the section title will be highlighted
+\section*{Problem A}
+
+\lstinputlisting[language=c++]{A/main.cpp}
+
+\section*{Problem C}
+
+\lstinputlisting[language=c++]{C/main.cpp}
+
+\section*{Problem D}
+
+\lstinputlisting[language=c++]{D/main.cpp}
+
+\section*{Problem E}
+
+\lstinputlisting[language=c++]{E/main.cpp}
+
+\section*{Problem G}
+
+\lstinputlisting[language=c++]{G/main.cpp}
+
+\end{document}
