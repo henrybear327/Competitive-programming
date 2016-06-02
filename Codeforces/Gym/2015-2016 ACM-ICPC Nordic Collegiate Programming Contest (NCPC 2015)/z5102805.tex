@@ -80,7 +80,9 @@ You are given some forests to start with, and you have to add one edge for each 
 
 Finding the diameter and radii is the part that got me 12 WA, because I didn't implement it the right way for the first 10+ attempts. Here is a great article on \href{http://codeforces.com/blog/entry/17974}{Codeforces} that have great explanations on this. \\
 
-Let's denote $D$ for the largest diameter of all trees in the forest, $A$ for the largest radius, $B$ for the second-largest radius(if exists), and $C$ for the third-largest radius of all trees(if exists). The answer will be $max(D, A+B+1, B+C+2)$. Because the furthest two leaves are of the closest distance wiil be determined by the longest "chains" in the trees after connecting all of them together, and we can see if we connect all trees on to the center of the longest diameter, we can minimize the distance of the furthest leaves\\
+Let's denote $D$ for the largest diameter of all trees in the forest, $A$ for the largest radius, $B$ for the second-largest radius(if exists), and $C$ for the third-largest radius of all trees(if exists). The answer will be $max(D, A+B+1, B+C+2)$. Because the furthest two leaves are of the closest distance will be determined by the longest "chains" in the trees after connecting all of them together, and we can see if we only connect trees together by connecting the centers to the center of the longest diameter, we can minimize the distance of the furthest leaves\\
+
+The solution is $O(n)$, because finding the diameter and radii are all linear time algorithms.
 
 \lstinputlisting[language=c++]{A/main.cpp}
 
