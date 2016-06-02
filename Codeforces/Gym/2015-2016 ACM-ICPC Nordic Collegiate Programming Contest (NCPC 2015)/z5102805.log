@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.4.22)  2 JUN 2016 11:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.4.22)  2 JUN 2016 11:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -689,11 +689,6 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 83.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 83.
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-
- []
-
 (./A/main.cpp
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <8> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 1.
@@ -886,11 +881,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
 Here is how much of TeX's memory you used:
  9131 strings out of 493089
  130337 string characters out of 6134842
- 595463 words of memory out of 5000000
+ 582463 words of memory out of 5000000
  12196 multiletter control sequences out of 15000+600000
  7784 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,18n,58p,602b,1971s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,18n,58p,502b,1971s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
@@ -908,7 +903,7 @@ exmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2015/texmf-dist/font
 s/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
 w/times/utmri8a.pfb>
-Output written on z5102805.pdf (16 pages, 3547567 bytes).
+Output written on z5102805.pdf (16 pages, 3547386 bytes).
 PDF statistics:
  555 PDF objects out of 1000 (max. 8388607)
  490 compressed objects within 5 object streams
