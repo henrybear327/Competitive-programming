@@ -76,11 +76,11 @@
 
 This is a very interesting problem, which I got 12 WA during virtual participation on Codeforces. Draw the diagram out for the ths problem, you will realise that this is a problem about tree diameter and radius pretty quickly. \\
 
-You are given some forests to start with, and you have to add one edge for each tree in the forest to connect all of them together eventually, such that the forest will become a tree, where the furthest two leaves are of the closest distance.\\ 
+You are given some forests to start with, and you have to add one edge for each tree in the forest to connect all of them together eventually, such that the forest will become a tree, where the furthest two leaves are of the shortest distance.\\ 
 
-Finding the diameter and radii is the part that got me 12 WA, because I didn't implement it the right way for the first 10+ attempts. Here is a great article on \href{http://codeforces.com/blog/entry/17974}{Codeforces} that have great explanation on this. \\
+Finding the diameter and radii is the part that got me 12 WA, because I didn't implement it the right way for the first 10+ attempts. Here is a great article on \href{http://codeforces.com/blog/entry/17974}{Codeforces} that have great explanations on this. \\
 
-Let's denote $D$ for the largest diameter of all trees in the forest, $A$ for the largest radius, $B$ for the second-largest radius(if exists), and $C$ for the third-largest radius of all trees(if exists). The answer will be $max(D, A+B+1, B+C+2)$, because the furthest two leaves are of the closest distance wiil be determined by the longest "chains" in the trees.\\
+Let's denote $D$ for the largest diameter of all trees in the forest, $A$ for the largest radius, $B$ for the second-largest radius(if exists), and $C$ for the third-largest radius of all trees(if exists). The answer will be $max(D, A+B+1, B+C+2)$. Because the furthest two leaves are of the closest distance wiil be determined by the longest "chains" in the trees after connecting all of them together, and we can see if we connect all trees on to the center of the longest diameter, we can minimize the distance of the furthest leaves\\
 
 \lstinputlisting[language=c++]{A/main.cpp}
 
