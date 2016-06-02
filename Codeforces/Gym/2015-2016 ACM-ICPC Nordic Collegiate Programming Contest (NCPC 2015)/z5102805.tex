@@ -2,6 +2,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage[a4paper]{geometry}
 
+\usepackage{pdfpages}
+\usepackage[colorlinks=true, urlcolor=cyan]{hyperref}
+
 \usepackage{listings}
 \usepackage{xcolor}
 
@@ -66,26 +69,57 @@
 
 %By default, the paragraphs are indented by 1.5 times the point size of the current font. Also, there is no extra blank space inserted between the paragraphs. In the sections below is described how to change that.
 
-% If just \section the section title will be highlighted
+%A
+\includepdf[pages={3,4}]{problem_statement.pdf}
 
 \section*{Problem A}
 
+This is a very interesting problem, which I got 12 WA during virtual participation on Codeforces. Draw the diagram out for the ths problem, you will realise that this is a problem about tree diameter and radius pretty quickly. \\
+
+You are given some forests to start with, and you have to add one edge for each tree in the forest to connect all of them together eventually, such that the forest will become a tree, where the furthest two leaves are of the closest distance.\\ 
+
+Finding the diameter and radii is the part that got me 12 WA, because I didn't implement it the right way for the first 10+ attempts. Here is a great article on \href{http://codeforces.com/blog/entry/17974}{Codeforces} that have great explanation on this. \\
+
+Let's denote $D$ for the largest diameter of all trees in the forest, $A$ for the largest radius, $B$ for the second-largest radius(if exists), and $C$ for the third-largest radius of all trees(if exists). The answer will be $max(D, A+B+1, B+C+2)$, because the furthest two leaves are of the closest distance wiil be determined by the longest "chains" in the trees.\\
+
 \lstinputlisting[language=c++]{A/main.cpp}
+
+\newpage
+
+%C
+\includepdf[pages={7}]{problem_statement.pdf}
 
 \section*{Problem C}
 
 \lstinputlisting[language=c++]{C/main.cpp}
 
+\newpage
+
+%D
+\includepdf[pages={9}]{problem_statement.pdf}
+
 \section*{Problem D}
 
 \lstinputlisting[language=c++]{D/main.cpp}
+
+\newpage
+
+%E
+\includepdf[pages={11}]{problem_statement.pdf}
 
 \section*{Problem E}
 
 \lstinputlisting[language=c++]{E/main.cpp}
 
+\newpage
+
+%G
+\includepdf[pages={15,16}]{problem_statement.pdf}
+
 \section*{Problem G}
 
 \lstinputlisting[language=c++]{G/main.cpp}
+
+\newpage
 
 \end{document}
