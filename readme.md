@@ -82,6 +82,7 @@ Winston Churchill
 
 ## Fast power
 
+* [Kolya and Tanya](http://codeforces.com/contest/584/problem/B)
 * [Vanya and Label](http://codeforces.com/contest/677/problem/C)
 
 ## Time
