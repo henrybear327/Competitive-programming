@@ -80,9 +80,9 @@ Winston Churchill
 
 ## Extended Euclidean Algorithm
 
-*
-
 ## Fast power
+
+* [Vanya and Label](http://codeforces.com/contest/677/problem/C)
 
 ## Time
 
@@ -163,10 +163,16 @@ Winston Churchill
 * [Recycling Bottles](http://codeforces.com/contest/672/problem/C)
 * [Nicholas and Permutation](http://codeforces.com/contest/676/problem/A)
 * [Pyramid of Glasses](http://codeforces.com/contest/676/problem/B)
+* [Vanya and Food Processor](http://codeforces.com/contest/677/problem/B)
 
 # Geometry
 * [Expanding Rods](http://poj.org/problem?id=1905): precision!
 * [Pick-up sticks](http://poj.org/problem?id=2653): a basic problem to test out your ccw, cross product, overlap, and intersection code.
+* [Game](http://poj.org/problem?id=3246): convex hull
+
+# WA_AC problem
+
+* [Vanya and Treasure](http://codeforces.com/contest/677/problem/D)
 
 ## Using Struct for Segment Tree Notes
 
