@@ -7,9 +7,13 @@
 #define lld "lld"
 #endif
 
-typedef long long int ll;
-
 using namespace std;
+
+#define x first
+#define y second
+
+typedef long long int ll;
+typedef pair<int, int> ii;
 
 int main()
 {
