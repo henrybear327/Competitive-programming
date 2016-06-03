@@ -124,7 +124,9 @@ This is a repository that I use for backing up my Codeforces code. I am still ne
     58. Round 352
         * A, B, C
     59. Round 354
-	* A, B, C
+	      * A, B, C
+    60. Round 355
+        * A, B, C
 
 # Gym
 
@@ -140,6 +142,8 @@ This is a repository that I use for backing up my Codeforces code. I am still ne
     * A, D, F, G, H, K, L
 6. 2014 Nordic Collegiate Programming Contest
     * H, K
+7. 2015-2016 ACM-ICPC Nordic Collegiate Programming Contest (NCPC 2015)
+    * A, C, D, E, G
 
 # Notes
 
