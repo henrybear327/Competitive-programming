@@ -80,7 +80,7 @@ You are given a forest with n vertices to start with, and you have to add one ed
 
 Finding the diameter and radii is the part that got me 12 WA, because I didn't implement it the right way for the first 10+ attempts. Here is a great article on \href{http://codeforces.com/blog/entry/17974}{Codeforces} that have great explanations on this. \\
 
-Let's denote $D$ for the largest diameter of all trees in the forest, $A$ for the largest radius, $B$ for the second-largest radius(if exists), and $C$ for the third-largest radius of all trees(if exists). The answer will be $max(D, A+B+1, B+C+2)$. We get this formula by two crucial observations: connect to trees using their center(s) only, and always connect to the center of the largest diameter. In this way, we can minimize the distance between two furthest leaves.
+Let's denote $D$ for the largest diameter of all trees in the forest, $A$ for the largest radius, $B$ for the second-largest radius(if exists), and $C$ for the third-largest radius of all trees(if exists). The answer will be $max(D, A+B+1, B+C+2)$. We get this formula by two crucial observations: connect to trees using their center(s) only, and always connect to the center of the largest diameter. In this way, we can minimize the distance between two furthest leaves.\\
 
 The solution is $O(n)$, because finding the diameter and radii are all linear time algorithms.
 
@@ -107,6 +107,8 @@ The solution is $O(n)$, just linear scan and check the differences.\\
 \includepdf[pages={9}]{problem_statement.pdf}
 
 \section*{Problem D}
+
+
 
 \lstinputlisting[language=c++]{D/main.cpp}
 
