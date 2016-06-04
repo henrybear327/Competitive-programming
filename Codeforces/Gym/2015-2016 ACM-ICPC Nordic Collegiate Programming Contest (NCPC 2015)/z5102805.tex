@@ -112,7 +112,9 @@ Finding the minimal number of server required to process all requests is equal t
 
 We can tackle the problem by splitting each request into two parts: when the request is received, we create a tuple (time, 1); when the request is finished, we create a tuple (time + 1000, 0). Sort all tuples by time (non-decreasing order) and status (non-decreasing order). Iterate over all tuples, and keep track of the maximal sum at a specific moment. \\
 
-The maximal sum will tell us what is the maximal number of requests being processed at a specific moment. Divide maximal sum by the number of requests a server can handle per second, take the ceiling of the result, and will get the answer.
+The maximal sum will tell us what is the maximal number of requests being processed at a specific moment. Divide maximal sum by the number of requests a server can handle per second, take the ceiling of the result, and will get the answer.\\
+
+The solution is $O(nlog(n))$ because sorting is involved.
 
 \lstinputlisting[language=c++]{D/main.cpp}
 
@@ -122,6 +124,12 @@ The maximal sum will tell us what is the maximal number of requests being proces
 \includepdf[pages={11}]{problem_statement.pdf}
 
 \section*{Problem E}
+
+We are trying to record as many TV shows as we can, so we first sort the TV shows by end time, in non-decreasing order, and then we try to add them to the tracks greedily.\\
+
+Add the TV shows to the track using the following principle: extend the track that has the end time closest to your start time. \\
+
+Because the data structure that we used for maintaining the data is c++ multiset, the solution is $O(nlog(k))$, where n is the total number of TV shows and k is the total tracks we have. 
 
 \lstinputlisting[language=c++]{E/main.cpp}
 
