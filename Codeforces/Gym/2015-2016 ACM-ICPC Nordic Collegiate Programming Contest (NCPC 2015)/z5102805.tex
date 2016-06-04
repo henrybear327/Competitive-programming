@@ -82,7 +82,7 @@ Finding the diameter and radii is the part that got me 12 WA, because I didn't i
 
 Let's denote $D$ for the largest diameter of all trees in the forest, $A$ for the largest radius, $B$ for the second-largest radius(if exists), and $C$ for the third-largest radius of all trees(if exists). The answer will be $max(D, A+B+1, B+C+2)$. We get this formula by two crucial observations: connect to trees using their center(s) only, and always connect to the center of the largest diameter. In this way, we can minimize the distance between two furthest leaves.\\
 
-The solution is $O(n)$, because finding the diameter and radii are all linear time algorithms.
+The solution is $O(n)$, because finding the diameter and radii are all linear time algorithms.\\
 
 \lstinputlisting[language=c++]{A/main.cpp}
 
@@ -114,7 +114,7 @@ We can tackle the problem by splitting each request into two parts: when the req
 
 The maximal sum will tell us what is the maximal number of requests being processed at a specific moment. Divide maximal sum by the number of requests a server can handle per second, take the ceiling of the result, and will get the answer.\\
 
-The solution is $O(nlog(n))$ because sorting is involved.
+The solution is $O(nlog(n))$ because sorting is involved.\\
 
 \lstinputlisting[language=c++]{D/main.cpp}
 
@@ -129,7 +129,7 @@ We are trying to record as many TV shows as we can, so we first sort the TV show
 
 Add the TV shows to the track using the following principle: extend the track that has the end time closest to your start time. \\
 
-Because the data structure that we used for maintaining the data is c++ multiset, the solution is $O(nlog(k))$, where n is the total number of TV shows and k is the total tracks we have. 
+Because the data structure that we used for maintaining the data is c++ multiset, the solution is $O(nlog(k))$, where n is the total number of TV shows and k is the total tracks we have. \\
 
 \lstinputlisting[language=c++]{E/main.cpp}
 
@@ -139,6 +139,12 @@ Because the data structure that we used for maintaining the data is c++ multiset
 \includepdf[pages={15,16}]{problem_statement.pdf}
 
 \section*{Problem G}
+
+If we use brute force for the solution: for every sprinkler, we need to iterate over all goblins to check if any of the them are within the range, this will be a $O(g * m)$ = $O(10^9)$ solution, which is too slow to pass. \\
+
+Because $r$ is at most 100, so we can optimize the search by storing all goblins' location according to their x-coordinate. So now, for every sprinkler, we just need to check the x-coordinate range $[x - r, x + r]$, where for every x being checked, we binary search for the maximal and minimal y, $(x, max(y))$ and $(x, min(y))$ within the radius of the sprinkler's location, and remove those goblins.\\
+
+The solution will be $O(nlogn)$, because we are using STL map as the underlying data structure. \\
 
 \lstinputlisting[language=c++]{G/main.cpp}
 
