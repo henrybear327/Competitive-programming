@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.4.22)  3 JUN 2016 10:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.4.22)  4 JUN 2016 16:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -781,107 +781,117 @@ File: problem_statement.pdf Graphic file (type pdf)
 <use problem_statement.pdf, page 9>
 Package pdftex.def Info: problem_statement.pdf, page9 used on input line 107.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
- [8 <./problem_statement.pdf>] (./D/main.cpp) [9]
+ [8 <./problem_statement.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
+
+ []
+
+(./D/main.cpp) [9]
 File: problem_statement.pdf Graphic file (type pdf)
  <use problem_statement.pdf>
-Package pdftex.def Info: problem_statement.pdf used on input line 118.
+Package pdftex.def Info: problem_statement.pdf used on input line 122.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: problem_statement.pdf Graphic file (type pdf)
  <use problem_statement.pdf>
-Package pdftex.def Info: problem_statement.pdf used on input line 118.
+Package pdftex.def Info: problem_statement.pdf used on input line 122.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 
 <problem_statement.pdf, id=299, page=11, 597.50829pt x 845.0471pt>
 File: problem_statement.pdf Graphic file (type pdf)
 
 <use problem_statement.pdf, page 11>
-Package pdftex.def Info: problem_statement.pdf, page11 used on input line 118.
+Package pdftex.def Info: problem_statement.pdf, page11 used on input line 122.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: problem_statement.pdf Graphic file (type pdf)
  <use problem_statement.pdf, page 11>
-Package pdftex.def Info: problem_statement.pdf, page11 used on input line 118.
+Package pdftex.def Info: problem_statement.pdf, page11 used on input line 122.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: problem_statement.pdf Graphic file (type pdf)
 
 <use problem_statement.pdf, page 11>
-Package pdftex.def Info: problem_statement.pdf, page11 used on input line 118.
+Package pdftex.def Info: problem_statement.pdf, page11 used on input line 122.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: problem_statement.pdf Graphic file (type pdf)
  <use problem_statement.pdf, page 11>
-Package pdftex.def Info: problem_statement.pdf, page11 used on input line 118.
+Package pdftex.def Info: problem_statement.pdf, page11 used on input line 122.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: problem_statement.pdf Graphic file (type pdf)
 
 <use problem_statement.pdf, page 11>
-Package pdftex.def Info: problem_statement.pdf, page11 used on input line 118.
+Package pdftex.def Info: problem_statement.pdf, page11 used on input line 122.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [10 <./problem_statement.pdf>]
 (./E/main.cpp) [11]
 File: problem_statement.pdf Graphic file (type pdf)
  <use problem_statement.pdf>
-Package pdftex.def Info: problem_statement.pdf used on input line 127.
+Package pdftex.def Info: problem_statement.pdf used on input line 131.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: problem_statement.pdf Graphic file (type pdf)
  <use problem_statement.pdf>
-Package pdftex.def Info: problem_statement.pdf used on input line 127.
+Package pdftex.def Info: problem_statement.pdf used on input line 131.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: problem_statement.pdf Graphic file (type pdf)
 
 <use problem_statement.pdf>
-Package pdftex.def Info: problem_statement.pdf used on input line 127.
+Package pdftex.def Info: problem_statement.pdf used on input line 131.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 
 <problem_statement.pdf, id=367, page=15, 597.50829pt x 845.0471pt>
 File: problem_statement.pdf Graphic file (type pdf)
 
 <use problem_statement.pdf, page 15>
-Package pdftex.def Info: problem_statement.pdf, page15 used on input line 127.
+Package pdftex.def Info: problem_statement.pdf, page15 used on input line 131.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: problem_statement.pdf Graphic file (type pdf)
  <use problem_statement.pdf, page 15>
-Package pdftex.def Info: problem_statement.pdf, page15 used on input line 127.
+Package pdftex.def Info: problem_statement.pdf, page15 used on input line 131.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: problem_statement.pdf Graphic file (type pdf)
 
 <use problem_statement.pdf, page 15>
-Package pdftex.def Info: problem_statement.pdf, page15 used on input line 127.
+Package pdftex.def Info: problem_statement.pdf, page15 used on input line 131.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: problem_statement.pdf Graphic file (type pdf)
  <use problem_statement.pdf, page 15>
-Package pdftex.def Info: problem_statement.pdf, page15 used on input line 127.
+Package pdftex.def Info: problem_statement.pdf, page15 used on input line 131.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 
 <problem_statement.pdf, id=368, page=16, 597.50829pt x 845.0471pt>
 File: problem_statement.pdf Graphic file (type pdf)
 
 <use problem_statement.pdf, page 16>
-Package pdftex.def Info: problem_statement.pdf, page16 used on input line 127.
+Package pdftex.def Info: problem_statement.pdf, page16 used on input line 131.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: problem_statement.pdf Graphic file (type pdf)
  <use problem_statement.pdf, page 16>
-Package pdftex.def Info: problem_statement.pdf, page16 used on input line 127.
+Package pdftex.def Info: problem_statement.pdf, page16 used on input line 131.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: problem_statement.pdf Graphic file (type pdf)
 
 <use problem_statement.pdf, page 15>
-Package pdftex.def Info: problem_statement.pdf, page15 used on input line 127.
+Package pdftex.def Info: problem_statement.pdf, page15 used on input line 131.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [12 <./problem_statement.pdf>]
 File: problem_statement.pdf Graphic file (type pdf)
 
 <use problem_statement.pdf, page 16>
-Package pdftex.def Info: problem_statement.pdf, page16 used on input line 127.
+Package pdftex.def Info: problem_statement.pdf, page16 used on input line 131.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [13 <./problem_statement.pdf>]
 (./G/main.cpp [14]) [15]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 135.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 135.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 139.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 139.
  (./z5102805.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 135.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 135.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 139.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 139.
 Package rerunfilecheck Info: File `z5102805.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 135.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 139.
  ) 
 Here is how much of TeX's memory you used:
  9131 strings out of 493089
@@ -908,7 +918,7 @@ exmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2015/texmf-dist/font
 s/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
 w/times/utmri8a.pfb>
-Output written on z5102805.pdf (16 pages, 3547386 bytes).
+Output written on z5102805.pdf (16 pages, 3548515 bytes).
 PDF statistics:
  555 PDF objects out of 1000 (max. 8388607)
  490 compressed objects within 5 object streams

@@ -108,7 +108,11 @@ The solution is $O(n)$, just linear scan and check the differences.\\
 
 \section*{Problem D}
 
+Finding the minimal number of server required to process all requests is equal to finding the maximal request at a specific time. \\
 
+We can tackle the problem by splitting each request into two parts: when the request is received, we create a tuple (time, 1); when the request is finished, we create a tuple (time + 1000, 0). Sort all tuples by time (non-decreasing order) and status (non-decreasing order). Iterate over all tuples, and keep track of the maximal sum at a specific moment. \\
+
+The maximal sum will tell us what is the maximal number of requests being processed at a specific moment. Divide maximal sum by the number of requests a server can handle per second, take the ceiling of the result, and will get the answer.
 
 \lstinputlisting[language=c++]{D/main.cpp}
 
