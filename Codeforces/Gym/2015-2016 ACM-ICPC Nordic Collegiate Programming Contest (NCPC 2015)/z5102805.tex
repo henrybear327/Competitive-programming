@@ -140,9 +140,11 @@ Because the data structure that we used for maintaining the data is c++ multiset
 
 \section*{Problem F}
 
-This is a problem that I really like a lot!
+This is a problem that I really like a lot!\\
 
+To check if given intervals for which $f_i$ should play is a possible scenario,  we keep around the possible starting time for every pair of (start, end) time. If during the processing of each pair, we have no possible starting time at all, then the output will be "impossible". \\
 
+The overall time complexity is $O(fnt)$, which is at most $O(10^{7})$.\\
 
 \lstinputlisting[language=c++]{F/main_for_latex.cpp}
 
