@@ -23,6 +23,7 @@ Winston Churchill
 * [Block Towers](http://codeforces.com/contest/626/problem/C)
 * [Restoring Painting](http://codeforces.com/contest/675/problem/B)
 * [GukiZ hates Boxes](http://codeforces.com/contest/551/problem/C)
+* [NCPC 2015 G Goblin Garden Guards](http://codeforces.com/gym/100781)
 
 ## Two pointer
 
@@ -57,6 +58,10 @@ Winston Churchill
 * Greedy
   * [All in All](http://poj.org/problem?id=1936)
 
+## Greedy
+
+* [NCPC 2015 E Entertainment Box](http://codeforces.com/gym/100781)
+
 ## Graph traversal
 
 * DFS
@@ -81,6 +86,8 @@ Winston Churchill
 
 ## Extended Euclidean Algorithm
 
+* [Euclid Problem](https://uva.onlinejudge.org/external/101/10104.pdf)
+
 ## Fast power
 
 * [Kolya and Tanya](http://codeforces.com/contest/584/problem/B)
@@ -97,17 +104,23 @@ Winston Churchill
 * [Balanced Lineup](http://poj.org/problem?id=3264): Very basic segment tree min/max problem
 * [A Simple Problem with Integers](http://poj.org/problem?id=3468): Very basic segment tree with lazy propagation
 
-## Articulation point
+## Tree
+
+### Articulation point
 
 * [Network](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=24&problem=251)
 
-## Bridge
+### Bridge
 
 * [Critical Links](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=737)
 
-## 2-edge component
+### 2-edge component
 
 * [Redundant Paths](http://poj.org/problem?id=3177)
+
+### Tree center
+
+* [NCPC 2015 A Adjoin the networks](http://codeforces.com/gym/100781)
 
 ## Kruskal
 
@@ -125,6 +138,7 @@ Winston Churchill
 * [The triangle](http://poj.org/problem?id=1163)
 * [Balancing Act](http://poj.org/problem?id=1655): good one! Tree related.
 * [Money Transfers](http://codeforces.com/contest/675/problem/C)
+* [NCPC 2015 F Floppy Music](http://codeforces.com/gym/100781)
 
 ## Pigeonhole Principle
 
@@ -166,6 +180,7 @@ Winston Churchill
 * [Nicholas and Permutation](http://codeforces.com/contest/676/problem/A)
 * [Pyramid of Glasses](http://codeforces.com/contest/676/problem/B)
 * [Vanya and Food Processor](http://codeforces.com/contest/677/problem/B)
+* [NCPC 2015 D Disastrous Downtime](http://codeforces.com/gym/100781)
 
 # Geometry
 * [Expanding Rods](http://poj.org/problem?id=1905): precision!
