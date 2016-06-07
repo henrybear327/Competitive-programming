@@ -127,6 +127,7 @@ Winston Churchill
 * [Out of Hay](http://poj.org/problem?id=2395)
 * [Trial Maintenance](http://www.lightoj.com/volume_showproblem.php?problem=1123): Time complexity trap...
 * [Underground Cables](https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2873)
+* [There is No Alternative](https://icpcarchive.ecs.baylor.edu/external/68/p6837.pdf): New acknowledgement of Kruskal algorithm!
 
 ## Euler Path
 
@@ -145,20 +146,26 @@ Winston Churchill
 * [Simple Subset](http://codeforces.com/contest/665/problem/D)
 * [Different is Good](http://codeforces.com/contest/672/problem/B)
 
-## Floyd-Warshall
+## Shortest Path
+
+### Floyd-Warshall
 
 * [Frogger](http://poj.org/problem?id=2253): tricky to realize the tweak needed :) Minimax
 * [Stockbroker Grapevine](http://poj.org/problem?id=1125)
 
-## Bellman-Ford
+### Bellman-Ford
 
 * [Layout](http://poj.org/problem?id=3169): 差分約束系統
 * [Haunted Graveyard](http://poj.org/problem?id=3878)
 
-## Dijkatra
+### Dijkatra
 
 * [Roadblocks](http://poj.org/problem?id=3255): next-to-shortest path
 * [Sightseeing](http://poj.org/problem?id=3463) : a good one!
+
+### Good ones (Mixed)
+
+* [Absurdistan Roads](https://icpcarchive.ecs.baylor.edu/external/66/p6622.pdf): Kruskal + DFS(shortest path on a tree!)
 
 ## Max flow
 
@@ -186,6 +193,7 @@ Winston Churchill
 * [Expanding Rods](http://poj.org/problem?id=1905): precision!
 * [Pick-up sticks](http://poj.org/problem?id=2653): a basic problem to test out your ccw, cross product, overlap, and intersection code.
 * [Game](http://poj.org/problem?id=3246): convex hull
+* [Grachten](https://icpcarchive.ecs.baylor.edu/external/66/p6628.pdf)
 
 # WA_AC problem
 
