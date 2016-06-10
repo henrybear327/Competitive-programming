@@ -214,3 +214,16 @@ allocated with malloc, freed with free
 allocated with new, freed with delete
 allocated with new[], freed with delete[]
 ```
+
+# Open test data
+
+* [NWERC](http://2013.nwerc.eu/en/)
+* [Waterloo](http://acm.student.cs.uwaterloo.ca/~acm00/)
+* [COCI](http://hsin.hr/coci/)
+* [GCPC](http://gcpc.nwerc.eu/gcpc_2016.php)
+* [NCPC](http://ncpc.idi.ntnu.no)
+* [CERC -2014](https://cerc.tcs.uj.edu.pl/2014/links.html)
+* [CERC 2015-](http://cerc.hsin.hr/index.php?page=home)
+* [Greater New York](http://acmgnyr.org/year2015/)
+* [NEERC -2014](http://neerc.ifmo.ru/past/index.html)
+* [NEERC 2015-](https://neerc.ifmo.ru/information/index.html)
