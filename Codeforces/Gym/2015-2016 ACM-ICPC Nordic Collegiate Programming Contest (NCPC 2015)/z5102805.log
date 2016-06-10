@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  6 JUN 2016 12:03
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  7 JUN 2016 14:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -375,10 +375,6 @@ LaTeX Info: Redefining \nameref on input line 64.
 \@outlinefile=\write3
 \openout3 = `z5102805.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 \c@lstlisting=\count115
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 68.
@@ -386,6 +382,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 68.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 68.
+
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 
@@ -660,12 +657,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 168.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 168.
  ) 
 Here is how much of TeX's memory you used:
- 11204 strings out of 493706
- 157567 string characters out of 6145769
+ 11202 strings out of 493706
+ 157521 string characters out of 6145769
  559811 words of memory out of 5000000
- 14451 multiletter control sequences out of 15000+600000
+ 14449 multiletter control sequences out of 15000+600000
  8144 words of font info for 30 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 39i,18n,58p,504b,1847s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,18n,58p,509b,1847s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on z5102805.pdf (23 pages).
