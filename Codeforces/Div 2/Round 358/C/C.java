@@ -8,6 +8,12 @@ public class C
 	public static int cnt = 0;
 	public static void dfs(int u, int par, long minSoFar, long sumSoFar, boolean fail)
 	{
+		/**
+		 * Key observation 
+		 *
+		 * The prefix sum will be maximized if we keep track of the currently smallest
+		 * prefix sum, and use it for future calculations!
+		 */
 		if(dp[u] < (sumSoFar - minSoFar) || fail == true) {
 			fail = true;
 			cnt++;
