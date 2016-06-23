@@ -15,6 +15,16 @@ Winston Churchill
 
 # Categorized problems
 
+## Implementation + Observation
+
+* [Infinite Sequence](http://codeforces.com/contest/675/problem/A)
+* [Recycling Bottles](http://codeforces.com/contest/672/problem/C)
+* [Nicholas and Permutation](http://codeforces.com/contest/676/problem/A)
+* [Pyramid of Glasses](http://codeforces.com/contest/676/problem/B)
+* [Vanya and Food Processor](http://codeforces.com/contest/677/problem/B)
+* [NCPC 2015 D Disastrous Downtime](http://codeforces.com/gym/100781)
+* [Alyona and Mex](http://codeforces.com/contest/682/problem/B)
+
 ## Binary Search
 
 * [Hard Process](http://codeforces.com/contest/660/problem/C): Watch out for the initial condition!
@@ -43,6 +53,7 @@ Winston Churchill
 
 * Modulo
     * [Round House](http://codeforces.com/contest/659/problem/A)
+    * [Alyona and Numbers](http://codeforces.com/contest/682/problem/A)
 * Set
     * [Watchmen](http://codeforces.com/contest/651/problem/C)
 
@@ -140,6 +151,7 @@ Winston Churchill
 * [Balancing Act](http://poj.org/problem?id=1655): good one! Tree related.
 * [Money Transfers](http://codeforces.com/contest/675/problem/C)
 * [NCPC 2015 F Floppy Music](http://codeforces.com/gym/100781)
+* [Alyona and the Tree](http://codeforces.com/contest/682/problem/C)
 
 ## Pigeonhole Principle
 
@@ -179,15 +191,6 @@ Winston Churchill
 ### Basic
 
 * [Dining](http://poj.org/problem?id=3281)
-
-## Implementation + Observation
-
-* [Infinite Sequence](http://codeforces.com/contest/675/problem/A)
-* [Recycling Bottles](http://codeforces.com/contest/672/problem/C)
-* [Nicholas and Permutation](http://codeforces.com/contest/676/problem/A)
-* [Pyramid of Glasses](http://codeforces.com/contest/676/problem/B)
-* [Vanya and Food Processor](http://codeforces.com/contest/677/problem/B)
-* [NCPC 2015 D Disastrous Downtime](http://codeforces.com/gym/100781)
 
 # Geometry
 * [Expanding Rods](http://poj.org/problem?id=1905): precision!
