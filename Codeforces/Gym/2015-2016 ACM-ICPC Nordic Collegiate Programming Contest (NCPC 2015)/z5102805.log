@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  7 JUN 2016 14:26
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  2 JUL 2016 01:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -455,6 +455,54 @@ File: problem_statement.pdf Graphic file (type QTm)
 
 <use  "problem_statement.pdf" >
 File: problem_statement.pdf Graphic file (type QTm)
+ <use  "problem_statement.pdf" >
+File: problem_statement.pdf Graphic file (type QTm)
+
+<use  "problem_statement.pdf"  page5>
+File: problem_statement.pdf Graphic file (type QTm)
+ <use  "problem_statement.pdf"  page5>
+File: problem_statement.pdf Graphic file (type QTm)
+
+<use  "problem_statement.pdf"  page5>
+File: problem_statement.pdf Graphic file (type QTm)
+ <use  "problem_statement.pdf"  page5>
+File: problem_statement.pdf Graphic file (type QTm)
+
+<use  "problem_statement.pdf"  page6>
+File: problem_statement.pdf Graphic file (type QTm)
+ <use  "problem_statement.pdf"  page6>
+File: problem_statement.pdf Graphic file (type QTm)
+
+<use  "problem_statement.pdf"  page5> [6]
+File: problem_statement.pdf Graphic file (type QTm)
+
+<use  "problem_statement.pdf"  page6> [7]
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+
+ []
+
+(./B/main_TLE.cpp [8]) [9]
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+
+ []
+
+(./B/main.cpp [10] [11]) [12]
+File: problem_statement.pdf Graphic file (type QTm)
+ <use  "problem_statement.pdf" >
+File: problem_statement.pdf Graphic file (type QTm)
+
+<use  "problem_statement.pdf" >
+File: problem_statement.pdf Graphic file (type QTm)
  <use  "problem_statement.pdf"  page7>
 File: problem_statement.pdf Graphic file (type QTm)
 
@@ -466,22 +514,22 @@ File: problem_statement.pdf Graphic file (type QTm)
 <use  "problem_statement.pdf"  page7>
 File: problem_statement.pdf Graphic file (type QTm)
  <use  "problem_statement.pdf"  page7>
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
-(./C/main.cpp) [7]
+(./C/main.cpp) [14]
 File: problem_statement.pdf Graphic file (type QTm)
  <use  "problem_statement.pdf" >
 File: problem_statement.pdf Graphic file (type QTm)
@@ -499,27 +547,27 @@ File: problem_statement.pdf Graphic file (type QTm)
 <use  "problem_statement.pdf"  page9>
 File: problem_statement.pdf Graphic file (type QTm)
  <use  "problem_statement.pdf"  page9>
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
-(./D/main.cpp) [9] [10]
+(./D/main.cpp) [16] [17]
 File: problem_statement.pdf Graphic file (type QTm)
  <use  "problem_statement.pdf" >
 File: problem_statement.pdf Graphic file (type QTm)
@@ -544,25 +592,25 @@ File: problem_statement.pdf Graphic file (type QTm)
  <use  "problem_statement.pdf"  page12>
 File: problem_statement.pdf Graphic file (type QTm)
 
-<use  "problem_statement.pdf"  page11> [11]
+<use  "problem_statement.pdf"  page11> [18]
 File: problem_statement.pdf Graphic file (type QTm)
 
-<use  "problem_statement.pdf"  page12> [12]
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
+<use  "problem_statement.pdf"  page12> [19]
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
-(./E/main.cpp [13]) [14]
+(./E/main.cpp [20]) [21]
 File: problem_statement.pdf Graphic file (type QTm)
  <use  "problem_statement.pdf" >
 File: problem_statement.pdf Graphic file (type QTm)
@@ -587,25 +635,25 @@ File: problem_statement.pdf Graphic file (type QTm)
  <use  "problem_statement.pdf"  page14>
 File: problem_statement.pdf Graphic file (type QTm)
 
-<use  "problem_statement.pdf"  page13> [15]
+<use  "problem_statement.pdf"  page13> [22]
 File: problem_statement.pdf Graphic file (type QTm)
 
-<use  "problem_statement.pdf"  page14> [16]
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+<use  "problem_statement.pdf"  page14> [23]
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
-(./F/main_for_latex.cpp [17]) [18]
+(./F/main_for_latex.cpp [24]) [25]
 File: problem_statement.pdf Graphic file (type QTm)
  <use  "problem_statement.pdf" >
 File: problem_statement.pdf Graphic file (type QTm)
@@ -630,39 +678,40 @@ File: problem_statement.pdf Graphic file (type QTm)
  <use  "problem_statement.pdf"  page16>
 File: problem_statement.pdf Graphic file (type QTm)
 
-<use  "problem_statement.pdf"  page15> [19]
+<use  "problem_statement.pdf"  page15> [26]
 File: problem_statement.pdf Graphic file (type QTm)
 
-<use  "problem_statement.pdf"  page16> [20]
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+<use  "problem_statement.pdf"  page16> [27]
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
 
  []
 
-(./G/main.cpp [21]) [22]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 168.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 168.
+(./G/main.cpp [28]) [29]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 192.
+ [30]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 192.
  (./z5102805.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 168.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 168.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 168.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 192.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 192.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 192.
  ) 
 Here is how much of TeX's memory you used:
- 11202 strings out of 493706
- 157521 string characters out of 6145769
- 559811 words of memory out of 5000000
- 14449 multiletter control sequences out of 15000+600000
+ 11239 strings out of 493706
+ 157864 string characters out of 6145769
+ 612244 words of memory out of 5000000
+ 14480 multiletter control sequences out of 15000+600000
  8144 words of font info for 30 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 39i,18n,58p,509b,1847s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,18n,58p,504b,1847s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on z5102805.pdf (23 pages).
+Output written on z5102805.pdf (31 pages).
