@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  2 JUL 2016 01:46
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.4.22)  2 JUL 2016 01:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -496,7 +496,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
-(./B/main.cpp [10] [11]) [12]
+(./B/main.cpp [10]) [11]
 File: problem_statement.pdf Graphic file (type QTm)
  <use  "problem_statement.pdf" >
 File: problem_statement.pdf Graphic file (type QTm)
@@ -514,7 +514,7 @@ File: problem_statement.pdf Graphic file (type QTm)
 <use  "problem_statement.pdf"  page7>
 File: problem_statement.pdf Graphic file (type QTm)
  <use  "problem_statement.pdf"  page7>
-[13]
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
@@ -529,7 +529,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
-(./C/main.cpp) [14]
+(./C/main.cpp) [13]
 File: problem_statement.pdf Graphic file (type QTm)
  <use  "problem_statement.pdf" >
 File: problem_statement.pdf Graphic file (type QTm)
@@ -547,7 +547,7 @@ File: problem_statement.pdf Graphic file (type QTm)
 <use  "problem_statement.pdf"  page9>
 File: problem_statement.pdf Graphic file (type QTm)
  <use  "problem_statement.pdf"  page9>
-[15]
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
  []
@@ -567,7 +567,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
-(./D/main.cpp) [16] [17]
+(./D/main.cpp) [15] [16]
 File: problem_statement.pdf Graphic file (type QTm)
  <use  "problem_statement.pdf" >
 File: problem_statement.pdf Graphic file (type QTm)
@@ -592,10 +592,10 @@ File: problem_statement.pdf Graphic file (type QTm)
  <use  "problem_statement.pdf"  page12>
 File: problem_statement.pdf Graphic file (type QTm)
 
-<use  "problem_statement.pdf"  page11> [18]
+<use  "problem_statement.pdf"  page11> [17]
 File: problem_statement.pdf Graphic file (type QTm)
 
-<use  "problem_statement.pdf"  page12> [19]
+<use  "problem_statement.pdf"  page12> [18]
 Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
@@ -610,7 +610,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
-(./E/main.cpp [20]) [21]
+(./E/main.cpp [19]) [20]
 File: problem_statement.pdf Graphic file (type QTm)
  <use  "problem_statement.pdf" >
 File: problem_statement.pdf Graphic file (type QTm)
@@ -635,10 +635,10 @@ File: problem_statement.pdf Graphic file (type QTm)
  <use  "problem_statement.pdf"  page14>
 File: problem_statement.pdf Graphic file (type QTm)
 
-<use  "problem_statement.pdf"  page13> [22]
+<use  "problem_statement.pdf"  page13> [21]
 File: problem_statement.pdf Graphic file (type QTm)
 
-<use  "problem_statement.pdf"  page14> [23]
+<use  "problem_statement.pdf"  page14> [22]
 Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
@@ -653,7 +653,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
-(./F/main_for_latex.cpp [24]) [25]
+(./F/main_for_latex.cpp [23]) [24]
 File: problem_statement.pdf Graphic file (type QTm)
  <use  "problem_statement.pdf" >
 File: problem_statement.pdf Graphic file (type QTm)
@@ -678,10 +678,10 @@ File: problem_statement.pdf Graphic file (type QTm)
  <use  "problem_statement.pdf"  page16>
 File: problem_statement.pdf Graphic file (type QTm)
 
-<use  "problem_statement.pdf"  page15> [26]
+<use  "problem_statement.pdf"  page15> [25]
 File: problem_statement.pdf Graphic file (type QTm)
 
-<use  "problem_statement.pdf"  page16> [27]
+<use  "problem_statement.pdf"  page16> [26]
 Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
@@ -696,9 +696,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--183
 
  []
 
-(./G/main.cpp [28]) [29]
+(./G/main.cpp [27]) [28]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 192.
- [30]
+ [29]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 192.
  (./z5102805.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 192.
@@ -706,12 +706,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 192.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 192.
  ) 
 Here is how much of TeX's memory you used:
- 11239 strings out of 493706
- 157864 string characters out of 6145769
- 612244 words of memory out of 5000000
- 14480 multiletter control sequences out of 15000+600000
+ 11245 strings out of 493706
+ 157922 string characters out of 6145769
+ 559811 words of memory out of 5000000
+ 14486 multiletter control sequences out of 15000+600000
  8144 words of font info for 30 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  39i,18n,58p,504b,1847s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on z5102805.pdf (31 pages).
+Output written on z5102805.pdf (30 pages).

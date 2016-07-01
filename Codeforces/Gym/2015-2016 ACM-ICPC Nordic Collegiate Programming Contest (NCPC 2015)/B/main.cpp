@@ -27,19 +27,6 @@ void print(int x)
 
 void solve(int cur)
 {
-    /*
-       printf("cur %d\n", cur);
-
-       printf("ans[0]\n");
-       for(int i = 0; i < (int)ans[0].size(); i++)
-       printf("%d\n", ans[0][i]);
-       printf("\n");
-       printf("ans[1]\n");
-       for(int i = 0; i < (int)ans[1].size(); i++)
-       printf("%d\n", ans[1][i]);
-       printf("\n");
-     */
-
     if (cur == 1) {
         ans[cur % 2].push_back(1);
         solve(cur + 1);
