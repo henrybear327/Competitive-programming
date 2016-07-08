@@ -24,6 +24,10 @@ Winston Churchill
 * [Vanya and Food Processor](http://codeforces.com/contest/677/problem/B)
 * [NCPC 2015 D Disastrous Downtime](http://codeforces.com/gym/100781)
 * [Alyona and Mex](http://codeforces.com/contest/682/problem/B)
+* [Mike and Cellphone](http://codeforces.com/contest/689/problem/A)
+* [Opponents](http://codeforces.com/contest/688/problem/A)
+* [Lovely Palindromes](http://codeforces.com/contest/688/problem/B)
+* [NCPC 2015 B](http://codeforces.com/gym/100781)
 
 ## Binary Search
 
@@ -34,6 +38,7 @@ Winston Churchill
 * [Restoring Painting](http://codeforces.com/contest/675/problem/B)
 * [GukiZ hates Boxes](http://codeforces.com/contest/551/problem/C)
 * [NCPC 2015 G Goblin Garden Guards](http://codeforces.com/gym/100781)
+* [Mike and Chocolate Thieves](http://codeforces.com/contest/689/problem/C)
 
 ## Two pointer
 
@@ -73,7 +78,7 @@ Winston Churchill
 
 * [NCPC 2015 E Entertainment Box](http://codeforces.com/gym/100781)
 
-## Graph traversal
+## Graph
 
 * DFS
     * [New Reform](http://codeforces.com/contest/659/problem/E)
@@ -82,6 +87,8 @@ Winston Churchill
     * [Expressions](http://poj.org/problem?id=3367)
     * [The two routes](http://codeforces.com/contest/601/problem/A)
     * [Biridian Forest](http://codeforces.com/contest/330/problem/D)
+* Good ones
+    * [NP-Hard Problem](http://codeforces.com/contest/688/problem/C)
 
 ## UFDS  
 
