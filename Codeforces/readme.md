@@ -133,6 +133,8 @@ This is a repository that I use for backing up my Codeforces code. I am still ne
         * A1, C1, C2, D2, F1
     63. Round 360
         * A, B, C
+    64. Education Round 12
+        * A, B, D
 
 # Gym
 
