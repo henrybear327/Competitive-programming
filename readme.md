@@ -28,6 +28,8 @@ Winston Churchill
 * [Opponents](http://codeforces.com/contest/688/problem/A)
 * [Lovely Palindromes](http://codeforces.com/contest/688/problem/B)
 * [NCPC 2015 B](http://codeforces.com/gym/100781)
+* [Collective Mindsets (easy)](http://codeforces.com/contest/690/problem/A1)
+* [The Wall (easy)](http://codeforces.com/contest/690/problem/D1)
 
 ## Binary Search
 
@@ -61,6 +63,8 @@ Winston Churchill
     * [Alyona and Numbers](http://codeforces.com/contest/682/problem/A)
 * Set
     * [Watchmen](http://codeforces.com/contest/651/problem/C)
+* Mod Inverse
+    * [The Wall (medium)](http://codeforces.com/contest/690/problem/D2)
 
 ## Fun   
 
@@ -83,6 +87,10 @@ Winston Churchill
 * DFS
     * [New Reform](http://codeforces.com/contest/659/problem/E)
     * [Apple Tree](http://poj.org/problem?id=3321)
+    * [Swaps in Permutation](http://codeforces.com/contest/691/problem/D): Good one
+    * [Brain Network (easy)](http://codeforces.com/contest/690/problem/C1)
+    * [Brain Network (medium)](http://codeforces.com/contest/690/problem/C2)
+    * [Tree of Life (easy)](http://codeforces.com/contest/690/problem/F1)
 * BFS
     * [Expressions](http://poj.org/problem?id=3367)
     * [The two routes](http://codeforces.com/contest/601/problem/A)
