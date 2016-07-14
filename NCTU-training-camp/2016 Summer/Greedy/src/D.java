@@ -9,6 +9,7 @@ public class D
         out = new PrintWriter(new BufferedOutputStream(System.out));
         
         
+        
         out.close();
     }
 
