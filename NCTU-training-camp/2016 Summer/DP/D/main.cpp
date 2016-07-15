@@ -4,6 +4,10 @@ using namespace std;
 
 typedef long long ll;
 
+// bitmask DP
+// Bitmask DP basically needs the constraints of n, m, ... less than 20
+// 2^20 = 1048576 = 10^6
+
 int main()
 {
     int n, m, k;
