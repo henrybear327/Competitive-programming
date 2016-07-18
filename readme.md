@@ -30,6 +30,7 @@ Winston Churchill
 * [NCPC 2015 B](http://codeforces.com/gym/100781)
 * [Collective Mindsets (easy)](http://codeforces.com/contest/690/problem/A1)
 * [The Wall (easy)](http://codeforces.com/contest/690/problem/D1)
+* [Queens, Knights and Pawns](http://codeforces.com/gym/100650)
 
 ## Binary Search
 
@@ -65,6 +66,8 @@ Winston Churchill
     * [Watchmen](http://codeforces.com/contest/651/problem/C)
 * Mod Inverse
     * [The Wall (medium)](http://codeforces.com/contest/690/problem/D2)
+* GCD
+    * [Good Coins](http://codeforces.com/gym/101020/problem/J)
 
 ## Fun   
 
@@ -95,6 +98,7 @@ Winston Churchill
     * [Expressions](http://poj.org/problem?id=3367)
     * [The two routes](http://codeforces.com/contest/601/problem/A)
     * [Biridian Forest](http://codeforces.com/contest/330/problem/D)
+    * [B Countdown](http://codeforces.com/gym/100650): Do memory management on your own!
 * Good ones
     * [NP-Hard Problem](http://codeforces.com/contest/688/problem/C)
 
@@ -139,6 +143,7 @@ Winston Churchill
 ### Bridge
 
 * [Critical Links](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=737)
+* [E Reliable Nets](http://codeforces.com/gym/100650)
 
 ### 2-edge component
 
@@ -167,6 +172,8 @@ Winston Churchill
 * [Money Transfers](http://codeforces.com/contest/675/problem/C)
 * [NCPC 2015 F Floppy Music](http://codeforces.com/gym/100781)
 * [Alyona and the Tree](http://codeforces.com/contest/682/problem/C)
+* [Two Ends](http://codeforces.com/gym/100650): Optimal Strategy for a Game
+* [Sequences](http://codeforces.com/gym/101020/problem/D)
 
 ## Pigeonhole Principle
 
@@ -179,6 +186,7 @@ Winston Churchill
 
 * [Frogger](http://poj.org/problem?id=2253): tricky to realize the tweak needed :) Minimax
 * [Stockbroker Grapevine](http://poj.org/problem?id=1125)
+* [Weekend](http://codeforces.com/gym/101020/problem/H)
 
 ### Bellman-Ford
 
@@ -212,6 +220,7 @@ Winston Churchill
 * [Pick-up sticks](http://poj.org/problem?id=2653): a basic problem to test out your ccw, cross product, overlap, and intersection code.
 * [Game](http://poj.org/problem?id=3246): convex hull
 * [Grachten](https://icpcarchive.ecs.baylor.edu/external/66/p6628.pdf)
+* [Swamp Things](http://codeforces.com/gym/100650): O(n^2log(n))
 
 # WA_AC problem
 
