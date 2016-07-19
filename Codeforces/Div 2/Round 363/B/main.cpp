@@ -10,88 +10,38 @@ int main()
 {
     int n, m;
     scanf("%d %d", &n, &m);
-
-    bool hasBomb = false;
+	
+    int xcnt[1111] = {0}, ycnt[1111] = {0}, total;
+    int g[n][m];
+    memset(g, 0, sizeof(g));
     for(int i = 0; i < n; i++) {
-	char inp[10000];
+	char inp[1111];
 	scanf("%s", inp);
 	for(int j = 0; j < m; j++) {
 	    if(inp[j] == '*') {
-		cnt[j].push_back(i);
-		hasBomb = true;
+		xcnt[i]++;
+		ycnt[j]++;
+		total++;
+		g[i][j] = 1;
 	    }
 	}
     }
-
-    if(hasBomb == false) {
-	printf("YES\n");
-	printf("1 1\n");
-	return 0;
-    }
-
-    int mxrow, mx = -1;
-    for(int i = 0; i < m; i++) {
-	if((int)cnt[i].size() > mx) {
-	    mx = (int)cnt[i].size();
-	    mxrow = i;
-	}
-    }
-
-    bool error = false;
-    int ansx, ansy;
-    if(mx < 2) {
-	// only row has bomb
-	int val = -1, yy;
-	for(int i = 0; i < m; i++) {
-	    if((int)cnt[i].size() != 0) {
-		if(val == -1) {
-		    val = cnt[i][0];
-		    yy = i;
-		} else {
-		    if(val != cnt[i][0])
-			error = true;
-		}
-	    }
-	}
-
-	if(error == false) {
-	    ansx = val;
-	    ansy = yy;
-	}
-    } else {
-	int val = -1; // val = x
-	for(int i = 0; i < m; i++) {
-	    if(i == mxrow)
+    
+    int ansx, ansy = -1;
+    for(int i = 0; ansy == -1 && i < n; i++) {
+	for(int j = 0; j < m; j++) {
+	    int cnt = xcnt[i] + ycnt[j] - g[i][j];
+	    if(cnt != total)
 		continue;
-	    if((int)cnt[i].size() > 1) {
-		error = true;
-		break;
-	    }
-
-	    if((int)cnt[i].size() == 0)
-		continue;
-	    if(val == -1)
-		val = cnt[i][0];
-	    else {
-		if(val != cnt[i][0]) {
-		    error = true;
-		    break;
-		}
-	    }
-	}
-
-	if(error == false) {
-	    ansx = val == -1 ? 0 : val;
-	    ansy = mxrow;
+	    ansx = i;
+	    ansy = j;
+	    break;
 	}
     }
-
-    if(error == false) {
-	printf("YES\n");
-	printf("%d %d\n", ansx + 1, ansy + 1);
-    } else {
+    if(ansy == -1)
 	printf("NO\n");
-    }
+    else
+	printf("YES\n%d %d\n", ansx + 1, ansy + 1);
 
     return 0;
 }
