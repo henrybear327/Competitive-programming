@@ -64,6 +64,12 @@ Winston Churchill
     * [Alyona and Numbers](http://codeforces.com/contest/682/problem/A)
 * Set
     * [Watchmen](http://codeforces.com/contest/651/problem/C)
+    * [Two Sets](http://codeforces.com/gym/207990/problem/E): if a - x is not in the set, then x is not in the set.
+    ```
+    One good test case to look at:
+    4 20 18
+    5 15 3 13
+    ```
 * Mod Inverse
     * [The Wall (medium)](http://codeforces.com/contest/690/problem/D2)
 * GCD
@@ -94,6 +100,8 @@ Winston Churchill
     * [Brain Network (easy)](http://codeforces.com/contest/690/problem/C1)
     * [Brain Network (medium)](http://codeforces.com/contest/690/problem/C2)
     * [Tree of Life (easy)](http://codeforces.com/contest/690/problem/F1)
+    * [Xor-tree](http://codeforces.com/gym/207990/problem/B)
+    * [Strongly Connected City](http://codeforces.com/gym/207990/problem/A)
 * BFS
     * [Expressions](http://poj.org/problem?id=3367)
     * [The two routes](http://codeforces.com/contest/601/problem/A)
@@ -174,6 +182,7 @@ Winston Churchill
 * [Alyona and the Tree](http://codeforces.com/contest/682/problem/C)
 * [Two Ends](http://codeforces.com/gym/100650): Optimal Strategy for a Game
 * [Sequences](http://codeforces.com/gym/101020/problem/D)
+* [Choosing Capital for Treeland](http://codeforces.com/problemset/problem/219/D): A very good one
 
 ## Pigeonhole Principle
 
@@ -197,6 +206,7 @@ Winston Churchill
 
 * [Roadblocks](http://poj.org/problem?id=3255): next-to-shortest path
 * [Sightseeing](http://poj.org/problem?id=3463) : a good one!
+* [Dijkstra?](http://codeforces.com/gym/207990/problem/C)
 
 ### Good ones (Mixed)
 
