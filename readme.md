@@ -31,6 +31,8 @@ Winston Churchill
 * [Collective Mindsets (easy)](http://codeforces.com/contest/690/problem/A1)
 * [The Wall (easy)](http://codeforces.com/contest/690/problem/D1)
 * [Queens, Knights and Pawns](http://codeforces.com/gym/100650)
+* [Look for the Winner!](http://icpc.iisf.or.jp/past-icpc/domestic2016/problems/all_en.html)
+* [Bamboo Blossoms](http://icpc.iisf.or.jp/past-icpc/domestic2016/problems/all_en.html)
 
 ## Binary Search
 
@@ -102,6 +104,7 @@ Winston Churchill
     * [Tree of Life (easy)](http://codeforces.com/contest/690/problem/F1)
     * [Xor-tree](http://codeforces.com/gym/207990/problem/B)
     * [Strongly Connected City](http://codeforces.com/gym/207990/problem/A)
+    * [Gift Exchange Party](http://icpc.iisf.or.jp/past-icpc/domestic2016/problems/all_en.html): For any path a->b, if you reverse all the edges on the path, only the degrees of a and b will differ by 1 only 
 * BFS
     * [Expressions](http://poj.org/problem?id=3367)
     * [The two routes](http://codeforces.com/contest/601/problem/A)
@@ -183,6 +186,7 @@ Winston Churchill
 * [Two Ends](http://codeforces.com/gym/100650): Optimal Strategy for a Game
 * [Sequences](http://codeforces.com/gym/101020/problem/D)
 * [Choosing Capital for Treeland](http://codeforces.com/problemset/problem/219/D): A very good one
+* [Daruma Otoshi](http://icpc.iisf.or.jp/past-icpc/domestic2016/problems/all_en.html): cutting stick!
 
 ## Pigeonhole Principle
 
