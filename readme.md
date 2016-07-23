@@ -104,7 +104,7 @@ Winston Churchill
     * [Tree of Life (easy)](http://codeforces.com/contest/690/problem/F1)
     * [Xor-tree](http://codeforces.com/gym/207990/problem/B)
     * [Strongly Connected City](http://codeforces.com/gym/207990/problem/A)
-    * [Gift Exchange Party](http://icpc.iisf.or.jp/past-icpc/domestic2016/problems/all_en.html): For any path a->b, if you reverse all the edges on the path, only the degrees of a and b will differ by 1 only 
+    * [Gift Exchange Party](http://icpc.iisf.or.jp/past-icpc/domestic2016/problems/all_en.html): For any path a->b, if you reverse all the edges on the path, only the degrees of a and b will differ by 1 only
 * BFS
     * [Expressions](http://poj.org/problem?id=3367)
     * [The two routes](http://codeforces.com/contest/601/problem/A)
@@ -235,6 +235,7 @@ Winston Churchill
 * [Game](http://poj.org/problem?id=3246): convex hull
 * [Grachten](https://icpcarchive.ecs.baylor.edu/external/66/p6628.pdf)
 * [Swamp Things](http://codeforces.com/gym/100650): O(n^2log(n))
+* [New Year Table](http://codeforces.com/contest/140/problem/A): Rounding error is scary!
 
 # WA_AC problem
 
