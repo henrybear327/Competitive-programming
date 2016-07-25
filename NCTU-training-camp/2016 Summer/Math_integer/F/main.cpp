@@ -4,6 +4,18 @@ using namespace std;
 
 int main()
 {
+    int p, mn = INT_MAX;
+    for(int i = 0; i < 4; i++) {
+	scanf("%d", &p);
+	mn = min(mn, p);
+    }
+    
+    int a, b;
+    scanf("%d %d", &a, &b);
+    int ans = min(mn, b + 1) - a > 0 ? min(mn, b + 1) - a : 0;
+
+    printf("%d\n", ans);
+    /*
     int p[4], a, b;
     for(int i = 0; i < 4; i++)
 	scanf("%d", &p[i]);
@@ -26,6 +38,7 @@ int main()
     }
 
     printf("%d\n", ans);
+    */
 
     return 0;
 }
