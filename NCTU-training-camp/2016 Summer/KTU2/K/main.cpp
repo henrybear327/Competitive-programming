@@ -5,6 +5,8 @@ using namespace std;
 typedef pair<int, int> ii;
 typedef long long ll;
 
+#define EPS 1e-9
+
 int main()
 {
     double a, b, c;
@@ -16,12 +18,13 @@ int main()
         double mid = (l + r) / 2;
 
         double ans = a * pow(mid, 1.0/3.0) + b * pow(mid, 0.5);
-        if(ans >= c)
+        // if(ans >= c)
+	if( ans - c >= -EPS)
             r = mid;
         else
             l = mid;
     }
-
+    
     printf("%lld\n", (ll)ceil(l));
 
     return 0;
