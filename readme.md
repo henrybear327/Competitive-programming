@@ -33,6 +33,9 @@ Winston Churchill
 * [Queens, Knights and Pawns](http://codeforces.com/gym/100650)
 * [Look for the Winner!](http://icpc.iisf.or.jp/past-icpc/domestic2016/problems/all_en.html)
 * [Bamboo Blossoms](http://icpc.iisf.or.jp/past-icpc/domestic2016/problems/all_en.html)
+* [LCS Revised](http://codeforces.com/gym/100735/problem/G)
+* [Board with lights and switches](http://codeforces.com/gym/100738/problem/B)
+* [New GPU](http://codeforces.com/gym/100738/problem/K)
 
 ## Binary Search
 
@@ -44,6 +47,8 @@ Winston Churchill
 * [GukiZ hates Boxes](http://codeforces.com/contest/551/problem/C)
 * [NCPC 2015 G Goblin Garden Guards](http://codeforces.com/gym/100781)
 * [Mike and Chocolate Thieves](http://codeforces.com/contest/689/problem/C)
+* [Rating Shuffle](http://codeforces.com/gym/100738/problem/C): Need good observation
+* [Plantations](http://codeforces.com/gym/100738/problem/L): Diagnal prefix sum
 
 ## Two pointer
 
@@ -92,6 +97,7 @@ Winston Churchill
 ## Greedy
 
 * [NCPC 2015 E Entertainment Box](http://codeforces.com/gym/100781)
+* [Degree Sequence Tree](http://codeforces.com/gym/100738/problem/D)
 
 ## Graph
 
@@ -188,6 +194,10 @@ Winston Churchill
 * [Choosing Capital for Treeland](http://codeforces.com/problemset/problem/219/D): A very good one
 * [Daruma Otoshi](http://icpc.iisf.or.jp/past-icpc/domestic2016/problems/all_en.html): cutting stick!
 
+### Bitmask
+
+* [Triangle Formation](http://codeforces.com/gym/100735/problem/D)
+
 ## Pigeonhole Principle
 
 * [Simple Subset](http://codeforces.com/contest/665/problem/D)
@@ -236,6 +246,7 @@ Winston Churchill
 * [Grachten](https://icpcarchive.ecs.baylor.edu/external/66/p6628.pdf)
 * [Swamp Things](http://codeforces.com/gym/100650): O(n^2log(n))
 * [New Year Table](http://codeforces.com/contest/140/problem/A): Rounding error is scary!
+* [Fitting boxes](http://codeforces.com/gym/100738/problem/A)
 
 # WA_AC problem
 
