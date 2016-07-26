@@ -36,6 +36,12 @@ Winston Churchill
 * [LCS Revised](http://codeforces.com/gym/100735/problem/G)
 * [Board with lights and switches](http://codeforces.com/gym/100738/problem/B)
 * [New GPU](http://codeforces.com/gym/100738/problem/K)
+* [Soldier and Cards](http://codeforces.com/problemset/problem/546/C)
+* [Little Girl and Game](http://codeforces.com/problemset/problem/276/B)
+* [Vasya and Chess](http://codeforces.com/problemset/problem/493/D)
+* [Board Game](http://codeforces.com/problemset/problem/533/C): A very good one
+* [Weird Game](http://codeforces.com/gym/208054/problem/F): Also a good one
+* [Vasya and Chess](http://codeforces.com/problemset/problem/493/D)
 
 ## Binary Search
 
@@ -81,6 +87,7 @@ Winston Churchill
     * [The Wall (medium)](http://codeforces.com/contest/690/problem/D2)
 * GCD
     * [Good Coins](http://codeforces.com/gym/101020/problem/J)
+    * [Alice and Bob](http://codeforces.com/problemset/problem/346/A)
 
 ## Fun   
 
