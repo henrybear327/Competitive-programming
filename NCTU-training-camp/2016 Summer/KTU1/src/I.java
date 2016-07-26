@@ -6,13 +6,14 @@ public class I
 {
     public static void main(String[] args)
     {
-    	//MyScanner sc = new MyScanner();
-        //out = new PrintWriter(new BufferedOutputStream(System.out));
+    	MyScanner sc = new MyScanner();
+        out = new PrintWriter(new BufferedOutputStream(System.out));
         
-    	Scanner sc = new Scanner(System.in);
         BigInteger[] inp = new BigInteger[3];
-        for(int i = 0; i < 3; i++)
-        	inp[i] = sc.nextBigInteger();
+        for(int i = 0; i < 3; i++) {
+        	String str = sc.nextLine();
+        	inp[i] = new BigInteger(str);
+        }
         
         boolean ok = false;
         for(int i = 0; i < 3; i++)
@@ -26,7 +27,7 @@ public class I
         else
         	System.out.println("NO");
         
-        //out.close();
+        out.close();
     }
 
     // PrintWriter for faster output
