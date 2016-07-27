@@ -2,81 +2,77 @@
 
 using namespace std;
 
+#define prime 257
+#define prime1 137
+#define M 1000000007
+#define M1 0xdefaced
 #define N 600010
-#define DEBUG 0
-struct node {
-	int child[3]; //a b c
-	bool ending;
-} trie[N];
 
-int freeNode;
-void insert(string &str, int pos, int node)
+typedef long long ll;
+ll p[N], p1[N];
+void init()
 {
-#if DEBUG == 1
-	printf("%s %d %d\n", str.c_str(), pos, node);
-#endif
-
-	if(pos == (int)str.length()) {
-		trie[node].ending = true;
-#if DEBUG == 1
-		printf("%d has end\n", node);
-#endif
-	} else {
-		// find which way to go
-		int c = str[pos] - 'a';
-		if(trie[node].child[c] == 0) // give a new node
-			trie[node].child[c] = freeNode++;
-		insert(str, pos + 1, trie[node].child[c]);
+	p[0] = p1[0] = 1;
+	for(int i = 1; i < N; i++) {
+		p[i] = p[i - 1] * prime % M;
+		p1[i] = p1[i - 1] * prime1 % M1;
 	}
 }
 
-bool query(string &str, int pos, int node, bool error)
+ll getHash(string inp)
 {
-#if DEBUG == 1
-	printf("%s %d %d %d\n", str.c_str(), pos, node, error);
-#endif
+	ll res = 0;
+	for(int i = 0; i < (int)inp.length(); i++)
+		res = (res * prime % M + inp[i]) % M;
+	
+	return res;
+}
 
-	if(pos == (int)str.length()) {
-		if(trie[node].ending == true)
-			return error; // no error is not allowed, we need at least one error
-		return false; // no word ends here...
-	}
-
-	for(int i = 0; i < 3; i++) {
-		if(trie[node].child[i] == 0)
-			continue;
-
-		if(str[pos] - 'a' != i && error == true)
-			continue;
-		if(query(str, pos + 1, trie[node].child[i], error || (str[pos] - 'a' != i ? true : false)))
-			return true;
-	}
-	return false;
+ll getHash1(string inp)
+{
+	ll res = 0;
+	for(int i = 0; i < (int)inp.length(); i++)
+		res = (res * prime1 % M1 + inp[i]) % M1;
+	
+	return res;
 }
 
 int main()
 {
 	int n, m;
 	scanf("%d %d", &n, &m);
-
-	// insert strings into trie
-	// root is 0
-	memset(trie, 0, sizeof(trie));
-	freeNode = 1;
-
+	
+	init();
+	
+	set<ll> s, s1;
 	for(int i = 0; i < n; i++) {
 		char inp[N];
 		scanf("%s", inp);
 
-		string str = inp;
-		insert(str, 0, 0);
+		s.insert(getHash(inp));
+		s1.insert(getHash1(inp));
 	}
 
 	for(int i = 0; i < m; i++) {
 		char inp[N];
 		scanf("%s", inp);
-		string str = inp;
-		if(query(str, 0, 0, false) == true)
+		
+		bool ok = false;
+		int len = strlen(inp);
+		ll hashVal = getHash(inp);
+		ll hashVal1 = getHash1(inp);
+		for(int j = 0; !ok && j < len; j++) {
+			for(char k = 'a'; !ok && k <= 'c'; k++) {
+				// linearly try to change all position and check for hash
+				if(inp[j] == k) 
+					continue;
+				if(s.find( ( (hashVal - inp[j] * p[len - j - 1] + M) % M + k * p[len - j - 1] ) % M) != s.end()) 
+					if(s1.find( ( (hashVal1 - inp[j] * p1[len - j - 1] + M1) % M1 + k * p1[len - j - 1] ) % M1) != s1.end()) 
+						ok = true;
+			}
+		}
+
+		if(ok)
 			printf("YES\n");
 		else
 			printf("NO\n");
