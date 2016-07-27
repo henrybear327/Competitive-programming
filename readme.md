@@ -96,10 +96,15 @@ Winston Churchill
 ## String
 
 * Implementation
-  * [Simple Strings](http://codeforces.com/contest/665/problem/C)
-  * [Summer Camp](http://codeforces.com/contest/672/problem/A)
+    * [Simple Strings](http://codeforces.com/contest/665/problem/C)
+    * [Summer Camp](http://codeforces.com/contest/672/problem/A)
+    * [Equivalent Strings](http://codeforces.com/problemset/problem/559/B): merge sort
 * Greedy
-  * [All in All](http://poj.org/problem?id=1936)
+    * [All in All](http://poj.org/problem?id=1936)
+* KMP
+    * [Password](http://codeforces.com/problemset/problem/126/B): Rolling hash is also feasible
+* Trie
+    * [Watto and Mechanism](http://codeforces.com/problemset/problem/514/C)
 
 ## Greedy
 
