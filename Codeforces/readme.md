@@ -1,3 +1,5 @@
+** This list is not being updated anymore **
+
 # Codeforces Contest code backup
 
 I started doing Codeforces contest in 2015 summer vacation while participating in **2015 competitive programming summer training camp ** @NCTU. Thanks to the teacher and student mentors there. :)
@@ -133,8 +135,10 @@ This is a repository that I use for backing up my Codeforces code. I am still ne
         * A1, C1, C2, D2, F1
     63. Round 360
         * A, B, C
-    64. Education Round 12
+    64. Education Round 13
         * A, B, D
+    65. Educational Round 15
+        * A, B, C
 
 # Gym
 
