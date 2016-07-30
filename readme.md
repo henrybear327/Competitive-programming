@@ -42,6 +42,10 @@ Winston Churchill
 * [Board Game](http://codeforces.com/problemset/problem/533/C): A very good one
 * [Weird Game](http://codeforces.com/gym/208054/problem/F): Also a good one
 * [Vasya and Chess](http://codeforces.com/problemset/problem/493/D)
+* [Maximum Increase](http://codeforces.com/contest/702/problem/A)
+* [Cows and Poker Game](http://codeforces.com/problemset/problem/284/B)
+* [Little Girl and Maximum Sum](http://codeforces.com/problemset/problem/276/C)
+* [Little Girl and Maximum XOR](http://codeforces.com/problemset/problem/276/D): Requires very good observation
 
 ## Binary Search
 
@@ -55,6 +59,9 @@ Winston Churchill
 * [Mike and Chocolate Thieves](http://codeforces.com/contest/689/problem/C)
 * [Rating Shuffle](http://codeforces.com/gym/100738/problem/C): Need good observation
 * [Plantations](http://codeforces.com/gym/100738/problem/L): Diagnal prefix sum
+* [Powers of Two](http://codeforces.com/contest/702/problem/B)
+* [Cellular Network](http://codeforces.com/contest/702/problem/C)
+* [Cubist Artwork](http://poj.org/problem?id=3802)
 
 ## Two pointer
 
@@ -142,6 +149,14 @@ Winston Churchill
 ## BIT
 
 * [Apple Tree](http://poj.org/problem?id=3321)
+* [Sereja and Array](http://codeforces.com/problemset/problem/315/B)
+* [Pashmak and Parmida's problem](http://codeforces.com/problemset/problem/459/D): complex but good
+
+## Segment Tree
+
+* [Balanced Lineup](http://poj.org/problem?id=3264): Very basic segment tree min/max problem
+* [A Simple Problem with Integers](http://poj.org/problem?id=3468): Very basic segment tree with lazy propagation
+* [Sereja and Brackets](http://codeforces.com/problemset/problem/380/C): Good observation needed, compiler version matters
 
 ## Extended Euclidean Algorithm
 
@@ -157,11 +172,6 @@ Winston Churchill
 * [Buses Between Cities](http://codeforces.com/contest/665/problem/A)
 * [Road Construction](http://codeforces.com/problemset/problem/330/B)
 * [Bear and Three Musketeers](http://codeforces.com/problemset/problem/574/B)
-
-## Segment Tree
-
-* [Balanced Lineup](http://poj.org/problem?id=3264): Very basic segment tree min/max problem
-* [A Simple Problem with Integers](http://poj.org/problem?id=3468): Very basic segment tree with lazy propagation
 
 ## Tree
 
