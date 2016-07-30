@@ -1,75 +1,91 @@
 import java.io.*;
+import java.math.BigInteger;
 import java.util.*;
 
-public class B
-{
-    public static void main(String[] args)
-    {
-        MyScanner sc = new MyScanner();
-        out = new PrintWriter(new BufferedOutputStream(System.out));
+public class B {
+	public static void main(String[] args) {
+		MyScanner sc = new MyScanner();
+		out = new PrintWriter(new BufferedOutputStream(System.out));
 
-        
-        
-        out.close();
-    }
+		int n = sc.nextInt();
 
-    // PrintWriter for faster output
-    public static PrintWriter out;
+		long[] inp = new long[n]; // using type int will cause problem! (map is
+									// of type long)
+		HashMap<Long, Integer> cnt = new HashMap<Long, Integer>();
+		for (int i = 0; i < n; i++) {
+			inp[i] = sc.nextInt();
+			int tmp = cnt.getOrDefault(inp[i], 0);
+			// out.println(tmp);
+			tmp++;
+			cnt.put(inp[i], tmp);
+		}
 
-    // MyScanner class for faster input
-    public static class MyScanner
-    {
-        BufferedReader br;
-        StringTokenizer st;
+		long ans = 0;
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < 33; j++) {
+				long diff = (1L << j) - inp[i];
 
-        public MyScanner()
-        {
-            br = new BufferedReader(new InputStreamReader(System.in));
-        }
+				if (cnt.containsKey(diff) == true) {
+					// out.println(diff + " " + inp[i] + " " + cnt.get(diff));
+					ans += (diff == inp[i] ? cnt.get(diff) - 1 : cnt.get(diff));
+				}
+			}
+		}
 
-        boolean hasNext()
-        {
-            while (st == null || !st.hasMoreElements()) {
-                try {
-                    st = new StringTokenizer(br.readLine());
-                } catch (Exception e) {
-                    return false;
-                }
-            }
-            return true;
-        }
+		out.println(ans / 2);
 
-        String next()
-        {
-            if (hasNext())
-                return st.nextToken();
-            return null;
-        }
+		out.close();
+	}
 
-        int nextInt()
-        {
-            return Integer.parseInt(next());
-        }
+	// PrintWriter for faster output
+	public static PrintWriter out;
 
-        long nextLong()
-        {
-            return Long.parseLong(next());
-        }
+	// MyScanner class for faster input
+	public static class MyScanner {
+		BufferedReader br;
+		StringTokenizer st;
 
-        double nextDouble()
-        {
-            return Double.parseDouble(next());
-        }
+		public MyScanner() {
+			br = new BufferedReader(new InputStreamReader(System.in));
+		}
 
-        String nextLine()
-        {
-            String str = "";
-            try {
-                str = br.readLine();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            return str;
-        }
-    }
+		boolean hasNext() {
+			while (st == null || !st.hasMoreElements()) {
+				try {
+					st = new StringTokenizer(br.readLine());
+				} catch (Exception e) {
+					return false;
+				}
+			}
+			return true;
+		}
+
+		String next() {
+			if (hasNext())
+				return st.nextToken();
+			return null;
+		}
+
+		int nextInt() {
+			return Integer.parseInt(next());
+		}
+
+		long nextLong() {
+			return Long.parseLong(next());
+		}
+
+		double nextDouble() {
+			return Double.parseDouble(next());
+		}
+
+		String nextLine() {
+			String str = "";
+			try {
+				str = br.readLine();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			return str;
+		}
+	}
 }

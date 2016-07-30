@@ -1,75 +1,28 @@
-import java.io.*;
 import java.util.*;
+import java.math.*;
 
-public class A
-{
-    public static void main(String[] args)
-    {
-        MyScanner sc = new MyScanner();
-        out = new PrintWriter(new BufferedOutputStream(System.out));
-        
-        
-        
-        out.close();
-    }
+public class A {
 
-    // PrintWriter for faster output
-    public static PrintWriter out;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
 
-    // MyScanner class for faster input
-    public static class MyScanner
-    {
-        BufferedReader br;
-        StringTokenizer st;
+		int len = 1, ans = 1;
+		int prev = sc.nextInt();
+		for(int i = 0; i < n - 1; i++) {
+			int cur = sc.nextInt();
+			if(cur > prev)
+				len++;
+			else
+				len = 1;
 
-        public MyScanner()
-        {
-            br = new BufferedReader(new InputStreamReader(System.in));
-        }
+			prev = cur;
 
-        boolean hasNext()
-        {
-            while (st == null || !st.hasMoreElements()) {
-                try {
-                    st = new StringTokenizer(br.readLine());
-                } catch (Exception e) {
-                    return false;
-                }
-            }
-            return true;
-        }
+			ans = Math.max(ans, len);
+		}
 
-        String next()
-        {
-            if (hasNext())
-                return st.nextToken();
-            return null;
-        }
+		System.out.println(ans);
+	}
 
-        int nextInt()
-        {
-            return Integer.parseInt(next());
-        }
-
-        long nextLong()
-        {
-            return Long.parseLong(next());
-        }
-
-        double nextDouble()
-        {
-            return Double.parseDouble(next());
-        }
-
-        String nextLine()
-        {
-            String str = "";
-            try {
-                str = br.readLine();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            return str;
-        }
-    }
 }
