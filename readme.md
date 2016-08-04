@@ -46,6 +46,8 @@ Winston Churchill
 * [Cows and Poker Game](http://codeforces.com/problemset/problem/284/B)
 * [Little Girl and Maximum Sum](http://codeforces.com/problemset/problem/276/C)
 * [Little Girl and Maximum XOR](http://codeforces.com/problemset/problem/276/D): Requires very good observation
+* [As Fast As Possible](http://codeforces.com/contest/701/problem/D): Some equation solving and one crucial observation needed. A good one.
+* [Tavas and SaDDas](http://codeforces.com/contest/535/problem/B): Encode 47 into 01 should do it.
 
 ## Binary Search
 
@@ -62,6 +64,7 @@ Winston Churchill
 * [Powers of Two](http://codeforces.com/contest/702/problem/B)
 * [Cellular Network](http://codeforces.com/contest/702/problem/C)
 * [Cubist Artwork](http://poj.org/problem?id=3802)
+* [Tavas and Karafs](http://codeforces.com/contest/535/problem/C)
 
 ## Two pointer
 
