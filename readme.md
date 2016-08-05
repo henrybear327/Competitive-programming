@@ -85,6 +85,7 @@ Winston Churchill
 * Modulo
     * [Round House](http://codeforces.com/contest/659/problem/A)
     * [Alyona and Numbers](http://codeforces.com/contest/682/problem/A)
+    * [Mashmokh and Tokens](http://codeforces.com/contest/415/problem/B): watch out for corner case
 * Set
     * [Watchmen](http://codeforces.com/contest/651/problem/C)
     * [Two Sets](http://codeforces.com/gym/207990/problem/E): if a - x is not in the set, then x is not in the set.
@@ -126,6 +127,7 @@ Winston Churchill
 
 * [NCPC 2015 E Entertainment Box](http://codeforces.com/gym/100781)
 * [Degree Sequence Tree](http://codeforces.com/gym/100738/problem/D)
+* [Containers](http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=3503)
 
 ## Graph
 
@@ -225,6 +227,7 @@ Winston Churchill
 * [Choosing Capital for Treeland](http://codeforces.com/problemset/problem/219/D): A very good one
 * [Daruma Otoshi](http://icpc.iisf.or.jp/past-icpc/domestic2016/problems/all_en.html): cutting stick!
 * [Mishka and trip](http://codeforces.com/contest/703/problem/B): Not quite DP, but kind of
+* [Barcode](http://codeforces.com/contest/225/problem/C): Spaceship DP
 
 ### Bitmask
 
