@@ -45,9 +45,9 @@ Winston Churchill
 * [Maximum Increase](http://codeforces.com/contest/702/problem/A)
 * [Cows and Poker Game](http://codeforces.com/problemset/problem/284/B)
 * [Little Girl and Maximum Sum](http://codeforces.com/problemset/problem/276/C)
-* [Little Girl and Maximum XOR](http://codeforces.com/problemset/problem/276/D): Requires very good observation
 * [As Fast As Possible](http://codeforces.com/contest/701/problem/D): Some equation solving and one crucial observation needed. A good one.
 * [Tavas and SaDDas](http://codeforces.com/contest/535/problem/B): Encode 47 into 01 should do it.
+* [Mishka and Game](http://codeforces.com/contest/703/problem/A): 2 minutes -> AC!
 
 ## Binary Search
 
@@ -102,6 +102,12 @@ Winston Churchill
 ## Fun   
 
 * [Bicycle Race](http://codeforces.com/contest/659/problem/D)
+
+## Bit munipulation
+
+* [Little Girl and Maximum XOR](http://codeforces.com/problemset/problem/276/D): Requires very good observation
+* [The Most Potent Corner](http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1205)
+* [Splitting Numbers](http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=3084)
 
 ## String
 
@@ -218,6 +224,7 @@ Winston Churchill
 * [Sequences](http://codeforces.com/gym/101020/problem/D)
 * [Choosing Capital for Treeland](http://codeforces.com/problemset/problem/219/D): A very good one
 * [Daruma Otoshi](http://icpc.iisf.or.jp/past-icpc/domestic2016/problems/all_en.html): cutting stick!
+* [Mishka and trip](http://codeforces.com/contest/703/problem/B): Not quite DP, but kind of
 
 ### Bitmask
 
@@ -272,6 +279,9 @@ Winston Churchill
 * [Swamp Things](http://codeforces.com/gym/100650): O(n^2log(n))
 * [New Year Table](http://codeforces.com/contest/140/problem/A): Rounding error is scary!
 * [Fitting boxes](http://codeforces.com/gym/100738/problem/A)
+* [Chris and Road](http://codeforces.com/contest/703/problem/C): If you know slope life is easy
+
+# Bit
 
 # WA_AC problem
 
