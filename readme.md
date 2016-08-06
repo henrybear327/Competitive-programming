@@ -48,6 +48,7 @@ Winston Churchill
 * [As Fast As Possible](http://codeforces.com/contest/701/problem/D): Some equation solving and one crucial observation needed. A good one.
 * [Tavas and SaDDas](http://codeforces.com/contest/535/problem/B): Encode 47 into 01 should do it.
 * [Mishka and Game](http://codeforces.com/contest/703/problem/A): 2 minutes -> AC!
+* [Queue](http://codeforces.com/problemset/problem/490/B): Good one to think of.
 
 ## Binary Search
 
@@ -99,6 +100,8 @@ Winston Churchill
 * GCD
     * [Good Coins](http://codeforces.com/gym/101020/problem/J)
     * [Alice and Bob](http://codeforces.com/problemset/problem/346/A)
+* Combinatorics
+    * [Number of Ways](http://codeforces.com/contest/466/problem/C)
 
 ## Fun   
 
@@ -141,6 +144,7 @@ Winston Churchill
     * [Xor-tree](http://codeforces.com/gym/207990/problem/B)
     * [Strongly Connected City](http://codeforces.com/gym/207990/problem/A)
     * [Gift Exchange Party](http://icpc.iisf.or.jp/past-icpc/domestic2016/problems/all_en.html): For any path a->b, if you reverse all the edges on the path, only the degrees of a and b will differ by 1 only
+    * [New Year Permutation](http://codeforces.com/contest/500/problem/B)
 * BFS
     * [Expressions](http://poj.org/problem?id=3367)
     * [The two routes](http://codeforces.com/contest/601/problem/A)
