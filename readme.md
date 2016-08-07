@@ -145,6 +145,7 @@ Winston Churchill
     * [Strongly Connected City](http://codeforces.com/gym/207990/problem/A)
     * [Gift Exchange Party](http://icpc.iisf.or.jp/past-icpc/domestic2016/problems/all_en.html): For any path a->b, if you reverse all the edges on the path, only the degrees of a and b will differ by 1 only
     * [New Year Permutation](http://codeforces.com/contest/500/problem/B)
+    * [Anagrams by Stack](http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=673)
 * BFS
     * [Expressions](http://poj.org/problem?id=3367)
     * [The two routes](http://codeforces.com/contest/601/problem/A)
@@ -160,6 +161,7 @@ Winston Churchill
 * [Navigation Nightmare](http://poj.org/problem?id=1984)
 * [Is it a tree?](http://poj.org/problem?id=1308)
 * [Wireless Network](http://poj.org/problem?id=2236)
+* [Waking up brain](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1448)
 
 ## BIT
 
