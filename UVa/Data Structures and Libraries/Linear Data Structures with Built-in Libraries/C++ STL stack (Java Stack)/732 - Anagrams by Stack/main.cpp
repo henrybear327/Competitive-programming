@@ -63,7 +63,7 @@ int main()
 		
 		printf("[\n");
 		stack<int> s;
-		if(strlen(inp) == strlen(tar))
+		if(strlen(inp) == strlen(tar)) // really? really dude?
 			dfs(0, len, len, s, 0, 0);
 		printf("]\n");
 	}
