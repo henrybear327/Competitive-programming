@@ -6,114 +6,67 @@
 
 using namespace std;
 
-map<string, int> duplicate;
+#define N 10000
 
-char input[100];
-char input2[100];
-char io_string[200];
+char ans[2 * N];
+char inp[N], tar[N];
+const char cand[2] = {'i', 'o'};
 int len;
 
-int used[200];
-int ans[200];
-int cur_i, cur_o;
-
-bool test()
+#define DEBUG 0
+void dfs(int pos, int cnti, int cnto, stack<int> s, int next, int idx)
 {
-    stack<char> tmp;
-    int idx = 0, idx2 = 0;
-    for (int i = 0; i < 2 * len; i++) {
-        if (io_string[ans[i]] == 'i')
-            tmp.push(input[idx++]);
-        else {
-            if (tmp.top() != input2[idx2++])
-                return false;
-            else
-                tmp.pop();
-        }
-    }
+#if DEBUG == 1
+	printf("top %d %d %d %d %d\n", pos, cnti, cnto, next, idx);
+	for(int i = 0; i < 2 * len; i++)
+		printf("%c%c", ans[i], i == 2 * len - 1 ? '\n' : ' '); 
+#endif
 
-    return true;
-}
-
-void dfs(int level)
-{
-    // permutation
-    if (level == 2 * len) {
-        if (test() == false)
-            return;
-
-        string check;
-        for (int i = 0; i < 2 * len; i++) {
-            check += io_string[ans[i]];
-        }
-
-        if (duplicate[check] != 1)
-            duplicate[check] = 1;
-        else
-            return;
-
-        // print the output
-        for (int i = 0; i < 2 * len; i++) {
-            if (i != 2 * len - 1)
-                printf("%c ", io_string[ans[i]]);
-            else
-                printf("%c\n", io_string[ans[i]]);
-        }
-
-        return;
-    }
-
-    for (int i = 0; i < 2 * len; i++) {
-        if (used[i] == 0) {
-            if (i >= len && cur_o + 1 > cur_i)
-                continue;
-
-            if (i < len)
-                cur_i++;
-            else
-                cur_o++;
-
-            used[i] = 1;
-            ans[level] = i;
-
-            dfs(level + 1);
-
-            if (i < len)
-                cur_i--;
-            else
-                cur_o--;
-            used[i] = 0;
-            ans[level] = 0;
-        }
-    }
+	if(pos == 2 * len) {
+		for(int i = 0; i < 2 * len; i++)
+			printf("%c%c", ans[i], i == 2 * len - 1 ? '\n' : ' '); 
+		return;
+	}
+	for(int i = 0; i < 2; i++) {
+		if(cand[i] == 'i') {
+			// check 
+			if(cnti == 0)
+				continue;
+			ans[pos] = 'i';
+			s.push(inp[next]);
+			dfs(pos + 1, cnti - 1, cnto, s, next + 1, idx);
+			s.pop();
+		} else {
+			if(cnto == 0 || cnti == len)
+				return;
+#if DEBUG == 1
+			printf("case 2: %d %d %d %d %d\n", pos, cnti, cnto, next, idx);
+			if(s.empty())
+				return;
+			printf("%c %c %d\n", s.top(), tar[idx], idx);
+#endif
+			if(s.empty())
+				return;
+			if(s.top() != tar[idx])
+				return;
+			s.pop();
+			ans[pos] = 'o';
+			dfs(pos + 1, cnti, cnto - 1, s, next, idx + 1);
+		}
+	}
 }
 
 int main()
 {
-    while (fgets(input, 100, stdin) != NULL &&
-           fgets(input2, 100, stdin) != NULL) {
-        memset(used, 0, sizeof(used));
-        memset(ans, 0, sizeof(ans));
-        duplicate.clear();
-        cur_i = cur_o = 0;
-
-        printf("[\n");
-
-        len = (int)strlen(input) - 1;
-        int len2 = (int)strlen(input2) - 1;
-
-        if (len != len2) {
-            printf("]\n");
-            continue;
-        }
-
-        for (int i = 0; i < 2 * len; i++)
-            io_string[i] = i < len ? 'i' : 'o';
-
-        dfs(0);
-
-        printf("]\n");
-    }
+	while(scanf("%s %s", inp, tar) == 2) {
+		len = strlen(inp);
+		
+		printf("[\n");
+		stack<int> s;
+		if(strlen(inp) == strlen(tar))
+			dfs(0, len, len, s, 0, 0);
+		printf("]\n");
+	}
 
     return 0;
 }
