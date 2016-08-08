@@ -49,6 +49,9 @@ Winston Churchill
 * [Tavas and SaDDas](http://codeforces.com/contest/535/problem/B): Encode 47 into 01 should do it.
 * [Mishka and Game](http://codeforces.com/contest/703/problem/A): 2 minutes -> AC!
 * [Queue](http://codeforces.com/problemset/problem/490/B): Good one to think of.
+* [Hulk](http://codeforces.com/contest/705/problem/A)
+* [Spider Man](http://codeforces.com/contest/705/problem/B)
+* [Thor](http://codeforces.com/contest/705/problem/C): A very good implementation skill test problems
 
 ## Binary Search
 
@@ -154,7 +157,7 @@ Winston Churchill
 * Good ones
     * [NP-Hard Problem](http://codeforces.com/contest/688/problem/C)
 
-## UFDS  
+## Union Find Data Structure
 
 * [New Reform](http://codeforces.com/contest/659/problem/E)
 * [Cube Stacking](http://poj.org/problem?id=1988)
@@ -162,6 +165,7 @@ Winston Churchill
 * [Is it a tree?](http://poj.org/problem?id=1308)
 * [Wireless Network](http://poj.org/problem?id=2236)
 * [Waking up brain](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1448)
+* [Virtual Friends](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2498): A pretty good basic question to practice on
 
 ## BIT
 
