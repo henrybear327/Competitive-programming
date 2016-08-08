@@ -10,7 +10,7 @@ int main()
 	int n, q;
 	scanf("%d %d", &n, &q);
 
-	vector< queue<int> > que (n + 1);
+	queue<int> que[300100];
 	bool usedPos[q];
 	queue< ii > query;
 	memset(usedPos, false, sizeof(usedPos));
