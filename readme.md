@@ -172,6 +172,7 @@ Winston Churchill
 * [Apple Tree](http://poj.org/problem?id=3321)
 * [Sereja and Array](http://codeforces.com/problemset/problem/315/B)
 * [Pashmak and Parmida's problem](http://codeforces.com/problemset/problem/459/D): complex but good
+* [Interval Product](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=24&problem=3977&mosmsg=Submission+received+with+ID+17818351): Using BIT is tricky, segment tree implementation will be much straight forward
 
 ## Segment Tree
 
