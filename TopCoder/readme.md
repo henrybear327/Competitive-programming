@@ -12,6 +12,12 @@ http://arena.topcoder.com
 
 You should be good to go.
 
+# Notes on website
+
+1. The editorials are [here](https://apps.topcoder.com/wiki/display/tc/Algorithm+Problem+Set+Analysis)
+2. Check if the editorial is out for the current round *BEFORE* practicing.
+3. Use Google Chrome instead of Safari
+
 # How to compete in Java
 
 ```java
