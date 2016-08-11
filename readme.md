@@ -180,6 +180,10 @@ Winston Churchill
 * [A Simple Problem with Integers](http://poj.org/problem?id=3468): Very basic segment tree with lazy propagation
 * [Sereja and Brackets](http://codeforces.com/problemset/problem/380/C): Good observation needed, compiler version matters
 
+## Sparse Table
+
+* [Frequent values](https://uva.onlinejudge.org/external/112/11235.pdf): Discretization
+
 ## Extended Euclidean Algorithm
 
 * [Euclid Problem](https://uva.onlinejudge.org/external/101/10104.pdf)
@@ -294,8 +298,6 @@ Winston Churchill
 * [New Year Table](http://codeforces.com/contest/140/problem/A): Rounding error is scary!
 * [Fitting boxes](http://codeforces.com/gym/100738/problem/A)
 * [Chris and Road](http://codeforces.com/contest/703/problem/C): If you know slope life is easy
-
-# Bit
 
 # WA_AC problem
 
