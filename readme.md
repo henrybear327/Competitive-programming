@@ -52,6 +52,7 @@ Winston Churchill
 * [Hulk](http://codeforces.com/contest/705/problem/A)
 * [Spider Man](http://codeforces.com/contest/705/problem/B)
 * [Thor](http://codeforces.com/contest/705/problem/C): A very good implementation skill test problems
+* [Beru-taxi](http://codeforces.com/contest/706/problem/A)
 
 ## Binary Search
 
@@ -69,6 +70,7 @@ Winston Churchill
 * [Cellular Network](http://codeforces.com/contest/702/problem/C)
 * [Cubist Artwork](http://poj.org/problem?id=3802)
 * [Tavas and Karafs](http://codeforces.com/contest/535/problem/C)
+* [Interesting drink](http://codeforces.com/contest/706/problem/B)
 
 ## Two pointer
 
@@ -128,6 +130,7 @@ Winston Churchill
     * [Password](http://codeforces.com/problemset/problem/126/B): Rolling hash is also feasible
 * Trie
     * [Watto and Mechanism](http://codeforces.com/problemset/problem/514/C)
+    * [Vasiliy's Multiset](http://codeforces.com/contest/706/problem/D): Clever usage of trie
 
 ## Greedy
 
@@ -229,7 +232,7 @@ Winston Churchill
 
 * [Catenyms](http://poj.org/problem?id=2337)
 
-## DP
+## Dynamic Programming
 
 * [Dessert Wizard](https://www.codechef.com/JUNE13/problems/DELISH)
 * [The triangle](http://poj.org/problem?id=1163)
@@ -243,6 +246,7 @@ Winston Churchill
 * [Daruma Otoshi](http://icpc.iisf.or.jp/past-icpc/domestic2016/problems/all_en.html): cutting stick!
 * [Mishka and trip](http://codeforces.com/contest/703/problem/B): Not quite DP, but kind of
 * [Barcode](http://codeforces.com/contest/225/problem/C): Spaceship DP
+* [Hard problem](http://codeforces.com/contest/706/problem/C)
 
 ### Bitmask
 
