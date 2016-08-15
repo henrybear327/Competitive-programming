@@ -53,6 +53,8 @@ Winston Churchill
 * [Spider Man](http://codeforces.com/contest/705/problem/B)
 * [Thor](http://codeforces.com/contest/705/problem/C): A very good implementation skill test problems
 * [Beru-taxi](http://codeforces.com/contest/706/problem/A)
+* [Expert Enough?](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=3678)
+* [Integer Sequences from Addition of Terms](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=868): Nice one
 
 ## Binary Search
 
@@ -107,6 +109,8 @@ Winston Churchill
     * [Alice and Bob](http://codeforces.com/problemset/problem/346/A)
 * Combinatorics
     * [Number of Ways](http://codeforces.com/contest/466/problem/C)
+* Come up with Formula
+    * [Fractions Again?!](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1917)
 
 ## Fun   
 
@@ -152,6 +156,7 @@ Winston Churchill
     * [Gift Exchange Party](http://icpc.iisf.or.jp/past-icpc/domestic2016/problems/all_en.html): For any path a->b, if you reverse all the edges on the path, only the degrees of a and b will differ by 1 only
     * [New Year Permutation](http://codeforces.com/contest/500/problem/B)
     * [Anagrams by Stack](http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=673)
+    * [Sticker Collector Robot](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2931)
 * BFS
     * [Expressions](http://poj.org/problem?id=3367)
     * [The two routes](http://codeforces.com/contest/601/problem/A)
@@ -159,6 +164,8 @@ Winston Churchill
     * [B Countdown](http://codeforces.com/gym/100650): Do memory management on your own!
 * Good ones
     * [NP-Hard Problem](http://codeforces.com/contest/688/problem/C)
+* MST
+    * [Transportation system](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2169): Great one!
 
 ## Union Find Data Structure
 
@@ -182,6 +189,8 @@ Winston Churchill
 * [Balanced Lineup](http://poj.org/problem?id=3264): Very basic segment tree min/max problem
 * [A Simple Problem with Integers](http://poj.org/problem?id=3468): Very basic segment tree with lazy propagation
 * [Sereja and Brackets](http://codeforces.com/problemset/problem/380/C): Good observation needed, compiler version matters
+* [Ahoy, Pirates!](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2397): A nice one, required lazy propagation
+* [Interval Product]
 
 ## Sparse Table
 
