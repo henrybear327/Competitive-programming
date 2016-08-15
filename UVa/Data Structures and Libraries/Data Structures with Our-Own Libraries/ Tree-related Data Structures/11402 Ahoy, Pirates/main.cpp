@@ -5,7 +5,12 @@ using namespace std;
 #define N 1024100
 
 struct Data {
-    int type;
+	Data() {};
+	Data(int _sum, int _status) {
+		sum = _sum;
+		status = _status;
+	};
+
     int sum;
     int status; // (-1, 0, 1, 2) => (nothing, to 0, to 1, reverse)
 };
@@ -38,7 +43,6 @@ struct SegmentTree {
         mx = max(mx, idx);
 
         if (l == r) {
-            data[idx].type = inp[l] - '0';
             data[idx].sum = inp[l] == '1' ? 1 : 0;
 
             return;
