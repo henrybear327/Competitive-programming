@@ -166,6 +166,7 @@ Winston Churchill
     * [NP-Hard Problem](http://codeforces.com/contest/688/problem/C)
 * MST
     * [Transportation system](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2169): Great one!
+    * [Dark roads](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=24&problem=2678&mosmsg=Submission+received+with+ID+17844734)
 
 ## Union Find Data Structure
 
@@ -190,7 +191,6 @@ Winston Churchill
 * [A Simple Problem with Integers](http://poj.org/problem?id=3468): Very basic segment tree with lazy propagation
 * [Sereja and Brackets](http://codeforces.com/problemset/problem/380/C): Good observation needed, compiler version matters
 * [Ahoy, Pirates!](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2397): A nice one, required lazy propagation
-* [Interval Product]
 
 ## Sparse Table
 
