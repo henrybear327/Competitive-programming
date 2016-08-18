@@ -55,6 +55,7 @@ Winston Churchill
 * [Beru-taxi](http://codeforces.com/contest/706/problem/A)
 * [Expert Enough?](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=3678)
 * [Integer Sequences from Addition of Terms](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=868): Nice one
+* [Hello World!](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2683): Easy binary number rep. thinking problem
 
 ## Binary Search
 
@@ -167,8 +168,8 @@ Winston Churchill
 * MST
     * [Transportation system](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2169): Great one!
     * [Dark roads](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=24&problem=2678&mosmsg=Submission+received+with+ID+17844734)
-    * [ACM Contest and Blackout](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=24&problem=1541&mosmsg=Submission+received+with+ID+17859222): Enumerate all possible next-to-minimal spanning tree options
-    * [Audiophobia](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=989)
+    * [ACM Contest and Blackout](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1541): Enumerate all possible next-to-minimal spanning tree options ([proof](http://blog.csdn.net/weizhuwyzc000/article/details/50670320): 次小生成树一定是最小生成树加一条边然后减去一条边形成的。  所以只需要枚举减去最小生成树中的哪条边， 然后在此前提下再生成一遍最小生成树就行了)
+    * [Audiophobia](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=989): MST or Floyd-Warshall
     * [Arctic Network](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1310): Need good understanding of MST knowledge
     * [Heavy Cycle Edges](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2847)
 
@@ -277,6 +278,7 @@ Winston Churchill
 * [Frogger](http://poj.org/problem?id=2253): tricky to realize the tweak needed :) Minimax
 * [Stockbroker Grapevine](http://poj.org/problem?id=1125)
 * [Weekend](http://codeforces.com/gym/101020/problem/H)
+* [Audiophobia](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=989): MST or Floyd-Warshall
 
 ### Bellman-Ford
 
