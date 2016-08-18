@@ -167,6 +167,10 @@ Winston Churchill
 * MST
     * [Transportation system](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2169): Great one!
     * [Dark roads](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=24&problem=2678&mosmsg=Submission+received+with+ID+17844734)
+    * [ACM Contest and Blackout](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=24&problem=1541&mosmsg=Submission+received+with+ID+17859222): Enumerate all possible next-to-minimal spanning tree options
+    * [Audiophobia](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=989)
+    * [Arctic Network](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1310): Need good understanding of MST knowledge
+    * [Heavy Cycle Edges](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2847)
 
 ## Union Find Data Structure
 
