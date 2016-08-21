@@ -56,6 +56,8 @@ Winston Churchill
 * [Expert Enough?](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=3678)
 * [Integer Sequences from Addition of Terms](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=868): Nice one
 * [Hello World!](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2683): Easy binary number rep. thinking problem
+* [Brain's Photos](http://codeforces.com/problemset/problem/707/A)
+* [Longest Subsequence](http://codeforces.com/contest/632/submission/19962496): kind of Sieve of Eratosthenes
 
 ## Binary Search
 
@@ -112,6 +114,8 @@ Winston Churchill
     * [Number of Ways](http://codeforces.com/contest/466/problem/C)
 * Come up with Formula
     * [Fractions Again?!](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1917)
+* Triangle
+    * [Pythagorean Triples](http://codeforces.com/problemset/problem/707/C)
 
 ## Fun   
 
@@ -145,6 +149,8 @@ Winston Churchill
 
 ## Graph
 
+* Observation
+    * [Bakery](http://codeforces.com/problemset/problem/707/B)
 * DFS
     * [New Reform](http://codeforces.com/contest/659/problem/E)
     * [Apple Tree](http://poj.org/problem?id=3321)
@@ -207,8 +213,11 @@ Winston Churchill
 
 ## Fast power
 
-* [Kolya and Tanya](http://codeforces.com/contest/584/problem/B)
-* [Vanya and Label](http://codeforces.com/contest/677/problem/C)
+### Math
+    * [Kolya and Tanya](http://codeforces.com/contest/584/problem/B)
+    * [Vanya and Label](http://codeforces.com/contest/677/problem/C)
+### Matrix
+    * [Iterated Linear Function](http://codeforces.com/problemset/problem/678/D)
 
 ## Time
 
