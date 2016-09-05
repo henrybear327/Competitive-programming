@@ -97,6 +97,7 @@ Winston Churchill
     * [Round House](http://codeforces.com/contest/659/problem/A)
     * [Alyona and Numbers](http://codeforces.com/contest/682/problem/A)
     * [Mashmokh and Tokens](http://codeforces.com/contest/415/problem/B): watch out for corner case
+    * [Three Different Numbers ](https://www.codechef.com/problems/THREEDIF): Best mod practice problem even seen.
 * Set
     * [Watchmen](http://codeforces.com/contest/651/problem/C)
     * [Two Sets](http://codeforces.com/gym/207990/problem/E): if a - x is not in the set, then x is not in the set.
