@@ -58,6 +58,8 @@ Winston Churchill
 * [Hello World!](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2683): Easy binary number rep. thinking problem
 * [Brain's Photos](http://codeforces.com/problemset/problem/707/A)
 * [Longest Subsequence](http://codeforces.com/contest/632/submission/19962496): kind of Sieve of Eratosthenes
+* [Bus to Udayland](http://codeforces.com/contest/711/problem/A)
+* [Chris and Magic Square](ttp://codeforces.com/contest/711/problem/B): What a great problem! Easy to get wrong answer on test cases over 90!
 
 ## Binary Search
 
