@@ -99,7 +99,7 @@ Winston Churchill
     * [Round House](http://codeforces.com/contest/659/problem/A)
     * [Alyona and Numbers](http://codeforces.com/contest/682/problem/A)
     * [Mashmokh and Tokens](http://codeforces.com/contest/415/problem/B): watch out for corner case
-    * [Three Different Numbers ](https://www.codechef.com/problems/THREEDIF): Best mod practice problem even seen.
+    * [Three Different Numbers ](https://www.codechef.com/problems/THREEDIF): Best mod practice problem even seen. Combinatorics techniques required.
 * Set
     * [Watchmen](http://codeforces.com/contest/651/problem/C)
     * [Two Sets](http://codeforces.com/gym/207990/problem/E): if a - x is not in the set, then x is not in the set.
@@ -115,6 +115,7 @@ Winston Churchill
     * [Alice and Bob](http://codeforces.com/problemset/problem/346/A)
 * Combinatorics
     * [Number of Ways](http://codeforces.com/contest/466/problem/C)
+    * [Chef and Strange Operations](https://www.codechef.com/FEB16/problems/STROPR): Need good observation of pascal triangle
 * Come up with Formula
     * [Fractions Again?!](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1917)
 * Triangle
@@ -273,6 +274,7 @@ Winston Churchill
 * [Mishka and trip](http://codeforces.com/contest/703/problem/B): Not quite DP, but kind of
 * [Barcode](http://codeforces.com/contest/225/problem/C): Spaceship DP
 * [Hard problem](http://codeforces.com/contest/706/problem/C)
+* [The least round way](http://codeforces.com/contest/2/problem/B): A good one, combined with math. Crucial observation: path 2/5 can be calculated separated, and it MUST be done this way. (Check comments in code to see counterexample)
 
 ### Bitmask
 
