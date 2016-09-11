@@ -6,143 +6,130 @@ using namespace std;
 typedef long long ll;
 
 #define N 100010
-int inp[N];
-ll *tree, *lazy;
+#define lc(x) (2*x+1)
+#define rc(x) (2*x+2)
 
-void init()
-{
-    int depth = 1;
-    while( (1 << depth++) < N);
+ll inp[N];
+ll *data = NULL, *lazy = NULL, n;
+struct segmentTree {
+	void init(int _size) {
+		n = _size;
+		if(data)
+			free(data);
+		if(lazy)
+			free(lazy);
 
-    tree = (ll*) malloc((1 << depth) * sizeof(ll));
-    lazy = (ll*) malloc((1 << depth) * sizeof(ll));
-}
+		int size = 2;
+		while(_size >= size)
+			size *= 2;
+		size *= 2;
 
-#define lc(x) (x << 1)
-#define rc(x) ((x << 1) + 1)
-struct SegmentTree {
-    int nn;
-    void build(int n)
-    {
-        nn = n;
+		data = (ll*)malloc(sizeof(ll) * size);
+		lazy = (ll*)malloc(sizeof(ll) * size);
+	}
 
-        build(1, 0, n - 1);
-    }
+	void build() {
+		build(0, n - 1, 0);
+	}
 
-    void build(int idx, int l, int r)  // [l, r] = [0, n - 1]
-    {
-        if(l == r) {
-            lazy[idx] = 0;
-            tree[idx] = inp[l];
-            return;
-        }
+	void build(int l, int r, int idx) {
+		// printf("%d %d %d\n", l, r, idx);
+		lazy[idx] = 0;
 
-        int mid = (l + r) / 2;
-        build(lc(idx), l, mid);
-        build(rc(idx), mid + 1, r);
+		if(l == r) {
+			data[idx] = inp[l];
+			return;
+		}
 
-        lazy[idx] = 0;
-        tree[idx] = tree[lc(idx)] + tree[rc(idx)];
-    }
+		int mid = l + (r - l) / 2;
+		build(l, mid, lc(idx));
+		build(mid + 1, r, rc(idx));
 
-    void pushLazyTag(int idx, int l, int r)
-    {
-        if(lazy[idx] != 0) {
-            tree[idx] += (r - l + 1) * lazy[idx];
-            if(l != r) {
-                lazy[lc(idx)] += lazy[idx];
-                lazy[rc(idx)] += lazy[idx];
-            }
-            lazy[idx] = 0;
-        }
-    }
+		data[idx] = data[lc(idx)] + data[rc(idx)];
+	}
 
-    ll query(int i, int j)
-    {
-        return query(1, 0, nn - 1, i, j);
-    }
+	// this type of segment tree: self is always up to date, children are not
+	void push(int idx, int lb, int mid, int rb) {
+		if(lazy[idx] != 0) {
+			data[lc(idx)] += lazy[idx] * (mid - lb + 1); // stupid! You need to keep the child node updated!
+			lazy[lc(idx)] += lazy[idx];
 
-    ll query(int idx, int l, int r, int i, int j)
-    {
-        pushLazyTag(idx, l, r); // deal with lazy propagation
+			data[rc(idx)] += lazy[idx] * (rb - (mid + 1) + 1); // stupid!
+			lazy[rc(idx)] += lazy[idx];
 
-        if(l == i && r == j) {
-            return tree[idx];
-        }
+			lazy[idx] = 0;
+		}
+	}
 
-        int mid = (l + r) / 2;
-        if(i <= mid && mid + 1 <= j) {
-            return query(lc(idx), l, mid, i, mid) + query(rc(idx), mid + 1, r, mid + 1, j);
-        } else if(j <= mid) {
-            return query(lc(idx), l, mid, i, j);
-        } else {
-            return query(rc(idx), mid + 1, r, i, j);
-        }
-    }
+	void update(int l, int r, ll val) {
+		update(0, n - 1, l, r, 0, val);
+	}
 
-    void update(int i, int j, ll val)
-    {
-        update(1, 0, nn - 1, i, j, val);
-    }
+	void update(int lb, int rb, int l, int r, int idx, ll val) {
+		// printf("update %d %d %d %d %d %lld\n", lb, rb, l, r, idx, data[idx]);
+		if(l > rb || r < lb)
+			return;
 
-    void update(int idx, int l, int r, int i, int j, ll val)
-    {
-        pushLazyTag(idx, l, r); // deal with lazy propagation
+		if(l <= lb && rb <= r) {
+			data[idx] += val * (rb - lb + 1);
+			lazy[idx] += val;
+			return;
+		}
 
-        if(i == l && j == r) {
-            tree[idx] += (r - l + 1) * val;
+		int mid = lb + (rb - lb) / 2;
+		push(idx, lb, mid, rb);
+		update(lb, mid, l, r, lc(idx), val);
+		update(mid + 1, rb, l, r, rc(idx), val);
+		data[idx] = data[lc(idx)] + data[rc(idx)];
+	}
 
-            if(l != r) {
-                lazy[lc(idx)] += val;
-                lazy[rc(idx)] += val;
-            }
+	ll query(int l, int r) {
+		return query(0, n - 1, l, r, 0);
+	}
 
-            return;
-        }
+	ll query(int lb, int rb, int l, int r, int idx) {
+		// printf("%d %d %d %d %d %lld\n", lb, rb, l, r, idx, data[idx]);
 
-        int mid = (l + r) / 2;
-        if(i <= mid && mid + 1 <= j) {
-            update(lc(idx), l, mid, i, mid, val);
-            update(rc(idx), mid + 1, r, mid + 1, j, val);
-        } else if(j <= mid) {
-            update(lc(idx), l, mid, i, j, val);
-        } else {
-            update(rc(idx), mid + 1, r, i, j, val);
-        }
+		if(l > rb || r < lb)
+			return 0;
 
-        // tree[idx] = tree[lc(idx)] + tree[rc(idx)]; // bug!!!
-        tree[idx] = query(lc(idx), l, mid, l, mid) + query(rc(idx), mid + 1, r, mid + 1, r);
-    }
-};
+		if(l <= lb && rb <= r) {
+			return data[idx];
+		}
+
+		int mid = lb + (rb - lb) / 2;
+		push(idx, lb, mid, rb);
+		ll res = query(lb, mid, l, r, lc(idx)) + query(mid + 1, rb, l, r, rc(idx));
+		data[idx] = data[lc(idx)] + data[rc(idx)];
+		return res;
+	}
+} tree;
 
 int main()
 {
-    init();
+	int n, q;
+	while(scanf("%d %d", &n, &q) == 2) {
+		for(int i = 0; i < n; i++)
+			scanf("%lld", &inp[i]);
+		tree.init(n);
+		tree.build();
 
-    int n, q;
-    while(scanf("%d %d", &n, &q) == 2) {
-        for(int i = 0; i < n; i++)
-            scanf("%d", &inp[i]);
+		for(int i = 0; i < q; i++) {
+			char cmd[10];
+			scanf("%s", cmd);
 
-        SegmentTree sum;
-        sum.build(n);
+			if(cmd[0] == 'C') {
+				int l, r, val;
+				scanf("%d %d %d", &l, &r, &val);
 
-        for(int i = 0; i < q; i++) {
-            char com[100];
-            int a, b;
-            scanf("%s %d %d", com, &a, &b);
-            a--;
-            b--;
+				tree.update(l - 1, r - 1, val);
+			} else {
+				int l, r;
+				scanf("%d %d", &l, &r);
+				printf("%lld\n", tree.query(l - 1, r - 1));
+			}
+		}
+	}
 
-            if(com[0] == 'Q') {
-                printf("%lld\n", sum.query(a, b));
-            } else {
-                int val;
-                scanf("%d", &val);
-                sum.update(a, b, val);
-            }
-        }
-    }
-
-    return 0;
+	return 0;
 }
