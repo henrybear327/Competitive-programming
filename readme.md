@@ -60,6 +60,8 @@ Winston Churchill
 * [Longest Subsequence](http://codeforces.com/contest/632/submission/19962496): kind of Sieve of Eratosthenes
 * [Bus to Udayland](http://codeforces.com/contest/711/problem/A)
 * [Chris and Magic Square](ttp://codeforces.com/contest/711/problem/B): What a great problem! Easy to get wrong answer on test cases over 90!
+* [Memory and Crow](http://codeforces.com/contest/712/problem/A): Math observation
+* [Memory and Trident](http://codeforces.com/contest/712/problem/B)
 
 ## Binary Search
 
@@ -120,6 +122,7 @@ Winston Churchill
     * [Fractions Again?!](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1917)
 * Triangle
     * [Pythagorean Triples](http://codeforces.com/problemset/problem/707/C)
+    * [Memory and De-Evolution](http://codeforces.com/contest/712/problem/C)
 
 ## Fun   
 
