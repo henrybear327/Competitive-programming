@@ -8,7 +8,32 @@ public class C
         MyScanner sc = new MyScanner();
         out = new PrintWriter(new BufferedOutputStream(System.out));
         
+        int a = sc.nextInt(), b = sc.nextInt();
         
+        ArrayList<Integer> inp = new ArrayList<Integer>();
+        
+        inp.add(b);
+        inp.add(b);
+        inp.add(b);
+        
+        Collections.sort(inp);
+        
+        int ans = 0;
+        while(true) {
+        	//System.out.printf("%d %d %d %d\n", inp.get(0), inp.get(1), inp.get(2), a);
+        	if( inp.get(0).intValue() == inp.get(1).intValue() && inp.get(1).intValue() == inp.get(2).intValue()
+        			&&  inp.get(0).intValue() == a )
+        		break;
+        	ans++;
+        	
+        	inp.remove(0);
+        	
+        	inp.add(Math.min(inp.get(0) + inp.get(1) - 1, a));
+        	
+        	Collections.sort(inp);
+        }
+        
+        out.println(ans);
         
         out.close();
     }
