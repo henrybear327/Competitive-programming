@@ -296,17 +296,20 @@ Winston Churchill
 * [Stockbroker Grapevine](http://poj.org/problem?id=1125)
 * [Weekend](http://codeforces.com/gym/101020/problem/H)
 * [Audiophobia](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=989): MST or Floyd-Warshall
+* [Page Hopping](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=762)
 
 ### Bellman-Ford
 
 * [Layout](http://poj.org/problem?id=3169): 差分約束系統
 * [Haunted Graveyard](http://poj.org/problem?id=3878)
 
-### Dijkatra
+### Dijkatra/SPFA
 
 * [Roadblocks](http://poj.org/problem?id=3255): next-to-shortest path
 * [Sightseeing](http://poj.org/problem?id=3463) : a good one!
 * [Dijkstra?](http://codeforces.com/gym/207990/problem/C)
+* [Number Maze](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=870)
+* [Mice and Maze](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=3553)
 
 ### Good ones (Mixed)
 

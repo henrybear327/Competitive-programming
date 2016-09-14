@@ -3,79 +3,54 @@
 using namespace std;
 
 typedef pair<int, int> ii;
-typedef vector<int> vi;
-typedef vector<ii> vii;
+typedef pair<int, ii> iii;
 
-#define INF 10000000
-
-const int dir[4][2] = {{-1, 0}, {1, 0}, {0, 1}, {0, -1}};
-
-int row, column;
-inline bool bounded(int x, int y)
-{
-    return 0 <= x && x < row && 0 <= y && y < column;
-}
-
+const int dx[4] = {0, 0, 1, -1};
+const int dy[4] = {1, -1, 0, 0};
 int main()
 {
-    int ncase;
-    scanf("%d", &ncase);
-    while(ncase--) {
-        scanf("%d %d", &row, &column);
+	int ncase;
+	scanf("%d", &ncase);
 
-        int tmp[row][column];
-        for(int i = 0; i < row; i++)
-            for(int j = 0; j < column; j++)
-                scanf("%d", &tmp[i][j]);
+	while(ncase--) {
+		int n, m;
+		scanf("%d %d", &n, &m);
 
-        vector<vii> AdjList;
-        AdjList.assign(row * column, vii()); // assign blank vectors of pair<int, int>s to AdjList
-        for(int i = 0; i < row; i++) {
-            for(int j = 0; j < column; j++) {
-                for(int k = 0; k < 4; k++) {
-                    int x = i + dir[k][0];
-                    int y = j + dir[k][1];
-                    if(bounded(x, y)) {
-                        AdjList[i * column + j].push_back(make_pair(x * column + y, tmp[x][y])); // directed graph
-                    }
-                }
-            }
-        }
+		int g[n][m];
+		long long d[n][m];
+		for(int i = 0; i < n; i++) 
+			for(int j = 0; j < m; j++) {
+				scanf("%d", &g[i][j]);
+				d[i][j] = INT_MAX;
+			}
 
-        //Dijkstra
+		// SPFA
+		priority_queue< iii, vector<iii>, greater<iii> > pq;
+		
+		d[0][0] = g[0][0];
+		pq.push(iii(g[0][0], ii(0, 0)));
+		while(pq.empty() == false) {
+			iii cur = pq.top();
+			pq.pop();
 
-        vector<int> dist;
-        dist.assign(row * column, INF);
+			if(cur.first > d[cur.second.first][cur.second.second])
+				continue;
 
-        dist[0] = tmp[0][0];
-        priority_queue<ii, vector<ii>, greater<ii> > pq;
-        pq.push(make_pair(0, 0));
+			for(int i = 0; i < 4; i++) {
+				int xx = cur.second.first + dx[i];
+				int yy = cur.second.second + dy[i];
 
-        while(!pq.empty()) {
-            ii curr = pq.top();
-            pq.pop();
+				if(0 <= xx && xx < n && 0 <= yy && yy < m) { // bitch, bound check
+					if(cur.first + g[xx][yy] < d[xx][yy]) {
+						d[xx][yy] = cur.first + g[xx][yy];
+						pq.push(iii(d[xx][yy], ii(xx, yy)));
+					}
+				}
+			}
+		}
 
-            int dist_to_s = curr.first;
-            int connect_with = curr.second;
+		printf("%lld\n", d[n - 1][m - 1]);
+	}
 
-            if(dist_to_s > dist[connect_with])
-                continue;
-            for(int i = 0; i < (int)AdjList[connect_with].size(); i++) {
-                ii &next = AdjList[connect_with][i];
-                if(dist[connect_with] + next.second < dist[next.first]) {
-                    dist[next.first] = dist[connect_with] + next.second;
-                    pq.push(make_pair(dist[next.first], next.first));
-                }
-            }
-        }
-        /*
-            for(int i = 0; i < row; i++)
-                for(int j = 0; j < column; j++)
-                    printf("%3d%c", dist[i * column + j], j == column - 1 ? '\n' : ' ');
-            printf("\n");
-        */
-        printf("%d\n", dist[row * column - 1]);
-    }
-
-    return 0;
+	return 0;
 }
