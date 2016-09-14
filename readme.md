@@ -220,10 +220,11 @@ Winston Churchill
 
 ## Fast power
 
-### Math
+* Math
     * [Kolya and Tanya](http://codeforces.com/contest/584/problem/B)
     * [Vanya and Label](http://codeforces.com/contest/677/problem/C)
-### Matrix
+
+* Matrix
     * [Iterated Linear Function](http://codeforces.com/problemset/problem/678/D)
 
 ## Time
@@ -234,22 +235,18 @@ Winston Churchill
 
 ## Tree
 
-### Articulation point
+* Articulation point
+    * [Network](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=24&problem=251)
 
-* [Network](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=24&problem=251)
+* Bridge
+    * [Critical Links](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=737)
+    * [E Reliable Nets](http://codeforces.com/gym/100650)
 
-### Bridge
+* 2-edge component
+    * [Redundant Paths](http://poj.org/problem?id=3177)
 
-* [Critical Links](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=737)
-* [E Reliable Nets](http://codeforces.com/gym/100650)
-
-### 2-edge component
-
-* [Redundant Paths](http://poj.org/problem?id=3177)
-
-### Tree center
-
-* [NCPC 2015 A Adjoin the networks](http://codeforces.com/gym/100781)
+* Tree center
+    * [NCPC 2015 A Adjoin the networks](http://codeforces.com/gym/100781)
 
 ## Kruskal
 
@@ -310,6 +307,7 @@ Winston Churchill
 * [Dijkstra?](http://codeforces.com/gym/207990/problem/C)
 * [Number Maze](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=870)
 * [Mice and Maze](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=3553)
+* [Sending email](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1927)
 
 ### Good ones (Mixed)
 
