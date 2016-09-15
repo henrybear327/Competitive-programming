@@ -299,6 +299,8 @@ Winston Churchill
 
 * [Layout](http://poj.org/problem?id=3169): 差分約束系統
 * [Haunted Graveyard](http://poj.org/problem?id=3878)
+* [Wormholes](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=499)
+* [Traffic](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1390): A very good question to think of cycle detection
 
 ### Dijkatra/SPFA
 

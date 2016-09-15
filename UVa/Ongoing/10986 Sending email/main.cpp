@@ -55,6 +55,10 @@ int main()
 						q.push(v);
 						inqueue[v] = true;
 						cnt[v]++;
+
+						if(cnt[v] == n) {
+							// loop!
+						}
 					}
 				}
 			}
