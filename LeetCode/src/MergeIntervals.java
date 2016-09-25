@@ -3,6 +3,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+// https://leetcode.com/problems/merge-intervals/
 public class MergeIntervals {
 	public List<Interval> merge(List<Interval> intervals) {
 		// sort it first
