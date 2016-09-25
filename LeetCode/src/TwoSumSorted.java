@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Solution {
+public class TwoSumSorted {
 	/**
 	 * Binary search for key. 
 	 * @param numbers array of integers
