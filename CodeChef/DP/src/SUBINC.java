@@ -16,6 +16,7 @@ public class SUBINC
         	for(int i = 0; i < n; i++) 
         		inp[i] = sc.nextInt();
         	
+        	int prev = 0;
         	for(int i = 0; i < n; i++) {
         		
         	}
