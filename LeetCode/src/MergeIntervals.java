@@ -3,7 +3,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class Solution {
+public class MergeIntervals {
 	public List<Interval> merge(List<Interval> intervals) {
 		// sort it first
 		Collections.sort(intervals, new Comparator<Interval>() {
@@ -48,7 +48,7 @@ public class Solution {
 	}
 
 	public static void main(String[] args) {
-		Solution s = new Solution();
+		MergeIntervals s = new MergeIntervals();
 		List<Interval> intervals = new ArrayList<Interval>();
 		intervals.add(new Interval(8, 10));
 		intervals.add(new Interval(15, 18));

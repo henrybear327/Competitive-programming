@@ -66,7 +66,7 @@ public class TwoSumSorted {
 		int nums[] = { 2, 7, 11, 15 };
 		int target = 9;
 
-		Solution s = new Solution();
+		TwoSumSorted s = new TwoSumSorted();
 		int[] ans = s.twoSum(nums, target);
 		System.out.println(ans[0] + " " + ans[1]);
 	}

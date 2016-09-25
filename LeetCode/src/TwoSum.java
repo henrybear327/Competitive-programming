@@ -36,7 +36,7 @@ public class TwoSum {
 		int nums[] = { 3, 2, 4 };
 		int target = 6;
 
-		Solution s = new Solution();
+		TwoSum s = new TwoSum();
 		int[] ans = s.twoSum(nums, target);
 		System.out.println(ans[0] + " " + ans[1]);
 	}
