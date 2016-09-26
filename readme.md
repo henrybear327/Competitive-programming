@@ -63,6 +63,7 @@ Winston Churchill
 * [Memory and Crow](http://codeforces.com/contest/712/problem/A): Math observation
 * [Memory and Trident](http://codeforces.com/contest/712/problem/B)
 * [Vitya in the Countryside](http://codeforces.com/contest/719/problem/A)
+* [Anatoly and Cockroaches](http://codeforces.com/contest/719/problem/B)
 
 ## Binary Search
 
