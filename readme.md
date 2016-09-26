@@ -62,6 +62,7 @@ Winston Churchill
 * [Chris and Magic Square](ttp://codeforces.com/contest/711/problem/B): What a great problem! Easy to get wrong answer on test cases over 90!
 * [Memory and Crow](http://codeforces.com/contest/712/problem/A): Math observation
 * [Memory and Trident](http://codeforces.com/contest/712/problem/B)
+* [Vitya in the Countryside](http://codeforces.com/contest/719/problem/A)
 
 ## Binary Search
 
