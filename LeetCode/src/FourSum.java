@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.Map.Entry;
 
-public class Solution {
+public class FourSum {
 	public List<List<Integer>> fourSum(int[] nums, int target) {
 		ArrayList<List<Integer>> res = new ArrayList<List<Integer>>();
 
@@ -79,7 +79,7 @@ public class Solution {
 		int[] nums = { 1, 0, -1, 0, -2, 2 };
 		int target = 0;
 
-		Solution s = new Solution();
+		FourSum s = new FourSum();
 		List<List<Integer>> res = s.fourSum(nums, target);
 
 		for (int i = 0; i < res.size(); i++) {
