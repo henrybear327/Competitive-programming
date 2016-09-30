@@ -1,4 +1,4 @@
-public class Solution {
+public class strStr {
 	public int strStr(String haystack, String needle) {
         if(haystack.length() < needle.length())
         	return -1;
@@ -21,7 +21,7 @@ public class Solution {
     	String haystack = "KerKerIsGood";
     	String needle = "Is";
     	
-    	Solution s = new Solution();
+    	strStr s = new strStr();
     	System.out.println(s.strStr(haystack, needle));
     }
 }
