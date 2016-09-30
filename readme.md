@@ -250,6 +250,9 @@ Winston Churchill
 * Tree center
     * [NCPC 2015 A Adjoin the networks](http://codeforces.com/gym/100781)
 
+* LCA
+    * [Nearest Common Ancestors](http://poj.org/problem?id=1330)
+
 ## Kruskal
 
 * [Out of Hay](http://poj.org/problem?id=2395)
