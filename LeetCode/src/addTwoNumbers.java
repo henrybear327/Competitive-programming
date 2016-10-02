@@ -1,4 +1,4 @@
-public class Solution {
+public class addTwoNumbers {
 	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 		ListNode res = new ListNode(-1), nextPos = res;
 		
@@ -57,7 +57,7 @@ public class Solution {
 		l2.next.next = new ListNode(4);
 		l2.next.next.next = null;
 
-		Solution s = new Solution();
+		addTwoNumbers s = new addTwoNumbers();
 
 		ListNode res = s.addTwoNumbers(l1, l2);
 
