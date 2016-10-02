@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Solution {
+public class mergeKLists {
 	// Sample solution
 	/*
 	private static final Comparator<ListNode> listComparator = new Comparator<ListNode>() {
@@ -86,7 +86,7 @@ public class Solution {
 			
 		ListNode[] array = new ListNode[] {l0, l1, l2};
 	
-		Solution s = new Solution();
+		mergeKLists s = new mergeKLists();
 
 		ListNode res = s.mergeKLists(array);
 		 
