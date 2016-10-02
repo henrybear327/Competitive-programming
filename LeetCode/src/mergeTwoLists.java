@@ -1,4 +1,4 @@
-public class Solution {
+public class mergeTwoLists {
 	public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 		ListNode head = new ListNode(0);
 		ListNode nextPos = head;
@@ -49,7 +49,7 @@ public class Solution {
 		l2.next.next = new ListNode(4);
 		l2.next.next.next = null;
 		
-		Solution s = new Solution();
+		mergeTwoLists s = new mergeTwoLists();
 		
 		ListNode res = s.mergeTwoLists(l1, l2);
 		
