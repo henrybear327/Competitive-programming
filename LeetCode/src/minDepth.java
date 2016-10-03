@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Solution {
+public class minDepth {
 	public static int depth;
 	
 	public void dfs(TreeNode root, int level) {
@@ -34,6 +34,6 @@ public class Solution {
 	}
 
 	public static void main(String argc[]) {
-		Solution s = new Solution();
+		minDepth s = new minDepth();
 	}
 }

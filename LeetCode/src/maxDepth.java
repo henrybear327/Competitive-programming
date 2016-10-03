@@ -1,24 +1,17 @@
 import java.util.*;
 
-public class Solution {
+public class maxDepth {
 	public static int depth;
-	
 	public void dfs(TreeNode root, int level) {
-    	if(root == null) {
-    		return;
-    	}
-		
+		if(root == null)
+			return;
+		depth = Math.max(depth, level);
 		dfs(root.left, level + 1);
 		dfs(root.right, level + 1);
-		
-		if(root.left == null && root.right == null)
-		    depth = Math.min(depth, level);
 	}
 	
-	public int minDepth(TreeNode root) {
-	    if(root == null)
-	        return 0;
-		depth = Integer.MAX_VALUE;
+	public int maxDepth(TreeNode root) {
+        depth = 0;
         dfs(root, 1);
         return depth;
     }
@@ -34,6 +27,6 @@ public class Solution {
 	}
 
 	public static void main(String argc[]) {
-		Solution s = new Solution();
+		maxDepth s = new maxDepth();
 	}
 }
