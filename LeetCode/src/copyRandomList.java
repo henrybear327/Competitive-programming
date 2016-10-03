@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Solution {
+public class copyRandomList {
 	public RandomListNode copyRandomList(RandomListNode head) {
 		if(head == null) // come on...
 			return null;
@@ -43,7 +43,7 @@ public class Solution {
 		head.next.random = head;
 		head.next.random = head.next.next;
 		
-		Solution s = new Solution();
+		copyRandomList s = new copyRandomList();
 
 		RandomListNode res = s.copyRandomList(head);
 
