@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Solution {
+public class searchInsert {
 	public int searchInsert(int[] nums, int target) { // upper bound
 		int l = -1, r = nums.length;
 		while(r - l > 1) {
@@ -17,7 +17,7 @@ public class Solution {
 	}
 
 	public static void main(String argc[]) {
-		Solution s = new Solution();
+		searchInsert s = new searchInsert();
 		System.err.println(s.searchInsert(new int[] {1, 3, 5, 6}, 0));
 	}
 }
