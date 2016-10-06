@@ -7,73 +7,62 @@
 using namespace std;
 
 #define N 10100
+#define LOGN 15
 vector<int> g[N];
 
-int lca[N][15], depth[N];
+int depth[N], lca[N][15];
 
-bool seen[N];
 void dfs(int u, int p, int d)
 {
-	if(seen[u])
+	if(depth[u] != -1)
 		return;
-	seen[u] = true;
-
-	lca[u][0] = p;
 	depth[u] = d;
+	lca[u][0] = p;
 
 	for(int i = 0; i < (int)g[u].size(); i++) {
 		int v = g[u][i];
-
-		if(v == p)
-			continue;
 		dfs(v, u, d + 1);
 	}
 }
 
-void computeLCA(int n, int root)
+void buildLCA(int n, int root)
 {
-	// build lca[i][0]; // 2^0 step
-	memset(seen, false, sizeof(seen));
-	memset(depth, 0, sizeof(depth));
-	dfs(root, -1, 0);
+	memset(lca, -1, sizeof(lca));
+	memset(depth, -1, sizeof(depth));
+	dfs(root, -1, 1); // root is depth 1
 
-	// build lca[i][all the rest]
-	for(int i = 1; i < 15; i++) {
-		for(int u = 1; u <= n; u++) {
+	// lca [u][0] is build to its parent after dfs call
+	for(int i = 1; i < LOGN; i++) 
+		for(int u = 1; u <= n; u++) 
 			if(lca[u][i - 1] != -1)
 				lca[u][i] = lca[lca[u][i - 1]][i - 1];
-		}
-	}
 }
 
-int query(int x, int y)
+int queryLCA(int u, int v)
 {
-	if(depth[x] < depth[y]) // let x be deeper
-		swap(x, y);
-
-	// move to same depth
-	int depthDiff = depth[x] - depth[y];
-	for(int i = 0; i < 15; i++) {
-		if(depthDiff & (1 << i)) {
-			x = lca[x][i];
+	if(depth[u] < depth[v])
+		swap(u, v);
+	
+	// move u v to same depth
+	int diff = depth[u] - depth[v];
+	for(int i = LOGN - 1; i >= 0; i--) 
+		if( (diff >> i) & 1 ) 
+			u = lca[u][i];
+	
+	// check if on same node
+	if(u == v)
+		return u;
+	
+	// binary search for answer
+	for(int i = LOGN - 1; i >= 0; i--) 
+		if(lca[u][i] != lca[v][i]) {
+			u = lca[u][i];
+			v = lca[v][i];
 		}
-	}
-
-	// check x == y
-	if(x == y)
-		return x;
-
-	// move up till same
-	for(int i = 15 - 1; i >= 0; i--) {
-		if(lca[x][i] != lca[y][i]) {
-			x = lca[x][i];
-			y = lca[y][i];
-		}
-	}
-	return lca[x][0];
+	return lca[u][0]; // need to go one step forward?
 }
 
-int main()
+int main() 
 {
 	int ncase;
 	scanf("%d", &ncase);
@@ -82,31 +71,29 @@ int main()
 		int n;
 		scanf("%d", &n);
 
-		for(int i = 1; i <= n; i++) 
+		for(int i = 1; i <= n; i++)
 			g[i].clear();
 
-		// build
-		memset(lca, -1, sizeof(lca));
+		vector<bool> hasParent (n + 1, false);
 		for(int i = 0; i < n - 1; i++) {
-			int u, v;
-			scanf("%d %d", &u, &v);
-
-			lca[v][0] = u;
-			g[u].push_back(v);
+			int parent, child;
+			scanf("%d %d", &parent, &child);
+			hasParent[child] = true;
+			g[parent].push_back(child);
 		}
 
-		int root;
+		int root = -1;
 		for(int i = 1; i <= n; i++)
-			if(lca[i][0] == -1)
+			if(hasParent[i] == false) {
 				root = i;
+				break;
+			}
 
-		// precompute LCA
-		computeLCA(n, root);
+		buildLCA(n, root);
 
-		// query
-		int x, y;
-		scanf("%d %d", &x, &y);
-		printf("%d\n", query(x, y));
+		int u, v;
+		scanf("%d %d", &u, &v);
+		printf("%d\n", queryLCA(u, v));
 	}
 
 	return 0;
