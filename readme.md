@@ -64,6 +64,7 @@ Winston Churchill
 * [Memory and Trident](http://codeforces.com/contest/712/problem/B)
 * [Vitya in the Countryside](http://codeforces.com/contest/719/problem/A)
 * [Anatoly and Cockroaches](http://codeforces.com/contest/719/problem/B)
+* [Batch Sort](http://codeforces.com/contest/724/problem/B): Enumerate
 
 ## Binary Search
 
@@ -104,6 +105,7 @@ Winston Churchill
     * [Alyona and Numbers](http://codeforces.com/contest/682/problem/A)
     * [Mashmokh and Tokens](http://codeforces.com/contest/415/problem/B): watch out for corner case
     * [Three Different Numbers ](https://www.codechef.com/problems/THREEDIF): Best mod practice problem even seen. Combinatorics techniques required.
+    * [Checking the Calendar](http://codeforces.com/contest/724/problem/A)
 * Set
     * [Watchmen](http://codeforces.com/contest/651/problem/C)
     * [Two Sets](http://codeforces.com/gym/207990/problem/E): if a - x is not in the set, then x is not in the set.
