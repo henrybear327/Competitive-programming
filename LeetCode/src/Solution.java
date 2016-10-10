@@ -1,23 +1,27 @@
 import java.util.*;
 
 public class Solution {
-	public int searchInsert(int[] nums, int target) { // upper bound
-		int l = -1, r = nums.length;
-		while(r - l > 1) {
-			// 0 0 0 0 1 1 1 1 1
-			int mid = (l + r) / 2;
-			if(nums[mid] == target) 
-				return mid;
-			else if(nums[mid] > target)
-				r = mid;
-			else 
-				l = mid;
-		}
-		return r;
-	}
+public int findMin(int[] nums) {
+        if(nums.length == 1)
+        	return nums[0];
+        if(nums[0] < nums[nums.length - 1])
+        	return nums[0];
+        
+        int l = 0, r = nums.length;
+        while(r - l > 1) {
+        	int mid = (l + r) / 2;
+        	if(nums[mid] > nums[l])
+        		l = mid;
+        	else if(nums[mid] < nums[l])
+        		r = mid;
+        	else 
+				l++;
+        }
+        return nums[r];
+    }
 
 	public static void main(String argc[]) {
 		Solution s = new Solution();
-		System.err.println(s.searchInsert(new int[] {1, 3, 5, 6}, 0));
+		System.err.println(s.findMin(new int[] {5, 1, 1, 2, 2, 3, 4}));
 	}
 }
