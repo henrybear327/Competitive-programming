@@ -83,6 +83,9 @@ Winston Churchill
 * [Cubist Artwork](http://poj.org/problem?id=3802)
 * [Tavas and Karafs](http://codeforces.com/contest/535/problem/C)
 * [Interesting drink](http://codeforces.com/contest/706/problem/B)
+* [Hopscotch](http://poj.org/problem?id=3050): Enumerate
+* [Epidemic in Monstropolis](http://codeforces.com/contest/733/problem/C): Awesome one to practice implementation and observation skills
+* [Kostya the Sculptor](http://codeforces.com/contest/733/problem/D): After you got the observation, it's easy to code using `set`
 
 ## Two pointer
 
