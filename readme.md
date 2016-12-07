@@ -65,6 +65,8 @@ Winston Churchill
 * [Vitya in the Countryside](http://codeforces.com/contest/719/problem/A)
 * [Anatoly and Cockroaches](http://codeforces.com/contest/719/problem/B)
 * [Batch Sort](http://codeforces.com/contest/724/problem/B): Enumerate
+* [Arpa’s hard exam and Mehrdad’s naive cheat](http://codeforces.com/contest/742/problem/A)
+* [Arpa’s obvious problem and Mehrdad’s terrible solution](ttp://codeforces.com/contest/742/problem/B): XOR property
 
 ## Binary Search
 
@@ -162,6 +164,7 @@ Winston Churchill
 
 * Observation
     * [Bakery](http://codeforces.com/problemset/problem/707/B)
+    * [Arpa's loud Owf and Mehrdad's evil plan](http://codeforces.com/contest/741/problem/A): combine with lcm
 * DFS
     * [New Reform](http://codeforces.com/contest/659/problem/E)
     * [Apple Tree](http://poj.org/problem?id=3321)
