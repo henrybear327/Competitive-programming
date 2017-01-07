@@ -67,6 +67,7 @@ Winston Churchill
 * [Batch Sort](http://codeforces.com/contest/724/problem/B): Enumerate
 * [Arpa’s hard exam and Mehrdad’s naive cheat](http://codeforces.com/contest/742/problem/A)
 * [Arpa’s obvious problem and Mehrdad’s terrible solution](ttp://codeforces.com/contest/742/problem/B): XOR property
+* [Santa Claus and Candies](http://codeforces.com/contest/753/problem/A): Need good math observation
 
 ## Binary Search
 
