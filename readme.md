@@ -59,16 +59,16 @@ Winston Churchill
 * [Brain's Photos](http://codeforces.com/problemset/problem/707/A)
 * [Longest Subsequence](http://codeforces.com/contest/632/submission/19962496): kind of Sieve of Eratosthenes
 * [Bus to Udayland](http://codeforces.com/contest/711/problem/A)
-* [Chris and Magic Square](ttp://codeforces.com/contest/711/problem/B): What a great problem! Easy to get wrong answer on test cases over 90!
+* [Chris and Magic Square](http://codeforces.com/contest/711/problem/B): What a great problem! Easy to get wrong answer on test cases over 90!
 * [Memory and Crow](http://codeforces.com/contest/712/problem/A): Math observation
 * [Memory and Trident](http://codeforces.com/contest/712/problem/B)
 * [Vitya in the Countryside](http://codeforces.com/contest/719/problem/A)
 * [Anatoly and Cockroaches](http://codeforces.com/contest/719/problem/B)
 * [Batch Sort](http://codeforces.com/contest/724/problem/B): Enumerate
 * [Arpa’s hard exam and Mehrdad’s naive cheat](http://codeforces.com/contest/742/problem/A)
-* [Arpa’s obvious problem and Mehrdad’s terrible solution](ttp://codeforces.com/contest/742/problem/B): XOR property
+* [Arpa’s obvious problem and Mehrdad’s terrible solution](http://codeforces.com/contest/742/problem/B): XOR property
 * [Santa Claus and Candies](http://codeforces.com/contest/753/problem/A): Need good math observation
-
+* [New Year and North Pole](http://codeforces.com/problemset/problem/750/B): Good one
 ## Binary Search
 
 * [Hard Process](http://codeforces.com/contest/660/problem/C): Watch out for the initial condition!
