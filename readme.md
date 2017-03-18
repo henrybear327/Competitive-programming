@@ -86,6 +86,8 @@ Winston Churchill
 * [Cubist Artwork](http://poj.org/problem?id=3802)
 * [Tavas and Karafs](http://codeforces.com/contest/535/problem/C)
 * [Interesting drink](http://codeforces.com/contest/706/problem/B)
+* [River Hopscotch](http://poj.org/problem?id=3258)
+* [Monthly Expense](http://poj.org/problem?id=3273)
 
 ## Two pointer
 
