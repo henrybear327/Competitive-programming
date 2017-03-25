@@ -50,7 +50,8 @@ int main()
 
             ll val = check(mid);
             // printf("before %d %d %d %lld\n", l, mid, r, val);
-            if (val < (total + 1) / 2) { // this equal sign is fucking crucial -> try 2 2 3 9
+            if (val < (total + 1) /
+                2) { // this equal sign is fucking crucial -> try 2 2 3 9
                 l = mid;
             } else {
                 r = mid;
