@@ -25,7 +25,8 @@ int main()
 
 		int begin = 1, end = 0, ans = 1;
 		for(int i = 0; i < n; i++) {
-			if(inp[i].first <= begin || inp[i].second <= end) { // the starting point is <= begin
+			if(inp[i].first <= begin || inp[i].second <= end) { 
+				// the starting point is <= begin or the ending point in less than the current ending point
 				if(inp[i].second > end) // extend the end point as far as you can
 					end = inp[i].second;
 			} else {
