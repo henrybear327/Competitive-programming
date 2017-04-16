@@ -188,6 +188,7 @@ Winston Churchill
     * [B Countdown](http://codeforces.com/gym/100650): Do memory management on your own!
 * Good ones
     * [NP-Hard Problem](http://codeforces.com/contest/688/problem/C)
+    * [Bank Hacking](http://codeforces.com/contest/796/problem/C)
 * MST
     * [Transportation system](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2169): Great one!
     * [Dark roads](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=24&problem=2678&mosmsg=Submission+received+with+ID+17844734)
