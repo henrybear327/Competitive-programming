@@ -1,22 +1,21 @@
+#include <algorithm>
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
-#include <algorithm>
 #include <vector>
 
 using namespace std;
 
 typedef long long ll;
 
-int num[1000001];
-
 int main()
 {
-    int cnt = 1;
-    while (scanf("%d", &num[cnt]) == 1)
-        cnt++;
-    cnt--;
+    vector<int> inp;
+    int num;
+    while (scanf("%d", &num) == 1)
+        inp.push_back(num);
 
-    sort(num + 1, num + cnt + 1);
-    printf("%d\n", cnt % 2 == 0 ? num[cnt / 2] : num[(cnt + 1) / 2]);
+    sort(inp.begin(), inp.end());
+    int cnt = (int)inp.size();
+    printf("%d\n", cnt % 2 == 0 ? inp[cnt / 2 - 1] : inp[(cnt + 1) / 2 - 1]);
 }
