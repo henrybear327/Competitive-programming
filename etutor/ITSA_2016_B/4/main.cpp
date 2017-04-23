@@ -8,8 +8,6 @@ using namespace std;
 
 typedef long long ll;
 
-int num[1000001];
-
 int main()
 {
     int ncase;

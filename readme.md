@@ -69,6 +69,9 @@ Winston Churchill
 * [Arpa’s obvious problem and Mehrdad’s terrible solution](http://codeforces.com/contest/742/problem/B): XOR property
 * [Santa Claus and Candies](http://codeforces.com/contest/753/problem/A): Need good math observation
 * [New Year and North Pole](http://codeforces.com/problemset/problem/750/B): Good one
+* [Mike and palindrome](http://codeforces.com/contest/798/problem/A): Special case
+* [Mike and strings](http://codeforces.com/contest/798/problem/B): realize that 50 is so small that O(n^3) can work
+
 ## Binary Search
 
 * [Hard Process](http://codeforces.com/contest/660/problem/C): Watch out for the initial condition!
