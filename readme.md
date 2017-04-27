@@ -127,6 +127,7 @@ Winston Churchill
 * GCD
     * [Good Coins](http://codeforces.com/gym/101020/problem/J)
     * [Alice and Bob](http://codeforces.com/problemset/problem/346/A)
+    * [Mike and gcd problem](http://codeforces.com/contest/798/problem/C)
 * Combinatorics
     * [Number of Ways](http://codeforces.com/contest/466/problem/C)
     * [Chef and Strange Operations](https://www.codechef.com/FEB16/problems/STROPR): Need good observation of pascal triangle
