@@ -60,7 +60,7 @@ void solve()
 		u--;
 		v--;
 
-		g[v].push_back(Edge(u, w));
+		g[v].push_back(Edge(u, w)); // fuck this shit...
 	}
 
 	// get shortest path from e to all other vertex
