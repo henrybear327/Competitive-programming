@@ -4,10 +4,10 @@ using namespace std;
 
 int main()
 {
-	long long x;
-	scanf("%lld", &x);
+    long long x;
+    scanf("%lld", &x);
 
-	printf("%lld\n", x);
+    printf("%lld\n", x);
 
-	return 0;
+    return 0;
 }

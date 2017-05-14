@@ -4,16 +4,15 @@ using namespace std;
 
 int main()
 {
-	int n;
-	scanf("%d", &n);
+    int n;
+    scanf("%d", &n);
 
+    while (n--) {
+        int a, b;
+        scanf("%d %d", &a, &b);
 
-	while(n--) {
-		int a, b;
-		scanf("%d %d", &a, &b);
-		
-		printf("%d\n", a % b);
-	}
+        printf("%d\n", a % b);
+    }
 
-	return 0;
+    return 0;
 }

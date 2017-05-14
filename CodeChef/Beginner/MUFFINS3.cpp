@@ -7,22 +7,22 @@ typedef pair<int, int> ii;
 
 void solve()
 {
-	int n;
-	scanf("%d", &n);
+    int n;
+    scanf("%d", &n);
 
-	int mid = n / 2 + 1;
-	
-	printf("%d\n", mid);
+    int mid = n / 2 + 1;
+
+    printf("%d\n", mid);
 }
 
 int main()
 {
-	int ncase;
-	scanf("%d", &ncase);
+    int ncase;
+    scanf("%d", &ncase);
 
-	while(ncase--) {
-		solve();
-	}
+    while (ncase--) {
+        solve();
+    }
 
-	return 0;
+    return 0;
 }

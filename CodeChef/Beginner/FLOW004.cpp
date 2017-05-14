@@ -7,20 +7,20 @@ typedef pair<int, int> ii;
 
 void solve()
 {
-	char inp[11];
-	scanf("%s", inp);
+    char inp[11];
+    scanf("%s", inp);
 
-	printf("%d\n", (inp[0] - '0') + (inp[strlen(inp) - 1] - '0'));
+    printf("%d\n", (inp[0] - '0') + (inp[strlen(inp) - 1] - '0'));
 }
 
 int main()
 {
-	int ncase;
-	scanf("%d", &ncase);
+    int ncase;
+    scanf("%d", &ncase);
 
-	while(ncase--) {
-		solve();
-	}
+    while (ncase--) {
+        solve();
+    }
 
-	return 0;
+    return 0;
 }

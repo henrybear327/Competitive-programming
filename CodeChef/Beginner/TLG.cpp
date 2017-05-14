@@ -9,28 +9,28 @@ int a = 0, b = 0;
 int aa = 0, bb = 0;
 void solve()
 {
-	int x, y;
-	scanf("%d %d", &x, &y);
+    int x, y;
+    scanf("%d %d", &x, &y);
 
-	aa += x;
-	bb += y;
+    aa += x;
+    bb += y;
 
-	if(aa > bb)
-		a = max(a, aa - bb);
-	else
-		b = max(b, bb - aa);
+    if (aa > bb)
+        a = max(a, aa - bb);
+    else
+        b = max(b, bb - aa);
 }
 
 int main()
 {
-	int ncase;
-	scanf("%d", &ncase);
+    int ncase;
+    scanf("%d", &ncase);
 
-	while(ncase--) {
-		solve();
-	}
+    while (ncase--) {
+        solve();
+    }
 
-	printf("%d %d\n", a > b ? 1 : 2, a > b ? a : b);
+    printf("%d %d\n", a > b ? 1 : 2, a > b ? a : b);
 
-	return 0;
+    return 0;
 }

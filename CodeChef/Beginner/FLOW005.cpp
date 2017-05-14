@@ -7,25 +7,25 @@ typedef pair<int, int> ii;
 
 int main()
 {
-	int ncase;
-	scanf("%d", &ncase);
+    int ncase;
+    scanf("%d", &ncase);
 
-	while(ncase--) {
-		int n;
-		scanf("%d", &n);
+    while (ncase--) {
+        int n;
+        scanf("%d", &n);
 
-		const int deniminations[] = {100, 50, 10, 5, 2, 1};
-		int ans = 0;
-		
-		for(int i = 0; i < 6; i++) {
-			while(n >= deniminations[i]) {
-				n -= deniminations[i];
-				ans++;
-			}
-		}
+        const int deniminations[] = {100, 50, 10, 5, 2, 1};
+        int ans = 0;
 
-		printf("%d\n", ans);
-	}
+        for (int i = 0; i < 6; i++) {
+            while (n >= deniminations[i]) {
+                n -= deniminations[i];
+                ans++;
+            }
+        }
 
-	return 0;
+        printf("%d\n", ans);
+    }
+
+    return 0;
 }

@@ -7,21 +7,21 @@ typedef pair<int, int> ii;
 
 int main()
 {
-	int n;
-	scanf("%d", &n);
-	
-	vector<int> inp;
-	for(int i = 0; i < n; i++) {
-		int tmp;
-		scanf("%d", &tmp);
+    int n;
+    scanf("%d", &n);
 
-		inp.push_back(tmp);
-	}
+    vector<int> inp;
+    for (int i = 0; i < n; i++) {
+        int tmp;
+        scanf("%d", &tmp);
 
-	sort(inp.begin(), inp.end());
+        inp.push_back(tmp);
+    }
 
-	for(int i = 0; i < n; i++)
-		printf("%d\n", inp[i]);
+    sort(inp.begin(), inp.end());
 
-	return 0;
+    for (int i = 0; i < n; i++)
+        printf("%d\n", inp[i]);
+
+    return 0;
 }
