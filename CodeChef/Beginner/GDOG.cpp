@@ -7,8 +7,13 @@ typedef pair<int, int> ii;
 
 void solve()
 {
-    int n;
-    scanf("%d", &n);
+    int n, k;
+    scanf("%d %d", &n, &k);
+	
+	int res = 0;
+	for(int i = 1; i <= k; i++)
+		res = max(res, n % i);
+	printf("%d\n", res);
 }
 
 int main()
