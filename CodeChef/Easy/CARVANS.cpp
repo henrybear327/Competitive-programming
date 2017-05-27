@@ -10,16 +10,18 @@ void solve()
     int n;
     scanf("%d", &n);
 
-    int inp[n];
-    for (int i = 0; i < n; i++)
-        scanf("%d", &inp[i]);
-    sort(inp, inp + n);
+    int cnt = 0, mn = INT_MAX;
+    for (int i = 0; i < n; i++) {
+        int tmp;
+        scanf("%d", &tmp);
 
-    int res = INT_MAX;
-    for (int i = 0; i < n - 1; i++)
-        res = min(res, inp[i + 1] - inp[i]);
+        if (mn >= tmp) {
+            cnt++;
+            mn = tmp;
+        }
+    }
 
-    printf("%d\n", res);
+    printf("%d\n", cnt);
 }
 
 int main()
