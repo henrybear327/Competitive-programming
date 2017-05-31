@@ -7,18 +7,18 @@ typedef pair<int, int> ii;
 
 ll gcd(int a, int b)
 {
-	return a == 0 ? b : gcd(b % a, a);
+    return a == 0 ? b : gcd(b % a, a);
 }
 
 void solve()
 {
-	int n, k;
+    int n, k;
     scanf("%d %d", &n, &k);
 
-	ll g = gcd(n, k);
-	ll l = (ll)n * k / g;
+    ll g = gcd(n, k);
+    ll l = (ll)n * k / g;
 
-	printf("%lld %lld\n", g, l);
+    printf("%lld %lld\n", g, l);
 }
 
 int main()
