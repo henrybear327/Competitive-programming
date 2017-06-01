@@ -7,9 +7,9 @@ typedef pair<int, int> ii;
 
 int getType(char c)
 {
-    if(c == 'C')
+    if (c == 'C')
         return 0;
-    else if(c == 'E')
+    else if (c == 'E')
         return 1;
     else
         return 2;
@@ -21,18 +21,19 @@ void solve()
     scanf("%s", inp);
 
     int len = strlen(inp);
-    int mx = getType(inp[0]);;
+    int mx = getType(inp[0]);
+    ;
     bool ok = true;
-    for(int i = 1; i < len; i++) {
+    for (int i = 1; i < len; i++) {
         int state = getType(inp[i]);
 
-        if(state == mx)
+        if (state == mx)
             continue;
 
-        if(state < mx)
+        if (state < mx)
             ok = false;
 
-        if(state > mx)
+        if (state > mx)
             mx = state;
     }
 
