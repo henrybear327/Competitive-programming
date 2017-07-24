@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 
 // For every query, binary search for the upper-left corner of the square
-// And then binary search for the lower-left corner "on the diagnal"
+// And then binary search for the lower-left corner "on the diagnal
 
 using namespace std;
 
