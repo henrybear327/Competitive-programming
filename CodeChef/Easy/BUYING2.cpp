@@ -1,3 +1,5 @@
+// Good one!
+// Need good observation
 #include <bits/stdc++.h>
 
 using namespace std;
