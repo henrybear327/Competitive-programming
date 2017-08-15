@@ -1,0 +1,71 @@
+\begin{center}
+    {\LARGE Problem E}\vspace{1mm}\\
+    {\Large Fences}\\
+    {Time limit: 3 seconds}\\
+    {Memory limit: 512 megabytes}
+\end{center}
+
+\textbf{\large Problem Description}
+
+Your friend, Donald, has a villa surrounded by two tiers of fences, and he 
+wants to calculate the area of land between them. He can measure the length 
+of any fence, but Donald has no idea on calculating the area. 
+Watson, one of Donald's friends, notices that the fences are probably built by 
+a computer scientist mastering the knowledge of computational geometry, 
+because the following facts are no coincidence.
+\begin{itemize}
+\item The shape of the land inside the outer tier is a perfect circle $C$. 
+Let $B$ denote the set of points on the boundary of $C$.
+\item The shape of the land inside the inner tier is a non-self-intersecting polygon $P$ of $n$ vertices. I.e., two edges do not intersect if they don't share a common vertex. Let $V$ denote the set of vertices of $P$. 
+\item All vertices of $P$ have identical minimum distances to $C$. 
+In other words, for distinct vertices $(x_u,y_u),(x_v,y_v)\in V$, 
+we have 
+$$\min_{(x,y)\in B}\sqrt{(x-x_u)^2+(y-y_u)^2}=\min_{(x,y)\in B}\sqrt{(x-x_v)^2+(y-y_v)^2}.$$
+ 
+\end{itemize}
+Suddenly, you know how to calculate the area of land between the two tiers 
+of fences from the total length $c$ of outer tier and the lengths 
+$\ell_1,\dots,\ell_n$ of the $n$ edges of $P$. Note that Donald can measure 
+these length. Could you help him to calculate the area?
+
+\textbf{\large Input Format}
+
+The first line of the input contains a positive integer $T$ indicating the 
+number of test cases. Each test case consists of two lines.
+The first line contains two numbers $c$ and $n$ separated by a space. $c$ is 
+the total length of the outer tier, i.e., $c$ is the perimeter of $C$. 
+$n$ is the number of vertices of P. The second line contains $n$ positive 
+integers $\ell_1,\dots,\ell_n$ indicating the lengths of 
+edges of $P$. 
+
+You may assume:
+\begin{itemize}
+    \tightlist{}
+    \item $1 \le T \le 100$
+    \item $3 \le n \le 10$
+    \item $10 \le c\le 1000$
+    \item $\ell_1,\dots,\ell_n>0$
+    \item $P$ must be inside the circle $C$.
+\end{itemize}
+
+\textbf{\large Output Format}
+
+For each case, output the area between the two tiers of fences. 
+Your answer will be accepted if the absolute error or the relative error is less than $10^{-6}$.
+
+\textbf{\large Sample Input}
+
+\begin{verbatim}
+2
+10.0 3
+1 1 1
+10.0 4
+1 1 1 1
+\end{verbatim}
+
+\textbf{\large Sample Output}
+
+\begin{verbatim}
+7.524734452702549
+6.9577471545947684
+\end{verbatim}

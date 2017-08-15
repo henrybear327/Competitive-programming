@@ -1,0 +1,61 @@
+\begin{center}
+    {\LARGE Problem C}\vspace{1mm}\\
+    {\Large Coloring Intervals}\\
+    {Time limit: 3 seconds}\\
+    {Memory limit: 512 megabytes}
+\end{center}
+
+\textbf{\large Problem Description}
+
+對任兩個實數$a\le b$，閉區間$[a,b]$乃指介於$a$與$b$之間（包含$a$與$b$）
+的實數之集合。
+例如，$[3,5]=\{x\in\mathbb{R}\mid 3\le x\le 5\}$。
+
+鮑伯有$n$個閉區間，分別為$[a_1,b_1]$、$[a_2,b_2]$、$\ldots$、$[a_n,b_n]$，
+其中對所有相異$i$、$j\in\{1,2,\ldots,n\}$，
+\begin{itemize}
+%\addtolength\itemsep{-.3em}
+\item $a_i,b_i$ 均為正整數
+\item $a_i\le b_i$，即 $[a_i,b_i]$ 不是空集合。
+\item $a_i\neq b_j$、$a_i\neq a_j$ 且 $b_i\neq b_j$，即相異區間不會有共通的端點。
+\end{itemize}
+他想要將每個閉區間塗上一個顏色，且使任兩相異且有交集的區間被塗上相異的顏色。
+鮑伯想知道最少要有幾個顏色才可以做這件事。
+換句話說，他想找到最小的正整數$k$，使得$n$個閉區間中的都可以被賦予$1$、$2$、$\ldots$、$k$
+中的一個值，而使任兩相異且相交的區間被賦予的值相異。請幫他算吧。
+
+\textbf{\large Input Format}
+
+第一行給出測資筆數$T$。接下來的$T$行中，每一行都指定一筆測資，指定的方法是依序給出
+$n$、$a_1$、$b_1$、$a_2$、$b_2$、$\ldots$、$a_n$、$b_n$。
+同一行中的連續兩數字將被一或多個空白隔開。
+
+可假設：
+\begin{itemize}
+    \tightlist{}
+    \item $1 \le T \le 10$
+    \item $n\in \{2,3,\ldots,100000\}$
+    \item 對每個$i\in\{1,2,\ldots,n\}$，$a_i$與$b_i$都是小於等於$2^{32}-1$的正整數。
+\end{itemize}
+
+\textbf{\large Output Format}
+
+對每一筆測資，輸出最小的正整數$k$，使得$[a_1,b_1]$、$[a_2,b_2]$、$\ldots$、$[a_n,b_n]$
+中的任何一個都可以被賦予$1$、$2$、$\ldots$、$k$中的一個值，而使任兩相異且相交的區間被賦予的值相異。
+
+\textbf{\large Sample Input}
+
+\begin{verbatim}
+3
+4 1 2 3 5 4 8 6 7
+5 2 5 1 10 3 7 4 6 8 9
+4 3 7 4 5 2 9 6 8
+\end{verbatim}
+
+\textbf{\large Sample Output}
+\begin{verbatim}
+2
+4
+3
+\end{verbatim}
+

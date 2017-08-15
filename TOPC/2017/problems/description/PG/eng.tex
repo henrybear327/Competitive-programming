@@ -1,0 +1,82 @@
+\begin{center}
+    {\LARGE Problem G}\vspace{1mm}\\
+    {\Large The Jet-Black Wings}\\
+    {Time limit: 3 seconds}\\
+    {Memory limit: 512 megabytes}
+\end{center}
+
+\textbf{\large Problem Description}
+
+``AHHHHHHHHH...''
+
+Eddy, who calls himself "The Jet-Black Wings", is fighting against an evil organization called Dark
+Reunion. Then, he startled from the dream.
+
+``I must be more powerful.'' Eddy said to himself in his mind.
+
+Eddy often practice to be a powerful fighter. During his practice, he collects $N$ magic stones. The
+$i$-th stone contains $A_i$ units of dark forces. Eddy does the instruction for $Q$ turns, each turn
+he has two choices:
+
+\begin{itemize}
+\item[$1\ X$:] Use $X$ units of dark forces to all of the magic stones. Thus, the dark forces of the
+  $i$-th magic stone changes to $A_i \oplus X$.
+\item[$2\ K$:] Sort all the magic stones by their dark forces increasely and sum up the dark forces
+  of the first $K$ magic stones.
+\end{itemize}
+
+Could you help Eddy to check whether he is correct?
+
+Expression $x \oplus y$ means applying bitwise exclusive or operation to integers $x$ and $y$.
+The given operation exists in all modern programming languages, for example, in languages C++ and
+Java it is represented as ``\^{}'', in Pascal — as ``xor''.
+
+\textbf{\large Input Format}
+
+On the first line there is a single integer $T$ indicating the number of test cases.
+
+The first line of each test case contains two integers $N$, $Q$, indicating the
+number of magic stones and the number of instructions.
+
+The second line of each test case contains $N$ integers $A_1, A_2, \ldots, A_N$, indicating the dark
+forces of the $i$-th magic stone.
+
+For the following $Q$ lines, each line contains an instruction ``$1\ X$'' or ``$2\ K$''.
+
+You may assume:
+\begin{itemize}
+    \tightlist{}
+    \item $T \le 1000$
+    \item $1 \le N, Q \le 100000$
+    \item $0 \le A_i, X < 2^{31}$
+    \item $1 \le K \le N$
+    \item There are at most $5$ test cases with $N + Q > 200$.
+\end{itemize}
+
+
+\textbf{\large Output Format}
+
+For each ``$2\ K$'' instruction, sum up the dark forces of the first $K$ magic stones after sorted
+and output in one line.
+
+\textbf{\large Sample Input}
+
+\begin{verbatim}
+1
+3 6
+4 8 3
+1 3
+1 1
+2 3
+1 2
+2 2
+2 1
+\end{verbatim}
+
+\textbf{\large Sample Output}
+\begin{verbatim}
+17
+7
+3
+\end{verbatim}
+

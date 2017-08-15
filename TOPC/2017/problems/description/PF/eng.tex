@@ -1,0 +1,53 @@
+\begin{center}
+    {\LARGE Problem F}\vspace{1mm}\\
+    {\Large A Simple Function}\\
+    {Time limit: 1 second}\\
+    {Memory limit: 512 megabytes}
+\end{center}
+
+\textbf{\large Problem Description}
+
+A function $f:\mathbb{N}^{3} \to \mathbb{N}$ where $\mathbb{N}$ stands for the set of non-negative integers, is defined as follows.
+
+\begin{outline}
+	\1 $f(i, 0, M)=1$, for all $i$ and $M$.
+	\1 $f(i, i, M)=1$, for all $i$ and $M$.
+	\1 $f(i, x, M)=0$, for all $i < x$.
+	\1 $f(i, x, M)=f(i-1, x-1, M)+f(i-1, x, M)$, if $f(i-1, x-1, M)+f(i-1, x, M)$ is NOT a multiple of $M$, for all $0 < x < i$.
+	\1 $f(i, x, M)=0$, if $f(i-1, x-1, M)+f(i-1, x, M)$ is a multiple of $M$, for all $0 < x < i$.
+\end{outline}
+
+For example, $f(2, 1, 2) = 0$ and $f(4, 2, 5) = 6$.
+
+\textbf{\large Input Format}
+
+The first line of the input contains an integer $T$, the number of test cases. $T$ lines follow, one line per test case consisting of three space-separated integers $a$, $b$ and $M$ indicating that the value of $f(a, b, M)$ is to be computed.
+
+You may assume:
+\begin{itemize}
+    \tightlist{}
+    \item $1 \le T \le 10^4$
+    \item $0 \leq a < 2^{31}$
+    \item $0 \leq b < 2^{31}$
+    \item $M \leq 10000$ is a prime
+\end{itemize}
+
+\textbf{\large Output Format}
+
+For each test case, output a single integer which denotes your answer modulo $10^{9}+7$ in a line.
+
+\textbf{\large Sample Input}
+
+\begin{verbatim}
+2
+2 1 2
+4 2 5
+\end{verbatim}
+
+\textbf{\large Sample Output}
+
+\begin{verbatim}
+0
+6
+\end{verbatim}
+

@@ -1,0 +1,78 @@
+\begin{center}
+    {\LARGE Problem H}\vspace{1mm}\\
+    {\Large HH Country}\\
+    {Time limit: 10 seconds}\\
+    {Memory limit: 512 megabytes}
+\end{center}
+
+\textbf{\large Problem Description}
+
+HH is the world's leading competitive programming country.
+It consists of $n$ cities labeled from $1$ to $n$, and the cities are connected by roads.
+Under the planning of the shrewd king of HH, there is exactly one path between any two different cities.
+In other words, the cities of HH made up a clever tree structure.
+
+HH launched a series of contests to arrange the budget of ``Forward-looking Infrastructure Development Program''.
+It has $m$ rounds, and the $i$-th round will determine the distribution of the $i$-th budget.
+The distribution is based on the result of a double round-robin tournament among $k_i$ cities associated with $i$-th budget.
+More specifically, considering any two different participating cities $A$ and $B$. There will be a game that $A$ send a team to the city $B$,
+as well as a game that $B$ send a team to the city $A$. So there will be $k_i \times (k_i - 1)$ games in a round totally.
+
+In order to be able to detail the travel expenses,
+HH country would like to ask you to calculate the total travelling distance between participating cities of each round.
+The distance of one game is defined as the number of roads on the only path from the away city to the home city.
+
+\textbf{\large Input Format}
+
+The first line contains an integer $T$, denoting the number of test cases.
+The first line of each test case contains two integers $n$ and $m$, denoting the number of cities and rounds.
+Each of the next $n - 1$ lines contains two integers $u$ and $v$, denoting a road between the city $u$ and the city $v$.
+Each of the next $m$ lines contains an integer $k_i$ at the beginning, denoting the number of associated cities in $i$-th round;
+and followed by $k_i$ integers $c_{i, j}$ in the same line denote the labeles of the these cities.
+
+You may assume:
+\begin{itemize}
+    \tightlist{}
+    \item $1 \le T \le 100$
+    \item $2 \le n \le 10^5$
+    \item $1 \le u, v, c_{i, j} \le n$
+    \item $1 \le m \le 10^5$
+    \item $2 \le k_i \le n$
+    \item All $c_{i, j}$ are distinct in a round
+    \item $\sum_i k_i \le 2 \times 10^5$ in a test case
+    \item The size of an input file is not greater than 60MB
+\end{itemize}
+
+\textbf{\large Output Format}
+
+For each round of the contest, please output an integer, denoting the total travelling distance of that round.
+
+\clearpage
+
+\textbf{\large Sample Input}
+
+\begin{verbatim}
+2
+2 2
+1 2
+2 1 2
+2 2 1
+5 3
+1 2
+2 3
+2 4
+1 5
+2 3 5
+3 3 4 5
+5 1 2 3 4 5
+\end{verbatim}
+
+\textbf{\large Sample Output}
+\begin{verbatim}
+
+2
+2
+6
+16
+36
+\end{verbatim}

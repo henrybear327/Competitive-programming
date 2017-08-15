@@ -1,0 +1,67 @@
+\begin{center}
+    {\LARGE Problem B}\vspace{1mm}\\
+    {\Large The Combination of Poker Cards}\\
+    {Time limit: 1 second}\\
+    {Memory limit: 512 megabytes}
+\end{center}
+
+\textbf{\large Problem Description}
+
+撲克牌是一種國際盛行的卡牌遊戲，有很多種玩法，據傳最早源自18世紀。
+標準撲克牌共52張牌，包含四種花色，每一花色共13張不同點數的牌。在華人
+地區盛行的撲克牌玩法有大老二和十三支，主要是比較牌型組合的大小。如果
+想要利用電腦設計這些撲克牌遊戲，就必須寫程式自動判斷各種牌型。假設我
+們簡化牌型的判斷條件如下: 在不看花色與只看牌點的條件下，每次從給定的6
+張牌中，決定牌型是哪一種。如果使用整數數字代表不同的牌點，則可能的牌
+型描述如下:
+\begin{itemize}
+\item 單張(single): 6個數字均不相同，例如，2 5 7 10 9 8
+\item 一對(one pair): 兩個數字相同，其餘均不同，例如，4 4 7 10 8 9
+\item 兩對(two pairs): 兩組兩個數字相同，例如，8 8 3 3 6 7
+\item 三對(three pairs): 三組兩個數字相同，例如，8 8 3 3 7 7
+\item 三條(one triple): 一組三個數字相同，其餘均不同，例如，2 2 2 7 5 6
+\item 雙三條(two triples): 兩組三個數字相同，例如，2 2 2 7 7 7
+\item 鐵支(tiki): 四個數字相同，例如，5 5 5 5 9 8
+\item 鐵支配對(tiki pair): 四個數字相同，另外還有一對數字，例如，5 5 5 5 9
+9
+\item 葫蘆(full house): 三個數字相同，另外還有一對數字，例如，3 3 3 9 9 7
+%\item 順(straight): 5個連號的數字，例如，4 5 6 7 8 10
+\end{itemize}
+假設使用整數數字1至13代表不同點數的牌卡，請寫一個程式從每行輸入的6個數字中判讀是以上哪一種牌型。
+
+\textbf{\large Input Format}
+
+第一行輸入包含一個整數$T$，表示測試的牌型數量。每一個測試牌型包括6個
+落於1至13的整數數字，數字間用單一空格區隔。
+
+可假設：
+\begin{itemize}
+    \tightlist{}
+    \item $1 \le T \le 25$
+    \item 不會有同一數字出現超過四次。
+\end{itemize}
+
+\textbf{\large Output Format}
+
+輸出每一行的牌型名稱，牌型名稱請用對應的英文名稱，即single、one
+pair、two pairs、three pairs、one triple、two triples、tiki、tiki pair或full house。
+
+\textbf{\large Sample Input}
+
+\begin{verbatim}
+5
+4 3 4 3 12 10
+5 4 2 3 6 12
+10 12 10 12 12 8
+8 5 8 8 5 5
+2 10 6 10 10 10
+\end{verbatim}
+
+\textbf{\large Sample Output}
+\begin{verbatim}
+two pairs
+single
+full house
+two triples
+tiki
+\end{verbatim}

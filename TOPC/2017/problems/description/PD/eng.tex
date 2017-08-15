@@ -1,0 +1,76 @@
+\begin{center}
+    {\LARGE Problem D}\vspace{1mm}\\
+    {\Large Mixing Coins}\\
+    {Time limit: 5 seconds}\\
+    {Memory limit: 512 megabytes}
+\end{center}
+
+\textbf{\large Problem Description}
+
+Misaka likes to shoot coins as a powerful railgun.
+
+She prepares a line of coins to fight crime. To produce a stronger coin, she
+mixes coins together. However, coins with different materials are not compatible
+to each other, so she only mixes coins with same material together.
+
+Here's the steps Misaka makes coins:
+
+\begin{enumerate}
+	\item Find first three consecutive coins with same material from the
+	beginning of the line
+	\item Take them out from the line
+	\item Mix together and produce a new coin with same material
+	\item Put the new coin at the end of line
+\end{enumerate}
+
+She repeatedly do these steps until she can't produce new coins anymore.
+
+Misaka wants to know how many coins she will have. Please help her count coins
+rapidly!
+
+\textbf{\large Input Format}
+
+On the first line there is a single integer $T$ indicating the number of test
+cases.
+
+The first line of each test case contains an integer $N$ indicating the number
+of groups of consecutive coins Misaka has. All coins are in a single line.
+
+Then $N$ lines follow, each line containing a character $c_i$ and an integer
+$n_i$, denoting that there are $n_i$ consecutive coins with material $c_i$ for
+$i$-th group of consecutive coins, behind $(i-1)$-th.
+
+You may assume:
+\begin{itemize}
+    \tightlist{}
+    \item $T \leq 10$
+    \item $1 \leq N \leq 10^5$
+    \item $1 \leq n_i \leq 10^9$
+    \item $c_i$ is an uppercase alphabet, $c_i \neq c_{i+1}$ for $1 \leq i < N$
+\end{itemize}
+
+\textbf{\large Output Format}
+
+For each test case, output an integer in one line, indicating the number of
+coins after Misaka doing the steps of making coins as many as possible.
+
+\textbf{\large Sample Input}
+
+\begin{verbatim}
+2
+3
+A 3
+B 1
+A 2
+3
+A 2
+B 3
+A 2
+\end{verbatim}
+
+\textbf{\large Sample Output}
+
+\begin{verbatim}
+2
+3
+\end{verbatim}

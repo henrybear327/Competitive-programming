@@ -1,0 +1,54 @@
+\begin{center}
+    {\LARGE Problem F}\vspace{1mm}\\
+    {\Large A Simple Function}\\
+    {Time limit: 1 second}\\
+    {Memory limit: 512 megabytes}
+\end{center}
+
+\textbf{\large Problem Description}
+
+定義一個函數 $f:\mathbb{N}^{3} \to \mathbb{N}$，其中 $\mathbb{N}$ 代表非負整數集合，$f$ 的定義如下：
+
+\begin{outline}
+	\1 對於所有的 $i$ 和 $M$，$f(i, 0, M)=1$
+	\1 對於所有的 $i$ 和 $M$，$f(i, i, M)=1$
+	\1 對於所有的 $i < x$，$f(i, x, M)=0$
+	\1 對於所有的 $0 < x < i$，若 $f(i-1, x-1, M)+f(i-1, x, M)$ 不是 $M$ 的倍數，則 $f(i, x, M)=f(i-1, x-1, M)+f(i-1, x, M)$
+	\1 對於所有的 $0 < x < i$，若 $f(i-1, x-1, M)+f(i-1, x, M)$ 是 $M$ 的倍數，則 $f(i, x, M)=0$
+\end{outline}
+
+例如 $f(2, 1, 2) = 0$，$f(4, 2, 5) = 6$.
+
+\textbf{\large Input Format}
+
+第一行有一個整數 $T$ 代表測試資料組數。每組測試資料由三個整數 $a$, $b$ 和 $M$ 
+組成，請計算 $f(a, b, M)$ 的值。
+
+可假設：
+\begin{itemize}
+    \tightlist{}
+    \item $1 \le T \le 10^4$
+    \item $0 \leq a < 2^{31}$
+    \item $0 \leq b < 2^{31}$
+    \item $M \leq 10000$ 且是個質數
+\end{itemize}
+
+\textbf{\large Output Format}
+
+對於每組測試資料，請輸出一個整數，代表計算得到的答案除以 $10^{9}+7$ 的餘數。
+
+\textbf{\large Sample Input}
+
+\begin{verbatim}
+2
+2 1 2
+4 2 5
+\end{verbatim}
+
+\textbf{\large Sample Output}
+
+\begin{verbatim}
+0
+6
+\end{verbatim}
+

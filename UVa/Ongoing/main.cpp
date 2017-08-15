@@ -7,7 +7,5 @@ typedef long long ll;
 
 int main()
 {
-
-
-	return 0;
+    return 0;
 }

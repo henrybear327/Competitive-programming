@@ -1,0 +1,93 @@
+\begin{center}
+    {\LARGE Problem C}\vspace{1mm}\\
+    {\Large Coloring Intervals}\\
+    {Time limit: 3 seconds}\\
+    {Memory limit: 512 megabytes}
+\end{center}
+
+\textbf{\large Problem Description}
+
+For all real numbers $a\le b$, the closed interval $[a,b]$ refers to
+the set of all real numbers between $a$ and $b$, inclusive.
+For example, $[3,5]=\{x\in\mathbb{R}\mid 3\le x\le 5\}$.
+
+Bob has
+%$n\in \{2,3,\ldots,100000\}$
+$n$
+closed intervals, denoted $[a_1,b_1]$, $[a_2,b_2]$, $\ldots$,
+$[a_n,b_n]$, such that
+for all distinct $i$, $j\in\{1,2,\ldots,n\}$,
+\begin{itemize}
+%\addtolength\itemsep{-.3em}
+\item $a_i$ and $b_i$ are positive integers.
+\item $a_i\le b_i$. I.e., $[a_i,b_i]$ is not empty.
+\item $a_i\neq b_j$, $a_i\neq a_j$ and $b_i\neq b_j$. I.e., distinct
+closed intervals do not have any common endpoint.
+\end{itemize}
+%(here $\mathbb{Z}^+$ stands for the set of all positive integers).
+He wants to color each of the $n$ closed intervals monochromatically
+such that any two distinct overlapping intervals are in different
+colors. Bob wonders how many colors are needed. In other words, 
+he wants to find the minimum positive integer $k$ such that
+%there exists a function $f\colon\{1,2,\ldots,n\}\to\{1,2,\ldots,k\}$
+%satisfying $f(i)\neq f(j)$ for all distinct $i$, $j\in\{1,2,\ldots,n\}$
+%with $[a_i,b_i]\cap[a_j,b_j]\neq\emptyset$.
+%That is, he wants to find the minimum positive integer $k$ such that
+each of
+the $n$ closed intervals
+%$[a_1,b_1]$, $[a_2,b_2]$, $\ldots$, $[a_n,b_n]$
+can be
+labelled with one of $1$, $2$, $\ldots$, $k$ in a way that any two
+distinct overlapping
+%(but distinct)
+intervals are labelled differently.
+Please help him.
+
+\textbf{\large Input Format}
+
+The first line contains the number $T$ of test cases.
+Each of the next $T$ lines specifies a test case by providing
+$n$, $a_1$, $b_1$, $a_2$, $b_2$, $\ldots$, $a_n$, $b_n$, in that order.
+Two consecutive numbers in a line are separated by one or more spaces.
+
+You may assume:
+\begin{itemize}
+    \tightlist{}
+    \item $1 \le T \le 10$
+    \item $n\in \{2,3,\ldots,100000\}$
+    \item $a_i$ and $b_i$ are positive integers less than or equal to $2^{32}-1$
+          for each $i\in\{1,2,\ldots,n\}$.
+\end{itemize}
+
+
+\textbf{\large Output Format}
+
+For each test case, output the minimum positive integer $k$ such that
+each of
+%the $n$ closed intervals
+$[a_1,b_1]$, $[a_2,b_2]$, $\ldots$, $[a_n,b_n]$
+can be
+labelled with one of $1$, $2$, $\ldots$, $k$ in a way that any two
+distinct overlapping
+%(but distinct)
+intervals are labelled differently.
+%there exists a function $f\colon\{1,2,\ldots,n\}\to\{1,2,\ldots,k\}$
+%satisfying $f(i)\neq f(j)$ for all distinct $i$, $j\in\{1,2,\ldots,n\}$
+%with $[a_i,b_i]\cap[a_j,b_j]\neq\emptyset$.
+
+\textbf{\large Sample Input}
+
+\begin{verbatim}
+3
+4 1 2 3 5 4 8 6 7
+5 2 5 1 10 3 7 4 6 8 9
+4 3 7 4 5 2 9 6 8
+\end{verbatim}
+
+\textbf{\large Sample Output}
+
+\begin{verbatim}
+2
+4
+3
+\end{verbatim}

@@ -1,0 +1,77 @@
+\begin{center}
+    {\LARGE Problem G}\vspace{1mm}\\
+    {\Large The Jet-Black Wings}\\
+    {Time limit: 3 seconds}\\
+    {Memory limit: 256 megabytes}
+\end{center}
+
+\textbf{\large Problem Description}
+
+「呃啊...可惡！...要發狂了嗎！」
+
+艾迪，一個自稱為「漆黑之翼」的人，正在與名為「Dark Reunion」的邪惡組織作戰。
+接著他就驚醒了，原來只是一場夢阿...
+
+「我一定要變得更強。」 艾迪在心中激勵自己。
+
+為了成為一名強悍的戰鬥者，艾迪認真的鍛鍊自己。
+在他的練習中，他收集了 $N$ 顆魔法石頭，第 $i$ 顆魔法石頭有著 $A_i$ 單位的黑暗力量。
+艾迪會進行 $Q$ 次操作，每次操作有以下兩種：
+
+\begin{enumerate}
+\item[$1\ X$:] 使用 $X$ 單位的黑暗力量於每顆魔法石頭. 因此，第 $i$ 顆魔法石頭的暗黑力量會變成
+  $A_i \oplus X$ 單位。
+\item[$2\ K$:] 將所有的魔法石頭按照他們的黑暗力量由小到大排序，並加總前 $K$ 顆魔法石頭的黑暗力量。
+\end{enumerate}
+
+你能夠幫助艾迪確認他是否正確嗎？
+
+$x \oplus y$ 表示將 $x$ 與 $y$ 進行互斥或操作。這個操作存在於所有常用的程式語言中，例如：C++ 與 Java
+即是使用「\^{}」，而 Pascal 則使用「xor」。
+
+\textbf{\large Input Format}
+
+第一行有一個數字 $T$，表示有 $T$ 組測試資料。
+
+每組測試資料的第一行有兩個數字 $N$, $Q$，表示艾迪蒐集的魔法石頭個數與訓練的操作次數。
+
+每組測試資料的第二行有 $N$ 個數字 $A_1, A_2, \ldots, A_N$，
+其中 $A_i$ 表示第 $i$ 顆魔法石頭的黑暗力量。
+
+接著有 $Q$ 行，每行為一個操作「$1\ X$」或「$2\ K$」。
+
+可假設：
+\begin{itemize}
+    \tightlist{}
+    \item $T \le 1000$
+    \item $1 \le N, Q \le 100000$
+    \item $0 \le A_i, X < 2^{31}$
+    \item $1 \le K \le N$
+    \item 至多只有 $5$ 組測試資料的 $N + Q > 200$。
+\end{itemize}
+
+\textbf{\large Output Format}
+
+對於每個操作「$2\ K$」輸出一個數字於一行，表示排序後前 $K$ 顆魔法石頭的黑暗力量總和。
+
+\textbf{\large Sample Input}
+
+\begin{verbatim}
+1
+3 6
+4 8 3
+1 3
+1 1
+2 3
+1 2
+2 2
+2 1
+\end{verbatim}
+
+\textbf{\large Sample Output}
+\begin{verbatim}
+17
+7
+3
+\end{verbatim}
+

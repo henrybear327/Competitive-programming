@@ -1,0 +1,58 @@
+\begin{center}
+    {\LARGE Problem E}\vspace{1mm}\\
+    {\Large Fences}\\
+    {Time limit: 3 seconds}\\
+    {Memory limit: 512 megabytes}
+\end{center}
+
+\textbf{\large Problem Description}
+
+你的朋友東納德的別墅外有兩層圍籬，他想要計算在這兩層圍籬之間的土地面積。他能測量圍籬的長度，
+但他對計算面積毫無概念。東納德的朋友華生發現圍籬可能是由專精於計算幾何的電腦科學家建造的，
+因為下列事實絕非巧合：
+\begin{itemize}
+\item 外層圍籬之內的土地，形成一個完美的圓形$C$。以下用$B$代表$C$邊界上的所有點所形成的集合。
+\item 內層圍籬之內的土地，形成一個非自交$n$邊形$P$，即不共用頂點的兩條邊，沒有交點。以下用$V$代表$P$的所有頂點所形成的集合。
+\item $P$所有頂點到$C$的最短距離都是一樣的，即對$V$中相異的兩頂點$(x_u,y_u),(x_v,y_v)$，
+下述等式成立：
+$$\min_{(x,y)\in B}\sqrt{(x-x_u)^2+(y-y_u)^2}=\min_{(x,y)\in B}\sqrt{(x-x_v)^2+(y-y_v)^2}.$$
+\end{itemize}
+你恍然大悟。你明白了如何由外層圍籬總長$c$以及內層圍籬的$n$個邊長$\ell_1,\dots,\ell_n$
+計算出兩個圍籬之間的土地面積。還記得東納德知道如何測量圍籬長度吧？請幫他算出面積吧。
+
+\textbf{\large Input Format}
+
+輸入的第一行有一個正整數$T$代表有多少筆測試資料。每一筆測試資料有兩行，第一行有兩個數字$c$ 跟 $n$，
+以一個空白隔開。$c$代表了外層圍籬的總長，也就是$C$的周長。$n$代表內層圍籬的頂點數目。
+第二行有$n$個正整數$\ell_1,\dots,\ell_n$，代表$n$邊形$P$的各個邊長。
+
+可假設
+\begin{itemize}
+    \tightlist{}
+    \item $1 \le T \le 100$
+    \item $3 \le n \le 10$
+    \item $10 \le c \le 1000$
+    \item $\ell_1,\dots,\ell_n>0$
+    \item $P$必在圓$C$內部。
+\end{itemize}
+
+\textbf{\large Output Format}
+
+對每筆測試資料，請輸出兩層圍籬間的土地面積。只要絕對或相對誤差小於$10^{-6}$就會被視為正確。
+
+\textbf{\large Sample Input}
+
+\begin{verbatim}
+2
+10.0 3
+1 1 1
+10.0 4
+1 1 1 1
+\end{verbatim}
+
+\textbf{\large Sample Output}
+
+\begin{verbatim}
+7.524734452702549
+6.9577471545947684
+\end{verbatim}

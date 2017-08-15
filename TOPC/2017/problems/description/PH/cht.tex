@@ -1,0 +1,75 @@
+\begin{center}
+    {\LARGE Problem H}\vspace{1mm}\\
+    {\Large HH Country}\\
+    {Time limit: 10 seconds}\\
+    {Memory limit: 512 megabytes}
+\end{center}
+
+\textbf{\large Problem Description}
+
+HH 國是世界知名的競技程式設計比賽強國。其國土由 $n$ 座編號 $1$ 到 $n$ 的城市組成，城市之間以道路連接。
+在精明的 HH 國王規劃之下，任兩座城市之間恰有一條經過若干道路的路徑可以往返。
+換言之，HH 國的城市組成了一個巧妙的樹型結構。
+
+為了分配各城市在前瞻基礎建設計畫中的預算，HH 國展開了一系列的比賽。
+比賽共有 $m$ 輪，第 $i$ 輪比賽會決定第 $i$ 項預算的分配，
+而分配方式則基於與此項預算相關的 $k_i$ 個城市之間雙循環賽的結果。
+具體而言，任兩個相異的參賽城市 $A, B$ 之間，會有一場由 $A$ 派代表隊去城市 $B$ 進行的比賽，
+以及一場由 $B$ 派代表隊去城市 $A$ 進行的比賽。整輪共會進行 $k_i \times (k_i - 1)$ 場。
+
+為了能夠詳實的編列交通費，HH 國想請你幫忙算出每輪比賽中，參賽城市間的總移動距離。
+而其中一場比賽的移動距離則定義為客場城市到主場城市之唯一路徑上的道路數量。
+
+\textbf{\large Input Format}
+
+第一行有一個整數 $T$，代表有多少筆測試資料。
+每筆測試資料的第一行有兩個整數 $n, m$，分別代表 HH 國的城市數以及有幾輪比賽。
+接下來 $n - 1$ 每行有兩個整數 $u, v$，代表有一條道路連接城市 $u$ 及城市 $v$。
+接下來 $m$ 行，每行開頭有一個整數 $k_i$，代表有幾座城市參與該輪比賽；
+同一行中接下來 $k_i$ 個整數 $c_{i, j}$ 則代表這 $k_i$ 座城市的編號。
+
+可假設：
+\begin{itemize}
+    \tightlist{}
+    \item $1 \le T \le 100$
+    \item $2 \le n \le 10^5$
+    \item $1 \le u, v, c_{i, j} \le n$
+    \item $1 \le m \le 10^5$
+    \item $2 \le k_i \le n$
+    \item 一輪比賽中所有 $c_{i, j}$ 皆相異
+    \item 一筆測試資料中，$\sum_i k_i \le 2 \times 10^5$ 
+    \item 一個輸入檔之大小不超過 60MB
+\end{itemize}
+
+\textbf{\large Output Format}
+
+對於每一輪比賽，請輸出一個整數，代表該輪比賽中，參賽城市間的總移動距離。
+
+\textbf{\large Sample Input}
+
+\begin{verbatim}
+2
+2 2
+1 2
+2 1 2
+2 2 1
+5 3
+1 2
+2 3
+2 4
+1 5
+2 3 5
+3 3 4 5
+5 1 2 3 4 5
+\end{verbatim}
+
+\textbf{\large Sample Output}
+
+\begin{verbatim}
+2
+2
+6
+16
+36
+\end{verbatim}
+
