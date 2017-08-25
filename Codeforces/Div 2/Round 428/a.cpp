@@ -4,27 +4,27 @@ using namespace std;
 
 int main()
 {
-	int n, k;
-	scanf("%d %d", &n, &k);
-	
-	int sum = 0;
-	int ok = -1;
-	for(int i = 0; i < n; i++) {
-		int num;
-		scanf("%d", &num);
+    int n, k;
+    scanf("%d %d", &n, &k);
 
-		sum += num;
+    int sum = 0;
+    int ok = -1;
+    for (int i = 0; i < n; i++) {
+        int num;
+        scanf("%d", &num);
 
-		k -= min(8, sum);
-		sum -= min(8, sum);
+        sum += num;
 
-		if(k <= 0) {
-			ok = i + 1;
-			break;
-		}
-	}
+        k -= min(8, sum);
+        sum -= min(8, sum);
 
-	printf("%d\n", ok);
+        if (k <= 0) {
+            ok = i + 1;
+            break;
+        }
+    }
 
-	return 0;
+    printf("%d\n", ok);
+
+    return 0;
 }
