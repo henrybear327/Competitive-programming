@@ -355,6 +355,7 @@ Winston Churchill
 * [New Year Table](http://codeforces.com/contest/140/problem/A): Rounding error is scary!
 * [Fitting boxes](http://codeforces.com/gym/100738/problem/A)
 * [Chris and Road](http://codeforces.com/contest/703/problem/C): If you know slope life is easy
+* [Arpa and an exam about geometry](http://codeforces.com/contest/851/problem/B)
 
 # WA_AC problem
 
