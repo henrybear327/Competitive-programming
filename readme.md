@@ -71,6 +71,7 @@ Winston Churchill
 * [New Year and North Pole](http://codeforces.com/problemset/problem/750/B): Good one
 * [Mike and palindrome](http://codeforces.com/contest/798/problem/A): Special case
 * [Mike and strings](http://codeforces.com/contest/798/problem/B): realize that 50 is so small that O(n^3) can work
+* [Maxim Buys an Apartment](http://codeforces.com/contest/854/problem/B): Such a good one...
 
 ## Binary Search
 
@@ -137,7 +138,7 @@ Winston Churchill
     * [Pythagorean Triples](http://codeforces.com/problemset/problem/707/C)
     * [Memory and De-Evolution](http://codeforces.com/contest/712/problem/C)
 
-## Fun   
+## Fun
 
 * [Bicycle Race](http://codeforces.com/contest/659/problem/D)
 
@@ -166,6 +167,7 @@ Winston Churchill
 * [NCPC 2015 E Entertainment Box](http://codeforces.com/gym/100781)
 * [Degree Sequence Tree](http://codeforces.com/gym/100738/problem/D)
 * [Containers](http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=3503)
+* [Planning](http://codeforces.com/contest/854/problem/C): Greedy, with good proof
 
 ## Graph
 
