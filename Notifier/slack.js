@@ -40,32 +40,8 @@ rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message) {
 
 rtm.start();
 
-setInterval(checkCodeforcesContests, 10000);
+/**
+ * Codeforces contest checker per 60 seconds
+ */
+setInterval(Codeforces.checkCodeforcesContest, 60 * 1000);
 
-function checkCodeforcesContests() {
-    const url = "http://codeforces.com/api/contest.list";
-
-    Codeforces.requestp(url, true)
-        .then(function (res) {
-            console.log("Promise returned successfully");
-
-            // console.log("%s@%s: %s", res.name, res.version, res.description);
-            // console.log("%s", res['status']);
-            if(res['status'] !== "OK") {
-                console.log("Status code error: %s", res['status']);
-            }
-
-            // console.log(res['result']);
-            for(let contest of res['result']) {
-                // console.log(contest['name']);
-                if(Codeforces.contestPhase.includes(contest['phase'])) {
-                    console.log("Contest name: %s. Phase: %s", contest['name'], contest['phase']);
-                }
-            }
-        }, function (err) {
-            console.log("Promise returned with error");
-
-            console.error("%s; %s", err.message, url);
-            console.log("%j", err.res.statusCode);
-        });
-}
