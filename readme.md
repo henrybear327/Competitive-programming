@@ -72,6 +72,7 @@ Winston Churchill
 * [Mike and palindrome](http://codeforces.com/contest/798/problem/A): Special case
 * [Mike and strings](http://codeforces.com/contest/798/problem/B): realize that 50 is so small that O(n^3) can work
 * [Maxim Buys an Apartment](http://codeforces.com/contest/854/problem/B): Such a good one...
+* [1-2-3](http://codeforces.com/contest/863/problem/C): Very very good cycle length implementation problem
 
 ## Binary Search
 
