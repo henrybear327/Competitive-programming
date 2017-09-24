@@ -16,7 +16,7 @@ void solve(int ncase)
     int mx = k - 1;
     for(int i = 0; i < k; i++) {
         if(team[i] >= energy) {
-            if(mx == i)
+            if(mx <= i)
                 break;
             if(ans == 0)
                 break;
