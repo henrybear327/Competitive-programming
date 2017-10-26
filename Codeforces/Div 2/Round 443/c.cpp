@@ -35,26 +35,26 @@ ii ans_cmd[3];
 void print(int index, char c, int status[])
 {
     int num;
-    if(c == '|') {
+    if (c == '|') {
         num = 0;
-        for(int i = 9; i >= 0; i--) {
-            if(status[i] == ALWAYS_ON)
+        for (int i = 9; i >= 0; i--) {
+            if (status[i] == ALWAYS_ON)
                 num |= (1 << i);
         }
-    } else if(c == '&') {
+    } else if (c == '&') {
         num = (1 << 10) - 1;
-        for(int i = 9; i >= 0; i--) {
-            if(status[i] == ALWAYS_OFF)
+        for (int i = 9; i >= 0; i--) {
+            if (status[i] == ALWAYS_OFF)
                 num ^= (1 << i);
         }
     } else {
         num = 0;
-        for(int i = 9; i >= 0; i--) {
-            if(status[i] == ALWAYS_FLIP)
+        for (int i = 9; i >= 0; i--) {
+            if (status[i] == ALWAYS_FLIP)
                 num |= (1 << i);
         }
     }
-    
+
     ans_cmd[index] = ii(c, num);
     printf("%c %d\n", c, num);
 }
@@ -107,7 +107,7 @@ int main()
             }
         }
     }
-    
+
     /*
     for(int i = 9; i >= 0; i--)
         printf("%d ", status[i]);
@@ -119,13 +119,13 @@ int main()
     print(1, '&', status);
     print(2, '^', status);
 
-    /* 
+    /*
     for (int i = 0; i <= 1023; i++) {
         int res = i;
         for (int j = 0; j < n; j++) {
             res = run(res, inp[j]);
         }
-        
+
         int res1 = i;
         for(int j = 0; j < 3; j++) {
             res1 = run(res1, ans_cmd[j]);

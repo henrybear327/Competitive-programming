@@ -36,7 +36,7 @@ int main()
                 inp.push_back(inp[head]);
                 rival++;
                 head = rival - 1;
-                cnt = 0;
+                cnt = 1;
             }
         }
         printf("%d\n", inp[head]);
