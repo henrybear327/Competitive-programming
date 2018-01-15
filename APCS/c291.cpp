@@ -6,7 +6,7 @@ bool seen[55555];
 int inp[55555];
 void dfs(int i)
 {
-    if(seen[i])
+    if (seen[i])
         return;
     seen[i] = true;
 
@@ -17,13 +17,13 @@ int main()
     int n;
     scanf("%d", &n);
 
-    for(int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
         scanf("%d", &inp[i]);
 
     memset(seen, false, sizeof(seen));
     int ans = 0;
-    for(int i = 0; i < n; i++) {
-        if(seen[i] == false) {
+    for (int i = 0; i < n; i++) {
+        if (seen[i] == false) {
             dfs(i);
             ans++;
         }
