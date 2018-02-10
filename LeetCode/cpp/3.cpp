@@ -1,7 +1,4 @@
-#include <cstdio>
-#include <map>
-#include <string>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 class Solution
@@ -12,7 +9,7 @@ public:
         // two pointers
 
         int l = 0;
-        map<char, int> cnt;
+        unordered_map<char, int> cnt;
         int ans = 0;
         for (int r = 0; r < (int)s.length(); r++) {
             cnt[s[r]]++;
