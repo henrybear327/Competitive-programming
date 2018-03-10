@@ -3,7 +3,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-static int x = []()
+static int initialSetup = []()
 {
     // toggle off cout & cin, instead, use printf & scanf
     std::ios::sync_with_stdio(false);
@@ -12,16 +12,17 @@ static int x = []()
     return 0;
 }();
 
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+};
+
 class Solution
 {
 public:
-    int singleNumber(vector<int> &nums)
-    {
-        int ans = 0;
-        for (int i = 0; i < (int)nums.size(); i++)
-            ans ^= nums[i];
-        return ans;
-    }
+    TreeNode *mergeTrees(TreeNode *t1, TreeNode *t2) {}
 };
 
 int main()

@@ -10,8 +10,7 @@ static int x = []()
     // untie cin & cout
     cin.tie(NULL);
     return 0;
-}
-();
+}();
 
 class Solution
 {
