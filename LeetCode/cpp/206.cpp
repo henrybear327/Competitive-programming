@@ -10,7 +10,8 @@ static int initialSetup = []()
     // untie cin & cout
     cin.tie(NULL);
     return 0;
-}();
+}
+();
 
 struct ListNode {
     int val;

@@ -11,7 +11,8 @@ static int initialSetup = []()
     cin.tie(NULL);
     cout.tie(NULL);
     return 0;
-}();
+}
+();
 
 // DP, space ship
 class Solution
