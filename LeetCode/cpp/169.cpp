@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/majority-element/solution/
+// Sort, hashmap, random (>= 50% chance for guessing it right)
 // clang-format -style=LLVM -i *.cpp && astyle --style=linux *.cpp && rm *.orig
 // && g++ -Wall -Wextra -std=c++11 ...
 #include <bits/stdc++.h>
