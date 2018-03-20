@@ -17,7 +17,7 @@ struct TreeNode {
     int val;
     TreeNode *left;
     TreeNode *right;
-    *TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
 class Solution
@@ -28,15 +28,17 @@ private:
 public:
     TreeNode *convertBST(TreeNode *root)
     {
-        if (root == NULL) // WA once again on NULL case
+        if (root == NULL)
             return NULL;
 
         convertBST(root->right);
+        // int orig = root->val;
+        // root->val += sum;
+        // sum += orig;
+
         root->val += sum;
         sum = root->val;
         convertBST(root->left);
-
-        return root;
     }
 };
 
