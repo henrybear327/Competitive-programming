@@ -14,7 +14,7 @@ static int initialSetup = []()
 ();
 
 // observation
-// we can place the people in decreasing order regarding to height,
+// we can sort the people in decreasing order regarding to height,
 // tie break by increasing order with regard to ppl in
 // then insert (read code)
 class Solution
