@@ -23,21 +23,22 @@ struct TreeNode {
 class Solution
 {
 public:
-    bool isEqual(TreeNode *s, TreeNode *t) {
-        if(s == NULL && t == NULL)
+    bool isEqual(TreeNode *s, TreeNode *t)
+    {
+        if (s == NULL && t == NULL)
             return true;
-        else if(s == NULL || t == NULL)
+        else if (s == NULL || t == NULL)
             return false;
-        else 
+        else
             return isEqual(s->left, t->left) && isEqual(s->right, t->right);
     }
 
     bool isSubtree(TreeNode *s, TreeNode *t)
     {
-        if(s == NULL || t == NULL)
+        if (s == NULL || t == NULL)
             return false;
-            
-        if(s->val == t->val)
+
+        if (s->val == t->val)
             return isEqual(s, t);
         else {
             return isSubtree(s->left, t) || isSubtree(s->right, t);
