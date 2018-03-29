@@ -54,7 +54,7 @@ public:
                 }
             }
 
-            if(level.size() > 0)
+            if (level.size() > 0)
                 ans.push_back(level);
         }
 
