@@ -6,3 +6,5 @@
     * one element
     * extreme value
     * duplicated values
+5. When doing recursion, think of the terminating conditions first
+6. Set the initial values carefully

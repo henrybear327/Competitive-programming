@@ -1,9 +1,15 @@
 // clang-format -style=LLVM -i *.cpp && astyle --style=linux *.cpp && rm *.orig
 // && g++ -Wall -Wextra -std=c++11 ...
+
+#ifdef LOCAL
 #include <bits/stdc++.h>
 using namespace std;
 
-static int initialSetup = []()
+// tree node stuff here...
+
+#endif
+
+static int __initialSetup = []()
 {
     // toggle off cout & cin, instead, use printf & scanf
     std::ios::sync_with_stdio(false);
@@ -13,7 +19,9 @@ static int initialSetup = []()
 }
 ();
 
+#ifdef LOCAL
 int main()
 {
     return 0;
 }
+#endif
