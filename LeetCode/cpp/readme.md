@@ -10,3 +10,4 @@
 6. Set the initial values carefully
 7. For binary search, consider the monotonic property carefully first!
 8. For linked list, don't forget to more the the cursor forward
+9. If you mean to use reference, double check for it!
