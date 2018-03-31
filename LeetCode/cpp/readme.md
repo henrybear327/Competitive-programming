@@ -1,3 +1,5 @@
+# Reminders
+
 1. NULL pointer case
 2. Carefully consider the input conditions that is given
 3. Come up with the sub-optimal/naive solution first
@@ -11,3 +13,13 @@
 7. For binary search, consider the monotonic property carefully first!
 8. For linked list, don't forget to more the the cursor forward
 9. If you mean to use reference, double check for it!
+10. When doing `min()` `max()`, make sure the answer is updated every time and AFTER the last iteration
+11. When doing `mn` and `mx` updating, make sure we keep the original value first!!!! (leetcode 152)
+
+# Compilation
+
+1. `PROBLEM=...`
+2. 
+```
+clang-format -style=LLVM -i $PROBLEM.cpp && astyle --style=linux $PROBLEM.cpp && rm $PROBLEM.cpp.orig && g++ -Wall -Wextra -Wshadow -O2 -std=c++11 -DLOCAL $PROBLEM.cpp && time ./a.out
+```

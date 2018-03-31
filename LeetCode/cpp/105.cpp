@@ -32,7 +32,7 @@ class Solution
 {
 private:
     // [l, r)
-    TreeNode *go(vector<int> &preorder, unordered_map<int, int>& lookup, int &pi,
+    TreeNode *go(vector<int> &preorder, unordered_map<int, int> &lookup, int &pi,
                  int l, int r)
     {
         // terminating condition

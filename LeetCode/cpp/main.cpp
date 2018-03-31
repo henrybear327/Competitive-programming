@@ -1,6 +1,3 @@
-// clang-format -style=LLVM -i *.cpp && astyle --style=linux *.cpp && rm *.orig
-// && g++ -Wall -Wextra -std=c++11 ...
-
 #ifdef LOCAL
 #include <bits/stdc++.h>
 using namespace std;
