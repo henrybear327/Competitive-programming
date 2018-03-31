@@ -9,3 +9,4 @@
 5. When doing recursion, think of the terminating conditions first
 6. Set the initial values carefully
 7. For binary search, consider the monotonic property carefully first!
+8. For linked list, don't forget to more the the cursor forward
