@@ -19,7 +19,7 @@ static int __initialSetup = []()
 }
 ();
 
-static char *mapping[] = {
+const char *mapping[] = {
     "0",   "1",   "abc",  "def", "ghi",
     "jkl", "mno", "pqrs", "tuv", "wxyz"
 }; // almost forget about this usage
