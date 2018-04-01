@@ -23,3 +23,14 @@
 ```
 clang-format -style=LLVM -i $PROBLEM.cpp && astyle --style=linux $PROBLEM.cpp && rm $PROBLEM.cpp.orig && g++ -Wall -Wextra -Wshadow -O2 -std=c++11 -DLOCAL $PROBLEM.cpp && time ./a.out
 ```
+
+# TreeNode code
+
+```c++
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+};
+```
