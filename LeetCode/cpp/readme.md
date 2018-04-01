@@ -15,6 +15,7 @@
 9. If you mean to use reference, double check for it!
 10. When doing `min()` `max()`, make sure the answer is updated every time and AFTER the last iteration
 11. When doing `mn` and `mx` updating, make sure we keep the original value first!!!! (leetcode 152)
+12. `int *a, *b;` for a and b both to be declared as pointer!
 
 # Compilation
 
@@ -32,5 +33,15 @@ struct TreeNode {
     TreeNode *left;
     TreeNode *right;
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+};
+```
+
+# Singly linked list
+
+```c++
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode(int x) : val(x), next(NULL) {}
 };
 ```
