@@ -1,6 +1,6 @@
 # Reminders
 
-1. NULL pointer case
+1. Deal with `NULL` pointer case and `sz = 0` cases first!
 2. Carefully consider the input conditions that is given
 3. Come up with the sub-optimal/naive solution first
 4. Testcases:
@@ -16,6 +16,7 @@
 10. When doing `min()` `max()`, make sure the answer is updated every time and AFTER the last iteration
 11. When doing `mn` and `mx` updating, make sure we keep the original value first!!!! (leetcode 152)
 12. `int *a, *b;` for a and b both to be declared as pointer!
+13. When brute forcing, think if you can keep a memo of the search space (leetcode 139)
 
 # Compilation
 
