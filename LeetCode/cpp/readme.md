@@ -17,6 +17,7 @@
 11. When doing `mn` and `mx` updating, make sure we keep the original value first!!!! (leetcode 152)
 12. `int *a, *b;` for a and b both to be declared as pointer!
 13. When brute forcing, think if you can keep a memo of the search space (leetcode 139)
+14. Brute force: for every position... (leetcode 42)
 
 # Compilation
 
