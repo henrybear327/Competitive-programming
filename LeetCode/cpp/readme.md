@@ -9,7 +9,7 @@
     * extreme value
     * duplicated values
 5. When doing recursion, think of the terminating conditions first
-6. Set the initial values carefully
+6. Set the initial values carefully (leetcode 228)
 7. For binary search, consider the monotonic property carefully first!
 8. For linked list, don't forget to more the the cursor forward
 9. If you mean to use reference, double check for it!
@@ -19,6 +19,7 @@
 13. When brute forcing, think if you can keep a memo of the search space (leetcode 139)
 14. Brute force: for every position... (leetcode 42)
 15. Clarify if `int` might be enough! If using long long, make sure that the conversion is done properly! (leetcode 50)
+16. Might need to deal with negative numbers! (Leetcode 326)
 
 # Compilation
 
