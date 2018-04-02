@@ -20,6 +20,7 @@
 14. Brute force: for every position... (leetcode 42)
 15. Clarify if `int` might be enough! If using long long, make sure that the conversion is done properly! (leetcode 50)
 16. Might need to deal with negative numbers! (Leetcode 326)
+17. Use bit trick to save space (Leetcode 289)
 
 # Compilation
 
