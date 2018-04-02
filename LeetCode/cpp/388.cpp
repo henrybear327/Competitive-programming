@@ -18,43 +18,51 @@ class Solution
 public:
     int lengthLongestPath(string input)
     {
-        stack<int> st;
-        st.push(0); // "dummy" length
-        int maxLen = 0;
+        stack<int> st; // length so far
 
         // input = regex_replace(input, regex("    "), "\t");
         // cout << input << endl;
 
-        string s;
+        int ans = 0;
+
+        string tok;
         stringstream ss;
         ss.str(input);
 
-        while (getline(ss, s, '\n')) {
-            int last_tab = -1;
-            for (int i = s.length() - 1; i >= 0; i--)
-                if (s[i] == '\t') {
-                    last_tab = i;
+        while (getline(ss, tok, '\n')) {
+            // get \t -> nesting level
+            int level = -1;
+            for (int i = (int)tok.size(); i >= 0; i--) {
+                if (tok[i] == '\t') {
+                    level = i;
                     break;
                 }
+            }
+            level++; // pos 0 has \t -> 1 \t -> nesting level 1
 
-            int lev = last_tab + 1;          // number of "\t"
-            while (lev + 1 < (int)st.size()) // find parent
+            while (level < (int)st.size()) {
+                // level 1, stack sz = 1 -> containing len of level 0
                 st.pop();
-            int len = st.top() + s.length() - lev + 1; // remove "\t", add"/"
-            st.push(len);
-            // check if it is file
-            if (s.find(".") != string::npos)
-                maxLen = max(maxLen, len - 1);
+            }
+
+            // stack top length + / + (current name - tab count)
+            int len = (st.size() > 0 ? st.top() + 1 : 0) + ((int)tok.size() - level);
+            if (tok.find(".") != string::npos)
+                ans = max(ans, len);
+            else
+                st.push(len);
         }
-        return maxLen;
+
+        return ans;
     }
 };
 
 #ifdef LOCAL
 int main()
 {
-    cout << Solution().lengthLongestPath("dir\n\t    file.txt") << endl; // a filename starts with 4 spaces WTF?
-    cout << Solution().lengthLongestPath("dir\n        file.txt") << endl;
+    cout << Solution().lengthLongestPath("dir\n\t    file.txt") << endl;
+    cout << Solution().lengthLongestPath("dir\n        file.txt")
+         << endl; // a filename as a top-level file WTF
 
     // cout << Solution().lengthLongestPath(
     //          "dir\n\tsubdir1\n\t\tfile1."
