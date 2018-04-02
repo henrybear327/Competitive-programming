@@ -48,3 +48,7 @@ struct ListNode {
     ListNode(int x) : val(x), next(NULL) {}
 };
 ```
+
+# Questions that I messed up
+
+* Leetcode 388
