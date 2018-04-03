@@ -47,7 +47,7 @@ public:
         sort(arr.begin(), arr.end());
 
         int ans = 0, cnt = 0;
-        for (int i = 0; i < (int)arr.size() - 1; i++) { 
+        for (int i = 0; i < (int)arr.size() - 1; i++) {
             // last item doesn't matter since it's guaranteed to be a -1
             // and we are looking for max
             cnt += arr[i].second;
