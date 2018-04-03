@@ -28,7 +28,7 @@
 1. `PROBLEM=...`
 2. 
 ```
-clang-format -style=LLVM -i $PROBLEM.cpp && astyle --style=linux $PROBLEM.cpp && rm $PROBLEM.cpp.orig && g++ -Wall -Wextra -Wshadow -O2 -std=c++11 -DLOCAL $PROBLEM.cpp && time ./a.out
+clang-format -style=LLVM -i $PROBLEM.cpp && astyle --style=linux $PROBLEM.cpp && rm $PROBLEM.cpp.orig && time g++ -Wall -Wextra -Wshadow -O2 -std=c++14 -DLOCAL $PROBLEM.cpp && time ./a.out
 ```
 
 # TreeNode code
@@ -57,3 +57,6 @@ struct ListNode {
 * Leetcode 388
 * Good but hard greedy: leetcode 316
 * Iterator: leetcode 341
+* Trie
+    * (easy) leetcode 421
+    * (design) leetcode 208
