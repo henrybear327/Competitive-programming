@@ -56,3 +56,4 @@ struct ListNode {
 
 * Leetcode 388
 * Good but hard greedy: leetcode 316
+* Iterator: leetcode 341

@@ -36,6 +36,9 @@ static int __initialSetup = []()
 class NestedIterator
 {
 private:
+    // the iterator runs through the vector
+    // for every position, it's a NestedInteger object
+    // so you can call the method 
     stack<vector<NestedInteger>::iterator> s; // pos
     stack<vector<NestedInteger>::iterator> se;
 
