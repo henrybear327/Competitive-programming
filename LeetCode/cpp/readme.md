@@ -61,3 +61,4 @@ struct ListNode {
 * Trie
     * (easy) leetcode 421
     * (design) leetcode 208
+* Heavy implementation skill: leetcode 166
