@@ -32,6 +32,8 @@
 clang-format -style=LLVM -i $PROBLEM.cpp && astyle --style=linux $PROBLEM.cpp && rm $PROBLEM.cpp.orig && time g++ -Wall -Wextra -Wshadow -O2 -std=c++14 -DLOCAL $PROBLEM.cpp && time ./a.out
 ```
 
+* check for total problems solved `ls *.cpp | wc -l`
+
 # TreeNode code
 
 ```c++
