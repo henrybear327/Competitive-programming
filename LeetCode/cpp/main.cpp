@@ -13,6 +13,9 @@ static int __initialSetup = []()
 }
 ();
 
+// handle special cases first
+// [], "", ...
+
 #ifdef LOCAL
 int main()
 {
