@@ -23,6 +23,7 @@
 16. Might need to deal with negative numbers! (Leetcode 326)
 17. Use bit trick to save space (Leetcode 289)
 18. Use `(ternary stuff)`!
+19. If you use `while` and needs to manually maintain the pointer, add comments first!
 
 # Compilation
 
@@ -55,13 +56,30 @@ struct ListNode {
 };
 ```
 
+# sstream
+
+```
+string item;
+stringstream ss;
+ss.str(input);
+
+while(!getline(ss, item, ',')) {
+
+}
+```
+
+# conversion
+
+string versio of `atoi()`: `stoi()`
+
 # Questions that I messed up
 
 * Leetcode 388
-* Good but hard greedy: leetcode 316
-* Iterator: leetcode 341
+* Good but hard greedy: 316
+* Iterator: 341, 26 (implement unique)
 * Trie
-    * (easy) leetcode 421
-    * (design) leetcode 208
-* Heavy implementation skill: leetcode 166, 315, 10
+    * (easy) 421
+    * (design) 208
+* Heavy implementation skill: 166, 315, 10
 * Good DP: 10
+* Math: 172 (I can't believe how bad my math is)
