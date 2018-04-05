@@ -83,5 +83,5 @@ string versio of `atoi()`: `stoi()`
     * (easy) 421
     * (design) 208
 * Heavy implementation skill: 166, 315, 10
-* Good DP: 10
+* Good DP: 10, 312 (cutting stick, but in a different approach)
 * Math: 172 (I can't believe how bad my math is)
