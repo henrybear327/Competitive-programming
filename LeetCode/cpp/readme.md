@@ -3,6 +3,7 @@
 1. Deal with `NULL` pointer case and `sz = 0` cases first!
 2. Carefully consider the input conditions that is given
     * range/sign of input! (leetcode 166)
+    * input datatype (int, float; string, vector, array)
 3. Come up with the sub-optimal/naive solution first
 4. Testcases:
     * no element
