@@ -24,6 +24,7 @@
 17. Use bit trick to save space (Leetcode 289)
 18. Use `(ternary stuff)`!
 19. If you use `while` and needs to manually maintain the pointer, add comments first!
+20. When checking strings, vectors: watch out for out-of-bound error
 
 # Compilation
 
