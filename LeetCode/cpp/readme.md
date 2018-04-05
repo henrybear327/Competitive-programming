@@ -26,6 +26,7 @@
 18. Use `(ternary stuff)`!
 19. If you use `while` and needs to manually maintain the pointer, add comments first!
 20. When checking strings, vectors: watch out for out-of-bound error
+21. Think of all cases before you type `+=` and `return` (leetcode 124, cases could be thought of when typing)
 
 # Compilation
 
