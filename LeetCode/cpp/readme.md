@@ -76,7 +76,7 @@ string versio of `atoi()`: `stoi()`
 
 # Questions that I messed up
 
-* Leetcode 388
+* Simply good one: 388, 240 (581 talked about it, now finally understands it)
 * Good but hard greedy: 316
 * Iterator: 341, 26 (implement unique)
 * Trie
