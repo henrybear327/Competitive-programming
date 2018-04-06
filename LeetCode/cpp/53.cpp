@@ -1,7 +1,20 @@
-// clang-format -style=LLVM -i *.cpp && astyle --style=linux *.cpp && rm *.orig
-// && g++ -Wall -Wextra -std=c++11 ...
+#ifdef LOCAL
 #include <bits/stdc++.h>
 using namespace std;
+
+// tree node stuff here...
+#endif
+
+static int __initialSetup = []()
+{
+    std::ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    return 0;
+}
+();
+
+// handle special cases first
+// [], "", ...
 
 class Solution
 {
@@ -21,7 +34,9 @@ public:
     }
 };
 
+#ifdef LOCAL
 int main()
 {
     return 0;
 }
+#endif
