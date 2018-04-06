@@ -18,7 +18,7 @@
 10. When doing `min()` `max()`, make sure the answer is updated every time and AFTER the last iteration
 11. When doing `mn` and `mx` updating, make sure we keep the original value first!!!! (leetcode 152)
 12. `int *a, *b;` for a and b both to be declared as pointer!
-13. When brute forcing, think if you can keep a memo of the search space (leetcode 139)
+13. When brute forcing, think if you can keep a memo of the search space (leetcode 139, 96)
 14. Brute force: for every position... (leetcode 42)
 15. Clarify if `int` might be enough! If using long long, make sure that the conversion is done properly! (leetcode 50)
 16. Might need to deal with negative numbers! (Leetcode 326)
@@ -87,3 +87,4 @@ string versio of `atoi()`: `stoi()`
 * Good DP: 10, 312 (cutting stick, but in a different approach)
 * Math: 172 (I can't believe how bad my math is)
 * Tree: 124 (wow, path! 3 cases)
+* Geometry: 149
