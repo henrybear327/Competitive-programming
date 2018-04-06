@@ -88,3 +88,5 @@ string versio of `atoi()`: `stoi()`
 * Math: 172 (I can't believe how bad my math is)
 * Tree: 124 (wow, path! 3 cases)
 * Geometry: 149
+* Easy DP: 221 (first time coming up with a DP solution!)
+* Good observation: 11
