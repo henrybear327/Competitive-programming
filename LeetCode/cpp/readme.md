@@ -2,7 +2,7 @@
 
 1. Deal with `NULL` pointer case and `sz = 0` cases first!
 2. Carefully consider the input conditions that is given
-    * range/sign of input! (leetcode 166)
+    * range/sign of input! (leetcode 166, 7)
     * input datatype (int, float; string, vector, array)
 3. Come up with the sub-optimal/naive solution first
 4. Testcases:
@@ -91,3 +91,4 @@ string versio of `atoi()`: `stoi()`
 * Easy DP: 221 (first time coming up with a DP solution!)
 * Good observation: 11
 * Recursion: 114
+* Pointer: 237 (never thought of it!)

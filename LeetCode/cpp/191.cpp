@@ -17,6 +17,13 @@ static int __initialSetup = []()
 // [], "", ...
 // range of input?
 
+class Solution {
+public:
+    int hammingWeight(uint32_t n) {
+        return __builtin_popcount(n);
+    }
+};
+
 #ifdef LOCAL
 int main()
 {
