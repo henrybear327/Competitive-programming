@@ -27,6 +27,7 @@
 19. If you use `while` and needs to manually maintain the pointer, add comments first!
 20. When checking strings, vectors: watch out for out-of-bound error
 21. Think of all cases before you type `+=` and `return` (leetcode 124, cases could be thought of when typing)
+22. When pushing things onto the stack, we can just push the index, instead of value-index pair! (84)
 
 # Compilation
 
@@ -89,7 +90,7 @@ string version of `atoi()` is `stoi()`
 * Math: 172 (I can't believe how bad my math is)
 * Tree: 124 (wow, path! 3 cases)
 * Geometry: 149
-* Easy DP: 221 (first time coming up with a DP solution!)
+* Easy DP: 221 (first time coming up with a DP solution!), 85 (based on max rect in histogram)
 * Good observation: 11
 * Recursion: 114, 140
 * Pointer: 237 (never thought of it!), 328
