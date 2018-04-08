@@ -61,7 +61,7 @@ struct ListNode {
 
 # sstream
 
-```
+```c++
 string item;
 stringstream ss;
 ss.str(input);
@@ -73,7 +73,7 @@ while(!getline(ss, item, ',')) {
 
 # conversion
 
-string versio of `atoi()`: `stoi()`
+string version of `atoi()` is `stoi()`
 
 # Questions that I messed up
 
@@ -83,7 +83,7 @@ string versio of `atoi()`: `stoi()`
 * Trie
     * (easy) 421
     * (design) 208
-* Heavy implementation skill: 166, 315, 10, 336 (don't be afraid to enumerate)
+* Heavy implementation skill: 166, 315, 10, 336 (don't be afraid to enumerate), 681 (100 lines 1 AC!, but time conversion can be done in a more elegant way)
 * Good DP: 10, 312 (cutting stick, but in a different approach), 96(1D), 309(state machine approach, wow!)
 * Math: 172 (I can't believe how bad my math is)
 * Tree: 124 (wow, path! 3 cases)
@@ -92,7 +92,7 @@ string versio of `atoi()`: `stoi()`
 * Good observation: 11
 * Recursion: 114, 140
 * Pointer: 237 (never thought of it!), 328
-* Recursion $O(2^N)$, with memoization $O(N^2)$ because you kept all possible pairs of $(start, end)$ in DP!
+* Recursion `O(2^N)`, with memoization `O(N^2)` because you kept all possible pairs of `(start, end)` in DP!
 
 # Procedure
 
