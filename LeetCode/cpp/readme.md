@@ -91,4 +91,9 @@ string versio of `atoi()`: `stoi()`
 * Easy DP: 221 (first time coming up with a DP solution!)
 * Good observation: 11
 * Recursion: 114
-* Pointer: 237 (never thought of it!)
+* Pointer: 237 (never thought of it!), 328
+
+# Procedure
+
+* Ask for spec
+* Generate basic testcases, and add more while coding
