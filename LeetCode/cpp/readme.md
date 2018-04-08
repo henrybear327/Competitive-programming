@@ -92,6 +92,7 @@ string versio of `atoi()`: `stoi()`
 * Good observation: 11
 * Recursion: 114, 140
 * Pointer: 237 (never thought of it!), 328
+* Recursion $O(2^N)$, with memoization $O(N^2)$ because you kept all possible pairs of $(start, end)$ in DP!
 
 # Procedure
 
