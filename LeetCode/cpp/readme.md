@@ -81,7 +81,7 @@ string version of `atoi()` is `stoi()`
 
 * Simply good one: 388, 240 (581 talked about it, now finally understands it)
 * Good but hard greedy: 316
-* Two pointer: 683 (nlogn is easy though), 239 (deque)
+* Two pointer: 683 (nlogn is easy though), 239 (deque), 340
 * Iterator: 341, 26 (implement unique)
 * Trie
     * (easy) 421
