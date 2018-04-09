@@ -28,6 +28,7 @@
 20. When checking strings, vectors: watch out for out-of-bound error
 21. Think of all cases before you type `+=` and `return` (leetcode 124, cases could be thought of when typing)
 22. When pushing things onto the stack, we can just push the index, instead of value-index pair! (84)
+23. Do **NOT** be afraid when you see problems being labelled as hard!
 
 # Compilation
 
@@ -85,7 +86,7 @@ string version of `atoi()` is `stoi()`
 * Trie
     * (easy) 421
     * (design) 208
-* Heavy implementation skill: 166, 315, 10, 336 (don't be afraid to enumerate), 681 (100 lines 1 AC!, but time conversion can be done in a more elegant way)
+* Heavy implementation skill: 166, 315, 10, 336 (don't be afraid to enumerate), 681 (100 lines 1 AC!, but time conversion can be done in a more elegant way), 218 (skyline)
 * Good DP: 10, 312 (cutting stick, but in a different approach), 96(1D), 309(state machine approach, wow!)
 * Math: 172 (I can't believe how bad my math is)
 * Tree: 124 (wow, path! 3 cases)
