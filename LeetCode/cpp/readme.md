@@ -95,6 +95,8 @@ string version of `atoi()` is `stoi()`
 * Recursion: 114, 140
 * Pointer: 237 (never thought of it!), 328
 * Recursion `O(2^N)`, with memoization `O(N^2)` because you kept all possible pairs of `(start, end)` in DP!
+* Do it from the front or back, coding complexity differs: 482
+* Basic DP: 72 (edit distance)
 
 # Procedure
 
