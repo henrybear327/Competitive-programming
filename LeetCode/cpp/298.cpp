@@ -25,6 +25,7 @@ static int __initialSetup = []()
 class Solution
 {
 private:
+    // bottom up
     int ans = 0;
     int dfs(TreeNode *root)
     {
@@ -45,12 +46,30 @@ private:
         return mx;
     }
 
+    // top down
+    int dfs(TreeNode *root, TreeNode *parent, int mx)
+    {
+        if (root == NULL)
+            return mx;
+
+        if (parent != nullptr && root->val == parent->val + 1)
+            mx++; // extent the value from parent
+        else
+            mx = 1; // reset mx value to self only
+        return max(mx, max(dfs(root->left, root, mx), dfs(root->right, root, mx)));
+    }
+
 public:
     int longestConsecutive(TreeNode *root)
     {
-        ans = 0;
-        dfs(root);
-        return ans;
+        // bottom up
+        // ans = 0;
+        // dfs(root);
+        // return ans;
+
+        // top down
+        return dfs(root, nullptr, 0);
+
         // WA:
         // You can't do it directly!
         // the case below, node 4 will ret 4 to 3, and then GG
