@@ -33,7 +33,7 @@
 # Compilation
 
 1. `PROBLEM=...`
-2. 
+2.
 ```
 clang-format -style=LLVM -i $PROBLEM.cpp && astyle --style=linux $PROBLEM.cpp && rm $PROBLEM.cpp.orig && time g++ -Wall -Wextra -Wshadow -O2 -std=c++14 -DLOCAL $PROBLEM.cpp && time ./a.out
 ```
@@ -81,7 +81,7 @@ string version of `atoi()` is `stoi()`
 
 * Simply good one: 388, 240 (581 talked about it, now finally understands it)
 * Good but hard greedy: 316
-* Two pointer: 683 (nlogn is easy though), 239 (deque), 340
+* Two pointer: 683 (nlogn is easy though), 239 (deque), 340, 76 (hard)
 * Iterator: 341, 26 (implement unique)
 * Trie
     * (easy) 421
@@ -99,6 +99,7 @@ string version of `atoi()` is `stoi()`
 * Do it from the front or back, coding complexity differs: 482
 * Basic DP: 72 (edit distance)
 * To graph (753)
+* DS: 308 (2d bit)
 
 # Procedure
 
