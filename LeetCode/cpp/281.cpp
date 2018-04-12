@@ -28,9 +28,9 @@ public:
     {
         data1 = v1;
         data2 = v2;
-        who = 0;
         it1 = data1.begin();
         it2 = data2.begin();
+        who = it1 != data1.end() ? 0 : 1;
     }
 
     int next()
