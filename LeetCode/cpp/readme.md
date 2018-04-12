@@ -100,6 +100,7 @@ string version of `atoi()` is `stoi()`
 * Basic DP: 72 (edit distance)
 * To graph (753)
 * DS: 308 (2d bit)
+* UFDS: 737
 
 # Procedure
 
