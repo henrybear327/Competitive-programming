@@ -2,8 +2,9 @@
 
 1. Deal with `NULL` pointer and `sz = 0` cases first!
 2. Carefully consider the input conditions that are given
-    * range and sign of input! (leetcode 166, 7)
+    * range and sign of input! (leetcode 166, 7, 163)
     * input datatype (int, float; string, vector, array)
+    * duplicated or not (leetcode 163)
 3. Come up with the sub-optimal or naive solution first
 4. Basic testcases:
     * no element
@@ -40,6 +41,7 @@ clang-format -style=LLVM -i $PROBLEM.cpp && astyle --style=linux $PROBLEM.cpp &&
 # Random notes
 
 * check for total problems solved `ls *.cpp | wc -l`
+* `vector<string> inp{"Hello world"};`
 
 # Snippets
 
@@ -91,12 +93,13 @@ string version of `atoi()` is `stoi()`
 * Trie
     * (easy) 421
     * (design) 208
+    * (tedious) 425
 * Heavy implementation skill: 388 (stack), 166, 315, 10, 336 (don't be afraid to enumerate), 681 (100 lines 1 AC!, but time conversion can be done in a more elegant way), 218 (skyline)
 * Good DP: 10, 312 (cutting stick, but in a different approach), 96(1D), 309(state machine approach, wow!)
 * Math: 172 (I can't believe how bad my math is)
 * Tree: 124 (wow, path! 3 cases)
 * Geometry: 149
-* Easy DP: 221 (first time coming up with a DP solution!), 85 (based on max rect in histogram)
+* Easy DP: 221 (first time coming up with a DP solution!), 85 (based on max rect in histogram), 361
 * Good observation: 11
 * Recursion: 114, 140, 298 (good one)
 * Pointer: 237 (never thought of it!), 328
@@ -106,6 +109,7 @@ string version of `atoi()` is `stoi()`
 * To graph (753)
 * DS: 308 (2d bit)
 * UFDS: 737
+* Design problems: 271
 
 # Procedure
 
