@@ -1,33 +1,41 @@
-#include <cstdio>
-#include <vector>
+#ifdef LOCAL
+#include <bits/stdc++.h>
 using namespace std;
 
+// tree node stuff here...
+#endif
+
+static int __initialSetup = []()
+{
+    std::ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    return 0;
+}
+();
+
+// handle special cases first
+// [], "", ...
+// range of input?
 class Solution
 {
 public:
     vector<int> twoSum(vector<int> &nums, int target)
     {
-        vector<int> res;
+        unordered_map<int, int> inp;
         for (int i = 0; i < (int)nums.size(); i++)
-            for (int j = i + 1; j < (int)nums.size(); j++) {
-                if (nums[i] + nums[j] == target) {
-                    res.push_back(i);
-                    res.push_back(j);
+            inp[nums[i]] = i;
 
-                    return res;
-                }
-            }
-
-        return res;
+        for (int i = 0; i < (int)nums.size(); i++) {
+            if (inp.count(target - nums[i]) != 0 && i != inp[target - nums[i]])
+                return vector<int> {i, inp[target - nums[i]]};
+        }
+        return vector<int>();
     }
 };
 
+#ifdef LOCAL
 int main()
 {
-    Solution s;
-    vector<int> inp = {2, 7, 11, 15};
-    auto res = s.twoSum(inp, 9);
-    printf("%d %d\n", res[0], res[1]);
-
     return 0;
 }
+#endif
