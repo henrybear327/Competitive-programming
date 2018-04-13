@@ -1,11 +1,11 @@
 # Reminders
 
-1. Deal with `NULL` pointer case and `sz = 0` cases first!
-2. Carefully consider the input conditions that is given
-    * range/sign of input! (leetcode 166, 7)
+1. Deal with `NULL` pointer and `sz = 0` cases first!
+2. Carefully consider the input conditions that are given
+    * range and sign of input! (leetcode 166, 7)
     * input datatype (int, float; string, vector, array)
-3. Come up with the sub-optimal/naive solution first
-4. Testcases:
+3. Come up with the sub-optimal or naive solution first
+4. Basic testcases:
     * no element
     * one element
     * extreme value
@@ -23,24 +23,29 @@
 15. Clarify if `int` might be enough! If using long long, make sure that the conversion is done properly! (leetcode 50)
 16. Might need to deal with negative numbers! (Leetcode 326)
 17. Use bit trick to save space (Leetcode 289)
-18. Use `(ternary stuff)`!
-19. If you use `while` and needs to manually maintain the pointer, add comments first!
-20. When checking strings, vectors: watch out for out-of-bound error
+18. Use `(ternary stuff)` so avoid precedence issues!
+19. If you use `while` and need to manually maintain the pointer, add comments first!
+20. When checking strings, vectors: watch out for `out-of-bound` error
 21. Think of all cases before you type `+=` and `return` (leetcode 124, cases could be thought of when typing)
-22. When pushing things onto the stack, we can just push the index, instead of value-index pair! (84)
+22. When pushing things onto the stack, we can just push the index, instead of value-index pair! (leetcode 84)
 23. Do **NOT** be afraid when you see problems being labelled as hard!
 
 # Compilation
 
 1. `PROBLEM=...`
-2.
-```
+2. ```bash
 clang-format -style=LLVM -i $PROBLEM.cpp && astyle --style=linux $PROBLEM.cpp && rm $PROBLEM.cpp.orig && time g++ -Wall -Wextra -Wshadow -O2 -std=c++14 -DLOCAL $PROBLEM.cpp && time ./a.out
 ```
 
+# Random notes
+
 * check for total problems solved `ls *.cpp | wc -l`
 
-# TreeNode code
+# Snippets
+
+Some random setup code
+
+## TreeNode code
 
 ```c++
 struct TreeNode {
@@ -51,7 +56,7 @@ struct TreeNode {
 };
 ```
 
-# Singly linked list
+## Singly linked list
 
 ```c++
 struct ListNode {
@@ -61,7 +66,7 @@ struct ListNode {
 };
 ```
 
-# sstream
+## sstream
 
 ```c++
 string item;
@@ -73,13 +78,13 @@ while(!getline(ss, item, ',')) {
 }
 ```
 
-# conversion
+# Conversion
 
 string version of `atoi()` is `stoi()`
 
 # Questions that I messed up
 
-* Simply good one: 240 (581 talked about it, now finally understands it)
+* Simply good one: 240 (581 talked about it, now finally understands it), 418 (observation)
 * Good but hard greedy: 316
 * Two pointer: 683 (nlogn is easy though), 239 (deque), 340, 76 (hard)
 * Iterator: 341, 26 (implement unique)
