@@ -94,7 +94,7 @@ string version of `atoi()` is `stoi()`
     * (easy) 421
     * (design) 208
     * (tedious) 425
-* Heavy implementation skill: 388 (stack), 166, 315, 10, 336 (don't be afraid to enumerate), 681 (100 lines 1 AC!, but time conversion can be done in a more elegant way), 218 (skyline), 351 (enumeration)
+* Heavy implementation skill: 388 (stack), 166, 315, 10, 336 (don't be afraid to enumerate), 681 (100 lines 1 AC!, but time conversion can be done in a more elegant way), 218 (skyline), 351 (enumeration), 288 (tricky case)
 * Good DP: 10, 312 (cutting stick, but in a different approach), 96(1D), 309(state machine approach, wow!)
 * Math: 172 (I can't believe how bad my math is)
 * Tree: 124 (wow, path! 3 cases), 687, 298
