@@ -42,6 +42,7 @@ clang-format -style=LLVM -i $PROBLEM.cpp && astyle --style=linux $PROBLEM.cpp &&
 
 * check for total problems solved `ls *.cpp | wc -l`
 * `vector<string> inp{"Hello world"};`
+* `next(it, steps=1)`;
 
 # Snippets
 
