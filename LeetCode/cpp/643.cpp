@@ -26,12 +26,14 @@ public:
         for (int i = 0; i < n; i++) {
             if (i < k) {
                 sum += nums[i];
+                if(i == k - 1)
+                    ans = max(ans, sum);
             } else {
                 sum += nums[i];
                 sum -= nums[i - k];
-            }
 
-            ans = max(ans, sum);
+                ans = max(ans, sum);
+            }
         }
 
         return 1.0 * ans / k;

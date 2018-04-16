@@ -16,19 +16,18 @@ static int __initialSetup = []()
 // handle special cases first
 // [], "", ...
 // range of input?
-class Solution
-{
+class Solution {
 public:
-    int findUnsortedSubarray(vector<int> &nums)
-    {
+    int findUnsortedSubarray(vector<int>& nums) {
         int n = nums.size();
-        if (n == 0)
+        if(n == 0)
             return 0;
         int left = n, right = -1;
         vector<int> ans = nums;
+        sort(ans.begin(), ans.end());
 
-        for (int i = 0; i < n; i++) {
-            if (ans[i] != nums[i]) {
+        for(int i = 0; i < n; i++) {
+            if(ans[i] != nums[i]) {
                 left = min(left, i);
                 right = max(right, i);
             }
