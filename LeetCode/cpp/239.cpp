@@ -23,7 +23,7 @@ public:
     vector<int> maxSlidingWindow(vector<int> &nums, int k)
     {
         vector<int> ans;
-        deque<pair<int, int>> mx;
+        deque<pair<int, int>> mx; // should be in time inc order, also val inc order
         for (int i = 0; i < (int)nums.size(); i++) {
             while (mx.size() > 0 && mx.front().second <= i - k) // pop old
                 mx.pop_front();
