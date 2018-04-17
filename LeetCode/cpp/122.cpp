@@ -25,7 +25,7 @@ public:
         if (prices.size() <= 0)
             return 0;
         int ans = 0;
-        for (int i = 1; i < (int)prices.size(); i++) {
+        for (int i = 1; i < (int)prices.size(); i++) 
             if (prices[i - 1] < prices[i])
                 ans += prices[i] - prices[i - 1];
         }
