@@ -30,6 +30,7 @@
 21. Think of all cases before you type `+=` and `return` (leetcode 124, cases could be thought of when typing)
 22. When pushing things onto the stack, we can just push the index, instead of value-index pair! (leetcode 84)
 23. Do **NOT** be afraid when you see problems being labelled as hard!
+24. May need to check for mod == 0! (823)
 
 # Compilation
 
