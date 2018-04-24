@@ -92,7 +92,7 @@ string version of `atoi()` is `stoi()`
 * Two pointer: 683 (nlogn is easy though), 239 (deque), 340, 76 (hard), 259 (goodness!)
 * Iterator: 341, 26 (implement unique)
 * Trie
-    * (easy) 421
+    * (easy) 421, 820
     * (design) 208
     * (tedious) 425
 * Heavy implementation skill: 388 (stack), 166, 315, 10, 336 (don't be afraid to enumerate), 681 (100 lines 1 AC!, but time conversion can be done in a more elegant way), 218 (skyline), 351 (enumeration), 288 (tricky case)
