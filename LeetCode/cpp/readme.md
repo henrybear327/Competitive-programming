@@ -31,6 +31,7 @@
 22. When pushing things onto the stack, we can just push the index, instead of value-index pair! (leetcode 84)
 23. Do **NOT** be afraid when you see problems being labelled as hard!
 24. May need to check for mod == 0! (823)
+25. Brute force: for every starting point...
 
 # Compilation
 
@@ -113,6 +114,8 @@ string version of `atoi()` is `stoi()`
 * UFDS: 737
 * Design problems: 271
 * BFS: 317 (where to start?/read sample code)
+* KMP: 616
+* Queue: 329 (topological sort)
 
 # Procedure
 
