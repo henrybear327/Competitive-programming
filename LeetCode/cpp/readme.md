@@ -31,6 +31,7 @@
 22. When pushing things onto the stack, we can just push the index, instead of value-index pair! (leetcode 84)
 23. Do **NOT** be afraid when you see problems being labelled as hard!
 24. May need to check for mod == 0! (823)
+25. Brute force: for every starting point...
 
 # Compilation
 
@@ -88,7 +89,7 @@ string version of `atoi()` is `stoi()`
 
 # Questions that I messed up
 
-* Simply good one: 240 (581 talked about it, now finally understands it), 418 (observation), 766 (implementation), 670 (greedy)
+* Simply good one: 240 (581 talked about it, now finally understands it), 418 (observation), 766 (implementation), 670 (greedy), 266
 * Good but hard greedy: 316
 * Two pointer: 683 (nlogn is easy though), 239 (deque), 340, 76 (hard), 259 (goodness!)
 * Iterator: 341, 26 (implement unique)
@@ -110,9 +111,12 @@ string version of `atoi()` is `stoi()`
 * Basic DP: 72 (edit distance)
 * To graph (753)
 * DS: 308 (2d bit)
-* UFDS: 737
+* UFDS: 737, 305
 * Design problems: 271
 * BFS: 317 (where to start?/read sample code)
+* KMP: 616
+* Queue: 329 (topological sort)
+* Combination DP: 276
 
 # Procedure
 
