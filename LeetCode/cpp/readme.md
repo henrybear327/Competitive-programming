@@ -4,7 +4,7 @@
 2. Carefully consider the input conditions that are given
     * range and sign of input! (leetcode 166, 7, 163)
     * input datatype (int, float; string, vector, array)
-    * duplicated or not (leetcode 163)
+    * duplicated or not (leetcode 163, 425)
 3. Come up with the sub-optimal or naive solution first
 4. Basic testcases:
     * no element
@@ -101,7 +101,7 @@ string version of `atoi()` is `stoi()`
 * Math: 172 (I can't believe how bad my math is)
 * Tree: 124 (wow, path! 3 cases), 687, 298
 * Geometry: 149
-* Easy DP: 221 (first time coming up with a DP solution!), 85 (based on max rect in histogram), 361
+* Easy DP: 221 (first time coming up with a DP solution!), 85 (based on max rect in histogram), 361, 801 (spaceship)
 * Good observation: 11
 * Recursion: 114, 140, 298 (good one)
 * Pointer: 237 (never thought of it!), 328
