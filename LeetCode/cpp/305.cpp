@@ -58,8 +58,6 @@ public:
 
 	void merge(int x1, int y1, int x2, int y2)
 	{
-		assert(active[x1][y1]);
-		assert(active[x2][y2]);
 
 		ii r1 = root(x1, y1);
 		ii r2 = root(x2, y2);
