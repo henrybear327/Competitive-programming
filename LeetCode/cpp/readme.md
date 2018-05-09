@@ -113,7 +113,7 @@ string version of `atoi()` is `stoi()`
 * DS: 308 (2d bit)
 * UFDS: 737, 305
 * Design problems: 271
-* BFS: 317 (where to start?/read sample code)
+* BFS: 317 (where to start?/read sample code), 286
 * KMP: 616
 * Queue: 329 (topological sort)
 * Combination DP: 276
