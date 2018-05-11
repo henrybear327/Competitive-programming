@@ -103,7 +103,7 @@ string version of `atoi()` is `stoi()`
 * Tree: 124 (wow, path! 3 cases), 687, 298
 * Geometry: 149
 * Easy DP: 221 (first time coming up with a DP solution!), 85 (based on max rect in histogram), 361, 801 (spaceship)
-* Good observation: 11
+* Good observation: 11, 828
 * Recursion: 114, 140, 298 (good one)
 * Pointer: 237 (never thought of it!), 328
 * Recursion `O(2^N)`, with memoization `O(N^2)` because you kept all possible pairs of `(start, end)` in DP!
