@@ -32,6 +32,7 @@
 23. Do **NOT** be afraid when you see problems being labelled as hard!
 24. May need to check for mod == 0! (823)
 25. Brute force: for every starting point...
+26. BFS, when enqueue, mark as seen!
 
 # Compilation
 
@@ -113,7 +114,7 @@ string version of `atoi()` is `stoi()`
 * DS: 308 (2d bit)
 * UFDS: 737, 305
 * Design problems: 271
-* BFS: 317 (where to start?/read sample code), 286
+* BFS: 317 (where to start?/read sample code), 286, 409 (GG good one)
 * KMP: 616
 * Queue: 329 (topological sort)
 * Combination DP: 276
