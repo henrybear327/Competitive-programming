@@ -86,6 +86,12 @@ while(!getline(ss, item, ',')) {
 }
 ```
 
+## 2D vector init
+
+```c++
+dp = vector<vector<int>>(n, vector<int>(m, 0));
+```
+
 # Conversion
 
 string version of `atoi()` is `stoi()`
@@ -121,6 +127,7 @@ string version of `atoi()` is `stoi()`
 * Queue: 329 (topological sort)
 * Combination DP: 276
 * Class inheritance: 284
+* DFS: 417
 
 # Procedure
 
