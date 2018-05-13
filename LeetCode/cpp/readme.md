@@ -33,6 +33,8 @@
 24. May need to check for mod == 0! (823)
 25. Brute force: for every starting point...
 26. BFS, when enqueue, mark as seen!
+27. When popping `stack`, `queue`, `deque`, check for `size() > 0` first
+28. For binary searching, l and r are just idx, don't forget to use the value that point to! (360)
 
 # Compilation
 
@@ -92,7 +94,7 @@ string version of `atoi()` is `stoi()`
 
 * Simply good one: 240 (581 talked about it, now finally understands it), 418 (observation), 766 (implementation), 670 (greedy), 266, 400
 * Good but hard greedy: 316
-* Two pointer: 683 (nlogn is easy though), 239 (deque), 340, 76 (hard), 259 (goodness!)
+* Two pointer: 683 (nlogn is easy though), 239 (deque), 340, 76 (hard), 259 (goodness!), 360
 * Iterator: 341, 26 (implement unique)
 * Trie
     * (easy) 421, 820
