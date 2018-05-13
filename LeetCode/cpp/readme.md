@@ -127,7 +127,7 @@ string version of `atoi()` is `stoi()`
 * Queue: 329 (topological sort)
 * Combination DP: 276
 * Class inheritance: 284
-* DFS: 417
+* DFS: 417, 294
 
 # Procedure
 
