@@ -118,6 +118,7 @@ string version of `atoi()` is `stoi()`
 * KMP: 616
 * Queue: 329 (topological sort)
 * Combination DP: 276
+* Class inheritance: 284
 
 # Procedure
 
