@@ -35,6 +35,7 @@
 26. BFS, when enqueue, mark as seen!
 27. When popping `stack`, `queue`, `deque`, check for `size() > 0` first
 28. For binary searching, l and r are just idx, don't forget to use the value that point to! (360)
+29. Convert to graph! (399)
 
 # Compilation
 
@@ -118,7 +119,7 @@ string version of `atoi()` is `stoi()`
 * Recursion `O(2^N)`, with memoization `O(N^2)` because you kept all possible pairs of `(start, end)` in DP!
 * Do it from the front or back, coding complexity differs: 482
 * Basic DP: 72 (edit distance)
-* To graph (753)
+* To graph: 753, 399 (very good one)
 * DS: 308 (2d bit)
 * UFDS: 737, 305
 * Design problems: 271
