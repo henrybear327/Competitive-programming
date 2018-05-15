@@ -129,6 +129,7 @@ string version of `atoi()` is `stoi()`
 * Combination DP: 276
 * Class inheritance: 284
 * DFS: 417, 294
+* String: 676
 
 # Procedure
 
