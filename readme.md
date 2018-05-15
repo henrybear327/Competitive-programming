@@ -380,6 +380,10 @@ allocated with new, freed with delete
 allocated with new[], freed with delete[]
 ```
 
+# Hashmap TLE problem
+
+* [F. Consecutive Subsequence](http://codeforces.com/contest/977/problem/F)
+
 # Open test data
 
 * [NWERC](http://2013.nwerc.eu/en/)
