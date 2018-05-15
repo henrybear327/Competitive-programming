@@ -33,6 +33,9 @@
 24. May need to check for mod == 0! (823)
 25. Brute force: for every starting point...
 26. BFS, when enqueue, mark as seen!
+27. When popping `stack`, `queue`, `deque`, check for `size() > 0` first
+28. For binary searching, l and r are just idx, don't forget to use the value that point to! (360)
+29. Convert to graph! (399)
 
 # Compilation
 
@@ -98,6 +101,11 @@ Overload `bool operator(const ... & others) const`
 int a;
 int b;
 tie(a, b) = someReturnedTuple
+
+## 2D vector init
+
+```c++
+dp = vector<vector<int>>(n, vector<int>(m, 0));
 ```
 
 # Conversion
@@ -108,25 +116,25 @@ string version of `atoi()` is `stoi()`
 
 * Simply good one: 240 (581 talked about it, now finally understands it), 418 (observation), 766 (implementation), 670 (greedy), 266, 400
 * Good but hard greedy: 316
-* Two pointer: 683 (nlogn is easy though), 239 (deque), 340, 76 (hard), 259 (goodness!)
+* Two pointer: 683 (nlogn is easy though), 239 (deque), 340, 76 (hard), 259 (goodness!), 360
 * Iterator: 341, 26 (implement unique)
 * Trie
     * (easy) 421, 820
     * (design) 208
     * (tedious) 425
-* Heavy implementation skill: 388 (stack), 166, 315, 10, 336 (don't be afraid to enumerate), 681 (100 lines 1 AC!, but time conversion can be done in a more elegant way), 218 (skyline), 351 (enumeration), 288 (tricky case)
+* Heavy implementation skill: 388 (stack), 166, 315, 10, 336 (don't be afraid to enumerate), 681 (100 lines 1 AC!, but time conversion can be done in a more elegant way), 218 (skyline), 351 (enumeration), 288 (tricky case), 544
 * Good DP: 10, 312 (cutting stick, but in a different approach), 96(1D), 309(state machine approach, wow!)
 * Math: 172 (I can't believe how bad my math is), 829
 * Tree: 124 (wow, path! 3 cases), 687, 298
 * Geometry: 149
 * Easy DP: 221 (first time coming up with a DP solution!), 85 (based on max rect in histogram), 361, 801 (spaceship)
-* Good observation: 11, 828
+* Good observation: 11, 828, 484 
 * Recursion: 114, 140, 298 (good one)
 * Pointer: 237 (never thought of it!), 328
 * Recursion `O(2^N)`, with memoization `O(N^2)` because you kept all possible pairs of `(start, end)` in DP!
 * Do it from the front or back, coding complexity differs: 482
 * Basic DP: 72 (edit distance)
-* To graph (753)
+* To graph: 753, 399 (very good one)
 * DS: 308 (2d bit)
 * UFDS: 737, 305
 * Design problems: 271
@@ -134,6 +142,8 @@ string version of `atoi()` is `stoi()`
 * KMP: 616
 * Queue: 329 (topological sort)
 * Combination DP: 276
+* Class inheritance: 284
+* DFS: 417, 294
 
 # Procedure
 
