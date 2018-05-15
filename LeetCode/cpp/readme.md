@@ -84,6 +84,22 @@ while(!getline(ss, item, ',')) {
 }
 ```
 
+## Set struct overloading
+
+Overload `bool operator(const ... & others) const`
+
+## Tuple
+
+1. `tuple<type, type, ...>`
+2. `make_tuple(var, var)`
+3. `get<index> tupleName`
+4. 
+```c++
+int a;
+int b;
+tie(a, b) = someReturnedTuple
+```
+
 # Conversion
 
 string version of `atoi()` is `stoi()`
