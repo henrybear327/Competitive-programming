@@ -36,6 +36,7 @@
 27. When popping `stack`, `queue`, `deque`, check for `size() > 0` first
 28. For binary searching, l and r are just idx, don't forget to use the value that point to! (360)
 29. Convert to graph! (399)
+30. Lot's of cases (816)
 
 # Compilation
 
