@@ -32,7 +32,7 @@
 23. Do **NOT** be afraid when you see problems being labelled as hard!
 24. May need to check for mod == 0! (823)
 25. Brute force: for every starting point...
-26. BFS, when enqueue, mark as seen!
+26. BFS, when enqueue, mark as seen! (505)
 27. When popping `stack`, `queue`, `deque`, check for `size() > 0` first
 28. For binary searching, l and r are just idx, don't forget to use the value that point to! (360)
 29. Convert to graph! (399)
