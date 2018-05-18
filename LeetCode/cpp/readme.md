@@ -146,6 +146,8 @@ string version of `atoi()` is `stoi()`
 * Class inheritance: 284
 * DFS: 417, 294
 * String: 676
+* Classic:
+    * Dynamic median query: 295, 480
 
 # Procedure
 
