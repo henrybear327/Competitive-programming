@@ -4,7 +4,7 @@
 2. Carefully consider the input conditions that are given
     * range and sign of input! (leetcode 166, 7, 163)
     * input datatype (int, float; string, vector, array)
-    * duplicated or not (leetcode 163, 425)
+    * **duplicated** or not (leetcode 163, 425)
 3. Come up with the sub-optimal or naive solution first
 4. Basic testcases:
     * no element
@@ -36,7 +36,10 @@
 27. When popping `stack`, `queue`, `deque`, check for `size() > 0` first
 28. For binary searching, l and r are just idx, don't forget to use the value that point to! (360)
 29. Convert to graph! (399)
-30. Lot's of cases (816)
+30. Odd/even checking 
+31. Sorted or not?
+32. DFS next step, besides bound check, don't forget to check if it's allow to be walked
+33. `fabs()` may be required when doing floating point diffing
 
 # Compilation
 
@@ -148,6 +151,7 @@ string version of `atoi()` is `stoi()`
 * String: 676
 * Classic:
     * Dynamic median query: 295, 480
+* Lot's of cases: 816
 
 # Procedure
 
