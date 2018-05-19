@@ -22,32 +22,29 @@ static int __initialSetup = []()
 // handle special cases first
 // [], "", ...
 // range of input?
-
 class Solution
 {
 private:
-    int dfs(int &ans, TreeNode *root)
+    void dfs(TreeNode *root, TreeNode *p, int acc, int &ans)
     {
         if (root == NULL)
-            return 0;
+            return;
+        if (p != NULL && p->val + 1 == root->val) {
+            acc++;
+        } else {
+            acc = 1;
+        }
 
-        int l = dfs(ans, root->left);
-        int r = dfs(ans, root->right);
-        int ret = 1;
-        if (root->left && root->left->val == root->val + 1)
-            ret = max(ret, l + 1);
-        if (root->right && root->right->val == root->val + 1)
-            ret = max(ret, r + 1);
-
-        ans = max(ans, ret);
-        return ret;
+        ans = max(ans, acc);
+        dfs(root->left, root, acc, ans);
+        dfs(root->right, root, acc, ans);
     }
 
 public:
     int longestConsecutive(TreeNode *root)
     {
         int ans = 0;
-        dfs(ans, root);
+        dfs(root, NULL, 1, ans);
         return ans;
     }
 };
