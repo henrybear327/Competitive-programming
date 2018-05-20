@@ -44,7 +44,14 @@ public:
         Point r1{rec1[2], rec1[3]};
         Point l2{rec2[0], rec2[1]};
         Point r2{rec2[2], rec2[3]};
-        return doOverlap(l1, r1, l2, r2) || doOverlap(l2, r2, l1, r1);
+        // return doOverlap(l1, r1, l2, r2) || doOverlap(l2, r2, l1, r1); // by
+        // point
+
+        return ((min(r1.x, r2.x) - max(l1.x, l2.x)) > 0) &&
+               ((min(r2.y, r1.y) - max(l1.y, l2.y)) > 0); // by area
+               // idea is if overlap, the dx will be diff of 
+               // (max of 2 left pts on x) and (min of 2 right pts on x)
+               // for dy is the same concept
     }
 };
 

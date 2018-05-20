@@ -140,7 +140,7 @@ string version of `atoi()` is `stoi()`
 * Basic DP: 72 (edit distance)
 * To graph: 753, 399 (very good one)
 * DS: 308 (2d bit)
-* UFDS: 737, 305
+* UFDS: 737, 305, 839
 * Design problems: 271
 * BFS: 317 (where to start?/read sample code), 286, 409 (GG good one)
 * KMP: 616
@@ -152,6 +152,7 @@ string version of `atoi()` is `stoi()`
 * Classic:
     * Dynamic median query: 295, 480
 * Lot's of cases: 816
+* Rectangle: 836
 
 # Procedure
 
