@@ -11,24 +11,51 @@ double solve()
     scanf("%d %d\n", &n, &p);
 
     ii inp[n];
-    double sum = 0;
+    int sum = 0;
     for (int i = 0; i < n; i++) {
         scanf("%d %d", &inp[i].first, &inp[i].second);
         sum += 2 * (inp[i].first + inp[i].second);
     }
 
-    /* // bug
-    for (int i = 0; fabs(sum - (double)p) > EPS && i < n; i++) { // EPS?
-        int f = inp[i].first;
-        int s = inp[i].second;
-        double diagnal = sqrt(f * f + s * s);
-        if (fabs(p - sum - 2 * diagnal) < EPS)
-            sum += 2 * diagnal;
-        else
-            return p;
+    // weight, value
+    // 2 * min(w, h), 2 * sqrt(w * w + h * h)
+    double dp[55555];
+    fill(dp, dp + 55555, -1e10);
+    for (int i = 0; i < n; i++) {
+        int w = inp[i].first;
+        int h = inp[i].second;
+        int weight = 2 * min(w, h);
+        double value = 2.0 * sqrt(w * w + h * h);
+
+        // printf("%d %d\n", w, h);
+        // printf("%d %d %f\n", i, weight, value);
+
+        dp[0] = 0;
+        for (int j = 55555 - 1; j >= 0; j--) {
+            if (j - weight >= 0 && dp[j - weight] >= 0) {
+                dp[j] = max(dp[j], dp[j - weight] + value);
+            }
+        }
     }
-    */
-    return sum;
+
+    double ans = 0;
+    double target = p - sum; // difference to make up
+    // printf("%f\n", target);
+    // i <= target means only when at least i is added, we can use dp[i]
+    for (int i = 0; i < 55555 && i <= target; i++) {
+        // printf("%d %f\n", i, dp[i]);
+
+        if (dp[i] >= 0) {
+            // WOW! can add range is [i, dp[i]]
+
+            // printf("%d %f\n", i, dp[i]);
+            // if (i * 1.0 + dp[i] >= target)
+            ans = max(ans, min(target, dp[i]));
+        }
+    }
+
+    return sum + ans;
+    // return ans;
 }
 
 int main()
