@@ -2,49 +2,46 @@
 
 using namespace std;
 
-const int MAX_V = 555;
-int V;
-vector<int> g[MAX_V];
-int match[MAX_V];
-bool used[MAX_V];
-
+vector<vector<int>> g;
 void add_edge(int u, int v)
 {
     g[u].push_back(v);
     g[v].push_back(u);
 }
 
-// 回傳有無找到從 v 出發的增廣路徑
-//（首尾都為未匹配點的交錯路徑）
-// [待確認] 每次遞迴都找一個末匹配點 v 及匹配點 u
-bool dfs(int v)
+int matching[222];
+bool seen[222];
+
+bool dfs(int u) // u must be unmatched node
 {
-    used[v] = true;
-    for (size_t i = 0; i < g[v].size(); i++) {
-        int u = g[v][i], w = match[u];
-        // 尚未配對或可從 w 找到增廣路徑（即路徑繼續增長）
-        if (w < 0 || (!used[w] && dfs(w))) {
-            // 交錯配對
-            match[v] = u;
-            match[u] = v;
+    // printf("u %d\n", u);
+    seen[u] = true;
+
+    for (auto v : g[u]) {
+        // 1. v is unmatched
+        // 2. v is matched but not in current path, dfs
+        if (matching[v] == -1 || (seen[matching[v]] == false && dfs(matching[v]))) {
+            matching[u] = v;
+            matching[v] = u;
             return true;
         }
     }
+
     return false;
 }
 
-int bipartite_matching() // 匈牙利演算法
+int bipartite_matching(int n)
 {
     int res = 0;
-    memset(match, -1, sizeof(match));
-    for (int v = 0; v < V; v++) {
-        if (match[v] == -1) {
-            memset(used, false, sizeof(used));
-            if (dfs(v)) {
+    memset(matching, -1, sizeof(matching));
+    for (int i = 0; i < n; i++) {
+        if (matching[i] == -1) {
+            memset(seen, false, sizeof(seen));
+            if (dfs(i))
                 res++;
-            }
         }
     }
+
     return res;
 }
 
@@ -52,7 +49,6 @@ int solve()
 {
     int n;
     scanf("%d", &n);
-    V = n;
 
     // read
     int inp[n][n];
@@ -63,13 +59,14 @@ int solve()
 
     int stay = 0;
     for (int i = -n; i <= n; i++) {
+        // printf("Now %d\n", i);
         if (i == 0)
             continue;
 
-        for (int j = 0; j < n; j++)
-            g[j].clear();
+        g.clear();
 
         // build
+        g = vector<vector<int>>(n * 2, vector<int>());
         for (int j = 0; j < n; j++)
             for (int k = 0; k < n; k++) {
                 if (inp[j][k] == i) {
@@ -80,7 +77,7 @@ int solve()
             }
 
         // run
-        stay += bipartite_matching();
+        stay += bipartite_matching(n * 2);
         // printf("%d %d\n", i, stay);
     }
 
