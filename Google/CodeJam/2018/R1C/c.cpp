@@ -14,6 +14,8 @@ int solve()
     for (int i = 1; i <= n; i++)
         scanf("%lld", &w[i]);
 
+    // DP[i][j] = k
+    // min weight sum = picking from ants [0, i], and we use only j of them
     for (int i = 0; i <= n; i++)
         fill(dp[i], dp[i] + 555, oo);
     dp[0][0] = 0;
