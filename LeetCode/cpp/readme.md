@@ -112,6 +112,26 @@ tie(a, b) = someReturnedTuple
 dp = vector<vector<int>>(n, vector<int>(m, 0));
 ```
 
+## Two pointers
+
+```c++
+int l = 0, sum = 0;
+int ans = 0;
+for (int r = 0; r < n; r++) { // [l, r)
+    sum += nums[r];
+    if (sum == k)
+        ans++;
+
+    while (l < r && sum > k) {
+        sum -= nums[l];
+        l++;
+
+        if (sum == k)
+            ans++;
+    }
+}
+```
+
 # Conversion
 
 string version of `atoi()` is `stoi()`
@@ -121,6 +141,7 @@ string version of `atoi()` is `stoi()`
 * Simply good one: 240 (581 talked about it, now finally understands it), 418 (observation), 766 (implementation), 670 (greedy), 266, 400, 835
 * Good but hard greedy: 316
 * Two pointer: 683 (nlogn is easy though), 239 (deque), 340, 76 (hard), 259 (goodness!), 360
+    * Not two pointer 560
 * Iterator: 341, 26 (implement unique)
 * Trie
     * (easy) 421, 820
