@@ -17,81 +17,56 @@ static int __initialSetup = []()
 // [], "", ...
 // range of input?
 
-struct Data {
-    string s;
-    int rep;
-
-    Data(string _s)
-    {
-        s = _s;
-        rep = -1;
-    }
-
-    Data(int _rep)
-    {
-        rep = _rep;
-        s = "";
-    }
-};
-
 class Solution
 {
-private:
-    stack<Data> st;
-
 public:
     string decodeString(string s)
     {
+        stack<string> st;
+        string cur;
         int num = 0;
-        string str = "";
+
+        // "3[a]2[bc]"
         for (auto i : s) {
-            if ('0' <= i && i <= '9') { // might end str
-                st.push(str);
-                str = "";
+            if ('0' <= i && i <= '9') {
+                if (num == 0) {
+                    st.push(cur);
+                    cur = "";
+                }
 
                 num = num * 10 + (i - '0');
             } else {
-                if (i == '[') { // proceed with numbers
-                    st.push(num);
+                if (i == '[') {
+                    st.push(to_string(num));
                     num = 0;
-                } else if (i == ']') { // end str
-                    st.push(str);
-                    str = "";
+                } else if (i == ']') {
+                    st.push(cur);
+                    cur = "";
 
-                    // pop till a number
-                    string tmp;
-                    while (st.size() > 0) {
-                        if (st.top().rep != -1) {
-                            string res = "";
-                            for (int j = 0; j < st.top().rep; j++)
-                                res += tmp;
-                            st.pop();
-                            st.push(res);
-                            break;
-                        }
-                        tmp = st.top().s + tmp;
-                        st.pop();
-                    }
-                } else { // alphabet
-                    str += i;
+                    cur = st.top();
+                    st.pop();
+                    int rep = stoi(st.top());
+                    st.pop();
+
+                    string tmp = "";
+                    for (int j = 0; j < rep; j++)
+                        tmp += cur;
+                    cur = st.top() + tmp; // crucial!
+                    st.pop();
+                    // cout << cur << endl;
+                } else {
+                    cur += i;
                 }
             }
         }
 
+        if (cur != "")
+            st.push(cur);
+
         string ans = "";
-        st.push(str);
+        // cout << st.size() << endl;
         while (st.size() > 0) {
-            if (st.top().rep == -1) {
-                ans = st.top().s + ans;
-
-            } else {
-                string tmp = ans;
-                ans = "";
-                for (int i = 0; i < st.top().rep; i++) {
-                    ans += tmp;
-                }
-            }
-
+            ans = st.top() + ans;
             st.pop();
         }
 
@@ -102,6 +77,7 @@ public:
 #ifdef LOCAL
 int main()
 {
+    cout << Solution().decodeString("3[a2[c]]") << endl;
     return 0;
 }
 #endif
