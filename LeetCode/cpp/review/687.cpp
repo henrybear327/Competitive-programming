@@ -22,35 +22,45 @@ static int __initialSetup = []()
 // handle special cases first
 // [], "", ...
 // range of input?
-
 class Solution
 {
 private:
-    int dfs(int &ans, TreeNode *root)
+    int ans;
+    int dfs(TreeNode *root)
     {
         if (root == NULL)
             return 0;
 
-        int l = dfs(ans, root->left);
-        int r = dfs(ans, root->right);
-        int ret = 0; // oneside max length
-        if (root->left && root->left->val == root->val)
-            ret = max(ret, l + 1);
-        if (root->right && root->right->val == root->val)
-            ret = max(ret, r + 1);
+        int l = dfs(root->left);
+        int r = dfs(root->right);
 
-        ans = max(ret, ans);
-        if (root->left && root->right && root->left->val == root->right->val &&
-            root->left->val == root->val)
-            ans = max(ans, l + r + 2);
-        return ret;
+        if (root->left != NULL && root->left->val == root->val) {
+            l++;
+        } else {
+            ans = max(ans, l);
+            l = 0;
+        }
+
+        if (root->right != NULL && root->right->val == root->val) {
+            r++;
+        } else {
+            ans = max(ans, r);
+            r = 0;
+        }
+
+        ans = max(ans, l + r);
+
+        return max(l, r); // return the max length of left or right only
+        // since the root node can only entend on one of them
     }
 
 public:
     int longestUnivaluePath(TreeNode *root)
     {
-        int ans = 0;
-        dfs(ans, root);
+        ans = 0;
+
+        dfs(root);
+
         return ans;
     }
 };
