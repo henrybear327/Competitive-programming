@@ -2,7 +2,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// tree node stuff here...
+// define data structures here
 #endif
 
 static int __initialSetup = []()
@@ -12,10 +12,6 @@ static int __initialSetup = []()
     return 0;
 }
 ();
-
-// handle special cases first
-// [], "", ...
-// range of input?
 
 #ifdef LOCAL
 int main()
