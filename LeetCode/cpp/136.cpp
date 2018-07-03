@@ -1,4 +1,3 @@
-// :%s/^ \*//g
 #ifdef LOCAL
 #include <bits/stdc++.h>
 using namespace std;
@@ -13,6 +12,18 @@ static int __initialSetup = []()
     return 0;
 }
 ();
+
+class Solution
+{
+public:
+    int singleNumber(vector<int> &nums)
+    {
+        int ret = 0;
+        for (auto i : nums)
+            ret ^= i;
+        return ret;
+    }
+};
 
 #ifdef LOCAL
 int main()

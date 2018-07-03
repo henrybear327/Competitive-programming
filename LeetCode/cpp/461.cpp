@@ -1,4 +1,3 @@
-// :%s/^ \*//g
 #ifdef LOCAL
 #include <bits/stdc++.h>
 using namespace std;
@@ -13,6 +12,15 @@ static int __initialSetup = []()
     return 0;
 }
 ();
+
+class Solution
+{
+public:
+    int hammingDistance(int x, int y)
+    {
+        return __builtin_popcount(x ^ y);
+    }
+};
 
 #ifdef LOCAL
 int main()
