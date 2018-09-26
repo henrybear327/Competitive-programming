@@ -1,6 +1,6 @@
-// :%s/^ \*//g
+// :%s/^ \* //g
 #ifdef LOCAL
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 // define data structures here
@@ -23,23 +23,25 @@ static int __initialSetup = []()
 class Solution
 {
 private:
-    int sum = 0;
+    TreeNode *res = NULL;
+    TreeNode *cur = NULL;
 
 public:
-    TreeNode *convertBST(TreeNode *root)
+    TreeNode *increasingBST(TreeNode *root)
     {
         if (root == NULL)
             return NULL;
 
-        TreeNode *newNode = new TreeNode(root->val);
+        increasingBST(root->left);
+        if (res == NULL)
+            res = cur = new TreeNode(root->val);
+        else {
+            cur->right = new TreeNode(root->val);
+            cur = cur->right;
+        }
+        increasingBST(root->right);
 
-        newNode->right = convertBST(root->right);
-        int orig = root->val; // cricual!
-        newNode->val += sum;
-        sum += orig;
-        newNode->left = convertBST(root->left);
-
-        return newNode;
+        return res;
     }
 };
 
