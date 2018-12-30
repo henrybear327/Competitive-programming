@@ -5,7 +5,7 @@ using namespace std;
 int mx = -1;
 int cnt = 0;
 bool seen[9][9];
-char inp[9][11];
+char inp[9][12];
 int xs, ys, xd, yd;
 
 const int dx[4] = {0, 0, 1, -1};
@@ -45,7 +45,7 @@ void dfs(int x, int y)
 void solve(int start)
 {
     for (int i = start; i < 9; i++)
-        fgets(inp[i], 11, stdin);
+        fgets(inp[i], 12, stdin);
 
     xs = xd = ys = yd = -1;
     for (int i = 0; i < 9; i++)
@@ -57,6 +57,7 @@ void solve(int start)
                 xd = i;
                 yd = j;
             }
+            seen[i][j] = false;
         }
 
     if (xs == -1 || xd == -1 || ys == -1 || yd == -1) {
@@ -66,7 +67,6 @@ void solve(int start)
 
     mx = -1;
     cnt = 0;
-    memset(seen, false, sizeof(seen));
     dfs(xs, ys);
 
     printf("%d\n", mx);
@@ -75,7 +75,7 @@ void solve(int start)
 int main()
 {
     bool first = true;
-    while (fgets(inp[0], 11, stdin) != NULL) {
+    while (fgets(inp[0], 12, stdin) != NULL) {
         if (first) {
             first = false;
             solve(1);
