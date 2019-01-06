@@ -11,34 +11,33 @@ int main()
     scanf("%d %d", &n, &m);
 
     long double sol = 0.0;
-    
+
     ll oddSum = 0;
     ll evenSum = 0;
     ll sum = 0;
-    for(int i = 0; i < m; i++) {
+    for (int i = 0; i < m; i++) {
         ll x, k;
-        scanf("%d %d", &x, &k);
+        scanf("%lld %lld", &x, &k);
 
         sum += x;
-        if(k >= 0) {
-            oddSum += k * (n - 1) * n;
-            // printf("k >= 0 %f\n", sol);
+        if (k >= 0) {
+            oddSum += k * (n - 1) * n / 2;
         } else {
             bool even = n % 2 == 0;
-            if(even)
+            if (even)
                 n--;
             int cnt = n / 2;
             ll inc = (k + cnt * k) * cnt;
             evenSum += inc;
-            if(even)
+            if (even) {
                 n++;
-            cnt = n / 2;
-            evenSum += (cnt * k);
-            // printf("k < 0 %f\n", sol);
+                cnt = n / 2;
+                evenSum += (cnt * k);
+            }
         }
     }
 
-    sol += (1.0 * oddSum / 2) + (1.0 * evenSum);
+    sol += oddSum + evenSum;
     sol /= n;
     sol += sum;
 
