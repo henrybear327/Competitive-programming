@@ -2,40 +2,56 @@
 
 using namespace std;
 
+// attempt to append val - 1
+
 int main()
 {
-	int n;
-	scanf("%d", &n);
-	map<int, int> occur;
-	int from[n];
-	memset(from, -1, sizeof(from));
-	int mx[n];
-	fill(mx, mx + n, 1);
-	int id = 0;
-	for (int i = 0; i < n; i++) {
-		int num;
-		scanf("%d", &num);
+    int n;
+    scanf("%d", &n);
 
-		if (occur.count(num - 1) > 0) {
-			from[i] = occur[num - 1];
-			mx[i] = mx[occur[num - 1]] + 1;
+    int inp[n];
+    for (int i = 0; i < n; i++)
+        scanf("%d", &inp[i]);
 
-			if (mx[id] < mx[i]) {
-				id = i;
-			}
-		}
-		occur[num] = i;
-	}
+    map<int, int> firstOcc;
+    int ans[n];
+    int pre[n]; // must record this, since the pos will be changed all the time
+    fill(ans, ans + n, 1);
+    for (int i = 0; i < n; i++) {
+        pre[i] = i;
+        firstOcc[inp[i]] =
+            i; // can't just keep the first occ position! try 2 3 4 1 2 3 8
+        auto it = firstOcc.find(inp[i]);
+        if (it != firstOcc.begin()) {
+            it--;
+            if (it->first + 1 == inp[i]) {
+                ans[i] = ans[it->second] + 1;
+                pre[i] = it->second;
+            }
+        }
+    }
 
-	vector<int> ans;
-	while (id != -1) {
-		ans.push_back(id + 1);
-		id = from[id];
-	}
-	reverse(ans.begin(), ans.end());
-	printf("%d\n", (int)ans.size());
-	for (auto i : ans)
-		printf("%d ", i);
+    /*for (int i = 0; i < n; i++)
+        printf("%d ", pre[i]);
+    printf("\n");*/
 
-	return 0;
+    int mx;
+    printf("%d\n", (mx = *max_element(ans, ans + n)));
+
+    for (int i = 0; i < n; i++)
+        if (ans[i] == mx) {
+            vector<int> res;
+            int who = i;
+            res.push_back(i);
+            while (pre[who] != who) {
+                res.push_back(pre[who]);
+                who = pre[who];
+            }
+            reverse(res.begin(), res.end());
+            for (auto j : res)
+                printf("%d ", j + 1);
+            break;
+        }
+
+    return 0;
 }
