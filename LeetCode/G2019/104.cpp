@@ -7,20 +7,23 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-class Solution {
+class Solution
+{
 private:
     int ans;
-    void dfs(TreeNode* root, int depth)
+    void dfs(TreeNode *root, int depth)
     {
-        if(root == NULL) {
+        if (root == NULL) {
             ans = max(ans, depth);
             return;
         }
         dfs(root->right, depth + 1);
         dfs(root->left, depth + 1);
     }
+
 public:
-    int maxDepth(TreeNode* root) {
+    int maxDepth(TreeNode *root)
+    {
         ans = 0;
         dfs(root, 0);
         return ans;
@@ -36,12 +39,14 @@ public:
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-class Solution {
+class Solution
+{
 public:
-    int maxDepth(TreeNode* root) {
-        if(root == NULL)
+    int maxDepth(TreeNode *root)
+    {
+        if (root == NULL)
             return 0;
-        
+
         return max(1 + maxDepth(root->left), 1 + maxDepth(root->right));
     }
 };

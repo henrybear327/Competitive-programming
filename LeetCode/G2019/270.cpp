@@ -7,21 +7,24 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-class Solution {
-private: 
+class Solution
+{
+private:
     int ans = 0;
-    void dfs(TreeNode* root, double target)
+    void dfs(TreeNode *root, double target)
     {
-        if(root == NULL)
+        if (root == NULL)
             return;
-        if(fabs(root->val - target) < fabs(ans - target)) {
+        if (fabs(root->val - target) < fabs(ans - target)) {
             ans = root->val;
         }
         dfs(root->left, target);
         dfs(root->right, target);
     }
+
 public:
-    int closestValue(TreeNode* root, double target) {
+    int closestValue(TreeNode *root, double target)
+    {
         ans = root->val;
         dfs(root, target);
         return ans;

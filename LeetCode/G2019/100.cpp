@@ -7,15 +7,17 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-class Solution {
+class Solution
+{
 public:
-    bool isSameTree(TreeNode* p, TreeNode* q) {
-        if(p == NULL && q == NULL) 
+    bool isSameTree(TreeNode *p, TreeNode *q)
+    {
+        if (p == NULL && q == NULL)
             return true;
-        else if(p == NULL || q == NULL) 
+        else if (p == NULL || q == NULL)
             return false;
-        
-        if(p->val == q->val) 
+
+        if (p->val == q->val)
             return isSameTree(p->left, q->left) && isSameTree(p->right, q->right);
         return false;
     }

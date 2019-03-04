@@ -7,15 +7,17 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-class Solution {
+class Solution
+{
 public:
-    TreeNode* searchBST(TreeNode* root, int val) {
-        if(root == NULL)
+    TreeNode *searchBST(TreeNode *root, int val)
+    {
+        if (root == NULL)
             return NULL;
-        if(root->val == val)
+        if (root->val == val)
             return root;
-        
-        if(val < root->val)
+
+        if (val < root->val)
             return searchBST(root->left, val);
         return searchBST(root->right, val);
     }
