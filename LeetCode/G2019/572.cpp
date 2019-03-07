@@ -7,27 +7,30 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-class Solution {
+class Solution
+{
 private:
-    bool dfs(TreeNode* s, TreeNode* t, bool isChecking)
+    bool dfs(TreeNode *s, TreeNode *t, bool isChecking)
     {
-        if(s == NULL && t == NULL) // WTF
+        if (s == NULL && t == NULL) // WTF
             return true;
-        if(s == NULL || t == NULL)
+        if (s == NULL || t == NULL)
             return false;
-        
-        if(s->val == t->val) {
+
+        if (s->val == t->val) {
             bool ret = dfs(s->left, t->left, true) && dfs(s->right, t->right, true);
-            if(ret)
+            if (ret)
                 return ret;
-        } 
-        
-        if(isChecking)
+        }
+
+        if (isChecking)
             return false;
         return dfs(s->left, t, false) || dfs(s->right, t, false);
     }
+
 public:
-    bool isSubtree(TreeNode* s, TreeNode* t) {
+    bool isSubtree(TreeNode *s, TreeNode *t)
+    {
         return dfs(s, t, false);
     }
 };
