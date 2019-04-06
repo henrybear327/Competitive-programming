@@ -11,18 +11,22 @@ func main() {
 	config := parseConfigFile()
 	api := apiData{contestID: config.ContestID}
 
-	// getHandleResults(&api, config.Handles)
+	getHandleResults(&api, config.Handles)
+	// getAllContestants(&api)
+}
+
+func getHandleResults(api *apiData, handles []string) {
+	for _, handle := range handles {
+		api.getResultByHandle(handle)
+	}
+}
+
+func getAllContestants(api *apiData) {
 	contestants := api.getAllResults()
 	for _, contestant := range contestants {
 		// fmt.Printf("%6f %30s %30s\n", contestant.rank, contestant.handle, contestant.score1)
 		if contestant.country == "Taiwan" {
 			fmt.Printf("%6.0f %30s %6.0f\n", contestant.rank, contestant.handle, contestant.score1)
 		}
-	}
-}
-
-func getHandleResults(api *apiData, handles []string) {
-	for _, handle := range handles {
-		api.getResultByHandle(handle)
 	}
 }

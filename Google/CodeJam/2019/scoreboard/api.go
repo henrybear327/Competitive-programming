@@ -97,7 +97,7 @@ func (data *apiData) getResultByHandle(handle string) {
 	handleErr(err)
 
 	result := decodeFromBase64(body)
-	log.Println(string(result))
+	// log.Println(string(result))
 
 	m := make(map[string]interface{})
 	err = json.Unmarshal(result, &m)
