@@ -1,0 +1,55 @@
+{  
+   "challenge":{  
+      "additional_info":"Contestants with at least 30 points at the end of this round will advance to Round 1.",
+      "are_results_final":false,
+      "end_ms":1554602400000,
+      "id":"0000000000051705",
+      "is_practice_available":false,
+      "result_status":10,
+      "result_status__str":"PARTIALLY_HIDDEN",
+      "show_scoreboard":true,
+      "start_ms":1554505200000,
+      "tasks":[  ],
+      "title":"Qualification Round 2019"
+   },
+   "full_scoreboard_size":13328,
+   "scoreboard_page_number":774,
+   "user_scores":[  
+      {  
+         "country":"Taiwan",
+         "displayname":"henrybear327",
+         "rank":775,
+         "score_1":66,
+         "score_2":-15482168927,
+         "task_info":[  
+            {  
+               "penalty_attempts":0,
+               "penalty_micros":3327420542,
+               "score":24,
+               "task_id":"00000000000881da",
+               "tests_definitely_solved":2,
+               "tests_possibly_solved":1,
+               "total_attempts":1
+            },
+            {  
+               "penalty_attempts":0,
+               "penalty_micros":1298630173,
+               "score":17,
+               "task_id":"0000000000088231",
+               "tests_definitely_solved":2,
+               "tests_possibly_solved":1,
+               "total_attempts":1
+            },
+            {  
+               "penalty_attempts":8,
+               "penalty_micros":13562168927,
+               "score":25,
+               "task_id":"000000000008830b",
+               "tests_definitely_solved":1,
+               "tests_possibly_solved":1,
+               "total_attempts":11
+            }
+         ]
+      }
+   ]
+}
