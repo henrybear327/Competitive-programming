@@ -1,0 +1,75 @@
+package main
+
+import (
+	"fmt"
+	"sort"
+)
+
+func gcd(a, b int) int {
+	if b == 0 {
+		return a
+	}
+	return gcd(b, a%b)
+}
+
+func solve() string {
+	ans := ""
+
+	n := 0
+	l := 0
+	fmt.Scanf("%d %d", &n, &l)
+
+	inp := make([]int, l)
+	for i := 0; i < l; i++ {
+		fmt.Scanf("%d", &inp[i])
+	}
+
+	res := make([]int, l+1)
+	idx := -1
+	for i := 1; i < l; i++ {
+		if inp[i] == inp[i-1] { // AAA or ABA
+			continue
+		}
+
+		g := gcd(inp[i-1], inp[i])
+		idx = i
+		res[i] = g
+	}
+
+	s := make(map[int]bool)
+	for i := idx - 1; i >= 0; i-- {
+		res[i] = inp[i] / res[i+1]
+	}
+	for i := idx + 1; i < l+1; i++ {
+		res[i] = inp[i-1] / res[i-1]
+	}
+	for i := 0; i < l+1; i++ {
+		s[res[i]] = true
+	}
+
+	var keys []int
+	for key := range s {
+		keys = append(keys, key)
+	}
+	sort.Ints(keys)
+
+	prime := make(map[int]string)
+	for key, value := range keys {
+		prime[value] = string(key + 'A')
+	}
+
+	for i := 0; i < l+1; i++ {
+		ans += prime[res[i]]
+	}
+
+	return ans
+}
+
+func main() {
+	ncase := 0
+	fmt.Scanf("%d", &ncase)
+	for i := 1; i <= ncase; i++ {
+		res := solve()
+		fmt.Printf("Case #%d: %s\n", i, res)
+	}
+}

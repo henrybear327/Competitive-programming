@@ -2,8 +2,6 @@
 
 using namespace std;
 
-typedef pair<int, int> ii;
-
 int gcd(int a, int b)
 {
     a = abs(a);
