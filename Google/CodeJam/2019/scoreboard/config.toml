@@ -1,9 +1,9 @@
 # contestID
-# contestID = "0000000000051705" # 2019 qualification round
-contestID = "0000000000007883" # Round 1A 2018
+contestID = "0000000000051705" # 2019 qualification round
+# contestID = "0000000000007883" # Round 1A 2018
 
 # list of friends' handle
-handles = ["henrybear327", "Andychen", "BeMg", "wu561092", "aaaaajack"] 
+handles = ["henrybear327", "Andychen", "amoshyc", "BeMg", "wu561092", "aaaaajack"] 
 
 # refresh interval in second
 refreshInterval = 60 

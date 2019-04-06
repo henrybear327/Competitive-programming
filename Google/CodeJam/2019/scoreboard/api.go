@@ -29,14 +29,46 @@ func getHandleSearchPayload(handle string) string {
 }
 
 func prettyPrint(handle string, result map[string]interface{}) {
+	fmt.Println("==================================")
 	if tmp, ok := result["user_scores"]; ok == false || len(tmp.([]interface{})) == 0 {
 		fmt.Println(handle, "has no submission yet")
 		return
 	}
 
+	// contest info
+	fmt.Println("Total contestants", result["full_scoreboard_size"])
 	challange := result["challenge"].(map[string]interface{})
-	fmt.Println("Contest status", challange["result_status__str"])
+	fmt.Println("Contest status is", challange["result_status__str"])
 	fmt.Println(handle, challange["additional_info"])
+
+	tasks := challange["tasks"].([]interface{})
+	taskList := make(map[string]string)
+	for _, taskObj := range tasks {
+		task := taskObj.(map[string]interface{})
+		taskList[task["id"].(string)] = task["title"].(string)
+	}
+	// for key, value := range taskList {
+	// 	log.Println(key, value)
+	// }
+
+	// user info
+	userScores := result["user_scores"].([]interface{})
+	for _, userScoreObj := range userScores {
+		userScore := userScoreObj.(map[string]interface{})
+		fmt.Println("Country", userScore["country"])
+		fmt.Println("Rank", userScore["rank"])
+		fmt.Println("Score", userScore["score_1"])
+		fmt.Println("Score 2", userScore["score_2"])
+
+		for _, taskInfoObj := range userScore["task_info"].([]interface{}) {
+			taskInfo := taskInfoObj.(map[string]interface{})
+			fmt.Println("task name", taskList[taskInfo["task_id"].(string)])
+			fmt.Println("total attempts", taskInfo["total_attempts"])
+			fmt.Println("tasks definitely solved", taskInfo["tests_definitely_solved"])
+			fmt.Println("tasks possibly solved", taskInfo["tests_possibly_solved"])
+			fmt.Println("wrong attempts", taskInfo["penalty_attempts"])
+		}
+	}
 }
 
 func (data *apiData) getResultByHandle(handle string) {
