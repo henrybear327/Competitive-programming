@@ -135,6 +135,7 @@ func (data *apiData) getAllResults() []*contestantData {
 
 		body, err := ioutil.ReadAll(resp.Body)
 		handleErr(err)
+		// log.Println(string(body))
 
 		result := decodeFromBase64(body)
 		// log.Println(string(result))
