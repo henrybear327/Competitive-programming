@@ -10,7 +10,7 @@ string solve()
     string ans;
 
     int n;
-    char inp[55555];
+    char inp[55555 * 2];
     scanf("%d %s", &n, inp);
 
     int l = strlen(inp);
