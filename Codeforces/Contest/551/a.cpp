@@ -10,12 +10,12 @@ int main()
 	int n, t;
 	scanf("%d %d", &n, &t);
 	
-	int bus = -1, diff = INT_MAX;
+	int bus = 0, diff = INT_MAX;
 	for(int i = 0; i < n; i++) {
 		int s, d;
 		scanf("%d %d", &s, &d);
 
-		for(int j = s; j < 100001; j += d) {
+		for(int j = s; j < 3 * 100001; j += d) {
 			if(j >= t) {
 				if(diff > j - t) {
 					diff = j - t;
