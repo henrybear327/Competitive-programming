@@ -6,7 +6,16 @@ typedef pair<int, int> ii;
 
 int main()
 {
-	
+    map<char, char> m;
+    m['A'] = 'T';
+    m['T'] = 'A';
+    m['C'] = 'G';
+    m['G'] = 'C';
 
-	return 0;
+    char c;
+    scanf("%c", &c);
+
+    printf("%c\n", m[c]);
+
+    return 0;
 }
