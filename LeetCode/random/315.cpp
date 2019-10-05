@@ -4,7 +4,7 @@ private:
     typedef pair<int, int> ii;
     vector<ii> inp;
     vector<int> ans;
-    void mergeSort(int l, int r)   // [l, r)
+    void mergeSort(int l, int r) // [l, r)
     {
         if (l + 1 == r)
             return;
