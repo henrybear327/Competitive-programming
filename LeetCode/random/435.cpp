@@ -7,7 +7,8 @@ public:
         if (n == 0)
             return 0;
 
-        sort(intervals.begin(), intervals.end(),
+        sort(
+            intervals.begin(), intervals.end(),
         [](const vector<int> &a, const vector<int> &b) {
             return a[0] < b[0];
         });

@@ -6,7 +6,7 @@
 [["1","1","1","1"],["1","1","1","1"],["1","1","1","1"]]
 [["1","1","1","1"],["1","1","1","1"]]
 */
-class Solution   // O(n^2m + nm^2)
+class Solution // O(n^2m + nm^2)
 {
 public:
     int maximalRectangle(vector<vector<char>> &matrix)

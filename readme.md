@@ -383,6 +383,7 @@ allocated with new[], freed with delete[]
 # Hashmap TLE problem
 
 * [F. Consecutive Subsequence](http://codeforces.com/contest/977/problem/F)
+* https://codeforces.com/contest/1234/submission/61983156
 
 # Open test data
 
