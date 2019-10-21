@@ -16,19 +16,20 @@ private:
         for (int i = 0; i < k; i++) {
             arr[depth] = i;
             sum[i] += nums[depth];
-            
-            if(sum[i] > target) {
+
+            if (sum[i] > target) {
                 // skip
             } else {
                 if (dfs(depth + 1, arr, nums, k, target))
                     return true;
             }
-            
+
             sum[i] -= nums[depth];
             arr[depth] = -1;
-            
-            // we guarantee the sum[i] = 0 will be consecutive, and towards the end only!
-            if(sum[i] == 0) // WTF?
+
+            // we guarantee the sum[i] = 0 will be consecutive, and towards the end
+            // only!
+            if (sum[i] == 0) // WTF?
                 break;
         }
 
@@ -47,15 +48,13 @@ public:
         int target = tot / k;
         int arr[nums.size()];
         sum = vector<int>(k, 0);
-        
+
         sort(nums.begin(), nums.end());
         reverse(nums.begin(), nums.end());
-        for(auto i : nums) 
-            if(i > target)
+        for (auto i : nums)
+            if (i > target)
                 return false;
 
         return dfs(0, arr, nums, k, target);
     }
 };
-
-
