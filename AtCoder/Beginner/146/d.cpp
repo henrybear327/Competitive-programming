@@ -15,19 +15,12 @@ void dfs(int u, int p, int usedColor)
         int edgeNumber = cur.second;
         if (v == p) // skip parent
             continue;
-        if (p == -1) {
-            ans[edgeNumber] = idx;
-            mx = max(mx, idx);
-            dfs(v, u, idx);
+        if (usedColor == idx)
             idx++;
-        } else {
-            if (usedColor == idx)
-                idx++;
-            mx = max(mx, idx);
-            ans[edgeNumber] = idx;
-            dfs(v, u, idx);
-            idx++;
-        }
+        mx = max(mx, idx);
+        ans[edgeNumber] = idx;
+        dfs(v, u, idx);
+        idx++;
     }
 }
 
