@@ -2,6 +2,9 @@
 
 using namespace std;
 
+typedef long long ll;
+typedef pair<int, int> ii;
+
 void solve() {}
 
 int main()
