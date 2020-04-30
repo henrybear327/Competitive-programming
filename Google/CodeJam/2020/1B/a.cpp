@@ -5,53 +5,68 @@ using namespace std;
 typedef long long ll;
 typedef pair<int, int> ii;
 
-const char *dir = "ESWN";
-const int dx[4] = {1, 0, -1, 0};
-const int dy[4] = {0, -1, 0, 1};
-
-int x, y;
-string ans = "AAAAAAAAAAAAAAAAAAAAAAAAAAA";
-string path = "";
-void dfs(int depth, ll val, int curX, int curY)
+bool go(int x, int y, string &ans)
 {
-    // printf("%s\n", path.c_str());
-    // printf("%s\n", path.c_str());
-    if (depth == 10) {
-        return;
+    if (x == 0 && y == 0) {
+        return true;
+    }
+    if (x == 1 && y == 0) {
+        ans += "E";
+        return true;
+    }
+    if (x == 0 && y == 1) {
+        ans += "N";
+        return true;
+    }
+    if (x == -1 && y == 0) {
+        ans += "W";
+        return true;
+    }
+    if (x == 0 && y == -1) {
+        ans += "S";
+        return true;
     }
 
-    if (x == curX && y == curY) {
-        // printf("ans = %s\n, path = %s\n", ans.c_str(), path.c_str());
-        if (ans.length() > path.length()) {
-            ans = path;
-            return;
+    if (abs(x) % 2 != abs(y) % 2) {
+        if (abs(x) % 2 == 1) {
+            if (go((x + 1) / 2, y / 2, ans)) {
+                ans += "W";
+                return true;
+            }
+            if (go((x - 1) / 2, y / 2, ans)) {
+                ans += "E";
+                return true;
+            }
+        } else {
+            if (go(x / 2, (y + 1) / 2, ans)) {
+                ans += "S";
+                return true;
+            }
+            if (go(x / 2, (y - 1) / 2, ans)) {
+                ans += "N";
+                return true;
+            }
         }
     }
 
-    // to A
-    for (int i = 0; i < 4; i++) {
-        path += dir[i];
-        dfs(depth + 1, val * 2, curX + dx[i] * val, curY + dy[i] * val);
-        path.pop_back();
-    }
+    return false;
 }
 
 void solve()
 {
+    int x, y;
     scanf("%d %d", &x, &y);
     if (x == 0 && y == 0) {
         printf("\n");
         return;
     }
 
-    ans = "AAAAAAAAAA";
-    path = "";
-    dfs(0, 1, 0, 0);
-
-    if (ans.length() != 10) {
-        printf("%s\n", ans.c_str());
-    } else {
+    string ans = "";
+    if (go(x, y, ans) == false)
         printf("IMPOSSIBLE\n");
+    else {
+        reverse(ans.begin(), ans.end());
+        printf("%s\n", ans.c_str());
     }
 }
 
