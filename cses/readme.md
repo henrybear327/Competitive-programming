@@ -13,3 +13,8 @@
 ## Two pointers
 
 * 1069
+
+## Observation
+
+* 1092
+
