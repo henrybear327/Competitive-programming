@@ -1,26 +1,19 @@
 /**
  * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
  */
-func dfs(root *TreeNode, depth int, mx *int) {
-    if(root == nil) {
-        return
+class Solution {
+public:
+    int maxDepth(TreeNode* root) {
+        if(root == NULL)
+            return 0;
+        return max(maxDepth(root->left) + 1, maxDepth(root->right) + 1);
     }
-    
-    if depth > *mx {
-        *mx = depth
-    }
-    dfs(root.Left, depth + 1, mx);
-    dfs(root.Right, depth + 1, mx);
-}
-
-func maxDepth(root *TreeNode) int {
-    ans := 0
-    dfs(root, 1, &ans)
-    
-    return ans
-}
+};
