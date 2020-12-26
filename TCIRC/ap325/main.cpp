@@ -1,11 +1,4 @@
-#include <algorithm>
-#include <cassert>
-#include <cstdio>
-#include <cstdlib>
-#include <cstring>
-#include <queue>
-#include <stack>
-#include <vector>
+#include <bits/stdc++.h>
 
 using namespace std;
 
