@@ -26,4 +26,8 @@ else
 	echo 'unknown'
 fi
 
-$compiler -Wall -Wextra -Wshadow -std=c++14 -fanalyzer $PROBLEM.cpp
+# https://codeforces.com/blog/entry/15547
+checker='-Wall -Wextra -Wshadow -fanalyzer -Wfloat-equal -Wconversion -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2'
+standard='-std=c++14'
+$compiler $standard $checker $PROBLEM.cpp
+
