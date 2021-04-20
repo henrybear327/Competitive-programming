@@ -40,3 +40,47 @@ public:
         return head;
     }
 };
+
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution
+{
+public:
+    ListNode *addTwoNumbers(ListNode *l1, ListNode *l2)
+    {
+        int carry = 0;
+        ListNode *head = l1, *cur = l1;
+        while (l1 != NULL || l2 != NULL || carry > 0) {
+            int val = carry;
+            carry = 0;
+            if (l1 != NULL) {
+                val += l1->val;
+                l1 = l1->next;
+            }
+
+            if (l2 != NULL) {
+                val += l2->val;
+                l2 = l2->next;
+            }
+
+            carry = val / 10;
+            val %= 10;
+
+            cur->val = val;
+            if (cur->next == NULL && (l1 != NULL || l2 != NULL || carry > 0)) {
+                cur->next = new ListNode();
+            }
+            cur = cur->next;
+        }
+
+        return head;
+    }
+};
