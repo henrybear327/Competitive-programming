@@ -19,7 +19,7 @@ int main()
             if (tmp < prev)
                 ans += (prev - tmp) * 1LL; // long long required
             else
-                prev = tmp; // we only update when the tmp >= prev :) 
+                prev = tmp; // we only update when the tmp >= prev :)
         }
     }
 

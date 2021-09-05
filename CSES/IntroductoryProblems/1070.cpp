@@ -5,9 +5,6 @@ using namespace std;
 int main()
 {
     /*
-    2 4 1 3 6 8 5 7
-
-    1 6 2 7 3 8 4 9 5 10
     1 2 3 4 5 ... interleave with 6 7 8 9 10 ...
 
     odds then evens
@@ -16,6 +13,7 @@ int main()
     int n;
     scanf("%d", &n);
 
+    /*
     if (n == 3 || n == 2) {
         printf("NO SOLUTION\n");
     } else if (n == 4) {
@@ -27,6 +25,23 @@ int main()
             } else {
                 printf("%d ", (n + 1) / 2 + (i / 2 + 1));
             }
+        }
+    }
+    */
+
+    // 2 4 1 3 5
+    if (n == 2 || n == 3)
+        printf("NO SOLUTION\n");
+    else {
+        int base = 2;
+        for (int i = 0; i < n / 2; i++) {
+            printf("%d ", base);
+            base += 2;
+        }
+        base = 1;
+        for (int i = 0; i < (n + 1) / 2; i++) {
+            printf("%d ", base);
+            base += 2;
         }
     }
 
