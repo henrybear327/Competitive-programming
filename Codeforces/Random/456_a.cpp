@@ -1,6 +1,6 @@
+#include <algorithm>
 #include <stdio.h>
 #include <vector>
-#include <algorithm>
 
 using namespace std;
 
@@ -12,7 +12,7 @@ int main()
     scanf("%d", &n);
 
     vector<ii> inp;
-    for(int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) {
         int price, quality;
         scanf("%d %d", &price, &quality);
 
@@ -20,10 +20,10 @@ int main()
     }
     sort(inp.begin(), inp.end());
 
-    for(int i = 0; i < n - 1; i++) {
-        if(inp[i].second <= inp[i + 1].second)
+    for (int i = 0; i < n - 1; i++) {
+        if (inp[i].second <= inp[i + 1].second)
             continue;
-            
+
         printf("Happy Alex\n");
         return 0;
     }

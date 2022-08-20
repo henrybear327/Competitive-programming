@@ -30,9 +30,10 @@ int main()
         }
     }
 
-    if (hasZero == 0) { // if we have zero -> we can change parity without extra cost
+    if (hasZero ==
+        0) { // if we have zero -> we can change parity without extra cost
         if (neg % 2 == 1) { // odd number of -1
-            ans += 2; // make one -1 into 1
+            ans += 2;         // make one -1 into 1
         }
     }
 

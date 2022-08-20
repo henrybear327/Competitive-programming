@@ -9,7 +9,7 @@ int main()
 {
     char inp[100010];
     scanf("%s", inp);
-    
+
     // we group a into groups
     // divider is b
     vector<ll> group;

@@ -46,9 +46,10 @@ int main()
 
     vector<char> ans;
     // greedy works
-    // we need to keep the remove count as low as possible, so we keep as many valid pair as we can
-    // if it's the same char, throwing both is worse than preseving one
-    // so we should preserve either one down and discard the other, and continue the matching
+    // we need to keep the remove count as low as possible, so we keep as many
+    // valid pair as we can if it's the same char, throwing both is worse than
+    // preseving one so we should preserve either one down and discard the other,
+    // and continue the matching
     for (int i = 0; i < n; i++) {
         if ((int)ans.size() % 2 == 0)
             ans.push_back(inp[i]);
